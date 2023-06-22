@@ -1,0 +1,993 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Technacysolutions
+Theme URI: https://wordpress.org/themes/technacysolutions/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Technacysolutions is a blank canvas for your ideas and it makes the block editor your best brush. With new block patterns, which allow you to create a beautiful layout in a matter of seconds, this theme’s soft colors and eye-catching — yet timeless — design will let your work shine. Take it for a spin! See how Technacysolutions elevates your portfolio, business website, or personal blog.
+Requires at least: 5.3
+Tested up to: 6.2
+Requires PHP: 5.6
+Version: 1.8
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: technacysolutions
+Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready
+
+Technacysolutions WordPress Theme, (C) 2020 WordPress.org
+Technacysolutions is distributed under the terms of the GNU GPL.
+*/
+
+/* Document
+   ========================================================================== */
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Sections
+   ========================================================================== */
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+pre {
+    font-family: monospace;
+    font-size: 1em;
+}
+
+abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration-style: dotted; /* 2 */
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace; /* 1 */
+    font-size: 0.9rem;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+    -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+    vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+    overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+}
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+form,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+    line-height: 1.7;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.25rem;
+    font-weight: normal;
+    text-align: left;
+    background-color: #eeeeee;
+}
+
+button {
+    cursor: pointer;
+}
+
+blockquote {
+    padding: 0;
+    position: relative;
+    margin: 30px 0 30px 25px;
+}
+
+blockquote > * {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+blockquote > *:first-child {
+    margin-top: 0;
+}
+
+blockquote > *:last-child {
+    margin-bottom: 0;
+}
+
+blockquote p {
+    letter-spacing: normal;
+}
+
+blockquote cite,
+blockquote footer {
+    font-weight: normal;
+    font-size: 1rem;
+    letter-spacing: normal;
+}
+
+blockquote.alignleft,
+blockquote.alignright {
+    padding-left: inherit;
+}
+
+blockquote.alignleft p,
+blockquote.alignright p {
+    font-size: 1.125rem;
+    max-width: inherit;
+    width: inherit;
+}
+
+blockquote.alignleft cite,
+blockquote.alignleft footer,
+blockquote.alignright cite,
+blockquote.alignright footer {
+    font-size: 1rem;
+    letter-spacing: normal;
+}
+
+blockquote strong {
+}
+
+blockquote:before {
+    content: "“";
+    position: absolute;
+    left: calc(-0.5 * 25px);
+}
+
+blockquote .wp-block-quote__citation,
+blockquote cite,
+blockquote footer {
+    font-size: 1rem;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=tel],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=color],
+.site textarea {
+    font-size: 12px;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+input[type=month]:focus,
+input[type=week]:focus,
+input[type=time]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=color]:focus,
+.site textarea:focus {
+}
+
+input[type=text]:disabled,
+input[type=email]:disabled,
+input[type=url]:disabled,
+input[type=password]:disabled,
+input[type=search]:disabled,
+input[type=number]:disabled,
+input[type=tel]:disabled,
+input[type=date]:disabled,
+input[type=month]:disabled,
+input[type=week]:disabled,
+input[type=time]:disabled,
+input[type=datetime]:disabled,
+input[type=datetime-local]:disabled,
+input[type=color]:disabled,
+.site textarea:disabled {
+    opacity: 0.7;
+}
+
+input[type=search]:focus {
+}
+
+.is-dark-theme input[type=search]:focus {
+}
+
+input[type=email],
+input[type=url] {
+    direction: ltr;
+}
+
+select {
+    border: 1px solid #eeeeee;
+    color: #28303d;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    line-height: 1.7;
+    background: #ffffff url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' fill='%2328303d'><polygon points='0,0 10,0 5,5'/></svg>") no-repeat;
+}
+
+select:focus {
+}
+
+textarea {
+    width: 100%;
+}
+
+label {
+    font-weight: 500;
+}
+
+input[type=checkbox] + label,
+input[type=radio] + label {
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 1rem;
+    vertical-align: top;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 6px;
+    border-radius: 6px;
+    border-width: 19px 0;
+    border-color: #eeeeee;
+    background: transparent;
+    color: transparent;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #eeeeee;
+    border-radius: 6px;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #eeeeee;
+    border-radius: 6px;
+}
+
+input[type=range]::-ms-thumb {
+    border: 3px solid #eeeeee;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background: #eeeeee;
+    cursor: pointer;
+}
+
+fieldset {
+    display: grid;
+    border-color: #eeeeee;
+}
+
+fieldset legend {
+    font-size: 1.5rem;
+}
+
+fieldset input[type=submit] {
+    max-width: max-content;
+}
+
+fieldset input:not([type=submit]) {
+    margin-bottom: 20px;
+}
+
+fieldset input[type=radio],
+fieldset input[type=checkbox] {
+    margin-bottom: 0;
+}
+
+fieldset input[type=radio] + label,
+fieldset input[type=checkbox] + label {
+    font-size: 1.125rem;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/* Classic editor images */
+.entry-content img {
+    max-width: 100%;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object,
+video {
+    max-width: 100%;
+}
+
+/* Media captions */
+figcaption,
+.wp-caption,
+.wp-caption-text,
+.wp-block-embed figcaption {
+    color: currentColor;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-top: calc(0.5 * 20px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.alignleft figcaption,
+.alignright figcaption,
+.alignleft .wp-caption,
+.alignright .wp-caption,
+.alignleft .wp-caption-text,
+.alignright .wp-caption-text,
+.alignleft .wp-block-embed figcaption,
+.alignright .wp-block-embed figcaption {
+    margin-bottom: 0;
+}
+
+/* WP Smiley */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+/* Over here, place any elements that do not need to have their own file. */
+b,
+strong {
+    font-weight: 700;
+}
+
+dfn,
+cite,
+em,
+i {
+    font-style: italic;
+}
+
+pre {
+    white-space: pre;
+    overflow-x: auto;
+}
+
+/*
+ * text-underline-offset doesn't work in Chrome at all 👎
+ * But looks nice in Safari/Firefox, so let's keep it and
+ * maybe Chrome will support it soon.
+ */
+a {
+    cursor: pointer;
+    color: #514d8e;
+    text-underline-offset: 1px;
+    text-decoration-skip-ink: all;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/**
+ * Button
+ */
+button,
+input[type=submit],
+input[type=reset] {
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+button:hover,
+button:active,
+input[type=submit]:hover,
+input[type=submit]:active,
+input[type=reset]:hover,
+input[type=reset]:active {
+    background-color: transparent;
+    border-color: currentColor;
+    color: inherit;
+}
+
+button:focus,
+input[type=submit]:focus,
+input[type=reset]:focus {
+    outline-offset: -6px;
+    outline: 2px dotted currentColor;
+}
+
+button:disabled,
+input[type=submit]:disabled,
+input[type=reset]:disabled {
+    background-color: #eee;
+    border-color: #333;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    clear: both;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+h1 strong,
+.h1 strong,
+h2 strong,
+.h2 strong,
+h3 strong,
+.h3 strong,
+h4 strong,
+.h4 strong,
+h5 strong,
+.h5 strong,
+h6 strong,
+.h6 strong {
+    font-weight: 700;
+}
+
+h1, .h1 {
+    font-size: 2rem;
+}
+
+h2, .h2 {
+    font-size: 1.5rem;
+}
+
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-size: 1rem;
+}
+
+ul,
+ol {
+    margin: 0 0 0.5rem 0;
+    padding-left: 1.2rem;
+}
+
+ul.aligncenter,
+ol.aligncenter {
+    list-style-position: inside;
+    padding: 0;
+}
+
+ul.alignright,
+ol.alignright {
+    list-style-position: inside;
+    text-align: right;
+    padding: 0;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ul ul {
+    list-style-type: circle;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ol ul {
+    list-style-type: circle;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin: 0;
+    padding-left: calc(2 * 25px);
+}
+
+p {
+    line-height: 1.2;
+}
+
+p.has-background {
+    padding: 20px;
+}
+
+hr {
+    border-style: none;
+    border-bottom: 1px solid #333333;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 240px;
+    border-collapse: collapse;
+}
+
+table thead,
+table tfoot {
+    text-align: center;
+}
+
+table th,
+.wp-block-table th {
+    font-family: 'Poppins', sans-serif;
+}
+
+table td,
+table th {
+    padding: calc(0.5 * 20px);
+    border: 1px solid;
+}
+
+table figcaption {
+    font-size: 1rem;
+}
+
+table.is-style-stripes th,
+table.is-style-stripes td {
+    border-width: 0;
+}
+
+table.wp-calendar-table td,
+table.wp-calendar-table th {
+    background: transparent;
+    border: 0;
+    text-align: center;
+    line-height: 2;
+    vertical-align: middle;
+    word-break: normal;
+}
+
+table.wp-calendar-table th {
+    font-weight: bold;
+}
+
+table.wp-calendar-table thead,
+table.wp-calendar-table tbody {
+    color: currentColor;
+    border: 1px solid;
+}
+
+table.wp-calendar-table caption {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+    color: currentColor;
+}
+
+* > figure > video {
+    max-width: unset;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.alignleft {
+
+    /*rtl:ignore*/
+    text-align: left;
+    margin-top: 0;
+}
+
+.entry-content > .alignleft {
+    max-width: inherit;
+}
+
+@media only screen and (min-width: 482px) {
+    .alignleft {
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+/**
+ * .aligncenter
+ */
+.aligncenter {
+    clear: both;
+    display: block;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+/**
+ * .alignright
+ */
+.alignright {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.entry-content > .alignright {
+    max-width: inherit;
+}
+
+@media only screen and (min-width: 482px) {
+
+    .alignright {
+        float: right;
+        margin-left: 25px;
+    }
+
+    .entry-content > .alignright {
+        max-width: 50%;
+    }
+}
+
+[class*=inner-container] > .alignleft + *,
+[class*=inner-container] > .alignright + * {
+    margin-top: 0;
+}
+
+.alignwide {
+    clear: both;
+}
+
+.alignfull {
+    clear: both;
+}
+
+.has-left-content {
+    justify-content: flex-start;
+}
+
+.has-right-content {
+    justify-content: flex-end;
+}
+
+.has-parallax {
+    background-attachment: fixed;
+}
+
+.has-drop-cap:not(:focus)::first-letter {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    line-height: 0.66;
+    text-transform: uppercase;
+    font-style: normal;
+    float: left;
+    margin: 0.1em 0.1em 0 0;
+    font-size: calc(1.2 * 4rem);
+}
+
+.has-drop-cap:not(:focus)::after {
+    content: "";
+    display: table;
+    clear: both;
+    padding-top: 14px;
+}
+
+.desktop-only {
+    display: none;
+}
+
+@media only screen and (min-width: 482px) {
+
+    .desktop-only {
+        display: block;
+    }
+}
+
+/* Category 06 contains all "bigger" components which contain elements of the previous two categories like header, footer, page template, single template, comments section, archives, ... */
+.site-header {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.wp-custom-logo .site-header {
+    align-items: center;
+}
+
+@media only screen and (min-width: 482px) {
+
+    .site-header {
+        padding-top: calc(30px / 0.75);
+    }
+}
+
+/*
+ * FOOTER
+ */
+
+
+/*
+ * SINGOLO
+ */
+
+/**
+ * Entry Content
+ */
+.entry-content,
+.entry-summary {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.entry-content p {
+    margin-bottom: 0.5rem;
+}
+
+.entry-content p:last-child {
+    margin-bottom: 0rem;
+}
+
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+    margin-bottom: 0.5rem;
+}
+
+.entry-content > iframe[style] {
+    margin: 30px 0 !important;
+    max-width: 100% !important;
+}
+
+/**
+ * Post Thumbnails
+ */
+.post-thumbnail {
+    text-align: center;
+}
+
+.post-thumbnail .wp-post-image {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(2 * 30px);
+}
+header *,
+main *,
+footer * {
+    max-width: unset;
+}
+
+html,
+body,
+div,
+header,
+nav,
+article,
+figure,
+hr,
+main,
+section,
+footer {
+    max-width: none;
+}
