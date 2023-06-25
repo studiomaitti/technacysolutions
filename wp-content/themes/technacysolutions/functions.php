@@ -98,6 +98,11 @@ add_action('widgets_init', 'technacysolutions_widgets_init');
  */
 function technacysolutions_scripts()
 {
+  wp_dequeue_style( 'wp-block-library' );
+  wp_dequeue_style( 'wp-block-library-theme' );
+  wp_dequeue_style( 'wc-blocks-style' ); // Remove WooCommerce block CSS
+  wp_dequeue_style( 'global-styles' );
+
   // Note, the is_IE global variable is defined by WordPress and is used
   // to detect if the current browser is internet explorer.
   global $is_IE, $wp_scripts;
@@ -107,7 +112,7 @@ function technacysolutions_scripts()
   }
   else {
     // If not IE, use the standard stylesheet.
-    wp_enqueue_style('technacysolutions-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get('Version'));
+    wp_enqueue_style('technacysolutions-style', get_template_directory_uri() . '/assets/css/style.css', array(), wp_get_theme()->get('Version'));
   }
 
   // RTL styles.
@@ -115,6 +120,8 @@ function technacysolutions_scripts()
 
   // Print styles.
   wp_enqueue_style('technacysolutions-print-style', get_template_directory_uri() . '/assets/css/print.css', array(), wp_get_theme()->get('Version'), 'print');
+
+  wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/index.js', array( 'jquery' ), 1.1, true);
 
 }
 
@@ -185,3 +192,24 @@ if (!function_exists('wp_get_list_item_separator')) :
     return __(', ', 'technacysolutions');
   }
 endif;
+
+add_action( 'init', 'smartwp_disable_emojis' );
+
+function smartwp_disable_emojis() {
+  remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+  remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+  remove_action( 'wp_print_styles', 'print_emoji_styles' );
+  remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
+  remove_action( 'admin_print_styles', 'print_emoji_styles' );
+  remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
+  remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
+  add_filter( 'tiny_mce_plugins', 'disable_emojis_tinymce' );
+}
+
+function disable_emojis_tinymce( $plugins ) {
+  if ( is_array( $plugins ) ) {
+    return array_diff( $plugins, array( 'wpemoji' ) );
+  } else {
+    return array();
+  }
+}

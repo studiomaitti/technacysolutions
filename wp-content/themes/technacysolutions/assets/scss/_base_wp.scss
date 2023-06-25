@@ -1,0 +1,214 @@
+
+/* Media captions */
+figcaption,
+.wp-caption,
+.wp-caption-text,
+.wp-block-embed figcaption {
+    color: currentColor;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-top: calc(0.5 * 20px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.alignleft figcaption,
+.alignright figcaption,
+.alignleft .wp-caption,
+.alignright .wp-caption,
+.alignleft .wp-caption-text,
+.alignright .wp-caption-text,
+.alignleft .wp-block-embed figcaption,
+.alignright .wp-block-embed figcaption {
+    margin-bottom: 0;
+}
+
+/* WP Smiley */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+table figcaption {
+    font-size: 1rem;
+}
+
+table.is-style-stripes th,
+table.is-style-stripes td {
+    border-width: 0;
+}
+
+table.wp-calendar-table td,
+table.wp-calendar-table th {
+    background: transparent;
+    border: 0;
+    text-align: center;
+    line-height: 2;
+    vertical-align: middle;
+    word-break: normal;
+}
+
+table.wp-calendar-table th {
+    font-weight: bold;
+}
+
+table.wp-calendar-table thead,
+table.wp-calendar-table tbody {
+    color: currentColor;
+    border: 1px solid;
+}
+
+table.wp-calendar-table caption {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+    color: currentColor;
+}
+
+
+* > figure > video {
+    max-width: unset;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.alignleft {
+
+    /*rtl:ignore*/
+    text-align: left;
+    margin-top: 0;
+}
+
+.entry-content > .alignleft {
+    max-width: inherit;
+}
+
+/**
+ * .aligncenter
+ */
+.aligncenter {
+    clear: both;
+    display: block;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+/**
+ * .alignright
+ */
+.alignright {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.entry-content > .alignright {
+    max-width: inherit;
+}
+
+@media only screen and (min-width: 482px) {
+
+    .alignright {
+        float: right;
+        margin-left: 25px;
+    }
+
+    .entry-content > .alignright {
+        max-width: 50%;
+    }
+}
+
+[class*=inner-container] > .alignleft + *,
+[class*=inner-container] > .alignright + * {
+    margin-top: 0;
+}
+
+.alignwide {
+    clear: both;
+}
+
+.alignfull {
+    clear: both;
+}
+
+.has-left-content {
+    justify-content: flex-start;
+}
+
+.has-right-content {
+    justify-content: flex-end;
+}
+
+.has-parallax {
+    background-attachment: fixed;
+}
+
+.has-drop-cap:not(:focus)::first-letter {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    line-height: 0.66;
+    text-transform: uppercase;
+    font-style: normal;
+    float: left;
+    margin: 0.1em 0.1em 0 0;
+    font-size: calc(1.2 * 4rem);
+}
+
+.has-drop-cap:not(:focus)::after {
+    content: "";
+    display: table;
+    clear: both;
+    padding-top: 14px;
+}
+
+/**
+ * Entry Content
+ */
+.entry-content,
+.entry-summary {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.entry-content p {
+    margin-bottom: 0.5rem;
+}
+
+.entry-content p:last-child {
+    margin-bottom: 0rem;
+}
+
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+    margin-bottom: 0.5rem;
+}
+
+.entry-content > iframe[style] {
+    margin: 30px 0 !important;
+    max-width: 100% !important;
+}
+
+/**
+ * Post Thumbnails
+ */
+.post-thumbnail {
+    text-align: center;
+}
+
+.post-thumbnail .wp-post-image {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(2 * 30px);
+}
