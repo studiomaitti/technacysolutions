@@ -1,6 +1,17 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "NeueMachina Ultrabold";
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/PPNeueMachinaInktrapUltrabold.eot");
+  src: url("../fonts/PPNeueMachinaInktrapUltrabold.eot") format("embedded-opentype"), url("../fonts/PPNeueMachinaInktrapUltrabold.woff2") format("woff2"), url("../fonts/PPNeueMachinaInktrapUltrabold.woff") format("woff"), url("../fonts/PPNeueMachinaInktrapUltrabold.ttf") format("truetype"), url("../fonts/PPNeueMachinaInktrapUltrabold.svg#PPNeueMachinaInktrapUltrabold") format("svg");
+}
+@font-face {
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
   src: url("../fonts/PPNeueMachinaInktrapUltrabold.eot");
   src: url("../fonts/PPNeueMachinaInktrapUltrabold.eot") format("embedded-opentype"), url("../fonts/PPNeueMachinaInktrapUltrabold.woff2") format("woff2"), url("../fonts/PPNeueMachinaInktrapUltrabold.woff") format("woff"), url("../fonts/PPNeueMachinaInktrapUltrabold.ttf") format("truetype"), url("../fonts/PPNeueMachinaInktrapUltrabold.svg#PPNeueMachinaInktrapUltrabold") format("svg");
 }
@@ -914,7 +925,7 @@ body {
 /** *********************
   GENERICO
  ************************ */
-.content-width-2 {
+.content-width {
   margin: auto;
   max-width: 1180px;
   padding-bottom: 40px;
@@ -1021,7 +1032,7 @@ body {
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  font-family: "NeueMachina Ultrabold", sans-serif;
+  font-family: "Neue Machina", sans-serif;
   font-size: 28px;
   font-weight: 800;
   line-height: 100%;
@@ -1057,7 +1068,7 @@ body {
 }
 .menu-container .menu-area .main-navigation {
   color: #ffffff;
-  font-family: "NeueMachina Ultrabold", sans-serif;
+  font-family: "Neue Machina", sans-serif;
   font-size: 120px;
   font-weight: 900;
   line-height: 88%;
@@ -1069,11 +1080,13 @@ body {
   padding: 0;
 }
 .menu-container .menu-area .main-navigation a {
-  transition: all 0.3s ease-in-out;
+  display: block;
+  color: #ffffff;
+  transition: all 0.4s ease-in-out;
 }
-.menu-container .menu-area .main-navigation a a:hover {
+.menu-container .menu-area .main-navigation a:hover {
   color: var(--red, #FC0606);
-  font-family: "IvyPresto Display", "Times New Roman";
+  font-family: "ivypresto-display", serif;
   font-size: 120px;
   font-style: italic;
   font-weight: 300;
@@ -1100,6 +1113,12 @@ body {
 }
 .menu-container .menu-area .social-container .social a svg {
   pointer-events: none;
+}
+.menu-container .menu-area .social-container .social a svg path {
+  transition: fill 0.4s ease;
+}
+.menu-container .menu-area .social-container .social a:hover svg path {
+  fill: var(--red, #FC0606);
 }
 .menu-container .menu-area .download-email {
   bottom: 0;
@@ -1134,6 +1153,219 @@ body {
 }
 
 /** *********************
+  HOME PAGE
+ ************************ */
+.home-section .row-ivy {
+  font-family: "ivypresto-display", serif;
+  font-size: 96px;
+  font-size: 4.6vw;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 110px;
+  line-height: 1.2;
+  letter-spacing: 0em;
+}
+.home-section .row-neue {
+  font-family: "Neue Machina", sans-serif;
+  font-size: 96px;
+  font-size: 4.6vw;
+  font-weight: 800;
+  line-height: 110px;
+  line-height: 1.2;
+  letter-spacing: 0em;
+}
+
+.home-intro-top {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.home-intro-top .home-intro-top-base {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.home-intro-top .home-intro-top-base .home-intro-top-base-testo {
+  margin: auto;
+}
+.home-intro-top .home-intro-top-hover {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  top: 0;
+  width: 100%;
+}
+.home-intro-top .home-intro-top-hover video {
+  position: absolute;
+  width: 100%;
+}
+.home-intro-top .home-intro-top-hover .home-intro-top-hover-testo {
+  background-color: #FC0606;
+  color: #ffffff;
+  font-family: "ivypresto-display", serif;
+  font-size: 96px;
+  font-size: 4.6vw;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 110px;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  margin: auto;
+  opacity: 0;
+  padding: 0 20px;
+  transition: all 1s ease-in-out;
+  z-index: 1;
+}
+.home-intro-top:hover .home-intro-top-hover {
+  opacity: 1;
+}
+.home-intro-top:hover .home-intro-top-hover-testo {
+  opacity: 1;
+}
+
+.home-video-scroll {
+  color: #ffffff;
+  text-align: center;
+}
+.home-video-scroll .home-video-scroll-elem {
+  margin: auto;
+  position: relative;
+}
+.home-video-scroll .home-video-scroll-elem video {
+  height: 100%;
+  transform: translateX(50%);
+}
+.home-video-scroll .video-1 {
+  height: 580px;
+  overflow: hidden;
+  transform: rotate(-12deg) translateX(50%);
+  width: 350px;
+}
+.home-video-scroll .video-1 video {
+  transform: translateX(calc(-1 * calc(50% - 175px)));
+}
+.home-video-scroll .video-2 {
+  width: 300px;
+  height: 350px;
+  transform: rotate(11deg);
+  flex-shrink: 0;
+  height: 500px;
+  overflow: hidden;
+  transform: rotate(11deg) translateX(-50%);
+  width: 350px;
+}
+.home-video-scroll .video-2 video {
+  transform: translateX(calc(-1 * calc(50% - 175px)));
+}
+.home-video-scroll .video-3 {
+  height: 500px;
+  overflow: hidden;
+  transform: rotate(10deg) translateX(-50%);
+  width: 350px;
+}
+.home-video-scroll .video-3 video {
+  transform: translateX(calc(-1 * calc(50% - 175px)));
+}
+.home-video-scroll .video-4 {
+  width: 596px;
+  overflow: hidden;
+  transform: rotate(10deg) translateX(50%);
+  height: 346px;
+}
+.home-video-scroll .video-4 video {
+  transform: translateX(calc(-1 * calc(50% - 175px)));
+}
+
+.home-fascia-rossa {
+  background-color: #FC0606;
+  display: flex;
+  width: 2560px;
+  height: 987px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: -120px;
+  flex-shrink: 0;
+}
+
+.home-iptv {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+}
+.home-iptv .home-iptv-container {
+  margin: auto;
+}
+.home-iptv .home-iptv-container h2.row-ivy {
+  font-size: 96px;
+  line-height: 130%;
+}
+.home-iptv .home-iptv-container h2.row-neue {
+  font-size: 96px;
+  line-height: 130%;
+}
+.home-iptv .home-iptv-container .text {
+  font-size: 16px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 300;
+  line-height: 145%;
+}
+
+.home-computer {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+}
+.home-computer .home-iptv-container {
+  margin: auto;
+}
+.home-computer .home-iptv-container h2.row-ivy {
+  font-size: 96px;
+  line-height: 130%;
+}
+.home-computer .home-iptv-container h2.row-neue {
+  font-size: 96px;
+  line-height: 130%;
+}
+.home-computer .home-iptv-container .text {
+  font-size: 16px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 300;
+  line-height: 145%;
+}
+
+.page-link {
+  color: #ffffff;
+}
+.page-link .page-link-top-line {
+  font-family: "ivypresto-display", serif;
+  font-size: 160px;
+  font-style: italic;
+  font-weight: 100;
+  line-height: 175px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.page-link .page-link-bottom-line {
+  font-family: "Neue Machina", sans-serif;
+  font-size: 160px;
+  font-weight: 900;
+  line-height: 175px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+/** *********************
   FOOTER
  ************************ */
 .site-footer {
@@ -1146,7 +1378,7 @@ body {
 }
 .site-footer .row-email {
   color: var(--red, #FC0606);
-  font-family: "NeueMachina Ultrabold", sans-serif;
+  font-family: "Neue Machina", sans-serif;
   font-size: 21px;
   font-weight: 800;
   line-height: 120px;
@@ -1159,13 +1391,13 @@ body {
 .site-footer .row-sentence {
   color: var(--light-grey, #F4F4F4);
   font-size: 96px;
-  font-family: "NeueMachina Ultrabold", sans-serif;
+  font-family: "Neue Machina", sans-serif;
   font-weight: 800;
   line-height: 109.5%;
   text-transform: uppercase;
 }
 .site-footer .row-sentence span {
-  font-family: "IvyPresto Display", "Times New Roman";
+  font-family: "ivypresto-display", serif;
   font-size: 96px;
   font-style: italic;
   font-weight: 300;

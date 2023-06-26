@@ -19,13 +19,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/cqc4bfc.css">
 
   <link rel="preload" href="/wp-content/themes/technacysolutions/assets/fonts/PPNeueMachinaInktrapUltrabold.woff2" as="font" type="font/woff2" crossorigin>
 
   <?php wp_head(); ?>
+
+  <!-- PRELOAD IMAGES -->
+  <link rel="preload" as="image" href="/wp-content/themes/technacysolutions/assets/img/anim-togheter.gif"/>
+  <?php if (is_front_page()) { ?>
+    <link rel="preload" as="video" href="/wp-content/uploads/production_id 4124024 (2160p).mp4"/>
+  <?php } ?>
 </head>
 
 <body <?php body_class(); ?>>
-  <?php wp_body_open(); ?>
-  <?php get_template_part('template-parts/header/site-header'); ?>
+<?php wp_body_open(); ?>
+<?php get_template_part('template-parts/header/site-header'); ?>

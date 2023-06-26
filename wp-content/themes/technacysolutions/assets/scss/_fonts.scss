@@ -1,5 +1,21 @@
 @font-face {
-    font-family: 'NeueMachina Ultrabold';
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('../fonts/PPNeueMachinaInktrapUltrabold.eot');
+    src: url('../fonts/PPNeueMachinaInktrapUltrabold.eot') format('embedded-opentype'),
+    url('../fonts/PPNeueMachinaInktrapUltrabold.woff2') format('woff2'),
+    url('../fonts/PPNeueMachinaInktrapUltrabold.woff') format('woff'),
+    url('../fonts/PPNeueMachinaInktrapUltrabold.ttf') format('truetype'),
+    url('../fonts/PPNeueMachinaInktrapUltrabold.svg#PPNeueMachinaInktrapUltrabold') format('svg');
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
     src: url('../fonts/PPNeueMachinaInktrapUltrabold.eot');
     src: url('../fonts/PPNeueMachinaInktrapUltrabold.eot') format('embedded-opentype'),
     url('../fonts/PPNeueMachinaInktrapUltrabold.woff2') format('woff2'),
