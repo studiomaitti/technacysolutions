@@ -9,6 +9,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 https://everythingfonts.com/font-face
+admintech
+9VSY2ww*4w&j^Ger%)n@8aXN
 
 Technacysolutions is a blank canvas for your ideas and it makes the block editor your best brush.
 

@@ -122,6 +122,9 @@ function technacysolutions_scripts()
   wp_enqueue_style('technacysolutions-print-style', get_template_directory_uri() . '/assets/css/print.css', array(), wp_get_theme()->get('Version'), 'print');
 
   wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/index.js', array( 'jquery' ), 1.1, true);
+  wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/home.js', array( 'jquery' ), 1.1, true);
+  wp_enqueue_script( 'gsap', get_template_directory_uri() . '/assets/js/gsap-public/minified/gsap.min.js', array( 'script' ), 1.1, true);
+  wp_enqueue_script( 'gsap', get_template_directory_uri() . '/assets/js/paroller/dist/jquery.paroller.min.js', array( 'script' ), 1.1, true);
 
 }
 

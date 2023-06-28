@@ -103,7 +103,7 @@ get_header();
 <?php
 $a = [];
 for($i = 0 ; $i < 30; $i++){
-  $a[] = '<a href="/about-us">about</a>';
+  $a[] = '<a href="/about">about</a>';
 }
 ?>
   <section class="page-link">
