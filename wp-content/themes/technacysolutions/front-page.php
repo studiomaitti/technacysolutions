@@ -28,7 +28,7 @@ get_header();
 
     <div class="home-intro-top-hover">
       <div class="home-intro-top-hover-video">
-        <video src="/wp-content/uploads/production_id 4124024 (2160p).mp4" autoplay muted></video>
+        <video src="/wp-content/uploads/production_id 4124024 (2160p).mp4" autoplay muted loop></video>
       </div>
       <div class="home-intro-top-hover-testo">
         BASED IN BAHRAIN.
@@ -40,10 +40,10 @@ get_header();
     <div class="home-video-scroll-inner">
       <div class="home-video-scroll-livello-base">
         <div class="home-video-scroll-elem video-2">
-          <video src="/wp-content/uploads/video-art.mp4" autoplay muted></video>
+          <video src="/wp-content/uploads/video-art.mp4" autoplay muted loop></video>
         </div>
         <div class="home-video-scroll-elem video-4">
-          <video src="/wp-content/uploads/video-art.mp4" autoplay muted></video>
+          <video src="/wp-content/uploads/video-art.mp4" autoplay muted loop></video>
         </div>
       </div>
       <div class="home-video-scroll-livello-medio content-width">
@@ -59,10 +59,10 @@ get_header();
       </div>
       <div class="home-video-scroll-livello-top">
         <div class="home-video-scroll-elem video-1">
-          <video src="/wp-content/uploads/video-art.mp4" autoplay muted></video>
+          <video src="/wp-content/uploads/video-art.mp4" autoplay muted loop></video>
         </div>
         <div class="home-video-scroll-elem video-3">
-          <video src="/wp-content/uploads/video-art.mp4" autoplay muted></video>
+          <video src="/wp-content/uploads/video-art.mp4" autoplay muted loop></video>
         </div>
       </div>
     </div>
@@ -107,10 +107,12 @@ for($i = 0 ; $i < 30; $i++){
 }
 ?>
   <section class="page-link">
-    <div class="page-link-top-line">
+    <div class="page-link-top-line" data-paroller-factor="0.35" data-paroller-type="foreground"
+            data-paroller-direction="horizontal" data-paroller-transition="transform .35s linear">
       <?php echo implode(' - ' ,  $a); ?>
     </div>
-    <div class="page-link-bottom-line">
+    <div class="page-link-bottom-line" data-paroller-factor="-0.35" data-paroller-type="foreground"
+            data-paroller-direction="horizontal" data-paroller-transition="transform .35s linear">
       <?php echo implode(' - ' ,  $a); ?>
     </div>
   </section>

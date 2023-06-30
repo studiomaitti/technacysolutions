@@ -24,7 +24,15 @@
 
   <link rel="preload" href="/wp-content/themes/technacysolutions/assets/fonts/PPNeueMachinaInktrapUltrabold.woff2" as="font" type="font/woff2" crossorigin>
 
+
   <?php wp_head(); ?>
+
+  <script>
+    jQuery(document).ready(function ($) {
+
+    });
+  </script>
+
 
   <!-- PRELOAD IMAGES -->
   <link rel="preload" as="image" href="/wp-content/themes/technacysolutions/assets/img/anim-togheter.gif"/>

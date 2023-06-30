@@ -3,6 +3,7 @@
 @import "_fonts";
 @import "_base";
 @import "_base_wp";
+@import "_animations";
 
 body {
   background-color: #000;
@@ -23,6 +24,11 @@ body {
 [data-paroller-factor] {
   position: relative;
   z-index: 0
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
 /** *********************
@@ -510,6 +516,8 @@ body {
 
 .page-link {
   color: #ffffff;
+  overflow: hidden;
+  padding-top: 15vw;
 
   .page-link-top-line {
     font-family: "ivypresto-display", serif;
@@ -519,6 +527,13 @@ body {
     line-height: 175px;
     letter-spacing: 0em;
     text-align: center;
+    display: flex;
+    justify-content: center;
+
+    a {
+      display: inline-block;
+      margin: 0 3vw;
+    }
   }
 
   .page-link-bottom-line {
@@ -528,7 +543,13 @@ body {
     line-height: 175px;
     letter-spacing: 0em;
     text-align: center;
+    display: flex;
+    justify-content: center;
 
+    a {
+      display: inline-block;
+      margin: 0 3vw;
+    }
   }
 }
 
@@ -543,7 +564,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  .about-intro-top-video {
+  .video {
     background-color: #000000;
     height: 100%;
     left: 0;
@@ -558,7 +579,7 @@ body {
     }
   }
 
-  .about-intro-top-hover-testo-container{
+  .testo-container {
     backdrop-filter: blur(20px);
     display: flex;
     flex-direction: column;
@@ -570,7 +591,8 @@ body {
       backdrop-filter: blur(0px);
     }
   }
-  .about-intro-top-hover-testo {
+
+  .testo {
     font-family: 'Neue Machina', sans-serif;
     font-size: 96px;
     font-weight: 800;
@@ -580,7 +602,7 @@ body {
     text-align: left;
     transition: all 0.4s ease-in-out;
 
-    span{
+    span {
       font-family: "ivypresto-display", serif;
       font-size: 96px;
       font-style: italic;
@@ -590,10 +612,587 @@ body {
     }
   }
 
-
-
+  .arrow-down {
+    position: absolute;
+    left: calc(50% - 12px);
+    bottom: 5%;
+    z-index: 100;
+  }
 }
 
+.about-we-crush {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  .panel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    .content-width {
+      margin: auto;
+    }
+
+    .panel-content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    &.panel-1 {
+      background-color: #ffffff;
+      color: #000000;
+      text-transform: uppercase;
+
+      .sent-1 {
+        font-family: 'Neue Machina', sans-serif;
+        font-size: 96px;
+        font-weight: 800;
+        line-height: 106px;
+        letter-spacing: 0em;
+      }
+
+      .sent-2 {
+        font-family: "ivypresto-display", serif;
+        font-size: 96px;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 106px;
+        letter-spacing: 0em;
+        position: relative;
+
+        .sent-amp {
+          display: inline-block;
+          font-family: "ivypresto-display", serif;
+          font-size: 240px;
+          font-style: italic;
+          font-weight: 300;
+          line-height: 0.9;
+          letter-spacing: 0em;
+          padding-left: 5rem;
+          position: absolute;
+          bottom: 0;
+        }
+      }
+
+      .sent-3 {
+        .sent-3-1 {
+          font-family: 'Neue Machina', sans-serif;
+          font-size: 96px;
+          font-weight: 800;
+          line-height: 106px;
+          letter-spacing: 0em;
+        }
+
+        .sent-3-2 {
+          font-family: "ivypresto-display", serif;
+          font-size: 96px;
+          font-style: italic;
+          font-weight: 300;
+          line-height: 106px;
+          letter-spacing: 0em;
+          position: relative;
+
+          .video {
+            height: 250px;
+            opacity: 0;
+            position: absolute;
+            right: 0px;
+            overflow: hidden;
+            top: -50px;
+            transform: rotate(-10.488deg);
+            transition: all 0.4s ease-in-out;
+            width: 185px;
+
+            video {
+              transform: translateX(calc(-1 * calc(50% - 90px)));
+            }
+          }
+
+          &:hover {
+            .video {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      .dot {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 10%;
+        //cursor: pointer;
+        height: 48px;
+        right: 10%;
+        text-align: center;
+        width: 48px;
+
+        span {
+          position: absolute;
+          top: -10px;
+          left: -10px;
+          height: 100%;
+          width: 100%;
+        }
+
+        svg {
+          margin: auto;
+          z-index: 10;
+        }
+      }
+    }
+
+    &.panel-2 {
+      background-color: #000000;
+      color: #ffffff;
+      text-transform: uppercase;
+      z-index: 10;
+
+      .sent-1,
+      .sent-3 {
+        display: inline;
+        font-family: "ivypresto-display", serif;
+        font-size: 96px;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 106px;
+        letter-spacing: 0em;
+        position: relative;
+
+
+        .video {
+          height: 185px;
+          opacity: 0;
+          position: absolute;
+          left: -80%;
+          overflow: hidden;
+          top: 20%;
+          transform: rotate(-10.488deg);
+          transition: all 0.4s ease-in-out;
+          width: 250px;
+
+          video {
+            transform: translateX(calc(-1 * calc(50% - 125px)));
+          }
+        }
+
+        &:hover {
+          .video {
+            opacity: 1;
+          }
+        }
+      }
+
+      .sent-2,
+      .sent-4 {
+        display: inline;
+        font-family: 'Neue Machina', sans-serif;
+        font-size: 96px;
+        font-weight: 800;
+        line-height: 106px;
+        letter-spacing: 0em;
+      }
+
+      .dot {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 10%;
+        //cursor: pointer;
+        height: 48px;
+        right: 10%;
+        text-align: center;
+        width: 48px;
+
+        span {
+          position: absolute;
+          top: -10px;
+          left: -10px;
+          height: 100%;
+          width: 100%;
+        }
+
+        svg {
+          margin: auto;
+          z-index: 10;
+
+          path {
+          }
+        }
+      }
+    }
+  }
+}
+
+.about-our-client-have {
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  .testo-container {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20vh;
+    margin-top: 20vh;
+    width: 100%;
+
+    .testo {
+      font-size: 96px;
+      font-family: 'Neue Machina', sans-serif;
+      font-weight: 800;
+      line-height: 120.5%;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.about-world {
+  color: #ffffff;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  .video {
+    background-color: #000000;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    top: 0;
+    width: 100%;
+
+    video {
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  .testo-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 100;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .testo {
+    margin: auto;
+    text-transform: uppercase;
+
+    .sent-1 {
+      color: #FFF;
+      font-size: 96px;
+      font-family: "ivypresto-display", serif;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 110%;
+    }
+
+    .sent-2 {
+      font-family: 'Neue Machina', sans-serif;
+      font-size: 96px;
+      font-weight: 800;
+      line-height: 105px;
+      letter-spacing: 0em;
+      margin: auto;
+      text-align: left;
+    }
+  }
+}
+
+.about-partners {
+  color: #ffffff;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  .testo-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 100;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .testo {
+    margin: auto;
+    text-transform: uppercase;
+
+    .title {
+      font-family: 'Neue Machina', sans-serif;
+      font-size: 96px;
+      font-weight: 800;
+      line-height: 105px;
+      letter-spacing: 0em;
+      margin-bottom: 3rem;
+      text-align: left;
+    }
+  }
+}
+
+.about-clients {
+  color: #ffffff;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  .testo-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 100;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .testo {
+    margin: auto;
+    text-transform: uppercase;
+
+    .title {
+      font-family: 'Neue Machina', sans-serif;
+      font-size: 96px;
+      font-weight: 800;
+      line-height: 105px;
+      letter-spacing: 0em;
+      margin-bottom: 3rem;
+      text-align: left;
+    }
+  }
+
+  .client-row {
+    display: flex;
+    justify-content: space-between;
+
+    .img-i {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+      max-width: 18%;
+      max-height: 4.4rem;
+      text-align: center;
+
+
+      &.img-1 {
+        text-align: left;
+      }
+
+      &.img-5 {
+        text-align: right;
+      }
+
+    }
+
+    img {
+      margin-bottom: auto;
+      margin-top: auto;
+      max-height: 100%;
+    }
+  }
+}
+
+.about-testimonial {
+  color: #ffffff;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  .testo-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 100;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .title {
+    font-family: 'Neue Machina', sans-serif;
+    font-size: 96px;
+    font-weight: 800;
+    line-height: 105px;
+    letter-spacing: 0em;
+    margin-bottom: 3rem;
+    text-align: left;
+
+    span {
+      font-family: "ivypresto-display", serif;
+      font-size: 96px;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 106px;
+      letter-spacing: 0em;
+      position: relative;
+    }
+  }
+
+  .testimonial-container {
+    padding-bottom: 148px;
+  }
+
+  .testimonial-slide {
+    margin: auto;
+    text-transform: uppercase;
+    display: flex;
+
+    .img {
+      background-repeat: no-repeat;
+      border-radius: 42px;
+      overflow: hidden;
+      position: relative;
+      width: 35%;
+
+      background-blend-mode: luminosity;
+      background-color: #000000;
+
+      img {
+        max-width: 100%;
+        visibility: hidden;
+      }
+
+      &:after {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 52.03%, rgba(0, 0, 0, 0.8) 90%);
+        bottom: 0;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        width: 100%;
+      }
+    }
+
+    .data-container {
+      display: flex;
+      flex-direction: column;
+      margin-left: 7%;
+      width: 58%;
+    }
+
+    .data {
+      color: #ffffff;
+      margin: auto;
+
+      .description {
+        font-size: 24px;
+        font-family: 'Alegreya Sans', sans-serif;
+        font-weight: 300;
+        line-height: 140%;
+        margin-bottom: 32px;
+        margin-top: 32px;
+      }
+
+      .societa {
+        display: flex;
+      }
+
+      .logo {
+        position: relative;
+        margin-left: 20px;
+        padding-left: 21px;
+
+        .logo-black {
+          display: none;
+        }
+
+        &:before {
+          background-color: #ffffff;
+          content: '';
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 1px;
+        }
+      }
+
+      .nome {
+        font-size: 18px;
+        font-family: "ivypresto-display", serif;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 150%;
+      }
+
+      .societa {
+        font-family: 'Neue Machina', sans-serif;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 150%;
+      }
+    }
+  }
+
+  .swiper-buttons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    width: 100%;
+
+    .swiper-pagination {
+      left: 0;
+      position: absolute;
+      width: auto;
+
+      .swiper-pagination-bullet {
+        background-color: #8D8D8D;
+        opacity: 1;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: #ffffff;
+      }
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 0;
+    width: 49px;
+    height: 49px;
+    margin-top: 0;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .swiper-button-prev {
+    left: auto;
+    right: 55px;
+    transform: rotate(180deg);
+  }
+
+  .swiper-button-next {
+    right: 0;
+  }
+}
+
+.about-section {
+  display: none !important;
+}
+
+.about-section.about-clients {
+  display: flex !important;
+}
 
 /** *********************
   FOOTER
@@ -713,6 +1312,17 @@ body.light-mode {
 
   .page-link {
     color: #161616;
+  }
+
+  /* ABOUT */
+  .about-we-crush {
+    .about-we-crush-slide {
+
+      &.about-we-crush-slide-1 {
+        background-color: #ffffff;
+        color: #000000;
+      }
+    }
   }
 
   /* FOOTER */
