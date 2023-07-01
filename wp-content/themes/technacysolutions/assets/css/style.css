@@ -38,7 +38,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "MyriadPro-Cond", sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   position: relative;
 }
 
@@ -87,7 +87,7 @@ abbr[title] {
 
 b,
 strong {
-  font-family: "MyriadPro-BoldCond", sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   color: #000;
   font-weight: 500;
 }
@@ -277,7 +277,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: "MyriadPro-Cond", sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   line-height: 1.2;
 }
 
@@ -288,7 +288,7 @@ h4,
 h5,
 h6 {
   clear: both;
-  font-family: "MyriadPro-BoldCond", sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   line-height: 1.2;
   margin: 0;
   text-rendering: optimizeLegibility;
@@ -2078,6 +2078,74 @@ body {
 }
 .site-footer .row-sedi .sede-i .address-container .address {
   width: 50%;
+}
+
+/** *********************
+  ARCHIVE
+ ******* */
+body.archive .page-title {
+  display: none;
+}
+body.archive .project-category {
+  left: 0;
+  position: fixed;
+  top: 5rem;
+  width: 100%;
+}
+body.archive .project-category .container {
+  display: flex;
+  justify-content: center;
+}
+body.archive .project-category .container-1 {
+  display: flex;
+  justify-content: center;
+}
+body.archive .project-category .container-1 .cat-i {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+body.archive .project-category .container-1 .cat-i a {
+  display: block;
+  margin: auto;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 140%;
+  padding: 0.3rem 1rem;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+}
+body.archive .project-category .container-1 .cat-i a:hover {
+  background-color: #FC0606;
+}
+body.archive .project-category .container-1 .star {
+  margin: auto 3rem;
+  transition: all 0.4s ease-in-out;
+}
+body.archive .project-category .container-1:hover .cat-i {
+  opacity: 1;
+}
+body.archive .project-category .container-1:hover .star {
+  transform: rotateX(-360deg) rotateY(360deg);
+}
+body.archive .page-link {
+  left: 0;
+  padding-top: 0;
+  position: fixed;
+  top: 14rem;
+  width: 100%;
+}
+body.archive .page-link .page-link-top-line {
+  font-size: 100px;
+  line-height: 105px;
+}
+body.archive .page-link .page-link-bottom-line {
+  font-size: 100px;
+  line-height: 105px;
+}
+body.archive .content-area {
+  min-height: 100vh;
 }
 
 /** *********************

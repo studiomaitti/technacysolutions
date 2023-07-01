@@ -1287,6 +1287,89 @@ body {
 }
 
 /** *********************
+  ARCHIVE
+ ******* */
+body.archive {
+  .page-title {
+    display: none;
+  }
+
+  .project-category {
+    left: 0;
+    position: fixed;
+    top: 5rem;
+    width: 100%;
+
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .container-1 {
+      display: flex;
+      justify-content: center;
+
+      .cat-i {
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+
+        a {
+          display: block;
+          margin: auto;
+          font-size: 24px;
+          font-weight: 300;
+          line-height: 140%;
+          padding: 0.3rem 1rem;
+          text-transform: uppercase;
+          transition: all 0.4s ease-in-out;
+
+          &:hover{
+            background-color: #FC0606;
+          }
+        }
+      }
+
+      .star {
+        margin: auto 3rem;
+        transition: all 0.4s ease-in-out;
+      }
+
+      &:hover {
+        .cat-i{
+          opacity: 1;
+        }
+        .star {
+          transform: rotateX(-360deg) rotateY(360deg);
+        }
+      }
+    }
+  }
+
+  .page-link {
+    left: 0;
+    padding-top: 0;
+    position: fixed;
+    top: 14rem;
+    width: 100%;
+
+    .page-link-top-line {
+      font-size: 100px;
+      line-height: 105px;
+    }
+    .page-link-bottom-line {
+      font-size: 100px;
+      line-height: 105px;
+    }
+  }
+
+  .content-area {
+    min-height: 100vh;
+  }
+}
+
+/** *********************
   LIGHT MODE
  ******* */
 body.light-mode {
