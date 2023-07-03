@@ -62,11 +62,12 @@ for ($i = 0; $i < 30; $i++) {
       while (have_posts()) :
         the_post();
         $i++;
-        $css_class = 'post-mod-' . ($mod % 4);
+        $css_class = [];
+        $css_class[]= 'post-mod-' . ($mod % 4);
         $mod++;
 
-        $css_class .= ' post-i-' . $i;
-        $css_class .= ' post-i-mod-' . ($i % 2);
+        $css_class[]= 'post-i-' . $i;
+        $css_class[]= 'post-i-mod-' . ($i % 2);
 
         include(locate_template('template-parts/content/content-project.php', false, false));
 

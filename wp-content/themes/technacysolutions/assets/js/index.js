@@ -90,5 +90,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
 
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  /// SINGLE PROJECT
+  if (document.body.classList.contains('single-projects')){
+    jQuery('.owl-carousel').owlCarousel({
+      autoWidth:true,
+      items:4,
+      nav:true,
+    })
+  }
 
 });

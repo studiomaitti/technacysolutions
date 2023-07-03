@@ -50,6 +50,8 @@ if (!function_exists('technacysolutions_setup')) {
 
     // Remove feed icon link from legacy RSS widget.
     add_filter('rss_widget_feed_link', '__return_empty_string');
+
+    add_image_size( 'prj-gallery', 9999, 600, true ); // (cropped)
   }
 }
 add_action('after_setup_theme', 'technacysolutions_setup');
@@ -129,10 +131,20 @@ function technacysolutions_scripts()
 
   wp_enqueue_script( 'paroller', get_template_directory_uri() . '/assets/js/paroller/dist/jquery.paroller.min.js', array( 'jquery', 'script', 'script-home' ), 1.1);
   wp_enqueue_script( 'jquery-inview', get_template_directory_uri() . '/assets/js/jquery-inview/jquery.inview.min.js', array( 'jquery', 'script', 'script-home' ), 1.1);
-  wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper/swiper-bundle.min.js', array( 'jquery', 'script', 'script-home' ), 1.1);
-  wp_enqueue_style('swiper-style', get_template_directory_uri() . '/assets/js/swiper/swiper-bundle.min.css', array(), wp_get_theme()->get('Version'));
+
+  if(is_singular('projects')){
+    wp_enqueue_style('owl-style', get_template_directory_uri() . '/assets/js/OwlCarousel2/dist/assets/owl.carousel.min.css', array(), wp_get_theme()->get('Version'));
+    wp_enqueue_style('owl-style-theme', get_template_directory_uri() . '/assets/js/OwlCarousel2/dist/assets/owl.theme.default.min.css', array(), wp_get_theme()->get('Version'));
+    wp_enqueue_script( 'owl', get_template_directory_uri() . '/assets/js/OwlCarousel2/dist/owl.carousel.min.js', array( 'jquery', 'script', 'script-home' ), 1.1);
+  } else {
+    wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper/swiper-bundle.min.js', array( 'jquery', 'script', 'script-home' ), 1.1);
+    wp_enqueue_style('swiper-style', get_template_directory_uri() . '/assets/js/swiper/swiper-bundle.min.css', array(), wp_get_theme()->get('Version'));
+  }
+
   wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/index.js', array( 'jquery' ), 1.1);
   wp_enqueue_script( 'script-home', get_template_directory_uri() . '/assets/js/home.js', array( 'jquery' ), 1.1);
+
+
 
 }
 

@@ -2009,6 +2009,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  position: relative;
 }
 .site-footer .footer-continer {
   margin: auto;
@@ -2099,6 +2100,7 @@ body.archive .project-category .container {
 body.archive .project-category .container-1 {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 body.archive .project-category .container-1 .cat-i {
   display: flex;
@@ -2145,7 +2147,165 @@ body.archive .page-link .page-link-bottom-line {
   line-height: 105px;
 }
 body.archive .content-area {
+  margin-top: 28rem;
   min-height: 100vh;
+  position: relative;
+}
+body.archive .content-area .site-main {
+  display: flex;
+  flex-direction: column;
+}
+body.archive .content-area article {
+  padding-bottom: 4rem;
+  width: calc(50% - 50px);
+}
+body.archive .content-area article .article-container {
+  max-width: 70%;
+}
+body.archive .content-area article .article-container.left {
+  margin-left: 0;
+  margin-right: auto;
+}
+body.archive .content-area article .article-container.right {
+  margin-left: auto;
+  margin-right: 0;
+}
+body.archive .content-area article .article-container.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+body.archive .content-area article .img {
+  border-radius: 2rem;
+  overflow: hidden;
+}
+body.archive .content-area article .tit-container {
+  font-size: 24px;
+  padding: 16px 0;
+  text-align: center;
+}
+body.archive .content-area article .tit-container .inner,
+body.archive .content-area article .tit-container a {
+  display: flex;
+  justify-content: center;
+}
+body.archive .content-area article .tit-container .client {
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+body.archive .content-area article .tit-container .location {
+  display: inline-block;
+  padding: 0 0.5rem 0 0.55rem;
+  position: relative;
+}
+body.archive .content-area article .tit-container .location:before {
+  background-color: #fff;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: 1px;
+}
+body.archive .content-area article.upper {
+  margin-top: -14rem;
+  padding-bottom: 0rem;
+}
+body.archive .content-area article.upper-upper {
+  margin-top: -5rem;
+  padding-bottom: 0rem;
+}
+body.archive .content-area article.post-i-mod-0 {
+  align-self: flex-end;
+}
+body.archive .site-footer {
+  background-color: #000000;
+}
+body.archive .site-footer .footer-continer.content-width {
+  padding-top: 0;
+}
+
+/** *********************
+  SINGLE PROJECT
+ ******* */
+body.single-projects .hentry {
+  margin-top: 4rem;
+}
+body.single-projects .client span {
+  background-color: #FC0606;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  text-transform: uppercase;
+  padding: 4px 8px;
+}
+body.single-projects .post-title {
+  color: #ffffff;
+  font-size: 96px;
+  font-family: "Neue Machina", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 90%;
+  text-transform: uppercase;
+  margin: 2.5rem 0 2rem 0;
+}
+body.single-projects .location {
+  color: #ffffff;
+  font-family: "ivypresto-display", serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%;
+}
+body.single-projects .entry-content {
+  color: #ffffff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-top: 4rem;
+}
+body.single-projects .owl-carousel {
+  position: relative;
+  margin-top: 4rem;
+}
+body.single-projects .owl-carousel .owl-slide {
+  border-radius: 2rem;
+  overflow: hidden;
+}
+body.single-projects .owl-carousel .owl-nav {
+  position: absolute;
+  left: -180px;
+  top: calc(50% - 90px);
+}
+body.single-projects .owl-carousel .owl-nav .owl-prev {
+  width: 90px;
+  height: 180px;
+  background-color: #FC0606;
+  border-radius: 10rem 0 0 10rem;
+  opacity: 0.9;
+  transition: all 0.4s ease-in-out;
+}
+body.single-projects .owl-carousel .owl-nav .owl-next {
+  width: 90px;
+  height: 180px;
+  background-color: #FC0606;
+  border-radius: 0 10rem 10rem 0;
+  opacity: 0.9;
+  transition: all 0.4s ease-in-out;
+}
+body.single-projects .owl-carousel .owl-nav .owl-prev:hover,
+body.single-projects .owl-carousel .owl-nav .owl-next:hover {
+  opacity: 1;
+}
+body.single-projects .owl-carousel .owl-nav .owl-prev.disabled, body.single-projects .owl-carousel .owl-nav .owl-prev.disabled,
+body.single-projects .owl-carousel .owl-nav .owl-next.disabled,
+body.single-projects .owl-carousel .owl-nav .owl-next.disabled {
+  opacity: 0.6;
+  transition: all 0.4s ease-in-out;
 }
 
 /** *********************
