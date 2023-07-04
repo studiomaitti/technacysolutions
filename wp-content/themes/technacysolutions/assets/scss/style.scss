@@ -150,6 +150,7 @@ body {
     flex-direction: column;
     font-family: 'Neue Machina', sans-serif;
     font-size: 28px;
+    font-size: 1.46vw;
     font-weight: 800;
     line-height: 100%;
     text-transform: uppercase;
@@ -175,6 +176,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 300;
 
   .header {
     position: absolute;
@@ -186,12 +188,6 @@ body {
     padding-top: 40px;
 
     .main-navigation {
-      color: #ffffff;
-      font-family: 'Neue Machina', sans-serif;
-      font-size: 120px;
-      font-weight: 900;
-      line-height: 88%;
-      text-transform: uppercase;
 
       ul {
         list-style: none;
@@ -202,16 +198,52 @@ body {
       a {
         display: block;
         color: #ffffff;
-        transition: all 0.4s ease-in-out;
+        position: relative;
+        //transition: all 0.4s ease-in-out;
+        text-transform: uppercase;
+        transition: font-size 2.2s ease, font-family .2s ease;
 
-        &:hover {
+        span.font-1 {
+          display: block;
+          opacity: 1;
+          color: #ffffff;
+          font-family: 'Neue Machina', sans-serif;
+          font-size: 120px;
+          font-size: 6.25vw;
+          font-weight: 900;
+          line-height: 88%;
+
+          transition: all .2s ease-in-out;
+        }
+
+        span.font-2 {
+          display: block;
+          left: 0;
+          height: 100%;
+          opacity: 0;
+          position: absolute;
+          top: -17px;
+          width: 100%;
+
           color: var(--red, #FC0606);
           font-family: "ivypresto-display", serif;
           font-size: 120px;
+          font-size: 6.25vw;
           font-style: italic;
           font-weight: 300;
           line-height: 106px;
           letter-spacing: 0em;
+          transition: all .4s ease-in-out;
+        }
+
+        &:hover {
+          span.font-1 {
+            opacity: 0;
+          }
+
+          span.font-2 {
+            opacity: 1;
+          }
         }
       }
     }
@@ -297,6 +329,7 @@ body {
     font-family: "ivypresto-display", serif;
     font-size: 96px;
     font-size: 4.6vw;
+    font-size: 3.6vw;
     font-style: italic;
     font-weight: 300;
     line-height: 110px;
@@ -307,7 +340,8 @@ body {
   .row-neue {
     font-family: 'Neue Machina', sans-serif;
     font-size: 96px;
-    font-size: 4.6vw;
+    font-size: 4.8vw;
+    font-size: 3.8vw;
     font-weight: 800;
     line-height: 110px;
     line-height: 1.2;
@@ -345,6 +379,8 @@ body {
 
     video {
       position: absolute;
+      //width: 100%;
+      min-height: 100%;
       width: 100%;
     }
 
@@ -353,7 +389,7 @@ body {
       color: #ffffff;
       font-family: "ivypresto-display", serif;
       font-size: 96px;
-      font-size: 4.6vw;
+      font-size: 4.8vw;
       font-style: italic;
       font-weight: 300;
       line-height: 110px;
@@ -383,6 +419,44 @@ body {
   color: #ffffff;
   text-align: center;
 
+  .home-video-scroll-inner {
+    height: 350vh;
+    position: relative;
+    overflow: hidden;
+
+    .home-video-scroll-livello-base {
+      position: absolute;
+      top: 35%;
+      left: 0;
+      width: 100%;
+      height: 300%;
+    }
+
+    .home-video-scroll-livello-medio {
+      height: 100%;
+      width: 100%;
+
+      .home-video-scroll-text {
+        position: relative;
+        height: calc(100vh - 46px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 250ms ease-in-out;
+      }
+    }
+
+    .home-video-scroll-livello-top {
+      position: absolute;
+      top: 35%;
+      left: 0;
+      width: 100%;
+      height: 300%;
+    }
+
+  }
+
   .home-video-scroll-elem {
     margin: auto;
     position: relative;
@@ -394,11 +468,9 @@ body {
   }
 
   .video-1 {
-    //height: 736px;
     height: 580px;
     overflow: hidden;
-    transform: rotate(-12deg) translateX(50%);;
-    //width: 444px;
+    transform: rotate(-15deg) translate(120%, -5%);
     width: 350px;
 
     video {
@@ -407,14 +479,10 @@ body {
   }
 
   .video-2 {
-    width: 300px;
-    height: 350px;
-    transform: rotate(11deg);
     flex-shrink: 0;
-
     height: 500px;
     overflow: hidden;
-    transform: rotate(11deg) translateX(-50%);;
+    transform: rotate(18deg) translate(-145%, -65%);
     width: 350px;
 
     video {
@@ -425,7 +493,7 @@ body {
   .video-3 {
     height: 500px;
     overflow: hidden;
-    transform: rotate(10deg) translateX(-50%);;
+    transform: rotate(5deg) translate(-105%, -50%);
     width: 350px;
 
     video {
@@ -436,7 +504,7 @@ body {
   .video-4 {
     width: 596px;
     overflow: hidden;
-    transform: rotate(10deg) translateX(50%);;
+    transform: rotate(12deg) translate(80%, 50%);
     height: 346px;
 
     video {
@@ -518,10 +586,12 @@ body {
   color: #ffffff;
   overflow: hidden;
   padding-top: 15vw;
+  white-space: nowrap;
 
   .page-link-top-line {
     font-family: "ivypresto-display", serif;
     font-size: 160px;
+    font-size: 8.3vw;
     font-style: italic;
     font-weight: 100;
     line-height: 175px;
@@ -539,6 +609,7 @@ body {
   .page-link-bottom-line {
     font-family: 'Neue Machina', sans-serif;
     font-size: 160px;
+    font-size: 8.3vw;
     font-weight: 900;
     line-height: 175px;
     letter-spacing: 0em;
@@ -550,6 +621,10 @@ body {
       display: inline-block;
       margin: 0 3vw;
     }
+  }
+
+  .trattino {
+    padding: 0 0.5rem;
   }
 }
 
@@ -587,7 +662,7 @@ body {
     z-index: 100;
     transition: all 0.6s ease-in-out;
 
-    &.hover {
+    &:hover {
       backdrop-filter: blur(0px);
     }
   }
@@ -595,6 +670,7 @@ body {
   .testo {
     font-family: 'Neue Machina', sans-serif;
     font-size: 96px;
+    font-size: 4.8vw;
     font-weight: 800;
     line-height: 105px;
     letter-spacing: 0em;
@@ -605,6 +681,7 @@ body {
     span {
       font-family: "ivypresto-display", serif;
       font-size: 96px;
+      font-size: 4.8vw;
       font-style: italic;
       font-weight: 300;
       line-height: 106px;
@@ -648,6 +725,7 @@ body {
       .sent-1 {
         font-family: 'Neue Machina', sans-serif;
         font-size: 96px;
+        font-size: 4.8vw;
         font-weight: 800;
         line-height: 106px;
         letter-spacing: 0em;
@@ -656,6 +734,7 @@ body {
       .sent-2 {
         font-family: "ivypresto-display", serif;
         font-size: 96px;
+        font-size: 4.8vw;
         font-style: italic;
         font-weight: 300;
         line-height: 106px;
@@ -666,6 +745,7 @@ body {
           display: inline-block;
           font-family: "ivypresto-display", serif;
           font-size: 240px;
+          font-size: 12.5vw;
           font-style: italic;
           font-weight: 300;
           line-height: 0.9;
@@ -680,6 +760,7 @@ body {
         .sent-3-1 {
           font-family: 'Neue Machina', sans-serif;
           font-size: 96px;
+          font-size: 4.8vw;
           font-weight: 800;
           line-height: 106px;
           letter-spacing: 0em;
@@ -688,6 +769,7 @@ body {
         .sent-3-2 {
           font-family: "ivypresto-display", serif;
           font-size: 96px;
+          font-size: 4.8vw;
           font-style: italic;
           font-weight: 300;
           line-height: 106px;
@@ -755,6 +837,7 @@ body {
         display: inline;
         font-family: "ivypresto-display", serif;
         font-size: 96px;
+        font-size: 4.8vw;
         font-style: italic;
         font-weight: 300;
         line-height: 106px;
@@ -790,6 +873,7 @@ body {
         display: inline;
         font-family: 'Neue Machina', sans-serif;
         font-size: 96px;
+        font-size: 4.8vw;
         font-weight: 800;
         line-height: 106px;
         letter-spacing: 0em;
@@ -841,8 +925,9 @@ body {
     width: 100%;
 
     .testo {
-      font-size: 96px;
       font-family: 'Neue Machina', sans-serif;
+      font-size: 96px;
+      font-size: 4.8vw;
       font-weight: 800;
       line-height: 120.5%;
       text-transform: uppercase;
@@ -887,8 +972,9 @@ body {
 
     .sent-1 {
       color: #FFF;
-      font-size: 96px;
       font-family: "ivypresto-display", serif;
+      font-size: 96px;
+      font-size: 4.8vw;
       font-style: italic;
       font-weight: 300;
       line-height: 110%;
@@ -897,6 +983,7 @@ body {
     .sent-2 {
       font-family: 'Neue Machina', sans-serif;
       font-size: 96px;
+      font-size: 4.8vw;
       font-weight: 800;
       line-height: 105px;
       letter-spacing: 0em;
@@ -929,6 +1016,7 @@ body {
     .title {
       font-family: 'Neue Machina', sans-serif;
       font-size: 96px;
+      font-size: 4.8vw;
       font-weight: 800;
       line-height: 105px;
       letter-spacing: 0em;
@@ -961,6 +1049,7 @@ body {
     .title {
       font-family: 'Neue Machina', sans-serif;
       font-size: 96px;
+      font-size: 4.8vw;
       font-weight: 800;
       line-height: 105px;
       letter-spacing: 0em;
@@ -1020,6 +1109,7 @@ body {
   .title {
     font-family: 'Neue Machina', sans-serif;
     font-size: 96px;
+    font-size: 4.8vw;
     font-weight: 800;
     line-height: 105px;
     letter-spacing: 0em;
@@ -1029,6 +1119,7 @@ body {
     span {
       font-family: "ivypresto-display", serif;
       font-size: 96px;
+      font-size: 4.8vw;
       font-style: italic;
       font-weight: 300;
       line-height: 106px;
@@ -1117,17 +1208,19 @@ body {
       }
 
       .nome {
-        font-size: 18px;
         font-family: "ivypresto-display", serif;
+        font-size: 18px;
+        font-size: 0.93vw;
         font-style: italic;
         font-weight: 300;
         line-height: 150%;
       }
 
       .societa {
+        color: #ffffff;
         font-family: 'Neue Machina', sans-serif;
-        color: #FFF;
         font-size: 16px;
+        font-size: 0.833vw;
         font-weight: 800;
         line-height: 150%;
       }
@@ -1187,7 +1280,7 @@ body {
 }
 
 .about-section {
-  display: none !important;
+  display: noneee !important;
 }
 
 .about-section.about-clients {
@@ -1211,6 +1304,7 @@ body {
     color: var(--red, #FC0606);
     font-family: 'Neue Machina', sans-serif;
     font-size: 21px;
+    font-size: 1.09vw;
     font-weight: 800;
     line-height: 120px;
     letter-spacing: 3.78px;
@@ -1223,8 +1317,9 @@ body {
 
   .row-sentence {
     color: var(--light-grey, #F4F4F4);
-    font-size: 96px;
     font-family: 'Neue Machina', sans-serif;
+    font-size: 96px;
+    font-size: 4.8vw;
     font-weight: 800;
     line-height: 109.5%;
     text-transform: uppercase;
@@ -1232,6 +1327,7 @@ body {
     span {
       font-family: "ivypresto-display", serif;
       font-size: 96px;
+      font-size: 4.8vw;
       font-style: italic;
       font-weight: 300;
       line-height: 106px;
@@ -1369,7 +1465,7 @@ body.archive {
   }
 
   .content-area {
-    margin-top: 28rem;
+    margin-top: 35rem;
     min-height: 100vh;
     position: relative;
 
@@ -1492,19 +1588,26 @@ body.single-projects {
 
   .post-title {
     color: #ffffff;
-    font-size: 96px;
     font-family: 'Neue Machina', sans-serif;
+    font-size: 96px;
+    font-size: 4.8vw;
     font-style: normal;
     font-weight: 900;
     line-height: 90%;
     text-transform: uppercase;
     margin: 2.5rem 0 2rem 0;
+
+    .smaller {
+      font-size: 60px;
+      font-size: 3.12vw;
+    }
   }
 
   .location {
     color: #ffffff;
     font-family: "ivypresto-display", serif;
     font-size: 32px;
+    font-size: 1.66vw;
     font-style: normal;
     font-weight: 300;
     line-height: 130%;
@@ -1519,21 +1622,21 @@ body.single-projects {
     margin-top: 4rem;
   }
 
-  .owl-carousel{
+  .owl-carousel {
     position: relative;
     margin-top: 4rem;
 
-    .owl-slide{
+    .owl-slide {
       border-radius: 2rem;
       overflow: hidden;
     }
 
-    .owl-nav{
+    .owl-nav {
       position: absolute;
       left: -180px;
       top: calc(50% - 90px);
 
-      .owl-prev{
+      .owl-prev {
         width: 90px;
         height: 180px;
         background-color: #FC0606;
@@ -1541,28 +1644,33 @@ body.single-projects {
         opacity: 0.9;
         transition: all 0.4s ease-in-out;
       }
-      .owl-next{
+
+      .owl-next {
         width: 90px;
         height: 180px;
         background-color: #FC0606;
-        border-radius:0 10rem 10rem  0;
+        border-radius: 0 10rem 10rem 0;
         opacity: 0.9;
         transition: all 0.4s ease-in-out;
       }
 
       .owl-prev,
-      .owl-next{
-        &:hover{
+      .owl-next {
+        &:hover {
           opacity: 1;
         }
 
         &.disabled,
-        &.disabled{
+        &.disabled {
           opacity: 0.6;
           transition: all 0.4s ease-in-out;
         }
       }
     }
+  }
+
+  .prj-image-container {
+    margin-top: 4rem;
   }
 
 }

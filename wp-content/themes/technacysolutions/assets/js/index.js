@@ -25,6 +25,30 @@ document.addEventListener("DOMContentLoaded", () => {
   jQuery("[data-paroller-factor]").paroller();
 
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //HOME PAGE
+  if (document.body.classList.contains('home')){
+    var controller = new ScrollMagic.Controller({
+      globalSceneOptions: {
+        triggerHook: 0.05,
+        duration: "250%"
+      }
+    });
+
+    var trigger = document.querySelectorAll(".home-video-scroll-inner");
+    var slide = document.querySelectorAll(".home-video-scroll-livello-medio");
+
+    var scenaTxt = new ScrollMagic.Scene({ triggerElement: trigger })
+      .setClassToggle(".home-video-scroll-text", "is-fixed");
+
+    var scene = new ScrollMagic.Scene({
+      triggerElement: slide
+    })
+      .setPin(slide, { pushFollowers: false });
+
+    controller.addScene([scenaTxt, scene]);
+  }
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   //ABOUT
   if (document.body.classList.contains('page-template-page-template--about')) {
     // init
@@ -87,6 +111,37 @@ document.addEventListener("DOMContentLoaded", () => {
         };
       })
     }
+
+  }
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  /// ARCHIVE
+  if (document.body.classList.contains('archive')){
+    var controller = new ScrollMagic.Controller();
+
+    var wipeAnimation = new TimelineMax()
+      .fromTo(".page-link", 1, {opacity:1}, {opacity:0.3, ease: Linear.easeNone});
+
+    // create scene to pin and link animation
+    new ScrollMagic.Scene({
+      triggerElement: "#main",
+      triggerHook: 0.6,
+      duration: "100%"
+    })
+      .setTween(wipeAnimation)
+      .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+      .addTo(controller);
+
+    // Inview elementi
+    jQuery('.inview-elem').on('inview', function (event, isInView) {
+      if (isInView) {
+        // element is now visible in the viewport
+        jQuery(this).addClass('is-inview-elem');
+      } else {
+        // element has gone out of viewport
+        // $(this).removeClass('is-inview-elem');
+      }
+    });
 
   }
 

@@ -28,7 +28,7 @@ get_header();
 
     <div class="home-intro-top-hover">
       <div class="home-intro-top-hover-video">
-        <video src="/wp-content/uploads/production_id 4124024 (2160p).mp4" autoplay muted loop></video>
+        <video src="/wp-content/uploads/Homevideo_Hero_720.mp4" autoplay muted loop></video>
       </div>
       <div class="home-intro-top-hover-testo">
         BASED IN BAHRAIN.
@@ -46,7 +46,7 @@ get_header();
           <video src="/wp-content/uploads/video-art.mp4" autoplay muted loop></video>
         </div>
       </div>
-      <div class="home-video-scroll-livello-medio content-width">
+      <div class="home-video-scroll-livello-medio">
         <div class="home-video-scroll-text">
           <div class="row-ivy">WE DELIVER</div>
           <div class="row-neue">CUTTING-EDGE</div>
@@ -109,11 +109,11 @@ for($i = 0 ; $i < 30; $i++){
   <section class="page-link">
     <div class="page-link-top-line" data-paroller-factor="0.35" data-paroller-type="foreground"
             data-paroller-direction="horizontal" data-paroller-transition="transform .35s linear">
-      <?php echo implode(' - ' ,  $a); ?>
+      <?php echo implode('<span class="trattino">-</span>', $a); ?>
     </div>
     <div class="page-link-bottom-line" data-paroller-factor="-0.35" data-paroller-type="foreground"
             data-paroller-direction="horizontal" data-paroller-transition="transform .35s linear">
-      <?php echo implode(' - ' ,  $a); ?>
+      <?php echo implode('<span class="trattino">-</span>', $a); ?>
     </div>
   </section>
 

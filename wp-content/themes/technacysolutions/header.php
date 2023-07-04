@@ -37,7 +37,7 @@
   <!-- PRELOAD IMAGES -->
   <link rel="preload" as="image" href="/wp-content/themes/technacysolutions/assets/img/anim-togheter.gif"/>
   <?php if (is_front_page()) { ?>
-    <link rel="preload" as="video" href="/wp-content/uploads/production_id 4124024 (2160p).mp4"/>
+    <link rel="preload" as="video" href="/wp-content/uploads/Homevideo_Hero_720.mp4"/>
   <?php } ?>
 </head>
 

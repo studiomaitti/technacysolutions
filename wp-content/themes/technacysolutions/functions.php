@@ -51,7 +51,7 @@ if (!function_exists('technacysolutions_setup')) {
     // Remove feed icon link from legacy RSS widget.
     add_filter('rss_widget_feed_link', '__return_empty_string');
 
-    add_image_size( 'prj-gallery', 9999, 600, true ); // (cropped)
+    add_image_size( 'prj-gallery', 9999, 600 ); // (cropped)
   }
 }
 add_action('after_setup_theme', 'technacysolutions_setup');
@@ -140,6 +140,8 @@ function technacysolutions_scripts()
     wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper/swiper-bundle.min.js', array( 'jquery', 'script', 'script-home' ), 1.1);
     wp_enqueue_style('swiper-style', get_template_directory_uri() . '/assets/js/swiper/swiper-bundle.min.css', array(), wp_get_theme()->get('Version'));
   }
+
+  wp_enqueue_script( 'lettering', get_template_directory_uri() . '/assets/js/jquery.lettering.js', array( 'jquery' ), 1.1);
 
   wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/index.js', array( 'jquery' ), 1.1);
   wp_enqueue_script( 'script-home', get_template_directory_uri() . '/assets/js/home.js', array( 'jquery' ), 1.1);

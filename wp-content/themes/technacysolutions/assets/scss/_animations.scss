@@ -1,4 +1,5 @@
-
+//////////////////////////////
+/// PALLINE CHE FANNO GLOWING
 .blob {
   background: black;
   border-radius: 50%;
@@ -48,7 +49,8 @@
   }
 }
 
-/////////////////////////////////////////////
+//////////////////////////////
+/// FRECCE CHE FANNO IL BOUNCE
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
@@ -63,4 +65,37 @@
 
 .bounce-down {
   animation: bounce 2s infinite;
+}
+
+//////////////////////////////
+/// ANIMAZIONE INVIEW
+.inview-elem-top {
+  position: relative;
+  opacity: 0;
+  top: -30px;
+  transition: all 850ms ease-in-out;
+}
+.inview-elem-top.is-inview-elem {
+  opacity: 1;
+  top: 0;
+}
+.inview-elem-left {
+  position: relative;
+  opacity: 0;
+  left: -30px;
+  transition: all 850ms ease-in-out;
+}
+.inview-elem-left.is-inview-elem {
+  opacity: 1;
+  left: 0;
+}
+.inview-elem-right {
+  position: relative;
+  opacity: 0;
+  right: -30px;
+  transition: all 850ms ease-in-out;
+}
+.inview-elem-right.is-inview-elem {
+  opacity: 1;
+  right: 0;
 }

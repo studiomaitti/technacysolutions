@@ -976,6 +976,42 @@ table.wp-calendar-table caption {
   animation: bounce 2s infinite;
 }
 
+.inview-elem-top {
+  position: relative;
+  opacity: 0;
+  top: -30px;
+  transition: all 850ms ease-in-out;
+}
+
+.inview-elem-top.is-inview-elem {
+  opacity: 1;
+  top: 0;
+}
+
+.inview-elem-left {
+  position: relative;
+  opacity: 0;
+  left: -30px;
+  transition: all 850ms ease-in-out;
+}
+
+.inview-elem-left.is-inview-elem {
+  opacity: 1;
+  left: 0;
+}
+
+.inview-elem-right {
+  position: relative;
+  opacity: 0;
+  right: -30px;
+  transition: all 850ms ease-in-out;
+}
+
+.inview-elem-right.is-inview-elem {
+  opacity: 1;
+  right: 0;
+}
+
 body {
   background-color: #000;
   transition: all 0.4s linear;
@@ -1104,6 +1140,7 @@ body {
   flex-direction: column;
   font-family: "Neue Machina", sans-serif;
   font-size: 28px;
+  font-size: 1.46vw;
   font-weight: 800;
   line-height: 100%;
   text-transform: uppercase;
@@ -1127,6 +1164,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 300;
 }
 .menu-container .header {
   position: absolute;
@@ -1136,14 +1174,6 @@ body {
   padding-bottom: 40px;
   padding-top: 40px;
 }
-.menu-container .menu-area .main-navigation {
-  color: #ffffff;
-  font-family: "Neue Machina", sans-serif;
-  font-size: 120px;
-  font-weight: 900;
-  line-height: 88%;
-  text-transform: uppercase;
-}
 .menu-container .menu-area .main-navigation ul {
   list-style: none;
   margin: 0;
@@ -1152,16 +1182,44 @@ body {
 .menu-container .menu-area .main-navigation a {
   display: block;
   color: #ffffff;
-  transition: all 0.4s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+  transition: font-size 2.2s ease, font-family 0.2s ease;
 }
-.menu-container .menu-area .main-navigation a:hover {
+.menu-container .menu-area .main-navigation a span.font-1 {
+  display: block;
+  opacity: 1;
+  color: #ffffff;
+  font-family: "Neue Machina", sans-serif;
+  font-size: 120px;
+  font-size: 6.25vw;
+  font-weight: 900;
+  line-height: 88%;
+  transition: all 0.2s ease-in-out;
+}
+.menu-container .menu-area .main-navigation a span.font-2 {
+  display: block;
+  left: 0;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: -17px;
+  width: 100%;
   color: var(--red, #FC0606);
   font-family: "ivypresto-display", serif;
   font-size: 120px;
+  font-size: 6.25vw;
   font-style: italic;
   font-weight: 300;
   line-height: 106px;
   letter-spacing: 0em;
+  transition: all 0.4s ease-in-out;
+}
+.menu-container .menu-area .main-navigation a:hover span.font-1 {
+  opacity: 0;
+}
+.menu-container .menu-area .main-navigation a:hover span.font-2 {
+  opacity: 1;
 }
 .menu-container .menu-area .social-container {
   display: flex;
@@ -1229,6 +1287,7 @@ body {
   font-family: "ivypresto-display", serif;
   font-size: 96px;
   font-size: 4.6vw;
+  font-size: 3.6vw;
   font-style: italic;
   font-weight: 300;
   line-height: 110px;
@@ -1238,7 +1297,8 @@ body {
 .home-section .row-neue {
   font-family: "Neue Machina", sans-serif;
   font-size: 96px;
-  font-size: 4.6vw;
+  font-size: 4.8vw;
+  font-size: 3.8vw;
   font-weight: 800;
   line-height: 110px;
   line-height: 1.2;
@@ -1273,6 +1333,7 @@ body {
 }
 .home-intro-top .home-intro-top-hover video {
   position: absolute;
+  min-height: 100%;
   width: 100%;
 }
 .home-intro-top .home-intro-top-hover .home-intro-top-hover-testo {
@@ -1280,7 +1341,7 @@ body {
   color: #ffffff;
   font-family: "ivypresto-display", serif;
   font-size: 96px;
-  font-size: 4.6vw;
+  font-size: 4.8vw;
   font-style: italic;
   font-weight: 300;
   line-height: 110px;
@@ -1303,6 +1364,38 @@ body {
   color: #ffffff;
   text-align: center;
 }
+.home-video-scroll .home-video-scroll-inner {
+  height: 350vh;
+  position: relative;
+  overflow: hidden;
+}
+.home-video-scroll .home-video-scroll-inner .home-video-scroll-livello-base {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 100%;
+  height: 300%;
+}
+.home-video-scroll .home-video-scroll-inner .home-video-scroll-livello-medio {
+  height: 100%;
+  width: 100%;
+}
+.home-video-scroll .home-video-scroll-inner .home-video-scroll-livello-medio .home-video-scroll-text {
+  position: relative;
+  height: calc(100vh - 46px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 250ms ease-in-out;
+}
+.home-video-scroll .home-video-scroll-inner .home-video-scroll-livello-top {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 100%;
+  height: 300%;
+}
 .home-video-scroll .home-video-scroll-elem {
   margin: auto;
   position: relative;
@@ -1314,20 +1407,17 @@ body {
 .home-video-scroll .video-1 {
   height: 580px;
   overflow: hidden;
-  transform: rotate(-12deg) translateX(50%);
+  transform: rotate(-15deg) translate(120%, -5%);
   width: 350px;
 }
 .home-video-scroll .video-1 video {
   transform: translateX(calc(-1 * calc(50% - 175px)));
 }
 .home-video-scroll .video-2 {
-  width: 300px;
-  height: 350px;
-  transform: rotate(11deg);
   flex-shrink: 0;
   height: 500px;
   overflow: hidden;
-  transform: rotate(11deg) translateX(-50%);
+  transform: rotate(18deg) translate(-145%, -65%);
   width: 350px;
 }
 .home-video-scroll .video-2 video {
@@ -1336,7 +1426,7 @@ body {
 .home-video-scroll .video-3 {
   height: 500px;
   overflow: hidden;
-  transform: rotate(10deg) translateX(-50%);
+  transform: rotate(5deg) translate(-105%, -50%);
   width: 350px;
 }
 .home-video-scroll .video-3 video {
@@ -1345,7 +1435,7 @@ body {
 .home-video-scroll .video-4 {
   width: 596px;
   overflow: hidden;
-  transform: rotate(10deg) translateX(50%);
+  transform: rotate(12deg) translate(80%, 50%);
   height: 346px;
 }
 .home-video-scroll .video-4 video {
@@ -1417,10 +1507,12 @@ body {
   color: #ffffff;
   overflow: hidden;
   padding-top: 15vw;
+  white-space: nowrap;
 }
 .page-link .page-link-top-line {
   font-family: "ivypresto-display", serif;
   font-size: 160px;
+  font-size: 8.3vw;
   font-style: italic;
   font-weight: 100;
   line-height: 175px;
@@ -1436,6 +1528,7 @@ body {
 .page-link .page-link-bottom-line {
   font-family: "Neue Machina", sans-serif;
   font-size: 160px;
+  font-size: 8.3vw;
   font-weight: 900;
   line-height: 175px;
   letter-spacing: 0em;
@@ -1446,6 +1539,9 @@ body {
 .page-link .page-link-bottom-line a {
   display: inline-block;
   margin: 0 3vw;
+}
+.page-link .trattino {
+  padding: 0 0.5rem;
 }
 
 /** *********************
@@ -1480,12 +1576,13 @@ body {
   z-index: 100;
   transition: all 0.6s ease-in-out;
 }
-.about-intro-top .testo-container.hover {
+.about-intro-top .testo-container:hover {
   backdrop-filter: blur(0px);
 }
 .about-intro-top .testo {
   font-family: "Neue Machina", sans-serif;
   font-size: 96px;
+  font-size: 4.8vw;
   font-weight: 800;
   line-height: 105px;
   letter-spacing: 0em;
@@ -1496,6 +1593,7 @@ body {
 .about-intro-top .testo span {
   font-family: "ivypresto-display", serif;
   font-size: 96px;
+  font-size: 4.8vw;
   font-style: italic;
   font-weight: 300;
   line-height: 106px;
@@ -1534,6 +1632,7 @@ body {
 .about-we-crush .panel.panel-1 .sent-1 {
   font-family: "Neue Machina", sans-serif;
   font-size: 96px;
+  font-size: 4.8vw;
   font-weight: 800;
   line-height: 106px;
   letter-spacing: 0em;
@@ -1541,6 +1640,7 @@ body {
 .about-we-crush .panel.panel-1 .sent-2 {
   font-family: "ivypresto-display", serif;
   font-size: 96px;
+  font-size: 4.8vw;
   font-style: italic;
   font-weight: 300;
   line-height: 106px;
@@ -1551,6 +1651,7 @@ body {
   display: inline-block;
   font-family: "ivypresto-display", serif;
   font-size: 240px;
+  font-size: 12.5vw;
   font-style: italic;
   font-weight: 300;
   line-height: 0.9;
@@ -1562,6 +1663,7 @@ body {
 .about-we-crush .panel.panel-1 .sent-3 .sent-3-1 {
   font-family: "Neue Machina", sans-serif;
   font-size: 96px;
+  font-size: 4.8vw;
   font-weight: 800;
   line-height: 106px;
   letter-spacing: 0em;
@@ -1569,6 +1671,7 @@ body {
 .about-we-crush .panel.panel-1 .sent-3 .sent-3-2 {
   font-family: "ivypresto-display", serif;
   font-size: 96px;
+  font-size: 4.8vw;
   font-style: italic;
   font-weight: 300;
   line-height: 106px;
@@ -1624,6 +1727,7 @@ body {
   display: inline;
   font-family: "ivypresto-display", serif;
   font-size: 96px;
+  font-size: 4.8vw;
   font-style: italic;
   font-weight: 300;
   line-height: 106px;
@@ -1655,6 +1759,7 @@ body {
   display: inline;
   font-family: "Neue Machina", sans-serif;
   font-size: 96px;
+  font-size: 4.8vw;
   font-weight: 800;
   line-height: 106px;
   letter-spacing: 0em;
@@ -1695,8 +1800,9 @@ body {
   width: 100%;
 }
 .about-our-client-have .testo-container .testo {
-  font-size: 96px;
   font-family: "Neue Machina", sans-serif;
+  font-size: 96px;
+  font-size: 4.8vw;
   font-weight: 800;
   line-height: 120.5%;
   text-transform: uppercase;
@@ -1736,8 +1842,9 @@ body {
 }
 .about-world .testo .sent-1 {
   color: #FFF;
-  font-size: 96px;
   font-family: "ivypresto-display", serif;
+  font-size: 96px;
+  font-size: 4.8vw;
   font-style: italic;
   font-weight: 300;
   line-height: 110%;
@@ -1745,6 +1852,7 @@ body {
 .about-world .testo .sent-2 {
   font-family: "Neue Machina", sans-serif;
   font-size: 96px;
+  font-size: 4.8vw;
   font-weight: 800;
   line-height: 105px;
   letter-spacing: 0em;
@@ -1774,6 +1882,7 @@ body {
 .about-partners .testo .title {
   font-family: "Neue Machina", sans-serif;
   font-size: 96px;
+  font-size: 4.8vw;
   font-weight: 800;
   line-height: 105px;
   letter-spacing: 0em;
@@ -1803,6 +1912,7 @@ body {
 .about-clients .testo .title {
   font-family: "Neue Machina", sans-serif;
   font-size: 96px;
+  font-size: 4.8vw;
   font-weight: 800;
   line-height: 105px;
   letter-spacing: 0em;
@@ -1852,6 +1962,7 @@ body {
 .about-testimonial .title {
   font-family: "Neue Machina", sans-serif;
   font-size: 96px;
+  font-size: 4.8vw;
   font-weight: 800;
   line-height: 105px;
   letter-spacing: 0em;
@@ -1861,6 +1972,7 @@ body {
 .about-testimonial .title span {
   font-family: "ivypresto-display", serif;
   font-size: 96px;
+  font-size: 4.8vw;
   font-style: italic;
   font-weight: 300;
   line-height: 106px;
@@ -1936,16 +2048,18 @@ body {
   width: 1px;
 }
 .about-testimonial .testimonial-slide .data .nome {
-  font-size: 18px;
   font-family: "ivypresto-display", serif;
+  font-size: 18px;
+  font-size: 0.93vw;
   font-style: italic;
   font-weight: 300;
   line-height: 150%;
 }
 .about-testimonial .testimonial-slide .data .societa {
+  color: #ffffff;
   font-family: "Neue Machina", sans-serif;
-  color: #FFF;
   font-size: 16px;
+  font-size: 0.833vw;
   font-weight: 800;
   line-height: 150%;
 }
@@ -1995,7 +2109,7 @@ body {
 }
 
 .about-section {
-  display: none !important;
+  display: noneee !important;
 }
 
 .about-section.about-clients {
@@ -2018,6 +2132,7 @@ body {
   color: var(--red, #FC0606);
   font-family: "Neue Machina", sans-serif;
   font-size: 21px;
+  font-size: 1.09vw;
   font-weight: 800;
   line-height: 120px;
   letter-spacing: 3.78px;
@@ -2028,8 +2143,9 @@ body {
 }
 .site-footer .row-sentence {
   color: var(--light-grey, #F4F4F4);
-  font-size: 96px;
   font-family: "Neue Machina", sans-serif;
+  font-size: 96px;
+  font-size: 4.8vw;
   font-weight: 800;
   line-height: 109.5%;
   text-transform: uppercase;
@@ -2037,6 +2153,7 @@ body {
 .site-footer .row-sentence span {
   font-family: "ivypresto-display", serif;
   font-size: 96px;
+  font-size: 4.8vw;
   font-style: italic;
   font-weight: 300;
   line-height: 106px;
@@ -2147,7 +2264,7 @@ body.archive .page-link .page-link-bottom-line {
   line-height: 105px;
 }
 body.archive .content-area {
-  margin-top: 28rem;
+  margin-top: 35rem;
   min-height: 100vh;
   position: relative;
 }
@@ -2244,18 +2361,24 @@ body.single-projects .client span {
 }
 body.single-projects .post-title {
   color: #ffffff;
-  font-size: 96px;
   font-family: "Neue Machina", sans-serif;
+  font-size: 96px;
+  font-size: 4.8vw;
   font-style: normal;
   font-weight: 900;
   line-height: 90%;
   text-transform: uppercase;
   margin: 2.5rem 0 2rem 0;
 }
+body.single-projects .post-title .smaller {
+  font-size: 60px;
+  font-size: 3.12vw;
+}
 body.single-projects .location {
   color: #ffffff;
   font-family: "ivypresto-display", serif;
   font-size: 32px;
+  font-size: 1.66vw;
   font-style: normal;
   font-weight: 300;
   line-height: 130%;
@@ -2306,6 +2429,9 @@ body.single-projects .owl-carousel .owl-nav .owl-next.disabled,
 body.single-projects .owl-carousel .owl-nav .owl-next.disabled {
   opacity: 0.6;
   transition: all 0.4s ease-in-out;
+}
+body.single-projects .prj-image-container {
+  margin-top: 4rem;
 }
 
 /** *********************
