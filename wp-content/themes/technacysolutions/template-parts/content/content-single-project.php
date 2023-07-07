@@ -9,8 +9,8 @@
  * @since Technacysolutions 1.0
  */
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class('content-width'); ?>>
-  <header class="entry-header alignwide">
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <header class="entry-header alignwide content-width">
     <div class="client">
       <span><?php the_field('location'); ?></span>
     </div>
@@ -22,7 +22,7 @@
     </div>
   </header><!-- .entry-header -->
 
-  <div class="entry-content">
+  <div class="entry-content content-width">
     <?php the_content(); ?>
   </div><!-- .entry-content -->
 
@@ -31,39 +31,50 @@
   $size = 'prj-gallery'; // (thumbnail, medium, large, full or custom size)
   if ($images) {
 
-  ?>
-  <div class="prj-gallery-container">
-    <div class="owl-carousel">
-      <?php
+    ?>
+    <div class="prj-gallery-container">
+      <div class="owl-carousel">
+        <?php
         foreach ($images as $image_id) {
           $img_info = wp_get_attachment_image_src($image_id, $size);
           ?>
-            <div class="owl-slide" style="width: <?php echo $img_info[1]; ?>px;"><img src="<?php echo $img_info[0]; ?>" width="<?php echo $img_info[1]; ?>" height="<?php echo $img_info[2]; ?>" ></div>
+          <div class="owl-slide" style="width: <?php echo $img_info[1]; ?>px;">
+            <img src="<?php echo $img_info[0]; ?>" width="<?php echo $img_info[1]; ?>" height="<?php echo $img_info[2]; ?>">
+          </div>
           <?php
         }
-      }
-      ?>
-      <?php
-      $images = get_field('gallery');
-      $size = 'prj-gallery'; // (thumbnail, medium, large, full or custom size)
-      if ($images) {
         foreach ($images as $image_id) {
           $img_info = wp_get_attachment_image_src($image_id, $size);
           ?>
-          <div class="owl-slide" style="width: <?php echo $img_info[1]; ?>px;"><img src="<?php echo $img_info[0]; ?>" width="<?php echo $img_info[1]; ?>" height="<?php echo $img_info[2]; ?>" ></div>
+          <div class="owl-slide" style="width: <?php echo $img_info[1]; ?>px;">
+            <img src="<?php echo $img_info[0]; ?>" width="<?php echo $img_info[1]; ?>" height="<?php echo $img_info[2]; ?>">
+          </div>
           <?php
         }
-      ?>
+        ?>
+
+      </div>
     </div>
-  </div>
-  <?php
-  } else {
-  ?>
+    <?php
+  }
+  else {
+    ?>
     <div class="prj-image-container">
       <?php the_post_thumbnail('full'); ?>
     </div>
-  <?php
+    <?php
   }
   ?>
+
+  <div class="dot-container">
+    <div class="dot dot-arrow">
+      <span class="blob white"></span>
+      <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="Icon">
+          <path id="Vector" d="M17.465 35.6641L17.8185 36.0177L18.1721 35.6641L20.6075 33.2286L20.9608 32.8754L20.6079 32.5219L11.8214 23.7196L31.6367 23.7196L32.1367 23.7196L32.1367 23.2196L32.1367 19.7651L32.1367 19.2651L31.6367 19.2651L11.8214 19.2651L20.6079 10.4629L20.9608 10.1093L20.6075 9.75609L18.1721 7.32063L17.8185 6.96708L17.465 7.32063L3.6468 21.1388L3.29325 21.4924L3.6468 21.8459L17.465 35.6641Z" fill="black" stroke="black"/>
+        </g>
+      </svg>
+    </div>
+  </div>
 
 </article><!-- #post-<?php the_ID(); ?> -->

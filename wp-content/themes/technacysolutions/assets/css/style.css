@@ -1889,6 +1889,34 @@ body {
   margin-bottom: 3rem;
   text-align: left;
 }
+.about-partners .logo-row {
+  display: flex;
+  justify-content: space-between;
+}
+.about-partners .logo-row .img-i {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  max-width: 18%;
+  max-height: 4.4rem;
+  text-align: center;
+}
+.about-partners .logo-row .img-i.img-i-first {
+  text-align: left;
+}
+.about-partners .logo-row .img-i.img-i-last {
+  text-align: right;
+}
+.about-partners .logo-row img {
+  margin-bottom: auto;
+  margin-top: auto;
+  max-height: 100%;
+}
+.about-partners .logo-row.logo-row-black {
+  height: 0;
+  opacity: 0;
+}
 
 .about-clients {
   color: #ffffff;
@@ -1919,11 +1947,11 @@ body {
   margin-bottom: 3rem;
   text-align: left;
 }
-.about-clients .client-row {
+.about-clients .logo-row {
   display: flex;
   justify-content: space-between;
 }
-.about-clients .client-row .img-i {
+.about-clients .logo-row .img-i {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
@@ -1932,16 +1960,20 @@ body {
   max-height: 4.4rem;
   text-align: center;
 }
-.about-clients .client-row .img-i.img-1 {
+.about-clients .logo-row .img-i.img-i-first {
   text-align: left;
 }
-.about-clients .client-row .img-i.img-5 {
+.about-clients .logo-row .img-i.img-i-last {
   text-align: right;
 }
-.about-clients .client-row img {
+.about-clients .logo-row img {
   margin-bottom: auto;
   margin-top: auto;
   max-height: 100%;
+}
+.about-clients .logo-row.logo-row-black {
+  height: 0;
+  opacity: 0;
 }
 
 .about-testimonial {
@@ -2347,6 +2379,7 @@ body.archive .site-footer .footer-continer.content-width {
  ******* */
 body.single-projects .hentry {
   margin-top: 4rem;
+  position: relative;
 }
 body.single-projects .client span {
   background-color: #FC0606;
@@ -2390,6 +2423,11 @@ body.single-projects .entry-content {
   font-weight: 400;
   line-height: 140%;
   margin-top: 4rem;
+  -webkit-columns: 40px 2;
+  /* Chrome, Safari, Opera */
+  -moz-columns: 60px 2;
+  /* Firefox */
+  columns: 60px 2;
 }
 body.single-projects .owl-carousel {
   position: relative;
@@ -2411,6 +2449,17 @@ body.single-projects .owl-carousel .owl-nav .owl-prev {
   border-radius: 10rem 0 0 10rem;
   opacity: 0.9;
   transition: all 0.4s ease-in-out;
+  text-align: right;
+}
+body.single-projects .owl-carousel .owl-nav .owl-prev img {
+  transform: rotate(180deg);
+}
+body.single-projects .owl-carousel .owl-nav .owl-prev:hover {
+  opacity: 1;
+  transform: scale(1.02);
+}
+body.single-projects .owl-carousel .owl-nav .owl-prev:hover img {
+  transform: rotate(180deg) translateX(10px);
 }
 body.single-projects .owl-carousel .owl-nav .owl-next {
   width: 90px;
@@ -2419,10 +2468,26 @@ body.single-projects .owl-carousel .owl-nav .owl-next {
   border-radius: 0 10rem 10rem 0;
   opacity: 0.9;
   transition: all 0.4s ease-in-out;
+  text-align: left;
 }
-body.single-projects .owl-carousel .owl-nav .owl-prev:hover,
 body.single-projects .owl-carousel .owl-nav .owl-next:hover {
   opacity: 1;
+  transform: scale(1.02);
+}
+body.single-projects .owl-carousel .owl-nav .owl-next:hover img {
+  transform: translateX(10px);
+}
+body.single-projects .owl-carousel .owl-nav .owl-prev,
+body.single-projects .owl-carousel .owl-nav .owl-next {
+  position: relative;
+}
+body.single-projects .owl-carousel .owl-nav .owl-prev span,
+body.single-projects .owl-carousel .owl-nav .owl-next span {
+  display: none;
+}
+body.single-projects .owl-carousel .owl-nav .owl-prev img,
+body.single-projects .owl-carousel .owl-nav .owl-next img {
+  transition: all 0.3s ease-in-out;
 }
 body.single-projects .owl-carousel .owl-nav .owl-prev.disabled, body.single-projects .owl-carousel .owl-nav .owl-prev.disabled,
 body.single-projects .owl-carousel .owl-nav .owl-next.disabled,
@@ -2430,8 +2495,38 @@ body.single-projects .owl-carousel .owl-nav .owl-next.disabled {
   opacity: 0.6;
   transition: all 0.4s ease-in-out;
 }
+body.single-projects .prj-gallery-container {
+  margin-left: calc(50% - 590px);
+}
 body.single-projects .prj-image-container {
   margin-top: 4rem;
+}
+body.single-projects .dot-container {
+  height: 50px;
+  margin-top: 2rem;
+  position: relative;
+}
+body.single-projects .dot {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  height: 48px;
+  right: 10%;
+  text-align: center;
+  width: 48px;
+}
+body.single-projects .dot span {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  height: 100%;
+  width: 100%;
+}
+body.single-projects .dot svg {
+  margin: auto;
+  transform: translateX(2px);
+  z-index: 10;
 }
 
 /** *********************

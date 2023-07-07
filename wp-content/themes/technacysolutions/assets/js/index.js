@@ -22,9 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  jQuery("[data-paroller-factor]").paroller();
-
-  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   //HOME PAGE
   if (document.body.classList.contains('home')){
     var controller = new ScrollMagic.Controller({
@@ -149,10 +146,20 @@ document.addEventListener("DOMContentLoaded", () => {
   /// SINGLE PROJECT
   if (document.body.classList.contains('single-projects')){
     jQuery('.owl-carousel').owlCarousel({
+      loop:true,
       autoWidth:true,
       items:4,
       nav:true,
+      navText: [
+        "<img src='/wp-content/themes/technacysolutions/assets/img/arrow-navigation.svg' class='prev'>",
+        "<img src='/wp-content/themes/technacysolutions/assets/img/arrow-navigation.svg' class='next'>"
+      ]
+
     })
   }
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  /// PAROLE IN FONDO
+  jQuery("[data-paroller-factor]").paroller();
 
 });
