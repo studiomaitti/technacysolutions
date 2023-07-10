@@ -69,33 +69,48 @@
 
 //////////////////////////////
 /// ANIMAZIONE INVIEW
+//inview-elem inview-elem-top
 .inview-elem-top {
   position: relative;
   opacity: 0;
-  top: -30px;
+  top: -40px;
   transition: all 850ms ease-in-out;
 }
 .inview-elem-top.is-inview-elem {
   opacity: 1;
   top: 0;
 }
+
 .inview-elem-left {
   position: relative;
   opacity: 0;
-  left: -30px;
+  left: -40px;
   transition: all 850ms ease-in-out;
 }
 .inview-elem-left.is-inview-elem {
   opacity: 1;
   left: 0;
 }
+
 .inview-elem-right {
   position: relative;
   opacity: 0;
-  right: -30px;
+  right: -40px;
   transition: all 850ms ease-in-out;
 }
 .inview-elem-right.is-inview-elem {
   opacity: 1;
   right: 0;
+}
+
+
+.inview-elem-bottom {
+  position: relative;
+  opacity: 0;
+  bottom: -40px;
+  transition: all 850ms ease-in-out;
+}
+.inview-elem-bottom.is-inview-elem {
+  opacity: 1;
+  bottom: 0;
 }

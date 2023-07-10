@@ -70,35 +70,39 @@ get_header();
 
   <section class="home-section home-fascia-rossa"></section>
 
-  <section class="home-section home-iptv">
-    <div class="home-iptv-container content-width">
-      <img src="/wp-content/themes/technacysolutions/assets/img/logo-technacy-rosso.svg" alt="Logo">
-      <div class="home-iptv-text">
-        <h2 class="row-ivy">IPTV & MEDIA</h2>
-        <h2 class="row-neue">IPTV & MEDIA</h2>
-        <div class="text">
-          We are shipping thousands products in EMEA market every month and have supported<br>
-          hundreds customers in launching their video services. Technacy enable you to deliver the best<br>
-          of linear broadcast television and IP-based services with a seamless user experience
+
+  <section class="home-section category-section"  id="pinCategorySection">
+    <div class="panel panel-1 home-iptv">
+      <div class="home-iptv-container content-width">
+        <img src="/wp-content/themes/technacysolutions/assets/img/logo-technacy-rosso.svg" alt="Logo">
+        <div class="home-iptv-text">
+          <h2 class="row-ivy">IPTV & MEDIA</h2>
+          <h2 class="row-neue">IPTV & MEDIA</h2>
+          <div class="text">
+            We are shipping thousands products in EMEA market every month and have supported<br>
+            hundreds customers in launching their video services. Technacy enable you to deliver the best<br>
+            of linear broadcast television and IP-based services with a seamless user experience
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-2 home-computer">
+      <div class="home-iptv-container content-width">
+        <img src="/wp-content/themes/technacysolutions/assets/img/logo-technacy-full.svg" alt="Logo">
+        <div class="home-iptv-text">
+          <h2 class="row-ivy">DIGITAL</h2>
+          <h2 class="row-neue">COMMUNICATION</h2>
+          <div class="text">
+            We are shipping thousands products in EMEA market every month and have supported<br>
+            hundreds customers in launching their video services. Technacy enable you to deliver the best<br>
+            of linear broadcast television and IP-based services with a seamless user experience
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="home-section home-computer">
-    <div class="home-iptv-container content-width">
-      <img src="/wp-content/themes/technacysolutions/assets/img/logo-technacy-full.svg" alt="Logo">
-      <div class="home-iptv-text">
-        <h2 class="row-ivy">COMPUTER</h2>
-        <h2 class="row-neue">DEVELOPMENT</h2>
-        <div class="text">
-          We are shipping thousands products in EMEA market every month and have supported<br>
-          hundreds customers in launching their video services. Technacy enable you to deliver the best<br>
-          of linear broadcast television and IP-based services with a seamless user experience
-        </div>
-      </div>
-    </div>
-  </section>
 
 <?php
 $a = [];

@@ -25,6 +25,20 @@
   <div class="entry-content content-width">
     <?php the_content(); ?>
   </div><!-- .entry-content -->
+  <?php
+  $video = get_field('video');
+  $size = 'prj-gallery'; // (thumbnail, medium, large, full or custom size)
+  if ($video) {
+
+  ?>
+    <div class="entry-video content-width">
+      <video src="<?php echo $video; ?>" controls muted autoplay></video>
+    </div><!-- .entry-content -->
+    <?php
+  }
+  ?>
+
+
 
   <?php
   $images = get_field('gallery');
@@ -57,9 +71,9 @@
     </div>
     <?php
   }
-  else {
+  else if(empty($video)){
     ?>
-    <div class="prj-image-container">
+    <div class="prj-image-container content-width inview-elem inview-elem-left">
       <?php the_post_thumbnail('full'); ?>
     </div>
     <?php

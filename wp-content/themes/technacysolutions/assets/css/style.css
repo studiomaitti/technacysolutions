@@ -979,7 +979,7 @@ table.wp-calendar-table caption {
 .inview-elem-top {
   position: relative;
   opacity: 0;
-  top: -30px;
+  top: -40px;
   transition: all 850ms ease-in-out;
 }
 
@@ -991,7 +991,7 @@ table.wp-calendar-table caption {
 .inview-elem-left {
   position: relative;
   opacity: 0;
-  left: -30px;
+  left: -40px;
   transition: all 850ms ease-in-out;
 }
 
@@ -1003,13 +1003,25 @@ table.wp-calendar-table caption {
 .inview-elem-right {
   position: relative;
   opacity: 0;
-  right: -30px;
+  right: -40px;
   transition: all 850ms ease-in-out;
 }
 
 .inview-elem-right.is-inview-elem {
   opacity: 1;
   right: 0;
+}
+
+.inview-elem-bottom {
+  position: relative;
+  opacity: 0;
+  bottom: -40px;
+  transition: all 850ms ease-in-out;
+}
+
+.inview-elem-bottom.is-inview-elem {
+  opacity: 1;
+  bottom: 0;
 }
 
 body {
@@ -1318,6 +1330,7 @@ body {
 }
 .home-intro-top .home-intro-top-base .home-intro-top-base-testo {
   margin: auto;
+  white-space: nowrap;
 }
 .home-intro-top .home-intro-top-hover {
   background-color: #000000;
@@ -1334,7 +1347,6 @@ body {
 .home-intro-top .home-intro-top-hover video {
   position: absolute;
   min-height: 100%;
-  width: 100%;
 }
 .home-intro-top .home-intro-top-hover .home-intro-top-hover-testo {
   background-color: #FC0606;
@@ -1453,6 +1465,31 @@ body {
   flex-shrink: 0;
 }
 
+.sections-from-bottom,
+.category-section {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.sections-from-bottom .panel,
+.category-section .panel {
+  background-color: #000000;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.sections-from-bottom .panel .content-width,
+.category-section .panel .content-width {
+  margin: auto;
+}
+.sections-from-bottom .panel .panel-content,
+.category-section .panel .panel-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .home-iptv {
   color: #ffffff;
   display: flex;
@@ -1492,10 +1529,6 @@ body {
   font-size: 96px;
   line-height: 130%;
 }
-.home-computer .home-iptv-container h2.row-neue {
-  font-size: 96px;
-  line-height: 130%;
-}
 .home-computer .home-iptv-container .text {
   font-size: 16px;
   font-family: "Alegreya Sans", sans-serif;
@@ -1507,6 +1540,7 @@ body {
   color: #ffffff;
   overflow: hidden;
   padding-top: 15vw;
+  text-transform: uppercase;
   white-space: nowrap;
 }
 .page-link .page-link-top-line {
@@ -1516,6 +1550,7 @@ body {
   font-style: italic;
   font-weight: 100;
   line-height: 175px;
+  line-height: 1.1;
   letter-spacing: 0em;
   text-align: center;
   display: flex;
@@ -1530,7 +1565,7 @@ body {
   font-size: 160px;
   font-size: 8.3vw;
   font-weight: 900;
-  line-height: 175px;
+  line-height: 1.1;
   letter-spacing: 0em;
   text-align: center;
   display: flex;
@@ -1610,6 +1645,7 @@ body {
   height: 100vh;
   overflow: hidden;
   position: relative;
+  white-space: nowrap;
 }
 .about-we-crush .panel {
   height: 100%;
@@ -1634,7 +1670,7 @@ body {
   font-size: 96px;
   font-size: 4.8vw;
   font-weight: 800;
-  line-height: 106px;
+  line-height: 1.1;
   letter-spacing: 0em;
 }
 .about-we-crush .panel.panel-1 .sent-2 {
@@ -1643,7 +1679,7 @@ body {
   font-size: 4.8vw;
   font-style: italic;
   font-weight: 300;
-  line-height: 106px;
+  line-height: 1.1;
   letter-spacing: 0em;
   position: relative;
 }
@@ -1654,7 +1690,7 @@ body {
   font-size: 12.5vw;
   font-style: italic;
   font-weight: 300;
-  line-height: 0.9;
+  line-height: 1.1;
   letter-spacing: 0em;
   padding-left: 5rem;
   position: absolute;
@@ -1665,7 +1701,7 @@ body {
   font-size: 96px;
   font-size: 4.8vw;
   font-weight: 800;
-  line-height: 106px;
+  line-height: 1.1;
   letter-spacing: 0em;
 }
 .about-we-crush .panel.panel-1 .sent-3 .sent-3-2 {
@@ -1674,7 +1710,7 @@ body {
   font-size: 4.8vw;
   font-style: italic;
   font-weight: 300;
-  line-height: 106px;
+  line-height: 1.1;
   letter-spacing: 0em;
   position: relative;
 }
@@ -1730,7 +1766,7 @@ body {
   font-size: 4.8vw;
   font-style: italic;
   font-weight: 300;
-  line-height: 106px;
+  line-height: 1.1;
   letter-spacing: 0em;
   position: relative;
 }
@@ -1761,7 +1797,7 @@ body {
   font-size: 96px;
   font-size: 4.8vw;
   font-weight: 800;
-  line-height: 106px;
+  line-height: 1.1;
   letter-spacing: 0em;
 }
 .about-we-crush .panel.panel-2 .dot {
@@ -1824,10 +1860,12 @@ body {
   transition: all 0.4s ease-in-out;
   top: 0;
   width: 100%;
+  text-align: center;
 }
 .about-world .video video {
   position: absolute;
-  width: 100%;
+  transform: translateX(-50%);
+  height: 100%;
 }
 .about-world .testo-container {
   display: flex;
@@ -2016,7 +2054,6 @@ body {
 }
 .about-testimonial .testimonial-slide {
   margin: auto;
-  text-transform: uppercase;
   display: flex;
 }
 .about-testimonial .testimonial-slide .img {
@@ -2061,6 +2098,7 @@ body {
 }
 .about-testimonial .testimonial-slide .data .societa {
   display: flex;
+  text-transform: uppercase;
 }
 .about-testimonial .testimonial-slide .data .logo {
   position: relative;
@@ -2140,10 +2178,6 @@ body {
   right: 0;
 }
 
-.about-section {
-  display: noneee !important;
-}
-
 .about-section.about-clients {
   display: flex !important;
 }
@@ -2159,6 +2193,7 @@ body {
 }
 .site-footer .footer-continer {
   margin: auto;
+  white-space: nowrap;
 }
 .site-footer .row-email {
   color: var(--red, #FC0606);
@@ -2270,6 +2305,12 @@ body.archive .project-category .container-1 .cat-i a {
 body.archive .project-category .container-1 .cat-i a:hover {
   background-color: #FC0606;
 }
+body.archive .project-category .container-1 .cat-i.cat-1 {
+  font-family: "Neue Machina", sans-serif;
+}
+body.archive .project-category .container-1 .cat-i.cat-2 {
+  font-family: "ivypresto-display", serif;
+}
 body.archive .project-category .container-1 .star {
   margin: auto 3rem;
   transition: all 0.4s ease-in-out;
@@ -2307,6 +2348,9 @@ body.archive .content-area .site-main {
 body.archive .content-area article {
   padding-bottom: 4rem;
   width: calc(50% - 50px);
+}
+body.archive .content-area article#post-11578 {
+  width: 80%;
 }
 body.archive .content-area article .article-container {
   max-width: 70%;
@@ -2429,6 +2473,9 @@ body.single-projects .entry-content {
   /* Firefox */
   columns: 60px 2;
 }
+body.single-projects .entry-video {
+  text-align: center;
+}
 body.single-projects .owl-carousel {
   position: relative;
   margin-top: 4rem;
@@ -2546,11 +2593,17 @@ body.light-mode a {
 body.light-mode .header .dark-mode-hamburger .dark-mode-container span {
   color: #161616;
 }
+body.light-mode .menu-container-opener svg path {
+  fill: #000000;
+}
 body.light-mode .home-intro-top .home-intro-top-base,
 body.light-mode .home-video-scroll,
 body.light-mode .home-iptv,
 body.light-mode .home-computer {
   color: #161616;
+}
+body.light-mode .category-section .panel {
+  background-color: #ffffff;
 }
 body.light-mode .page-link {
   color: #161616;
@@ -2558,6 +2611,72 @@ body.light-mode .page-link {
 body.light-mode .about-we-crush .about-we-crush-slide.about-we-crush-slide-1 {
   background-color: #ffffff;
   color: #000000;
+}
+body.light-mode .about-our-client-have .testo-container {
+  color: #000000;
+}
+body.light-mode .about-our-client-have .testo-container a {
+  color: #000000;
+}
+body.light-mode .about-partners,
+body.light-mode .about-clients {
+  color: #000000;
+}
+body.light-mode .logo-row.logo-row-white {
+  height: 0;
+  opacity: 0;
+}
+body.light-mode .logo-row.logo-row-black {
+  height: auto;
+  opacity: 1;
+}
+body.light-mode .about-testimonial {
+  color: #000000;
+}
+body.light-mode .about-testimonial .testimonial-slide .img {
+  background-blend-mode: luminosity;
+  background-color: #ffffff;
+}
+body.light-mode .about-testimonial .testimonial-slide .img img {
+  max-width: 100%;
+  visibility: hidden;
+}
+body.light-mode .about-testimonial .testimonial-slide .img:after {
+  background: linear-gradient(180deg, rgba(100, 100, 100, 0) 62.03%, rgba(0, 0, 0, 0.8) 90%);
+}
+body.light-mode .about-testimonial .testimonial-slide .data {
+  color: #000000;
+}
+body.light-mode .about-testimonial .testimonial-slide .data .logo {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 21px;
+}
+body.light-mode .about-testimonial .testimonial-slide .data .logo .logo-white {
+  display: none;
+}
+body.light-mode .about-testimonial .testimonial-slide .data .logo .logo-black {
+  display: block;
+}
+body.light-mode .about-testimonial .testimonial-slide .data .logo:before {
+  background-color: #000000;
+}
+body.light-mode .about-testimonial .testimonial-slide .data .societa {
+  color: #000000;
+}
+body.light-mode .about-testimonial .swiper-buttons .swiper-pagination .swiper-pagination-bullet {
+  background-color: #8D8D8D;
+}
+body.light-mode .about-testimonial .swiper-buttons .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #000000;
+}
+body.light-mode .about-testimonial .swiper-button-next svg circle,
+body.light-mode .about-testimonial .swiper-button-prev svg circle {
+  fill: #000000;
+}
+body.light-mode .about-testimonial .swiper-button-next svg path,
+body.light-mode .about-testimonial .swiper-button-prev svg path {
+  fill: #ffffff;
 }
 body.light-mode .site-footer .row-sentence,
 body.light-mode .site-footer .row-sedi .sede-i {

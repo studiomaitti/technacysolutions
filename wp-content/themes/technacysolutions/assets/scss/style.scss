@@ -362,6 +362,7 @@ body {
 
     .home-intro-top-base-testo {
       margin: auto;
+      white-space: nowrap;
     }
   }
 
@@ -381,7 +382,6 @@ body {
       position: absolute;
       //width: 100%;
       min-height: 100%;
-      width: 100%;
     }
 
     .home-intro-top-hover-testo {
@@ -524,6 +524,31 @@ body {
   flex-shrink: 0;
 }
 
+.sections-from-bottom,
+.category-section {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  .panel {
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+
+    .content-width {
+      margin: auto;
+    }
+
+    .panel-content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+}
+
 .home-iptv {
   color: #ffffff;
   display: flex;
@@ -568,11 +593,6 @@ body {
       line-height: 130%;
     }
 
-    h2.row-neue {
-      font-size: 96px;
-      line-height: 130%;
-    }
-
     .text {
       font-size: 16px;
       font-family: 'Alegreya Sans', sans-serif;
@@ -586,6 +606,7 @@ body {
   color: #ffffff;
   overflow: hidden;
   padding-top: 15vw;
+  text-transform: uppercase;
   white-space: nowrap;
 
   .page-link-top-line {
@@ -595,6 +616,7 @@ body {
     font-style: italic;
     font-weight: 100;
     line-height: 175px;
+    line-height: 1.1;
     letter-spacing: 0em;
     text-align: center;
     display: flex;
@@ -611,7 +633,7 @@ body {
     font-size: 160px;
     font-size: 8.3vw;
     font-weight: 900;
-    line-height: 175px;
+    line-height: 1.1;
     letter-spacing: 0em;
     text-align: center;
     display: flex;
@@ -701,6 +723,7 @@ body {
   height: 100vh;
   overflow: hidden;
   position: relative;
+  white-space: nowrap;
 
   .panel {
     height: 100%;
@@ -727,7 +750,7 @@ body {
         font-size: 96px;
         font-size: 4.8vw;
         font-weight: 800;
-        line-height: 106px;
+        line-height: 1.1;
         letter-spacing: 0em;
       }
 
@@ -737,7 +760,7 @@ body {
         font-size: 4.8vw;
         font-style: italic;
         font-weight: 300;
-        line-height: 106px;
+        line-height: 1.1;
         letter-spacing: 0em;
         position: relative;
 
@@ -748,7 +771,7 @@ body {
           font-size: 12.5vw;
           font-style: italic;
           font-weight: 300;
-          line-height: 0.9;
+          line-height: 1.1;
           letter-spacing: 0em;
           padding-left: 5rem;
           position: absolute;
@@ -762,7 +785,7 @@ body {
           font-size: 96px;
           font-size: 4.8vw;
           font-weight: 800;
-          line-height: 106px;
+          line-height: 1.1;
           letter-spacing: 0em;
         }
 
@@ -772,7 +795,7 @@ body {
           font-size: 4.8vw;
           font-style: italic;
           font-weight: 300;
-          line-height: 106px;
+          line-height: 1.1;
           letter-spacing: 0em;
           position: relative;
 
@@ -840,7 +863,7 @@ body {
         font-size: 4.8vw;
         font-style: italic;
         font-weight: 300;
-        line-height: 106px;
+        line-height: 1.1;
         letter-spacing: 0em;
         position: relative;
 
@@ -875,7 +898,7 @@ body {
         font-size: 96px;
         font-size: 4.8vw;
         font-weight: 800;
-        line-height: 106px;
+        line-height: 1.1;
         letter-spacing: 0em;
       }
 
@@ -951,10 +974,12 @@ body {
     transition: all 0.4s ease-in-out;
     top: 0;
     width: 100%;
+    text-align: center;
 
     video {
       position: absolute;
-      width: 100%;
+      transform: translateX(-50%);
+      height: 100%;
     }
   }
 
@@ -1177,7 +1202,6 @@ body {
 
   .testimonial-slide {
     margin: auto;
-    text-transform: uppercase;
     display: flex;
 
     .img {
@@ -1228,6 +1252,7 @@ body {
 
       .societa {
         display: flex;
+        text-transform: uppercase;
       }
 
       .logo {
@@ -1322,10 +1347,6 @@ body {
   }
 }
 
-.about-section {
-  display: noneee !important;
-}
-
 .about-section.about-clients {
   display: flex !important;
 }
@@ -1341,6 +1362,7 @@ body {
 
   .footer-continer {
     margin: auto;
+    white-space: nowrap;
   }
 
   .row-email {
@@ -1470,6 +1492,15 @@ body.archive {
             background-color: #FC0606;
           }
         }
+
+        &.cat-1 {
+          font-family: 'Neue Machina', sans-serif;
+        }
+
+        &.cat-2 {
+          font-family: "ivypresto-display", serif;
+        }
+
       }
 
       .star {
@@ -1520,6 +1551,10 @@ body.archive {
     article {
       padding-bottom: 4rem;
       width: calc(50% - 50px);
+
+      &#post-11578 {
+        width: 80%;
+      }
 
 
       //50% meno la metà della larghezza della stella -5px ancora tanto per farli passare vicinissimi
@@ -1672,6 +1707,10 @@ body.single-projects {
     columns: 60px 2;
   }
 
+  .entry-video {
+    text-align: center;
+  }
+
   .owl-carousel {
     position: relative;
     margin-top: 4rem;
@@ -1808,12 +1847,30 @@ body.light-mode {
     color: #161616;
   }
 
+  .menu-container-opener {
+    svg {
+      path {
+        fill: #000000;
+      }
+    }
+  }
+
   /* HOME PAGE */
   .home-intro-top .home-intro-top-base,
   .home-video-scroll,
   .home-iptv,
   .home-computer {
     color: #161616;
+  }
+
+  .category-section {
+    .panel {
+      background-color: #ffffff;
+
+      .panel-content {
+      }
+    }
+
   }
 
   .page-link {
@@ -1830,6 +1887,107 @@ body.light-mode {
       }
     }
   }
+
+  .about-our-client-have {
+    .testo-container{
+      color: #000000;
+
+      a {
+        color: #000000;
+      }
+    }
+  }
+
+  .about-partners,
+  .about-clients{
+    color: #000000;
+  }
+
+  .logo-row.logo-row-white{
+    height: 0;
+    opacity: 0;
+  }
+
+  .logo-row.logo-row-black{
+    height: auto;
+    opacity: 1;
+  }
+
+  .about-testimonial {
+    color: #000000;
+
+    .title {
+      span {
+      }
+    }
+    .testimonial-slide {
+      .img {
+        background-blend-mode: luminosity;
+        background-color: #ffffff;
+
+        img {
+          max-width: 100%;
+          visibility: hidden;
+        }
+
+        &:after {
+          background: linear-gradient(180deg, rgba(100, 100, 100, 0) 62.03%, rgba(0, 0, 0, 0.8) 90%);
+        }
+      }
+
+      .data-container {
+      }
+
+      .data {
+        color: #000000;
+        .logo {
+          position: relative;
+          margin-left: 20px;
+          padding-left: 21px;
+
+          .logo-white {
+            display: none;
+          }
+          .logo-black {
+            display: block;
+          }
+
+          &:before {
+            background-color: #000000;
+          }
+        }
+        .societa {
+          color: #000000;
+        }
+      }
+    }
+
+    .swiper-buttons {
+      .swiper-pagination {
+        .swiper-pagination-bullet {
+          background-color: #8D8D8D;
+        }
+
+        .swiper-pagination-bullet-active {
+          background-color: #000000;
+        }
+      }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      svg{
+        circle{
+          fill: #000000;
+        }
+        path{
+          fill: #ffffff;
+        }
+      }
+    }
+
+  }
+
 
   /* FOOTER */
   .site-footer .row-sentence,

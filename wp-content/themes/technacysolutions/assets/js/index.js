@@ -24,6 +24,20 @@ document.addEventListener("DOMContentLoaded", () => {
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   //HOME PAGE
   if (document.body.classList.contains('home')){
+    // 1° section: Controllo dimensione video
+    var elem_video_cont = document.querySelector('.home-intro-top-hover-video');
+    var elem_video = document.querySelector('.home-intro-top-hover-video video');
+    if(elem_video.offsetWidth < elem_video_cont.offsetWidth){
+      elem_video.style.width = elem_video_cont.offsetWidth + 'px';
+    }
+    window.addEventListener("resize", function (ev) {
+      if(elem_video.offsetWidth < elem_video_cont.offsetWidth){
+        elem_video.style.width = elem_video_cont.offsetWidth + 'px';
+      }
+    });
+
+
+    // 2° section: Animazione
     var controller = new ScrollMagic.Controller({
       globalSceneOptions: {
         triggerHook: 0.05,
@@ -43,6 +57,22 @@ document.addEventListener("DOMContentLoaded", () => {
       .setPin(slide, { pushFollowers: false });
 
     controller.addScene([scenaTxt, scene]);
+
+    // 3° section: category
+    // define movement of panels
+    var wipeAnimation = new TimelineMax()
+      .fromTo(".category-section .panel.panel-2", 1, {y:  "100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
+    // create scene to pin and link animation
+    new ScrollMagic.Scene({
+      triggerElement: "#pinCategorySection",
+      triggerHook: "onLeave",
+      duration: "300%"
+    })
+      .setPin("#pinCategorySection")
+      .setTween(wipeAnimation)
+      .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
   }
 
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -65,6 +95,23 @@ document.addEventListener("DOMContentLoaded", () => {
       .setTween(wipeAnimation)
       .addIndicators() // add indicators (requires plugin)
       .addTo(controller);
+
+    var wipeAnimation = new TimelineMax()
+      .fromTo(".sections-from-bottom .panel.panel-2", 1, {y:  "100%"}, {y: "0%", ease: Linear.easeNone})
+      .fromTo(".sections-from-bottom .panel.panel-3", 1, {y:  "100%"}, {y: "0%", ease: Linear.easeNone})
+    ; // in from top
+
+    // create scene to pin and link animation
+    new ScrollMagic.Scene({
+      triggerElement: "#pinSectionFromBottom",
+      triggerHook: "onLeave",
+      duration: "300%"
+    })
+      .setPin("#pinSectionFromBottom")
+      .setTween(wipeAnimation)
+      .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+
 
     var about_we_are_tech = document.querySelector('.about-intro-top-hover-testo');
     if (about_we_are_tech) {
@@ -93,7 +140,6 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       });
     }
-
 
     var video_hover = document.querySelectorAll('.js-video-hover');
     var obj_video = document.querySelector('.js-video');
@@ -129,17 +175,6 @@ document.addEventListener("DOMContentLoaded", () => {
       .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
       .addTo(controller);
 
-    // Inview elementi
-    jQuery('.inview-elem').on('inview', function (event, isInView) {
-      if (isInView) {
-        // element is now visible in the viewport
-        jQuery(this).addClass('is-inview-elem');
-      } else {
-        // element has gone out of viewport
-        // $(this).removeClass('is-inview-elem');
-      }
-    });
-
   }
 
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -161,5 +196,18 @@ document.addEventListener("DOMContentLoaded", () => {
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   /// PAROLE IN FONDO
   jQuery("[data-paroller-factor]").paroller();
+
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  // Inview elementi
+  jQuery('.inview-elem').on('inview', function (event, isInView) {
+    if (isInView) {
+      // element is now visible in the viewport
+      jQuery(this).addClass('is-inview-elem');
+    } else {
+      // element has gone out of viewport
+      // $(this).removeClass('is-inview-elem');
+    }
+  });
 
 });
