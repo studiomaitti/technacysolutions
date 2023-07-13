@@ -290,6 +290,8 @@ body {
       line-height: 150%;
       position: absolute;
 
+      display: none;
+
       a {
         display: inline-block;
         padding-left: 6px;
@@ -379,9 +381,14 @@ body {
     width: 100%;
 
     video {
-      position: absolute;
-      //width: 100%;
       min-height: 100%;
+      left: 0;
+      height: auto;
+      object-fit: cover;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      //min-height: 100%;
     }
 
     .home-intro-top-hover-testo {
@@ -522,6 +529,30 @@ body {
   align-items: center;
   gap: -120px;
   flex-shrink: 0;
+}
+
+
+.category-section{
+  overflow: hidden;
+}
+.effetto-fascia-rossa {
+  background-color: #FC0606;
+  border-radius: 50px;
+  height: 120%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  transition-delay: 250ms;
+  transition: height 2000ms ease-in-out, width 2000ms ease-in-out, top 2000ms ease-in-out, opacity 3000ms ease-in-out;
+  top: 0%;
+  width: 110%;
+
+  &.is-inview{
+    height: 0px;
+    opacity: 0;
+    top: 17%;
+    width: 0px;
+  }
 }
 
 .sections-from-bottom,
@@ -994,6 +1025,7 @@ body {
   .testo {
     margin: auto;
     text-transform: uppercase;
+    z-index: 1;
 
     .sent-1 {
       color: #FFF;
@@ -1002,7 +1034,7 @@ body {
       font-size: 4.8vw;
       font-style: italic;
       font-weight: 300;
-      line-height: 110%;
+      line-height: 1.1;
     }
 
     .sent-2 {
@@ -1010,10 +1042,119 @@ body {
       font-size: 96px;
       font-size: 4.8vw;
       font-weight: 800;
-      line-height: 105px;
+      line-height: 1.1;
       letter-spacing: 0em;
       margin: auto;
       text-align: left;
+    }
+  }
+
+  .country-list{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    .country-1{
+      font-family: "ivypresto-display", serif;
+      font-size: 4vw;
+      font-style: italic;
+      font-weight: 300;
+      left: 10%;
+      line-height: 1;
+      position: absolute;
+      top: 10%;
+    }
+    .country-2{
+      font-family: 'Neue Machina', sans-serif;
+      font-size: 4vw;
+      font-style: italic;
+      font-weight: 800;
+      left: 15%;
+      line-height: 1;
+      position: absolute;
+      top: 20%;
+    }
+    .country-3{
+      bottom: 18%;
+      font-family: "ivypresto-display", serif;
+      font-size: 4vw;
+      font-style: italic;
+      font-weight: 300;
+      left: 10%;
+      line-height: 1;
+      position: absolute;
+    }
+    .country-4{
+      bottom: 10%;
+      font-family: 'Neue Machina', sans-serif;
+      font-size: 4vw;
+      font-style: italic;
+      font-weight: 800;
+      left: 25%;
+      line-height: 1;
+      position: absolute;
+    }
+    .country-5{
+      bottom: 35%;
+      font-family: 'Neue Machina', sans-serif;
+      font-size: 4vw;
+      font-style: italic;
+      font-weight: 800;
+      left: 50%;
+      line-height: 1;
+      position: absolute;
+    }
+    .country-6{
+      font-family: "ivypresto-display", serif;
+      font-size: 4vw;
+      font-style: italic;
+      font-weight: 300;
+      right: 30%;
+      line-height: 1;
+      position: absolute;
+      top: 18%;
+    }
+    .country-7{
+      font-family: "ivypresto-display", serif;
+      font-size: 4vw;
+      font-style: italic;
+      font-weight: 300;
+      right: 20%;
+      line-height: 1;
+      position: absolute;
+      top: 65%;
+    }
+    .country-8{
+      bottom: 55%;
+      font-family: 'Neue Machina', sans-serif;
+      font-size: 4vw;
+      font-style: italic;
+      font-weight: 800;
+      right: 10%;
+      line-height: 1;
+      position: absolute;
+    }
+    .country-9{
+      bottom: 85%;
+      font-family: 'Neue Machina', sans-serif;
+      font-size: 4vw;
+      font-style: italic;
+      font-weight: 800;
+      right: 5%;
+      line-height: 1;
+      position: absolute;
+    }
+    .country-10{
+      bottom: 5%;
+      font-family: 'Neue Machina', sans-serif;
+      font-size: 4vw;
+      font-style: italic;
+      font-weight: 800;
+      right: 5%;
+      line-height: 1;
+      position: absolute;
     }
   }
 }

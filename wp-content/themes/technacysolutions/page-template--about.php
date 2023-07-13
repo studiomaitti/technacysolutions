@@ -18,7 +18,7 @@ get_header();
     </div>
 
     <div class="testo-container">
-      <div class="testo">
+      <div class="testo inview-elem inview-elem-top">
         WE ARE <span>TECHNACY</span>
       </div>
     </div>
@@ -36,10 +36,10 @@ get_header();
     <div class="panel panel-1">
       <div class="panel-content">
         <div class="content-width">
-          <div class="sent-1">We crush</div>
-          <div class="sent-2">every challenge <span class="sent-amp">&amp;</span></div>
-          <div class="sent-3">
-            <span class="sent-3-1">deliver with </span> <span class="sent-3-2">style
+          <div class="sent-1 inview-elem inview-elem-top td-400">We crush</div>
+          <div class="sent-2 inview-elem inview-elem-top td-550">every challenge <span class="sent-amp">&amp;</span></div>
+          <div class="sent-3 inview-elem inview-elem-top td-620">
+            <span class="sent-3-1 inview-elem inview-elem-top td-740">deliver with </span> <span class="sent-3-2 inview-elem inview-elem-top">style
             <span class="video">
               <video src="/wp-content/uploads/video-art.mp4" autoplay muted loop></video>
             </span>
@@ -58,13 +58,13 @@ get_header();
     <div class="panel panel-2">
       <div class="panel-content">
         <div class="content-width">
-          <div class="sent-1">No project is</div>
-          <div class="sent-2">off-<br>limits-</div>
-          <div class="sent-3">we've been<br> rocking <span class="video">
+          <div class="sent-1 inview-elem inview-elem-top td-620">No project is </div>
+          <div class="sent-2 inview-elem inview-elem-top td-400">off-<br>limits-</div>
+          <div class="sent-3 inview-elem inview-elem-top td-550">we've been<br> rocking <span class="video">
               <video src="/wp-content/uploads/video-art.mp4" autoplay muted loop></video>
             </span>
           </div>
-          <div class="sent-4">it for a<br> decade!</div>
+          <div class="sent-4 inview-elem inview-elem-top td-550">it for a<br> decade!</div>
         </div>
         <div class="dot dot-arrow">
           <span class="blob white"></span>
@@ -76,26 +76,53 @@ get_header();
     </div>
   </section>
 
+<?php
+$txt = 'Our clients have been with us since the beginning, hooked on our top-notch solutions, service and transparency.<br><br>we are here to turn your ideas into reality!';
+$a_tmp = explode(' ', $txt);
+$a_tmp_finale = [];
+foreach ($a_tmp as $k => $v) {
+  if ($k % 4 == 0) {
+    $a_tmp_finale[] = '<span class="word-mod inview-elem inview-elem-left">' . $v . '</span>';
+  }
+  else if ($k % 3 == 0) {
+    $a_tmp_finale[] = '<span class="slide-from-top delay-500">' . $v . '</span>';
+  }
+  else if ($k % 2 == 0) {
+    $a_tmp_finale[] = '<span class="slide-from-top delay-700">' . $v . '</span>';
+  }
+  else {
+    $a_tmp_finale[] = '<span class="slide-from-top delay-900">' . $v . '</span>';
+  }
+}
+
+?>
   <section class="about-section about-our-client-have">
     <div class="testo-container">
-      <div class="content-width testo">
-        Our clients have been with us since the beginning, hooked on our top-notch solutions, service and transparency.<br>
-        <br> we are here to turn your ideas into reality!
-      </div>
+      <div class="content-width testo"><?php echo implode(' ', $a_tmp_finale); ?></div>
     </div>
   </section>
 
-
-  <section class="sections-from-bottom"  id="pinSectionFromBottom">
+  <section class="sections-from-bottom" id="pinSectionFromBottom">
     <section class="panel panel-1 about-section about-world">
       <div class="video">
         <video class="js-video" src="/wp-content/uploads/depositphotos_355960884-stock-video-wireless-internet-data-wifi-connectivity.mp4" autoplay muted loop></video>
       </div>
 
       <div class="testo-container">
-        <div class="content-width testo">
+        <div class="content-width testo inview-elem inview-elem-top">
           <div class="sent-1"><span class="js-video-hover">We work</span></div>
           <div class="sent-2"><span class="js-video-hover">Globally</span></div>
+        </div>
+        <div class="country-list">
+          <div class="country country-1 inview-elem-top td-550">Saudi</div>
+          <div class="country country-2 inview-elem-top td-740">Bahrain</div>
+          <div class="country country-3 inview-elem-bottom td-620">Qatar</div>
+          <div class="country country-4 inview-elem-bottom td-400">Oman</div>
+          <div class="country country-5 inview-elem-bottom td-200">UAE</div>
+          <div class="country country-6 inview-elem-top td-550">Holland</div>
+          <div class="country country-7 inview-elem-bottom td-700">Mauritius</div>
+          <div class="country country-8 inview-elem-right td-200">Seychelles</div>
+          <div class="country country-9 inview-elem-right td-710">Egypt</div>
         </div>
       </div>
     </section>
@@ -105,47 +132,101 @@ get_header();
         <div class="content-width testo">
           <div class="title">Partners</div>
           <div class="logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Active.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-amino.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-amt.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-bns.png" alt=""></div>
-            <div class="img-i img-i-last"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-broadback.png" alt=""></div>
+            <div class="img-i img-i-first">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Active.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-amino.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-amt.png" alt=""></div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-bns.png" alt=""></div>
+            <div class="img-i img-i-last">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-broadback.png" alt="">
+            </div>
           </div>
           <div class="logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-CGC.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-cubedots.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Dell.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Fortinet.png" alt=""></div>
-            <div class="img-i img-i-last"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Harmonic.png" alt=""></div>
+            <div class="img-i img-i-first">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-CGC.png" alt=""></div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-cubedots.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Dell.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Fortinet.png" alt="">
+            </div>
+            <div class="img-i img-i-last">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Harmonic.png" alt="">
+            </div>
           </div>
           <div class="logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-IPmagic.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-JMC-Group.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Min-erva.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Notomi.png" alt=""></div>
-            <div class="img-i img-i-last"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Visual.png" alt=""></div>
+            <div class="img-i img-i-first">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-IPmagic.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-JMC-Group.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Min-erva.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Notomi.png" alt="">
+            </div>
+            <div class="img-i img-i-last">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Visual.png" alt="">
+            </div>
           </div>
 
           <div class="logo-row logo-row-black inview-elem inview-elem-top">
-            <div class="img-i img-i-first"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Active.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-amino.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-amt.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-bns.png" alt=""></div>
-            <div class="img-i img-i-last"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-broadback.png" alt=""></div>
+            <div class="img-i img-i-first">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Active.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-amino.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-amt.png" alt=""></div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-bns.png" alt=""></div>
+            <div class="img-i img-i-last">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-broadback.png" alt="">
+            </div>
           </div>
           <div class="logo-row logo-row-black inview-elem inview-elem-top">
-            <div class="img-i img-i-first"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-CGC.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-cubedots.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Dell.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Fortinet.png" alt=""></div>
-            <div class="img-i img-i-last"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Harmonic.png" alt=""></div>
+            <div class="img-i img-i-first">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-CGC.png" alt=""></div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-cubedots.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Dell.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Fortinet.png" alt="">
+            </div>
+            <div class="img-i img-i-last">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Harmonic.png" alt="">
+            </div>
           </div>
           <div class="logo-row logo-row-black inview-elem inview-elem-top">
-            <div class="img-i img-i-first"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-IPmagic.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-JMC-Group.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Min-erva.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Notomi.png" alt=""></div>
-            <div class="img-i img-i-last"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Visual.png" alt=""></div>
+            <div class="img-i img-i-first">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-IPmagic.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-JMC-Group.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Min-erva.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Notomi.png" alt="">
+            </div>
+            <div class="img-i img-i-last">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Visual.png" alt="">
+            </div>
           </div>
 
 
@@ -159,68 +240,131 @@ get_header();
         <div class="content-width testo">
           <div class="title">Clients</div>
           <div class="logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-bairport.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-batelco.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-BIC.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-BTC.png" alt=""></div>
-            <div class="img-i img-i-last"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-ccp.png" alt=""></div>
+            <div class="img-i img-i-first">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-bairport.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-batelco.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-BIC.png" alt=""></div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-BTC.png" alt=""></div>
+            <div class="img-i img-i-last">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-ccp.png" alt=""></div>
           </div>
           <div class="logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-Emar.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-F1.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-formula-E.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-gulfir.png" alt=""></div>
-            <div class="img-i img-i-last"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-icad.png" alt=""></div>
+            <div class="img-i img-i-first">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-Emar.png" alt=""></div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-F1.png" alt=""></div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-formula-E.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-gulfir.png" alt="">
+            </div>
+            <div class="img-i img-i-last">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-icad.png" alt=""></div>
           </div>
           <div class="logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-Kapsark.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-kohei.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-lambo.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-orange.png" alt=""></div>
-            <div class="img-i img-i-last"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-stc.png" alt=""></div>
+            <div class="img-i img-i-first">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-Kapsark.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-kohei.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-lambo.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-orange.png" alt="">
+            </div>
+            <div class="img-i img-i-last">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-stc.png" alt=""></div>
           </div>
           <div class="logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-trined.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-vodafon.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-whirpool.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-youth.png" alt=""></div>
-            <div class="img-i img-i-last"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-zain.png" alt=""></div>
+            <div class="img-i img-i-first">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-trined.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-vodafon.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-whirpool.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-youth.png" alt="">
+            </div>
+            <div class="img-i img-i-last">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-zain.png" alt=""></div>
           </div>
 
           <div class="logo-row logo-row-black inview-elem inview-elem-top">
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-bairport.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-batelco.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-BIC.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-BTC.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-ccp.png" alt=""></div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-bairport.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-batelco.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-BIC.png" alt=""></div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-BTC.png" alt=""></div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-ccp.png" alt=""></div>
           </div>
           <div class="logo-row logo-row-black inview-elem inview-elem-top">
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-Emar.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-F1.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-formula-E.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-gulfir.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-icad.png" alt=""></div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-Emar.png" alt=""></div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-F1.png" alt=""></div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-formula-E.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-gulfir.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-icad.png" alt=""></div>
           </div>
           <div class="logo-row logo-row-black inview-elem inview-elem-top">
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-Kapsark.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-kohei.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-lambo.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-orange.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-stc.png" alt=""></div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-Kapsark.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-kohei.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-lambo.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-orange.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-stc.png" alt=""></div>
           </div>
           <div class="logo-row logo-row-black inview-elem inview-elem-top">
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-trined.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-vodafon.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-whirpool.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-youth.png" alt=""></div>
-            <div class="img-i"><img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-zain.png" alt=""></div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-trined.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-vodafon.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-whirpool.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-youth.png" alt="">
+            </div>
+            <div class="img-i">
+              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-zain.png" alt=""></div>
           </div>
         </div>
       </div>
     </section>
-
-
   </section>
+
   <section class="about-section about-testimonial">
     <div class="testo-container">
       <div class="content-width testo">
@@ -291,7 +435,7 @@ get_header();
                   </div>
                   <div class="societa">
                     <div class="container">
-                      <div class="nome">Nani Butti - Director, Information System </div>
+                      <div class="nome">Nani Butti - Director, Information System</div>
                       <div class="societa">Information Systems Directorate</div>
                     </div>
                     <!--
@@ -312,14 +456,18 @@ get_header();
 
           <div class="swiper-buttons">
             <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"><svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="swiper-button-prev">
+              <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="24.5" cy="24" r="24" fill="white"/>
                 <path d="M24.5 16L23.09 17.41L28.67 23H16.5V25H28.67L23.09 30.59L24.5 32L32.5 24L24.5 16Z" fill="black"/>
-              </svg></div>
-            <div class="swiper-button-next"><svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="24.5" cy="24" r="24" fill="white"/>
                 <path d="M24.5 16L23.09 17.41L28.67 23H16.5V25H28.67L23.09 30.59L24.5 32L32.5 24L24.5 16Z" fill="black"/>
-              </svg></div>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
@@ -328,7 +476,7 @@ get_header();
 
 <?php
 $a = [];
-for($i = 0 ; $i < 20; $i++){
+for ($i = 0; $i < 20; $i++) {
   $a[] = '<a href="/projects">projects</a>';
 }
 ?>

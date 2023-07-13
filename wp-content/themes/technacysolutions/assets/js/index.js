@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //HOME PAGE
   if (document.body.classList.contains('home')){
     // 1° section: Controllo dimensione video
+    /*
     var elem_video_cont = document.querySelector('.home-intro-top-hover-video');
     var elem_video = document.querySelector('.home-intro-top-hover-video video');
     if(elem_video.offsetWidth < elem_video_cont.offsetWidth){
@@ -35,7 +36,17 @@ document.addEventListener("DOMContentLoaded", () => {
         elem_video.style.width = elem_video_cont.offsetWidth + 'px';
       }
     });
-
+    */
+    jQuery('.effetto-fascia-rossa').on('inview', function (event, isInView) {
+      if (isInView) {
+        // element is now visible in the viewport
+        jQuery(this).addClass('is-inview');
+      } else {
+        jQuery(this).removeClass('is-inview');
+        // element has gone out of viewport
+        // $(this).removeClass('is-inview-elem');
+      }
+    });
 
     // 2° section: Animazione
     var controller = new ScrollMagic.Controller({
@@ -147,13 +158,75 @@ document.addEventListener("DOMContentLoaded", () => {
       video_hover.forEach(function (elem) {
         elem.onmouseover = function (event) {
           obj_video.pause();
+
+          document.querySelectorAll('.country').forEach(function (elem) {
+            elem.classList.add('is-inview-elem');
+          })
         };
 
         elem.onmouseout = function (event) {
           obj_video.play();
+
+          var a_pos = ['country-1', 'country-2', 'country-3', 'country-4', 'country-5', 'country-6', 'country-7', 'country-8', 'country-9', 'country-10'];
+          shuffle_array(a_pos);
+
+          document.querySelectorAll('.country').forEach(function (elem, key) {
+            elem.classList.remove('is-inview-elem');
+
+            /*
+            window.setTimeout(function () {
+              var prefix = "country-";
+              var classes = elem.className.split(" ").filter(function(c) {
+                return c.lastIndexOf(prefix, 0) !== 0;
+              });
+              elem.className = classes.join(" ").trim();
+              console.log(a_pos[key]);
+              //elem.classList.add(a_pos[key]);
+            }, 1200);
+            +/
+             */
+          })
+
         };
       })
     }
+
+    /*
+    jQuery(".about-our-client-have .testo").lettering('words');
+    var all_words = document.querySelectorAll(".about-our-client-have .testo span");
+    if(all_words.length){
+      all_words.forEach(function(elem, key){
+        elem.classList.add('word-mod-i');
+
+        if(key%4 == 0){
+          elem.classList.add('word-mod');
+          elem.classList.add('inview-elem');
+          elem.classList.add('inview-elem-left');
+        } else if(key%3 == 0){
+          elem.classList.add('slide-from-top');
+          elem.classList.add('delay-500');
+        } else if(key%2 == 0){
+          elem.classList.add('slide-from-top');
+          elem.classList.add('delay-700');
+        } else {
+          elem.classList.add('slide-from-top');
+          elem.classList.add('delay-900');
+        }
+      });
+
+
+    }
+    */
+
+  jQuery('.about-our-client-have .testo .slide-from-top').on('inview', function (event, isInView) {
+      if (isInView) {
+        // element is now visible in the viewport
+          jQuery(this).addClass('slide-from-top-delay');
+      } else {
+        // element has gone out of viewport
+        // $(this).removeClass('is-inview-elem');
+      }
+    });
 
   }
 
@@ -211,3 +284,21 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
+function shuffle_array(array) {
+  let currentIndex = array.length,  randomIndex;
+
+  // While there remain elements to shuffle.
+  while (currentIndex != 0) {
+
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}

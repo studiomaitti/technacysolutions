@@ -69,6 +69,9 @@
 
 //////////////////////////////
 /// ANIMAZIONE INVIEW
+//inview-elem inview-elem-bottom
+//inview-elem inview-elem-left
+//inview-elem inview-elem-right
 //inview-elem inview-elem-top
 .inview-elem-top {
   position: relative;
@@ -76,6 +79,7 @@
   top: -40px;
   transition: all 850ms ease-in-out;
 }
+
 .inview-elem-top.is-inview-elem {
   opacity: 1;
   top: 0;
@@ -87,6 +91,7 @@
   left: -40px;
   transition: all 850ms ease-in-out;
 }
+
 .inview-elem-left.is-inview-elem {
   opacity: 1;
   left: 0;
@@ -98,11 +103,11 @@
   right: -40px;
   transition: all 850ms ease-in-out;
 }
+
 .inview-elem-right.is-inview-elem {
   opacity: 1;
   right: 0;
 }
-
 
 .inview-elem-bottom {
   position: relative;
@@ -110,7 +115,72 @@
   bottom: -40px;
   transition: all 850ms ease-in-out;
 }
+
 .inview-elem-bottom.is-inview-elem {
   opacity: 1;
   bottom: 0;
+}
+
+
+.td-200{
+  transition-delay: 200ms;
+}
+.td-400{
+  transition-delay: 400ms;
+}
+.td-550{
+  transition-delay: 550ms;
+}
+.td-620{
+  transition-delay: 620ms;
+}
+.td-700{
+  transition-delay: 700ms;
+}
+.td-710{
+  transition-delay: 710ms;
+}
+.td-740{
+  transition-delay: 740ms;
+}
+
+//////////////////////////////////
+.slide-from-top {
+  opacity: 0;
+  top: -40px;
+}
+.slide-from-top-delay {
+  opacity: 0;
+  top: -40px;
+  position: relative;
+  animation-duration: 500ms;
+  animation-name: slide-from-top;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 200ms;
+}
+
+.slide-from-top-delay.delay-500 {
+  animation-delay: 500ms;
+}
+
+.slide-from-top-delay.delay-700 {
+  animation-delay: 700ms;
+}
+
+.slide-from-top-delay.delay-900 {
+  animation-delay: 900ms;
+}
+
+@keyframes slide-from-top {
+  from {
+    opacity: 0;
+    top: -40px;
+  }
+
+  to {
+    opacity: 1;
+    top: 0;
+  }
 }

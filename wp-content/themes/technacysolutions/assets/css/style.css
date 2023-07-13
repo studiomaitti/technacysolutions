@@ -1024,6 +1024,73 @@ table.wp-calendar-table caption {
   bottom: 0;
 }
 
+.td-200 {
+  transition-delay: 200ms;
+}
+
+.td-400 {
+  transition-delay: 400ms;
+}
+
+.td-550 {
+  transition-delay: 550ms;
+}
+
+.td-620 {
+  transition-delay: 620ms;
+}
+
+.td-700 {
+  transition-delay: 700ms;
+}
+
+.td-710 {
+  transition-delay: 710ms;
+}
+
+.td-740 {
+  transition-delay: 740ms;
+}
+
+.slide-from-top {
+  opacity: 0;
+  top: -40px;
+}
+
+.slide-from-top-delay {
+  opacity: 0;
+  top: -40px;
+  position: relative;
+  animation-duration: 500ms;
+  animation-name: slide-from-top;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 200ms;
+}
+
+.slide-from-top-delay.delay-500 {
+  animation-delay: 500ms;
+}
+
+.slide-from-top-delay.delay-700 {
+  animation-delay: 700ms;
+}
+
+.slide-from-top-delay.delay-900 {
+  animation-delay: 900ms;
+}
+
+@keyframes slide-from-top {
+  from {
+    opacity: 0;
+    top: -40px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
 body {
   background-color: #000;
   transition: all 0.4s linear;
@@ -1268,6 +1335,7 @@ body {
   left: 0;
   line-height: 150%;
   position: absolute;
+  display: none;
 }
 .menu-container .menu-area .download-email a {
   display: inline-block;
@@ -1345,8 +1413,13 @@ body {
   width: 100%;
 }
 .home-intro-top .home-intro-top-hover video {
-  position: absolute;
   min-height: 100%;
+  left: 0;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  top: 0;
 }
 .home-intro-top .home-intro-top-hover .home-intro-top-hover-testo {
   background-color: #FC0606;
@@ -1463,6 +1536,29 @@ body {
   align-items: center;
   gap: -120px;
   flex-shrink: 0;
+}
+
+.category-section {
+  overflow: hidden;
+}
+
+.effetto-fascia-rossa {
+  background-color: #FC0606;
+  border-radius: 50px;
+  height: 120%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  transition-delay: 250ms;
+  transition: height 2000ms ease-in-out, width 2000ms ease-in-out, top 2000ms ease-in-out, opacity 3000ms ease-in-out;
+  top: 0%;
+  width: 110%;
+}
+.effetto-fascia-rossa.is-inview {
+  height: 0px;
+  opacity: 0;
+  top: 17%;
+  width: 0px;
 }
 
 .sections-from-bottom,
@@ -1877,6 +1973,7 @@ body {
 .about-world .testo {
   margin: auto;
   text-transform: uppercase;
+  z-index: 1;
 }
 .about-world .testo .sent-1 {
   color: #FFF;
@@ -1885,17 +1982,124 @@ body {
   font-size: 4.8vw;
   font-style: italic;
   font-weight: 300;
-  line-height: 110%;
+  line-height: 1.1;
 }
 .about-world .testo .sent-2 {
   font-family: "Neue Machina", sans-serif;
   font-size: 96px;
   font-size: 4.8vw;
   font-weight: 800;
-  line-height: 105px;
+  line-height: 1.1;
   letter-spacing: 0em;
   margin: auto;
   text-align: left;
+}
+.about-world .country-list {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.about-world .country-list .country-1 {
+  font-family: "ivypresto-display", serif;
+  font-size: 4vw;
+  font-style: italic;
+  font-weight: 300;
+  left: 10%;
+  line-height: 1;
+  position: absolute;
+  top: 10%;
+}
+.about-world .country-list .country-2 {
+  font-family: "Neue Machina", sans-serif;
+  font-size: 4vw;
+  font-style: italic;
+  font-weight: 800;
+  left: 15%;
+  line-height: 1;
+  position: absolute;
+  top: 20%;
+}
+.about-world .country-list .country-3 {
+  bottom: 18%;
+  font-family: "ivypresto-display", serif;
+  font-size: 4vw;
+  font-style: italic;
+  font-weight: 300;
+  left: 10%;
+  line-height: 1;
+  position: absolute;
+}
+.about-world .country-list .country-4 {
+  bottom: 10%;
+  font-family: "Neue Machina", sans-serif;
+  font-size: 4vw;
+  font-style: italic;
+  font-weight: 800;
+  left: 25%;
+  line-height: 1;
+  position: absolute;
+}
+.about-world .country-list .country-5 {
+  bottom: 35%;
+  font-family: "Neue Machina", sans-serif;
+  font-size: 4vw;
+  font-style: italic;
+  font-weight: 800;
+  left: 50%;
+  line-height: 1;
+  position: absolute;
+}
+.about-world .country-list .country-6 {
+  font-family: "ivypresto-display", serif;
+  font-size: 4vw;
+  font-style: italic;
+  font-weight: 300;
+  right: 30%;
+  line-height: 1;
+  position: absolute;
+  top: 18%;
+}
+.about-world .country-list .country-7 {
+  font-family: "ivypresto-display", serif;
+  font-size: 4vw;
+  font-style: italic;
+  font-weight: 300;
+  right: 20%;
+  line-height: 1;
+  position: absolute;
+  top: 65%;
+}
+.about-world .country-list .country-8 {
+  bottom: 55%;
+  font-family: "Neue Machina", sans-serif;
+  font-size: 4vw;
+  font-style: italic;
+  font-weight: 800;
+  right: 10%;
+  line-height: 1;
+  position: absolute;
+}
+.about-world .country-list .country-9 {
+  bottom: 85%;
+  font-family: "Neue Machina", sans-serif;
+  font-size: 4vw;
+  font-style: italic;
+  font-weight: 800;
+  right: 5%;
+  line-height: 1;
+  position: absolute;
+}
+.about-world .country-list .country-10 {
+  bottom: 5%;
+  font-family: "Neue Machina", sans-serif;
+  font-size: 4vw;
+  font-style: italic;
+  font-weight: 800;
+  right: 5%;
+  line-height: 1;
+  position: absolute;
 }
 
 .about-partners {

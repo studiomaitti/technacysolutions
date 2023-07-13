@@ -19,10 +19,10 @@ get_header();
   <section class="home-section home-intro-top">
     <div class="home-intro-top-base content-width">
       <div class="home-intro-top-base-testo">
-        <div class="row-ivy">WE ARE TECHNACY</div>
-        <div class="row-neue">A TEAM OF VIBRANT &</div>
-        <div class="row-neue">DYNAMIC CREATIVES</div>
-        <div class="row-ivy">BASED IN BAHRAIN.</div>
+        <div class="row-ivy inview-elem inview-elem-left td-200">WE ARE TECHNACY</div>
+        <div class="row-neue inview-elem inview-elem-left td-400">A TEAM OF VIBRANT &</div>
+        <div class="row-neue inview-elem inview-elem-left td-550">DYNAMIC CREATIVES</div>
+        <div class="row-ivy inview-elem inview-elem-left td-620">BASED IN BAHRAIN.</div>
       </div>
     </div>
 
@@ -48,13 +48,13 @@ get_header();
       </div>
       <div class="home-video-scroll-livello-medio">
         <div class="home-video-scroll-text">
-          <div class="row-ivy">WE DELIVER</div>
-          <div class="row-neue">CUTTING-EDGE</div>
-          <div class="row-ivy">IPTV SOLUTIONS</div>
-          <div class="row-ivy">& DIGITAL EXPERIENCES</div>
-          <div class="row-neue">WELCOME</div>
-          <div class="row-ivy">TO THE NEW</div>
-          <div class="row-neue">DIGITAL ERA</div>
+          <div class="row-ivy inview-elem inview-elem-top td-200">WE DELIVER</div>
+          <div class="row-neue inview-elem inview-elem-top td-400">CUTTING-EDGE</div>
+          <div class="row-ivy inview-elem inview-elem-top td-550">IPTV SOLUTIONS</div>
+          <div class="row-ivy inview-elem inview-elem-top td-620">& DIGITAL EXPERIENCES</div>
+          <div class="row-neue inview-elem inview-elem-top td-700">WELCOME</div>
+          <div class="row-ivy inview-elem inview-elem-top td-710">TO THE NEW</div>
+          <div class="row-neue inview-elem inview-elem-top td-740">DIGITAL ERA</div>
         </div>
       </div>
       <div class="home-video-scroll-livello-top">
@@ -68,20 +68,21 @@ get_header();
     </div>
   </section>
 
+<!--
   <section class="home-section home-fascia-rossa"></section>
+-->
 
-
-  <section class="home-section category-section"  id="pinCategorySection">
+  <section class="home-section category-section" id="pinCategorySection">
     <div class="panel panel-1 home-iptv">
+      <div class="effetto-fascia-rossa">
+      </div>
       <div class="home-iptv-container content-width">
-        <img src="/wp-content/themes/technacysolutions/assets/img/logo-technacy-rosso.svg" alt="Logo">
+        <img class="inview-elem inview-elem-top td-200" src="/wp-content/themes/technacysolutions/assets/img/logo-technacy-rosso.svg" alt="Logo">
         <div class="home-iptv-text">
-          <h2 class="row-ivy">IPTV & MEDIA</h2>
-          <h2 class="row-neue">IPTV & MEDIA</h2>
-          <div class="text">
-            We are shipping thousands products in EMEA market every month and have supported<br>
-            hundreds customers in launching their video services. Technacy enable you to deliver the best<br>
-            of linear broadcast television and IP-based services with a seamless user experience
+          <h2 class="row-ivy inview-elem inview-elem-left td-400">IPTV & MEDIA</h2>
+          <h2 class="row-neue inview-elem inview-elem-right td-550">IPTV & MEDIA</h2>
+          <div class="text inview-elem inview-elem-bottom">
+            We are shipping thousands products in EMEA market every month and have supported<br> hundreds customers in launching their video services. Technacy enable you to deliver the best<br> of linear broadcast television and IP-based services with a seamless user experience
           </div>
         </div>
       </div>
@@ -89,24 +90,21 @@ get_header();
 
     <div class="panel panel-2 home-computer">
       <div class="home-iptv-container content-width">
-        <img src="/wp-content/themes/technacysolutions/assets/img/logo-technacy-full.svg" alt="Logo">
+        <img class="inview-elem inview-elem-top td-200" src="/wp-content/themes/technacysolutions/assets/img/logo-technacy-full.svg" alt="Logo">
         <div class="home-iptv-text">
-          <h2 class="row-ivy">DIGITAL</h2>
-          <h2 class="row-neue">COMMUNICATION</h2>
-          <div class="text">
-            We are shipping thousands products in EMEA market every month and have supported<br>
-            hundreds customers in launching their video services. Technacy enable you to deliver the best<br>
-            of linear broadcast television and IP-based services with a seamless user experience
+          <h2 class="row-ivy inview-elem inview-elem-left td-400">DIGITAL</h2>
+          <h2 class="row-neue inview-elem inview-elem-right td-550">COMMUNICATION</h2>
+          <div class="text inview-elem inview-elem-bottom">
+            We are shipping thousands products in EMEA market every month and have supported<br> hundreds customers in launching their video services. Technacy enable you to deliver the best<br> of linear broadcast television and IP-based services with a seamless user experience
           </div>
         </div>
       </div>
     </div>
   </section>
 
-
 <?php
 $a = [];
-for($i = 0 ; $i < 30; $i++){
+for ($i = 0; $i < 30; $i++) {
   $a[] = '<a href="/about">about</a>';
 }
 ?>
