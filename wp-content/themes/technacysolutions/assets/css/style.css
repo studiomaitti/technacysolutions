@@ -1363,6 +1363,48 @@ body {
 /** *********************
   HOME PAGE
  ************************ */
+.home-section .row-i span.txt {
+  display: inline-block;
+  position: relative;
+}
+.home-section .row-i span.txt span.bg {
+  background-color: #FC0606;
+  content: "";
+  display: block;
+  height: calc(100% + 2rem);
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transform: translate(-2rem, -1rem);
+  transition: width 200ms ease-in-out, opacity 300ms ease-in-out;
+  z-index: -1;
+  width: 0;
+}
+.home-section .row-i span.txt:hover span.bg {
+  opacity: 1;
+  width: calc(100% + 4rem);
+}
+.home-section .row-i.row-1 {
+  margin-bottom: 1.5rem;
+}
+.home-section .row-i.row-1 span.txt span.bg {
+  display: none;
+}
+.home-section .row-i.row-2 {
+  margin-bottom: 1rem;
+}
+.home-section .row-i.row-2 span.txt span.bg {
+  display: none;
+  height: calc(100% + 20px);
+}
+.home-section .row-i.row-3 {
+  margin-bottom: 1rem;
+}
+.home-section .row-i.row-3 span.txt span.bg {
+  display: none;
+  height: calc(100% + 20px);
+}
 .home-section .row-ivy {
   font-family: "ivypresto-display", serif;
   font-size: 96px;
@@ -1371,7 +1413,7 @@ body {
   font-style: italic;
   font-weight: 300;
   line-height: 110px;
-  line-height: 1.2;
+  line-height: 1;
   letter-spacing: 0em;
 }
 .home-section .row-neue {
@@ -1381,7 +1423,7 @@ body {
   font-size: 3.8vw;
   font-weight: 800;
   line-height: 110px;
-  line-height: 1.2;
+  line-height: 1;
   letter-spacing: 0em;
 }
 
@@ -1395,6 +1437,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  position: relative;
+  z-index: 1;
 }
 .home-intro-top .home-intro-top-base .home-intro-top-base-testo {
   margin: auto;
@@ -1406,9 +1450,7 @@ body {
   flex-direction: column;
   height: 100%;
   left: 0;
-  opacity: 0;
   position: absolute;
-  transition: all 0.4s ease-in-out;
   top: 0;
   width: 100%;
 }
@@ -1417,9 +1459,15 @@ body {
   left: 0;
   height: auto;
   object-fit: cover;
+  opacity: 0;
   position: absolute;
   width: 100%;
   top: 0;
+  transition: all 0.4s ease-in-out;
+  transition-delay: 250ms;
+}
+.home-intro-top .home-intro-top-hover video.selected {
+  opacity: 1;
 }
 .home-intro-top .home-intro-top-hover .home-intro-top-hover-testo {
   background-color: #FC0606;
@@ -1437,12 +1485,6 @@ body {
   padding: 0 20px;
   transition: all 1s ease-in-out;
   z-index: 1;
-}
-.home-intro-top:hover .home-intro-top-hover {
-  opacity: 1;
-}
-.home-intro-top:hover .home-intro-top-hover-testo {
-  opacity: 1;
 }
 
 .home-video-scroll {

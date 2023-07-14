@@ -327,6 +327,70 @@ body {
   HOME PAGE
  ************************ */
 .home-section {
+  .row-i {
+    span.txt {
+      display: inline-block;
+      position: relative;
+
+      span.bg {
+        background-color: #FC0606;
+        content: '';
+        display: block;
+        height: calc(100% + 2rem);
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        transform: translate(-2rem, -1rem);
+        transition: width 200ms ease-in-out, opacity 300ms ease-in-out;
+        z-index: -1;
+        width: 0;
+
+      }
+
+      &:hover {
+        span.bg {
+          opacity: 1;
+          width: calc(100% + 4rem);
+        }
+      }
+    }
+  }
+
+  .row-i {
+    &.row-1 {
+      margin-bottom: 1.5rem;
+
+      span.txt {
+        span.bg {
+          display: none;
+        }
+      }
+    }
+
+    &.row-2 {
+      margin-bottom: 1rem;
+
+      span.txt {
+        span.bg {
+          display: none;
+          height: calc(100% + 20px);
+        }
+      }
+    }
+
+    &.row-3 {
+      margin-bottom: 1rem;
+
+      span.txt {
+        span.bg {
+          display: none;
+          height: calc(100% + 20px);
+        }
+      }
+    }
+  }
+
   .row-ivy {
     font-family: "ivypresto-display", serif;
     font-size: 96px;
@@ -335,7 +399,7 @@ body {
     font-style: italic;
     font-weight: 300;
     line-height: 110px;
-    line-height: 1.2;
+    line-height: 1;
     letter-spacing: 0em;
   }
 
@@ -346,7 +410,7 @@ body {
     font-size: 3.8vw;
     font-weight: 800;
     line-height: 110px;
-    line-height: 1.2;
+    line-height: 1;
     letter-spacing: 0em;
   }
 }
@@ -361,6 +425,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    position: relative;
+    z-index: 1;
 
     .home-intro-top-base-testo {
       margin: auto;
@@ -374,9 +440,7 @@ body {
     flex-direction: column;
     height: 100%;
     left: 0;
-    opacity: 0;
     position: absolute;
-    transition: all 0.4s ease-in-out;
     top: 0;
     width: 100%;
 
@@ -385,10 +449,17 @@ body {
       left: 0;
       height: auto;
       object-fit: cover;
+      opacity: 0;
       position: absolute;
       width: 100%;
       top: 0;
+      transition: all 0.4s ease-in-out;
+      transition-delay: 250ms;
+
       //min-height: 100%;
+      &.selected {
+        opacity: 1;
+      }
     }
 
     .home-intro-top-hover-testo {
@@ -409,16 +480,6 @@ body {
       z-index: 1;
     }
 
-  }
-
-  &:hover {
-    .home-intro-top-hover {
-      opacity: 1;
-    }
-
-    .home-intro-top-hover-testo {
-      opacity: 1;
-    }
   }
 }
 
@@ -532,9 +593,10 @@ body {
 }
 
 
-.category-section{
+.category-section {
   overflow: hidden;
 }
+
 .effetto-fascia-rossa {
   background-color: #FC0606;
   border-radius: 50px;
@@ -547,7 +609,7 @@ body {
   top: 0%;
   width: 110%;
 
-  &.is-inview{
+  &.is-inview {
     height: 0px;
     opacity: 0;
     top: 17%;
@@ -1049,14 +1111,14 @@ body {
     }
   }
 
-  .country-list{
+  .country-list {
     height: 100%;
     left: 0;
     position: absolute;
     top: 0;
     width: 100%;
 
-    .country-1{
+    .country-1 {
       font-family: "ivypresto-display", serif;
       font-size: 4vw;
       font-style: italic;
@@ -1066,7 +1128,8 @@ body {
       position: absolute;
       top: 10%;
     }
-    .country-2{
+
+    .country-2 {
       font-family: 'Neue Machina', sans-serif;
       font-size: 4vw;
       font-style: italic;
@@ -1076,7 +1139,8 @@ body {
       position: absolute;
       top: 20%;
     }
-    .country-3{
+
+    .country-3 {
       bottom: 18%;
       font-family: "ivypresto-display", serif;
       font-size: 4vw;
@@ -1086,7 +1150,8 @@ body {
       line-height: 1;
       position: absolute;
     }
-    .country-4{
+
+    .country-4 {
       bottom: 10%;
       font-family: 'Neue Machina', sans-serif;
       font-size: 4vw;
@@ -1096,7 +1161,8 @@ body {
       line-height: 1;
       position: absolute;
     }
-    .country-5{
+
+    .country-5 {
       bottom: 35%;
       font-family: 'Neue Machina', sans-serif;
       font-size: 4vw;
@@ -1106,7 +1172,8 @@ body {
       line-height: 1;
       position: absolute;
     }
-    .country-6{
+
+    .country-6 {
       font-family: "ivypresto-display", serif;
       font-size: 4vw;
       font-style: italic;
@@ -1116,7 +1183,8 @@ body {
       position: absolute;
       top: 18%;
     }
-    .country-7{
+
+    .country-7 {
       font-family: "ivypresto-display", serif;
       font-size: 4vw;
       font-style: italic;
@@ -1126,7 +1194,8 @@ body {
       position: absolute;
       top: 65%;
     }
-    .country-8{
+
+    .country-8 {
       bottom: 55%;
       font-family: 'Neue Machina', sans-serif;
       font-size: 4vw;
@@ -1136,7 +1205,8 @@ body {
       line-height: 1;
       position: absolute;
     }
-    .country-9{
+
+    .country-9 {
       bottom: 85%;
       font-family: 'Neue Machina', sans-serif;
       font-size: 4vw;
@@ -1146,7 +1216,8 @@ body {
       line-height: 1;
       position: absolute;
     }
-    .country-10{
+
+    .country-10 {
       bottom: 5%;
       font-family: 'Neue Machina', sans-serif;
       font-size: 4vw;
@@ -2030,7 +2101,7 @@ body.light-mode {
   }
 
   .about-our-client-have {
-    .testo-container{
+    .testo-container {
       color: #000000;
 
       a {
@@ -2040,16 +2111,16 @@ body.light-mode {
   }
 
   .about-partners,
-  .about-clients{
+  .about-clients {
     color: #000000;
   }
 
-  .logo-row.logo-row-white{
+  .logo-row.logo-row-white {
     height: 0;
     opacity: 0;
   }
 
-  .logo-row.logo-row-black{
+  .logo-row.logo-row-black {
     height: auto;
     opacity: 1;
   }
@@ -2061,6 +2132,7 @@ body.light-mode {
       span {
       }
     }
+
     .testimonial-slide {
       .img {
         background-blend-mode: luminosity;
@@ -2081,6 +2153,7 @@ body.light-mode {
 
       .data {
         color: #000000;
+
         .logo {
           position: relative;
           margin-left: 20px;
@@ -2089,6 +2162,7 @@ body.light-mode {
           .logo-white {
             display: none;
           }
+
           .logo-black {
             display: block;
           }
@@ -2097,6 +2171,7 @@ body.light-mode {
             background-color: #000000;
           }
         }
+
         .societa {
           color: #000000;
         }
@@ -2117,11 +2192,12 @@ body.light-mode {
 
     .swiper-button-next,
     .swiper-button-prev {
-      svg{
-        circle{
+      svg {
+        circle {
           fill: #000000;
         }
-        path{
+
+        path {
           fill: #ffffff;
         }
       }

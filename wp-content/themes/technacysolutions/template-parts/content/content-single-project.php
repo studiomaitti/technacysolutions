@@ -11,18 +11,18 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <header class="entry-header alignwide content-width">
-    <div class="client">
+    <div class="client inview-elem inview-elem-top">
       <span><?php the_field('location'); ?></span>
     </div>
-    <h1 class="post-title">
+    <h1 class="post-title inview-elem inview-elem-top td-200">
       <?php the_field('client'); ?>
     </h1>
-    <div class="location">
+    <div class="location inview-elem inview-elem-top td-400">
       <span><?php the_field('year'); ?></span>
     </div>
   </header><!-- .entry-header -->
 
-  <div class="entry-content content-width">
+  <div class="entry-content content-width inview-elem inview-elem-top td-550">
     <?php the_content(); ?>
   </div><!-- .entry-content -->
   <?php
@@ -31,7 +31,7 @@
   if ($video) {
 
   ?>
-    <div class="entry-video content-width">
+    <div class="entry-video content-width inview-elem inview-elem-top td-600">
       <video src="<?php echo $video; ?>" controls muted autoplay></video>
     </div><!-- .entry-content -->
     <?php
@@ -80,7 +80,7 @@
   }
   ?>
 
-  <div class="dot-container">
+  <div class="dot-container inview-elem inview-elem-bottom td-200">
     <div class="dot dot-arrow">
       <span class="blob white"></span>
       <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">

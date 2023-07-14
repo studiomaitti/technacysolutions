@@ -368,8 +368,8 @@ foreach ($a_tmp as $k => $v) {
   <section class="about-section about-testimonial">
     <div class="testo-container">
       <div class="content-width testo">
-        <div class="title">What <span>they</span> say</div>
-        <div class="testimonial-container swiper swiper-testimonial">
+        <div class="title inview-elem inview-elem-top">What <span>they</span> say</div>
+        <div class="testimonial-container swiper swiper-testimonial inview-elem inview-elem-left td-550">
           <div class="swiper-wrapper">
             <div class="testimonial-slide testimonial-slide-1 swiper-slide">
               <div class="img" style="background-image: url('/wp-content/themes/technacysolutions/assets/img/foto-marco-bonomo.jpg');">

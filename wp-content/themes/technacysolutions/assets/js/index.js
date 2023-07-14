@@ -23,7 +23,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   //HOME PAGE
-  if (document.body.classList.contains('home')){
+  if (document.body.classList.contains('home')) {
+    var intro_sentence = document.querySelectorAll('.js-hover-intro');
+
+    if (intro_sentence.length) {
+      intro_sentence.forEach(function (elem) {
+        elem.onmouseover = function (event) {
+          var num_video = this.getAttribute('data-id-video');
+          var video = document.querySelector('.home-intro-top-hover .video-' + num_video);
+
+          if (video) {
+            video.play();
+            video.classList.add('selected');
+          }
+        };
+
+        elem.onmouseout = function (event) {
+          var num_video = this.getAttribute('data-id-video');
+          var video = document.querySelector('.home-intro-top-hover .video-' + num_video);
+
+          if (video) {
+            video.play();
+            video.classList.remove('selected');
+          }
+        };
+      })
+    }
+
     // 1° section: Controllo dimensione video
     /*
     var elem_video_cont = document.querySelector('.home-intro-top-hover-video');
@@ -41,7 +67,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (isInView) {
         // element is now visible in the viewport
         jQuery(this).addClass('is-inview');
-      } else {
+      }
+      else {
         jQuery(this).removeClass('is-inview');
         // element has gone out of viewport
         // $(this).removeClass('is-inview-elem');
@@ -59,20 +86,20 @@ document.addEventListener("DOMContentLoaded", () => {
     var trigger = document.querySelectorAll(".home-video-scroll-inner");
     var slide = document.querySelectorAll(".home-video-scroll-livello-medio");
 
-    var scenaTxt = new ScrollMagic.Scene({ triggerElement: trigger })
+    var scenaTxt = new ScrollMagic.Scene({triggerElement: trigger})
       .setClassToggle(".home-video-scroll-text", "is-fixed");
 
     var scene = new ScrollMagic.Scene({
       triggerElement: slide
     })
-      .setPin(slide, { pushFollowers: false });
+      .setPin(slide, {pushFollowers: false});
 
     controller.addScene([scenaTxt, scene]);
 
     // 3° section: category
     // define movement of panels
     var wipeAnimation = new TimelineMax()
-      .fromTo(".category-section .panel.panel-2", 1, {y:  "100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
+      .fromTo(".category-section .panel.panel-2", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
     // create scene to pin and link animation
     new ScrollMagic.Scene({
       triggerElement: "#pinCategorySection",
@@ -94,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // define movement of panels
     var wipeAnimation = new TimelineMax()
-      .fromTo(".about-section .panel.panel-2", 1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone}); // in from top
+      .fromTo(".about-section .panel.panel-2", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone}); // in from top
 
     // create scene to pin and link animation
     new ScrollMagic.Scene({
@@ -108,8 +135,8 @@ document.addEventListener("DOMContentLoaded", () => {
       .addTo(controller);
 
     var wipeAnimation = new TimelineMax()
-      .fromTo(".sections-from-bottom .panel.panel-2", 1, {y:  "100%"}, {y: "0%", ease: Linear.easeNone})
-      .fromTo(".sections-from-bottom .panel.panel-3", 1, {y:  "100%"}, {y: "0%", ease: Linear.easeNone})
+      .fromTo(".sections-from-bottom .panel.panel-2", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone})
+      .fromTo(".sections-from-bottom .panel.panel-3", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone})
     ; // in from top
 
     // create scene to pin and link animation
@@ -122,7 +149,6 @@ document.addEventListener("DOMContentLoaded", () => {
       .setTween(wipeAnimation)
       .addIndicators() // add indicators (requires plugin)
       .addTo(controller);
-
 
     var about_we_are_tech = document.querySelector('.about-intro-top-hover-testo');
     if (about_we_are_tech) {
@@ -218,11 +244,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     */
 
-  jQuery('.about-our-client-have .testo .slide-from-top').on('inview', function (event, isInView) {
+    jQuery('.about-our-client-have .testo .slide-from-top').on('inview', function (event, isInView) {
       if (isInView) {
         // element is now visible in the viewport
-          jQuery(this).addClass('slide-from-top-delay');
-      } else {
+        jQuery(this).addClass('slide-from-top-delay');
+      }
+      else {
         // element has gone out of viewport
         // $(this).removeClass('is-inview-elem');
       }
@@ -232,11 +259,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   /// ARCHIVE
-  if (document.body.classList.contains('archive')){
+  if (document.body.classList.contains('archive')) {
     var controller = new ScrollMagic.Controller();
 
     var wipeAnimation = new TimelineMax()
-      .fromTo(".page-link", 1, {opacity:1}, {opacity:0.3, ease: Linear.easeNone});
+      .fromTo(".page-link", 1, {opacity: 1}, {opacity: 0.3, ease: Linear.easeNone});
 
     // create scene to pin and link animation
     new ScrollMagic.Scene({
@@ -252,12 +279,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   /// SINGLE PROJECT
-  if (document.body.classList.contains('single-projects')){
+  if (document.body.classList.contains('single-projects')) {
     jQuery('.owl-carousel').owlCarousel({
-      loop:true,
-      autoWidth:true,
-      items:4,
-      nav:true,
+      loop: true,
+      autoWidth: true,
+      items: 4,
+      nav: true,
       navText: [
         "<img src='/wp-content/themes/technacysolutions/assets/img/arrow-navigation.svg' class='prev'>",
         "<img src='/wp-content/themes/technacysolutions/assets/img/arrow-navigation.svg' class='next'>"
@@ -277,7 +304,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isInView) {
       // element is now visible in the viewport
       jQuery(this).addClass('is-inview-elem');
-    } else {
+    }
+    else {
       // element has gone out of viewport
       // $(this).removeClass('is-inview-elem');
     }
@@ -286,7 +314,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function shuffle_array(array) {
-  let currentIndex = array.length,  randomIndex;
+  let currentIndex = array.length, randomIndex;
 
   // While there remain elements to shuffle.
   while (currentIndex != 0) {
