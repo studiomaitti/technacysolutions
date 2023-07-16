@@ -8,6 +8,7 @@
 body {
   background-color: #000;
   transition: all 0.4s linear;
+  overflow-x: hidden;
 }
 
 /** *********************
@@ -319,8 +320,6 @@ body {
       }
     }
   }
-
-
 }
 
 /** *********************
@@ -389,6 +388,7 @@ body {
         }
       }
     }
+
   }
 
   .row-ivy {
@@ -548,21 +548,21 @@ body {
 
   .video-2 {
     flex-shrink: 0;
-    height: 500px;
     overflow: hidden;
-    transform: rotate(18deg) translate(-145%, -65%);
-    width: 350px;
+    transform: rotate(18deg) translate(-76%, -65%);
+    height: 300px;
+    width: 520px;
 
     video {
-      transform: translateX(calc(-1 * calc(50% - 175px)));
+      transform: translateX(calc(-1 * calc(50% - 260px)));
     }
   }
 
   .video-3 {
-    height: 500px;
+    height: 400px;
     overflow: hidden;
-    transform: rotate(5deg) translate(-105%, -50%);
-    width: 350px;
+    transform: rotate(5deg) translate(-150%, -50%);
+    width: 300px;
 
     video {
       transform: translateX(calc(-1 * calc(50% - 175px)));
@@ -570,13 +570,13 @@ body {
   }
 
   .video-4 {
-    width: 596px;
     overflow: hidden;
-    transform: rotate(12deg) translate(80%, 50%);
-    height: 346px;
+    transform: rotate(12deg) translate(55%, 50%);
+    width: 500px;
+    height: 250px;
 
     video {
-      transform: translateX(calc(-1 * calc(50% - 175px)));
+      transform: translateX(calc(-1 * calc(50% - 300px)));
     }
   }
 }
@@ -592,36 +592,17 @@ body {
   flex-shrink: 0;
 }
 
-
 .category-section {
-  overflow: hidden;
+  //overflow: hidden;
 }
 
-.effetto-fascia-rossa {
-  background-color: #FC0606;
-  border-radius: 50px;
-  height: 120%;
-  left: 50%;
-  position: absolute;
-  transform: translateX(-50%);
-  transition-delay: 250ms;
-  transition: height 2000ms ease-in-out, width 2000ms ease-in-out, top 2000ms ease-in-out, opacity 3000ms ease-in-out;
-  top: 0%;
-  width: 110%;
-
-  &.is-inview {
-    height: 0px;
-    opacity: 0;
-    top: 17%;
-    width: 0px;
-  }
+.home-iptv-img-container {
+  position: relative;
 }
 
 .sections-from-bottom,
 .category-section {
   height: 100vh;
-  overflow: hidden;
-  position: relative;
 
   .panel {
     background-color: #000000;
@@ -667,6 +648,31 @@ body {
       font-family: 'Alegreya Sans', sans-serif;
       font-weight: 300;
       line-height: 145%;
+    }
+
+    .effetto-fascia-rossa {
+      //background-color: #FC0606;
+      border-radius: 50px;
+      height: 220%;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%) translateY(-50%);
+      transition-delay: 250ms;
+      transition: height 4000ms ease-in-out, width 4000ms ease-in-out, top 3000ms ease-in-out, opacity 2500ms ease-in-out;
+      top: -40%;
+      width: 150%;
+
+      img {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      &.is-inview {
+        height: 0px;
+        opacity: 0;
+        top: 25%;
+        width: 0px;
+      }
     }
   }
 }
@@ -718,6 +724,13 @@ body {
     a {
       display: inline-block;
       margin: 0 3vw;
+      transition: all 0.4s ease-in-out;
+    }
+
+    &:hover {
+      a {
+        color: #FC0606;
+      }
     }
   }
 
@@ -735,6 +748,13 @@ body {
     a {
       display: inline-block;
       margin: 0 3vw;
+      transition: all 0.4s ease-in-out;
+    }
+
+    &:hover {
+      a {
+        color: #FC0606;
+      }
     }
   }
 
@@ -764,8 +784,13 @@ body {
     width: 100%;
 
     video {
+      min-height: 100%;
+      left: 0;
+      height: auto;
+      object-fit: cover;
       position: absolute;
       width: 100%;
+      top: 0;
     }
   }
 
@@ -777,10 +802,11 @@ body {
     z-index: 100;
     transition: all 0.6s ease-in-out;
 
-    &:hover {
+    &.hide-blur {
       backdrop-filter: blur(0px);
     }
   }
+
 
   .testo {
     font-family: 'Neue Machina', sans-serif;
@@ -893,7 +919,7 @@ body {
           position: relative;
 
           .video {
-            height: 250px;
+            height: 358px;
             opacity: 0;
             position: absolute;
             right: 0px;
@@ -901,10 +927,11 @@ body {
             top: -50px;
             transform: rotate(-10.488deg);
             transition: all 0.4s ease-in-out;
-            width: 185px;
+            width: 250px;
 
             video {
-              transform: translateX(calc(-1 * calc(50% - 90px)));
+              //446x640
+              width: 100%;
             }
           }
 
@@ -962,7 +989,7 @@ body {
 
 
         .video {
-          height: 185px;
+          height: 254px;
           opacity: 0;
           position: absolute;
           left: -80%;
@@ -970,14 +997,17 @@ body {
           top: 20%;
           transform: rotate(-10.488deg);
           transition: all 0.4s ease-in-out;
-          width: 250px;
+          width: 450px;
 
           video {
-            transform: translateX(calc(-1 * calc(50% - 125px)));
+            //transform: translateX(calc(-1 * calc(50% - 125px)));
+            width: 100%;
           }
         }
 
         &:hover {
+          color: #FC0606;
+
           .video {
             opacity: 1;
           }
@@ -1112,6 +1142,7 @@ body {
   }
 
   .country-list {
+    color: #AEAEAE;
     height: 100%;
     left: 0;
     position: absolute;
@@ -1583,7 +1614,7 @@ body {
     font-size: 21px;
     font-size: 1.09vw;
     font-weight: 800;
-    line-height: 120px;
+    line-height: 1.1;
     letter-spacing: 3.78px;
     text-transform: uppercase;
 
@@ -1607,7 +1638,7 @@ body {
       font-size: 4.8vw;
       font-style: italic;
       font-weight: 300;
-      line-height: 106px;
+      line-height: 1.1;
       letter-spacing: 0em;
       text-align: left;
       position: relative;
@@ -1713,11 +1744,21 @@ body.archive {
           font-family: "ivypresto-display", serif;
         }
 
+        &.opened{
+          opacity: 1;
+        }
+
       }
 
       .star {
         margin: auto 3rem;
+        cursor: pointer;
         transition: all 0.4s ease-in-out;
+
+        svg{
+          pointer-events: none;
+        }
+
       }
 
       &:hover {
@@ -1741,12 +1782,14 @@ body.archive {
 
     .page-link-top-line {
       font-size: 100px;
-      line-height: 105px;
+      font-size: 5.2vw;
+      line-height: 1.1;
     }
 
     .page-link-bottom-line {
       font-size: 100px;
-      line-height: 105px;
+      font-size: 5.2vw;
+      line-height: 1.1;
     }
   }
 
@@ -1767,7 +1810,6 @@ body.archive {
       &#post-11578 {
         width: 80%;
       }
-
 
       //50% meno la metà della larghezza della stella -5px ancora tanto per farli passare vicinissimi
       .article-container {
@@ -1934,7 +1976,7 @@ body.single-projects {
 
     .owl-nav {
       position: absolute;
-      left: -180px;
+      left: -200px;
       top: calc(50% - 90px);
 
       .owl-prev {
@@ -2021,7 +2063,7 @@ body.single-projects {
     flex-direction: column;
     position: absolute;
     bottom: 0;
-    //cursor: pointer;
+    cursor: pointer;
     height: 48px;
     right: 10%;
     text-align: center;
@@ -2037,6 +2079,7 @@ body.single-projects {
 
     svg {
       margin: auto;
+      pointer-events: none;
       transform: translateX(2px);
       z-index: 10;
     }
@@ -2212,6 +2255,206 @@ body.light-mode {
     color: #000000;
   }
 }
+.mobile{
+  color: #ffffff;
+  background-color: #000000;
+  display: none;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 100000;
+  font-family: 'Neue Machina', sans-serif;
+  font-size: 28px;
+  text-align: center;
 
+  img{
+    max-width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .text{
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cursor {
+    display: none;
+  }
+  .mobile{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    .dark-mode-hamburger {
+      .dark-mode-container {
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+
+  body.home{
+    .home-section{
+      .row-ivy {
+        font-size: 30px;
+      }
+      .row-neue{
+        font-size: 26px;
+      }
+    }
+
+    .home-video-scroll-livello-base,
+    .home-video-scroll-livello-top{
+      display: none;
+    }
+
+    .home-video-scroll{
+      .home-video-scroll-inner{
+        height: auto;
+        .home-video-scroll-livello-medio{
+          height: auto;
+
+          .home-video-scroll-text{
+            height: auto;
+          }
+        }
+      }
+    }
+
+    .home-iptv .home-iptv-container .effetto-fascia-rossa{
+      display: none;
+    }
+  }
+
+  body.archive {
+    .project-category {
+      .container-1 {
+        .cat-i{
+          width: calc(50% - 61px);
+          width: 50%;
+
+          a{
+            font-size: 16px;
+            line-height: 1.1;
+            padding: 0.3rem 0.6rem;
+          }
+
+          &.cat-2{
+            text-align: right;
+          }
+
+        }
+
+        .star {
+          margin: auto 1rem;
+
+          svg {
+            width: 45px;
+          }
+        }
+      }
+    }
+
+    .page-link .page-link-top-line,
+    .page-link-bottom-line {
+      font-size: 6vw;
+      padding: 0.5rem;
+    }
+
+    .page-link {
+      top: 11rem;
+    }
+
+    .content-area {
+      margin-top: 16rem;
+
+      article{
+        padding-bottom: 2rem;
+        width: 100%;
+
+        &#post-11578{
+          width: 100%;
+        }
+
+        .article-container{
+          margin: auto;
+          max-width: 80%;
+
+          &.left{
+            margin-left: auto;
+          }
+          &.right{
+            margin-right: auto;
+          }
+        }
+
+        &.upper {
+          margin-top: 0;
+          padding-bottom: 2rem;
+        }
+
+        &.upper-upper {
+          margin-top: 0;
+          padding-bottom: 2rem;
+        }
+
+        .tit-container {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .site-footer{
+    height: auto;
+
+    .row-email{
+      font-size: 14px;
+      letter-spacing: normal;
+    }
+
+    .row-sentence{
+      line-height: 1;
+    }
+
+    .row-sedi{
+      margin-top: 1rem;
+      .sede-i{
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1180px) {
+  .cursor {
+    display: none;
+  }
+  .content-width{
+    padding: 40px;
+  }
+  .sections-from-bottom,
+  .category-section {
+    height: 100vh;
+    overflow: hidden;
+  }
+  .testo-container {
+    backdrop-filter: blur(0px)!important;
+  }
+  .home-intro-top .home-intro-top-hover video.video-4{
+    opacity: 1;
+  }
+
+  .about-we-crush .panel .content-width{
+    padding-left: 8rem;
+  }
+
+  body.single-projects .prj-gallery-container {
+    margin-left: 20px;
+  }
+}
 
 

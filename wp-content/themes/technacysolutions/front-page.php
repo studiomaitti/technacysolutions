@@ -19,21 +19,19 @@ get_header();
   <section class="home-section home-intro-top">
     <div class="home-intro-top-base content-width">
       <div class="home-intro-top-base-testo">
-        <div class="row-i row-1 row-ivy inview-elem inview-elem-left td-200 js-hover-intro" data-id-video="1"><span class="txt"><span class="bg"></span>WE ARE TECHNACY</span></div>
-        <div class="row-i row-2 row-neue inview-elem inview-elem-left td-400 js-hover-intro" data-id-video="2"><span class="txt"><span class="bg"></span>A TEAM OF VIBRANT &</span></div>
-        <div class="row-i row-3 row-neue inview-elem inview-elem-left td-550 js-hover-intro" data-id-video="3"><span class="txt"><span class="bg"></span>DYNAMIC CREATIVES</span></div>
-        <div class="row-i row-4 row-ivy inview-elem inview-elem-left td-620 js-hover-intro" data-id-video="4"><span class="txt"><span class="bg"></span>BASED IN BAHRAIN.</span></div>
+        <div class="row-i row-1 row-ivy inview-elem inview-elem-left td-200" data-id-video="1">
+          <span class="txt"><span class="bg"></span>WE ARE TECHNACY</span></div>
+        <div class="row-i row-2 row-neue inview-elem inview-elem-left td-400 " data-id-video="2">
+          <span class="txt"><span class="bg"></span>A TEAM OF VIBRANT &</span></div>
+        <div class="row-i row-3 row-neue inview-elem inview-elem-left td-550" data-id-video="3">
+          <span class="txt"><span class="bg"></span>DYNAMIC CREATIVES</span></div>
+        <div class="row-i row-4 row-ivy inview-elem inview-elem-left td-620 js-hover-intro" data-id-video="4">
+          <span class="txt js-dot-to-cicle js-white-cicle"><span class="bg js-dot-to-cicle js-white-cicle"></span>BASED IN BAHRAIN.</span></div>
       </div>
     </div>
 
     <div class="home-intro-top-hover">
       <video class="video-4" src="/wp-content/uploads/Homevideo_Hero_720.mp4" autoplay muted loop></video>
-
-      <!--
-      <div class="home-intro-top-hover-testo">
-        BASED IN BAHRAIN.
-      </div>
-      -->
     </div>
   </section>
 
@@ -41,10 +39,10 @@ get_header();
     <div class="home-video-scroll-inner">
       <div class="home-video-scroll-livello-base">
         <div class="home-video-scroll-elem video-2">
-          <video src="/wp-content/uploads/video-art.mp4" autoplay muted loop></video>
+          <video src="/wp-content/uploads/technacy-home-1.mp4" autoplay muted loop></video>
         </div>
         <div class="home-video-scroll-elem video-4">
-          <video src="/wp-content/uploads/video-art.mp4" autoplay muted loop></video>
+          <video src="/wp-content/uploads/technacy-home-2-1.mp4" autoplay muted loop></video>
         </div>
       </div>
       <div class="home-video-scroll-livello-medio">
@@ -60,31 +58,32 @@ get_header();
       </div>
       <div class="home-video-scroll-livello-top">
         <div class="home-video-scroll-elem video-1">
-          <video src="/wp-content/uploads/video-art.mp4" autoplay muted loop></video>
+          <video src="/wp-content/uploads/technacy-home-3.mp4" autoplay muted loop></video>
         </div>
         <div class="home-video-scroll-elem video-3">
-          <video src="/wp-content/uploads/video-art.mp4" autoplay muted loop></video>
+          <video src="/wp-content/uploads/technacy-home-4.mp4" autoplay muted loop></video>
         </div>
       </div>
-      </div>
+    </div>
     </div>
   </section>
 
-<!--
-  <section class="home-section home-fascia-rossa"></section>
--->
-
   <section class="home-section category-section" id="pinCategorySection">
     <div class="panel panel-1 home-iptv">
-      <div class="effetto-fascia-rossa">
-      </div>
       <div class="home-iptv-container content-width">
-        <img class="inview-elem inview-elem-top td-200" src="/wp-content/themes/technacysolutions/assets/img/logo-technacy-rosso.svg" alt="Logo">
+        <div class="home-iptv-img-container">
+          <div class="effetto-fascia-rossa">
+            <img class="inview-elem inview-elem-top td-200" src="/wp-content/themes/technacysolutions/assets/img/logo-technacy-rosso.svg" alt="Logo">
+          </div>
+          <div class="home-iptv-img">
+            <img class="inview-elem inview-elem-top td-200" src="/wp-content/themes/technacysolutions/assets/img/logo-technacy-rosso.svg" alt="Logo">
+          </div>
+        </div>
         <div class="home-iptv-text">
           <h2 class="row-ivy inview-elem inview-elem-left td-400">IPTV & MEDIA</h2>
           <h2 class="row-neue inview-elem inview-elem-right td-550">IPTV & MEDIA</h2>
           <div class="text inview-elem inview-elem-bottom">
-            We are shipping thousands products in EMEA market every month and have supported<br> hundreds customers in launching their video services. Technacy enable you to deliver the best<br> of linear broadcast television and IP-based services with a seamless user experience
+            The Technacy Team offers cutting-edge IPTV technology and global content for an unparalleled viewer experience. With industry giants and leading brands as our partners, we have built strong relationships based on excellent communication and trust. Our customer-centric approach ensures your unique needs are met, providing an incredible IPTV experience. <br>We are committed to customer satisfaction with 24/7 support. Our operational flexibility and technical expertise set new benchmarks in IPTV provision across industries. Join us as we revolutionize the IPTV experience together.
           </div>
         </div>
       </div>
@@ -105,10 +104,10 @@ get_header();
   </section>
 
 <?php
-$a = [];
-for ($i = 0; $i < 30; $i++) {
-  $a[] = '<a href="/about">about</a>';
-}
+  $a = [];
+  for ($i = 0; $i < 30; $i++) {
+    $a[] = '<a href="/about">about</a>';
+  }
 ?>
   <section class="page-link">
     <div class="page-link-top-line" data-paroller-factor="0.35" data-paroller-type="foreground" data-paroller-direction="horizontal" data-paroller-transition="transform .35s linear">

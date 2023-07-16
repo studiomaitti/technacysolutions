@@ -80,7 +80,7 @@
   }
   ?>
 
-  <div class="dot-container inview-elem inview-elem-bottom td-200">
+  <div class="js-go-back js-dot-to-cicle dot-container inview-elem inview-elem-bottom td-200">
     <div class="dot dot-arrow">
       <span class="blob white"></span>
       <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">

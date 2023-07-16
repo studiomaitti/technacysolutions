@@ -17,6 +17,15 @@
 <head>
   <meta charset="<?php bloginfo('charset'); ?>"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -95,6 +104,10 @@
   <link rel="preload" as="image" href="/wp-content/themes/technacysolutions/assets/img/anim-togheter.gif"/>
   <?php if (is_front_page()) { ?>
     <link rel="preload" as="video" href="/wp-content/uploads/Homevideo_Hero_720.mp4"/>
+    <link rel="preload" as="video" href="/wp-content/uploads/technacy-home-1.mp4"/>
+    <link rel="preload" as="video" href="/wp-content/uploads/technacy-home-2-1.mp4"/>
+    <link rel="preload" as="video" href="/wp-content/uploads/technacy-home-3.mp4"/>
+    <link rel="preload" as="video" href="/wp-content/uploads/technacy-home-4.mp4"/>
   <?php } ?>
 </head>
 

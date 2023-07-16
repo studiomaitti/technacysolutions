@@ -17,8 +17,8 @@ get_header();
       <video src="/wp-content/uploads/technacy-digital-1.mp4" autoplay muted loop></video>
     </div>
 
-    <div class="testo-container">
-      <div class="testo inview-elem inview-elem-top">
+    <div class="testo-container js-about-1-section-video">
+      <div class="testo inview-elem inview-elem-top js-about-1-section">
         WE ARE <span>TECHNACY</span>
       </div>
     </div>
@@ -41,7 +41,7 @@ get_header();
           <div class="sent-3 inview-elem inview-elem-top td-620">
             <span class="sent-3-1 inview-elem inview-elem-top td-740">deliver with </span> <span class="sent-3-2 inview-elem inview-elem-top">style
             <span class="video">
-              <video src="/wp-content/uploads/video-art.mp4" autoplay muted loop></video>
+              <video src="/wp-content/uploads/fashion-style.mp4" autoplay muted loop></video>
             </span>
           </span>
           </div>
@@ -60,8 +60,8 @@ get_header();
         <div class="content-width">
           <div class="sent-1 inview-elem inview-elem-top td-620">No project is </div>
           <div class="sent-2 inview-elem inview-elem-top td-400">off-<br>limits-</div>
-          <div class="sent-3 inview-elem inview-elem-top td-550">we've been<br> rocking <span class="video">
-              <video src="/wp-content/uploads/video-art.mp4" autoplay muted loop></video>
+          <div class="sent-3 inview-elem inview-elem-top td-550">we've been<br> <span class="rocking">rocking</span> <span class="video">
+              <video src="/wp-content/uploads/astronaut.mp4" autoplay muted loop></video>
             </span>
           </div>
           <div class="sent-4 inview-elem inview-elem-top td-550">it for a<br> decade!</div>
@@ -76,26 +76,25 @@ get_header();
     </div>
   </section>
 
-<?php
-$txt = 'Our clients have been with us since the beginning, hooked on our top-notch solutions, service and transparency.<br><br>we are here to turn your ideas into reality!';
-$a_tmp = explode(' ', $txt);
-$a_tmp_finale = [];
-foreach ($a_tmp as $k => $v) {
-  if ($k % 4 == 0) {
-    $a_tmp_finale[] = '<span class="word-mod inview-elem inview-elem-left">' . $v . '</span>';
+  <?php
+  $txt = 'Our clients have been with us since the beginning, hooked on our top-notch solutions, service and transparency.<br><br>we are here to turn your ideas into reality!';
+  $a_tmp = explode(' ', $txt);
+  $a_tmp_finale = [];
+  foreach ($a_tmp as $k => $v) {
+    if ($k % 4 == 0) {
+      $a_tmp_finale[] = '<span class="word-mod inview-elem inview-elem-left">' . $v . '</span>';
+    }
+    else if ($k % 3 == 0) {
+      $a_tmp_finale[] = '<span class="slide-from-top delay-500">' . $v . '</span>';
+    }
+    else if ($k % 2 == 0) {
+      $a_tmp_finale[] = '<span class="slide-from-top delay-700">' . $v . '</span>';
+    }
+    else {
+      $a_tmp_finale[] = '<span class="slide-from-top delay-900">' . $v . '</span>';
+    }
   }
-  else if ($k % 3 == 0) {
-    $a_tmp_finale[] = '<span class="slide-from-top delay-500">' . $v . '</span>';
-  }
-  else if ($k % 2 == 0) {
-    $a_tmp_finale[] = '<span class="slide-from-top delay-700">' . $v . '</span>';
-  }
-  else {
-    $a_tmp_finale[] = '<span class="slide-from-top delay-900">' . $v . '</span>';
-  }
-}
-
-?>
+  ?>
   <section class="about-section about-our-client-have">
     <div class="testo-container">
       <div class="content-width testo"><?php echo implode(' ', $a_tmp_finale); ?></div>
@@ -448,6 +447,46 @@ foreach ($a_tmp as $k => $v) {
                       </div>
                     </div>
                     -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-slide testimonial-slide-2 swiper-slide">
+              <div class="img" style="background-image: url('/wp-content/themes/technacysolutions/assets/img/technacy-Carlo-Boutagy.jpg');">
+                <img src="/wp-content/themes/technacysolutions/assets/img/technacy-Carlo-Boutagy.jpg">
+              </div>
+              <div class="data-container">
+                <div class="data">
+                  <div class="star">
+                  <span><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.07088 0.667031C9.41462 -0.149428 10.5854 -0.149427 10.9291 0.667033L12.9579 5.48592C13.1029 5.83012 13.4306 6.0653 13.8067 6.09509L19.0727 6.51217C19.9649 6.58283 20.3267 7.68282 19.6469 8.25809L15.6348 11.6534C15.3482 11.8959 15.223 12.2765 15.3106 12.639L16.5363 17.7157C16.744 18.5758 15.7969 19.2557 15.033 18.7948L10.5245 16.0742C10.2025 15.8799 9.7975 15.8799 9.47548 16.0742L4.96699 18.7948C4.20311 19.2557 3.25596 18.5758 3.46363 17.7157L4.68942 12.639C4.77698 12.2765 4.65182 11.8959 4.36526 11.6534L0.353062 8.25809C-0.326718 7.68282 0.0350679 6.58283 0.927291 6.51217L6.19336 6.09509C6.5695 6.0653 6.89716 5.83012 7.04207 5.48592L9.07088 0.667031Z" fill="#FC0606"/>
+</svg></span> <span><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.07088 0.667031C9.41462 -0.149428 10.5854 -0.149427 10.9291 0.667033L12.9579 5.48592C13.1029 5.83012 13.4306 6.0653 13.8067 6.09509L19.0727 6.51217C19.9649 6.58283 20.3267 7.68282 19.6469 8.25809L15.6348 11.6534C15.3482 11.8959 15.223 12.2765 15.3106 12.639L16.5363 17.7157C16.744 18.5758 15.7969 19.2557 15.033 18.7948L10.5245 16.0742C10.2025 15.8799 9.7975 15.8799 9.47548 16.0742L4.96699 18.7948C4.20311 19.2557 3.25596 18.5758 3.46363 17.7157L4.68942 12.639C4.77698 12.2765 4.65182 11.8959 4.36526 11.6534L0.353062 8.25809C-0.326718 7.68282 0.0350679 6.58283 0.927291 6.51217L6.19336 6.09509C6.5695 6.0653 6.89716 5.83012 7.04207 5.48592L9.07088 0.667031Z" fill="#FC0606"/>
+</svg></span> <span><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.07088 0.667031C9.41462 -0.149428 10.5854 -0.149427 10.9291 0.667033L12.9579 5.48592C13.1029 5.83012 13.4306 6.0653 13.8067 6.09509L19.0727 6.51217C19.9649 6.58283 20.3267 7.68282 19.6469 8.25809L15.6348 11.6534C15.3482 11.8959 15.223 12.2765 15.3106 12.639L16.5363 17.7157C16.744 18.5758 15.7969 19.2557 15.033 18.7948L10.5245 16.0742C10.2025 15.8799 9.7975 15.8799 9.47548 16.0742L4.96699 18.7948C4.20311 19.2557 3.25596 18.5758 3.46363 17.7157L4.68942 12.639C4.77698 12.2765 4.65182 11.8959 4.36526 11.6534L0.353062 8.25809C-0.326718 7.68282 0.0350679 6.58283 0.927291 6.51217L6.19336 6.09509C6.5695 6.0653 6.89716 5.83012 7.04207 5.48592L9.07088 0.667031Z" fill="#FC0606"/>
+</svg></span> <span><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.07088 0.667031C9.41462 -0.149428 10.5854 -0.149427 10.9291 0.667033L12.9579 5.48592C13.1029 5.83012 13.4306 6.0653 13.8067 6.09509L19.0727 6.51217C19.9649 6.58283 20.3267 7.68282 19.6469 8.25809L15.6348 11.6534C15.3482 11.8959 15.223 12.2765 15.3106 12.639L16.5363 17.7157C16.744 18.5758 15.7969 19.2557 15.033 18.7948L10.5245 16.0742C10.2025 15.8799 9.7975 15.8799 9.47548 16.0742L4.96699 18.7948C4.20311 19.2557 3.25596 18.5758 3.46363 17.7157L4.68942 12.639C4.77698 12.2765 4.65182 11.8959 4.36526 11.6534L0.353062 8.25809C-0.326718 7.68282 0.0350679 6.58283 0.927291 6.51217L6.19336 6.09509C6.5695 6.0653 6.89716 5.83012 7.04207 5.48592L9.07088 0.667031Z" fill="#FC0606"/>
+</svg></span> <span><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.07088 0.667031C9.41462 -0.149428 10.5854 -0.149427 10.9291 0.667033L12.9579 5.48592C13.1029 5.83012 13.4306 6.0653 13.8067 6.09509L19.0727 6.51217C19.9649 6.58283 20.3267 7.68282 19.6469 8.25809L15.6348 11.6534C15.3482 11.8959 15.223 12.2765 15.3106 12.639L16.5363 17.7157C16.744 18.5758 15.7969 19.2557 15.033 18.7948L10.5245 16.0742C10.2025 15.8799 9.7975 15.8799 9.47548 16.0742L4.96699 18.7948C4.20311 19.2557 3.25596 18.5758 3.46363 17.7157L4.68942 12.639C4.77698 12.2765 4.65182 11.8959 4.36526 11.6534L0.353062 8.25809C-0.326718 7.68282 0.0350679 6.58283 0.927291 6.51217L6.19336 6.09509C6.5695 6.0653 6.89716 5.83012 7.04207 5.48592L9.07088 0.667031Z" fill="#FC0606"/>
+</svg></span>
+                  </div>
+                  <div class="description">
+                    "I have always had positive experiences working with Technacy for the past couple of years. Technacy has always provided the most suitable and recommended solutions with the best price that is suitable for our business. I would highly recommend Technacy in the field of Innovation."
+                  </div>
+                  <div class="societa">
+                    <div class="container">
+                      <div class="nome">Carlo Boutagy</div>
+                      <div class="societa">CBX</div>
+                    </div>
+                    <div class="logo">
+                      <div class="logo-white">
+                        <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/normal/logo-cbx-66x50.jpg">
+                      </div>
+                      <div class="logo-black">
+                        <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/normal/logo-cbx-66x50.jpg">
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
