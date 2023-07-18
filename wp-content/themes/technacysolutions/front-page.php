@@ -19,11 +19,11 @@ get_header();
   <section class="home-section home-intro-top">
     <div class="home-intro-top-base content-width">
       <div class="home-intro-top-base-testo">
-        <div class="row-i row-1 row-ivy inview-elem inview-elem-left td-200" data-id-video="1">
+        <div class="row-i row-1 row-ivy inview-elem inview-elem-left td-1200" data-id-video="1">
           <span class="txt"><span class="bg"></span>WE ARE TECHNACY</span></div>
-        <div class="row-i row-2 row-neue inview-elem inview-elem-left td-400 " data-id-video="2">
+        <div class="row-i row-2 row-neue inview-elem inview-elem-left td-1300" data-id-video="2">
           <span class="txt"><span class="bg"></span>A TEAM OF VIBRANT &</span></div>
-        <div class="row-i row-3 row-neue inview-elem inview-elem-left td-550" data-id-video="3">
+        <div class="row-i row-3 row-neue inview-elem inview-elem-left td-1400" data-id-video="3">
           <span class="txt"><span class="bg"></span>DYNAMIC CREATIVES</span></div>
         <div class="row-i row-4 row-ivy inview-elem inview-elem-left td-620 js-hover-intro" data-id-video="4">
           <span class="txt js-dot-to-cicle js-white-cicle"><span class="bg js-dot-to-cicle js-white-cicle"></span>BASED IN BAHRAIN.</span></div>

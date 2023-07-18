@@ -947,6 +947,22 @@ table.wp-calendar-table caption {
   animation: pulse-white 2s infinite;
 }
 
+.blob-big {
+  border-radius: 2rem;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 0 0 black;
+  margin: 10px;
+  transform: scale(1);
+}
+
+.blob-big.white {
+  background: white;
+}
+
 @keyframes pulse-white {
   0% {
     transform: scale(0.95);
@@ -955,6 +971,20 @@ table.wp-calendar-table caption {
   70% {
     transform: scale(1);
     box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+@keyframes pulse-white-big {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 40px rgba(255, 255, 255, 0);
   }
   100% {
     transform: scale(0.95);
@@ -1052,6 +1082,18 @@ table.wp-calendar-table caption {
   transition-delay: 740ms;
 }
 
+.td-1200 {
+  transition-delay: 1200ms;
+}
+
+.td-1300 {
+  transition-delay: 1300ms;
+}
+
+.td-1400 {
+  transition-delay: 1400ms;
+}
+
 .slide-from-top {
   opacity: 0;
   top: -40px;
@@ -1092,12 +1134,12 @@ table.wp-calendar-table caption {
   }
 }
 .cursor {
-  position: absolute;
+  position: fixed;
   width: 0px;
   height: 0px;
   top: 0%;
   left: 0%;
-  border: 10px solid #FC0606;
+  border: 14px solid #FC0606;
   border-radius: 100%;
   backface-visibility: hidden;
   transition: transform 300ms ease-out, left 80ms ease-out, top 80ms ease-out, border 500ms ease-out, height 500ms ease-out, width 500ms ease-out;
@@ -1108,8 +1150,8 @@ table.wp-calendar-table caption {
   transform: scale(0.7);
 }
 .cursor.is-hover {
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
   border: 4px solid #FC0606;
 }
 .cursor.is-hover.white {
@@ -1881,6 +1923,9 @@ body {
   line-height: 1.1;
   letter-spacing: 0em;
 }
+.about-we-crush .panel.panel-1 .sent-3 .sent-3-1:hover + .sent-3-2 .video {
+  opacity: 1;
+}
 .about-we-crush .panel.panel-1 .sent-3 .sent-3-2 {
   font-family: "ivypresto-display", serif;
   font-size: 96px;
@@ -2488,8 +2533,7 @@ body {
 .site-footer .row-email {
   color: var(--red, #FC0606);
   font-family: "Neue Machina", sans-serif;
-  font-size: 21px;
-  font-size: 1.09vw;
+  font-size: 16px;
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: 3.78px;
@@ -2667,8 +2711,17 @@ body.archive .content-area article .article-container.center {
   margin-right: auto;
 }
 body.archive .content-area article .img {
+  position: relative;
+}
+body.archive .content-area article .img:hover .blob-big.white {
+  animation: pulse-white-big 1.7s infinite;
+}
+body.archive .content-area article .img a {
+  display: block;
   border-radius: 2rem;
   overflow: hidden;
+  z-index: 10;
+  position: relative;
 }
 body.archive .content-area article .tit-container {
   font-size: 24px;
@@ -2903,6 +2956,9 @@ body.light-mode .home-iptv,
 body.light-mode .home-computer {
   color: #161616;
 }
+body.light-mode .home-intro-top .home-intro-top-hover {
+  background-color: #ffffff;
+}
 body.light-mode .category-section .panel {
   background-color: #ffffff;
 }
@@ -2984,6 +3040,9 @@ body.light-mode .site-footer .row-sedi .sede-i {
   color: #000000;
 }
 
+/** *********************
+  Mobile visualizzo un messaggio
+ ******* */
 .mobile {
   color: #ffffff;
   background-color: #000000;
@@ -3006,7 +3065,13 @@ body.light-mode .site-footer .row-sedi .sede-i {
   margin: auto;
 }
 
+/** *********************
+  Fino al table
+ ******* */
 @media screen and (max-width: 767px) {
+  /** *********************
+    Elementi vari
+   ******* */
   .cursor {
     display: none;
   }
@@ -3118,6 +3183,9 @@ body.archive .page-link-bottom-line {
     width: 100%;
   }
 }
+/** *********************
+  Fino alla dimensione minima interna definita
+ ******* */
 @media screen and (max-width: 1180px) {
   .cursor {
     display: none;

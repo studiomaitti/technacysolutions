@@ -42,6 +42,7 @@ if($i == 1){
 <article id="post-<?php the_ID(); ?>" <?php post_class(implode(' ', $css_class)); ?>>
   <div class="article-container <?php echo implode(' ', $css_class_container) ?>">
     <div class="img">
+      <span class="blob-big white"></span>
       <a class="post-thumbnail-inner alignwide" href="<?php echo $link; ?>" aria-hidden="true" tabindex="-1">
         <?php the_post_thumbnail('full'); ?>
       </a>
