@@ -80,7 +80,7 @@ get_header();
           </div>
         </div>
         <div class="home-iptv-text">
-          <h2 class="row-ivy inview-elem inview-elem-left td-400">IPTV & MEDIA</h2>
+          <h2 class="row-ivy inview-elem inview-elem-left td-400">TELECOMMUNICATION</h2>
           <h2 class="row-neue inview-elem inview-elem-right td-550">IPTV & MEDIA</h2>
           <div class="text inview-elem inview-elem-bottom">
             The Technacy Team offers cutting-edge IPTV technology and global content for an unparalleled viewer experience. With industry giants and leading brands as our partners, we have built strong relationships based on excellent communication and trust. Our customer-centric approach ensures your unique needs are met, providing an incredible IPTV experience. <br>We are committed to customer satisfaction with 24/7 support. Our operational flexibility and technical expertise set new benchmarks in IPTV provision across industries. Join us as we revolutionize the IPTV experience together.

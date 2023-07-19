@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /// 4° SECTION:
     var wipeAnimation = new TimelineMax()
-      .fromTo(".category-section .panel.panel-2", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone});
+      .fromTo(".category-section .panel.panel-2", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone});
 
     new ScrollMagic.Scene({
       triggerElement: "#pinCategorySection",
