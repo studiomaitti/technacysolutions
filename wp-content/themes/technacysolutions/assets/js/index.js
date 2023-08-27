@@ -25,12 +25,20 @@ function moveCursor(e) {
 
 document.addEventListener("DOMContentLoaded", () => {
   //CAMBIO COLORE
+  //Controllo il cookie
+  if(getCookie('dmode') == '1'){
+    document.body.classList.add('light-mode');
+    document.querySelector('.js-dark-mode').checked = true;
+  }
+
   document.querySelector('.js-dark-mode').addEventListener('change', function (ev) {
     if (ev.target.checked === true) {
       document.body.classList.add('light-mode');
+      setCookie('dmode', '1', 1);
     }
     else {
       document.body.classList.remove('light-mode');
+      setCookie('dmode', '0', -1);
     }
   })
 
@@ -69,8 +77,8 @@ document.addEventListener("DOMContentLoaded", () => {
           var video = document.querySelector('.home-intro-top-hover .video-' + num_video);
 
           if (video) {
-            video.play();
-            video.classList.remove('selected');
+            //video.play();
+            //video.classList.remove('selected');
           }
         };
       })
@@ -390,3 +398,25 @@ window.mobileCheck = function () {
   })(navigator.userAgent || navigator.vendor || window.opera);
   return check;
 };
+
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}

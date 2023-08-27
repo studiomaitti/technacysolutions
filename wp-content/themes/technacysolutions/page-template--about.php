@@ -14,7 +14,7 @@ get_header();
 ?>
   <section class="about-section about-intro-top">
     <div class="video">
-      <video src="/wp-content/uploads/technacy-digital-1.mp4" autoplay muted loop></video>
+      <video src="/wp-content/uploads/technacy-we-are-technacy-smaller.mp4" autoplay muted loop></video>
     </div>
 
     <div class="testo-container js-about-1-section-video">
@@ -61,7 +61,7 @@ get_header();
           <div class="sent-1 inview-elem inview-elem-top td-620">No project is </div>
           <div class="sent-2 inview-elem inview-elem-top td-400">off-<br>limits-</div>
           <div class="sent-3 inview-elem inview-elem-top td-550">we've been<br> <span class="rocking">rocking</span> <span class="video">
-              <video src="/wp-content/uploads/astronaut.mp4" autoplay muted loop></video>
+              <video src="/wp-content/uploads/astronaut-smaller.mp4" autoplay muted loop></video>
             </span>
           </div>
           <div class="sent-4 inview-elem inview-elem-top td-550">it for a<br> decade!</div>
@@ -104,7 +104,7 @@ get_header();
   <section class="sections-from-bottom" id="pinSectionFromBottom">
     <section class="panel panel-1 about-section about-world">
       <div class="video">
-        <video class="js-video" src="/wp-content/uploads/depositphotos_355960884-stock-video-wireless-internet-data-wifi-connectivity.mp4" autoplay muted loop></video>
+        <video class="js-video" src="/wp-content/uploads/technacysolutions-we-work-globally.mp4" autoplay muted loop></video>
       </div>
 
       <div class="testo-container">

@@ -108,6 +108,11 @@
     <link rel="preload" as="video" href="/wp-content/uploads/technacy-home-2-1.mp4"/>
     <link rel="preload" as="video" href="/wp-content/uploads/technacy-home-3.mp4"/>
     <link rel="preload" as="video" href="/wp-content/uploads/technacy-home-4.mp4"/>
+  <?php } else if(is_page('about')){?>
+    <link rel="preload" as="video" href="/wp-content/uploads/technacy-we-are-technacy-smaller.mp4"/>
+    <link rel="preload" as="video" href="/wp-content/uploads/astronaut-smaller.mp4"/>
+    <link rel="preload" as="video" href="/wp-content/uploads/fashion-style.mp4"/>
+    <link rel="preload" as="video" href="/wp-content/uploads/technacysolutions-we-work-globally.mp4"/>
   <?php } ?>
 </head>
 

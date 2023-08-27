@@ -14,10 +14,11 @@
         <div class="location">MIDDLE EAST</div>
         <div class="address-container">
           <div class="address">
-            Financial Harbour Building 1398. Road 4626, Block 346 P.O. Box 90100
+            Office 12, Building 1144, Road 4617, Block 346<br>
+            Bahrain Bay Seafront, Bahrain
           </div>
           <div class="address">
-            Manama Kingdom of Bahrain<br>T +973 17009819
+            T +973 17009819
           </div>
         </div>
       </div>

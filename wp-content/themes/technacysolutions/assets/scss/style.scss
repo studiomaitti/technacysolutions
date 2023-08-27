@@ -539,6 +539,7 @@ body {
     height: 580px;
     overflow: hidden;
     transform: rotate(-15deg) translate(120%, -5%);
+    transform: rotate(-15deg) translate(160%, -100%);
     width: 350px;
 
     video {
@@ -1002,6 +1003,7 @@ body {
           transform: rotate(-10.488deg);
           transition: all 0.4s ease-in-out;
           width: 450px;
+          z-index: -1;
 
           video {
             //transform: translateX(calc(-1 * calc(50% - 125px)));
@@ -1672,11 +1674,11 @@ body {
 
     .sede-i {
       color: #F4F4F4;
-      font-size: 14px;
+      font-size: 30px;
       font-family: 'Alegreya Sans', sans-serif;
       font-weight: 700;
       line-height: 150%;
-      width: 50%;
+      width: 100%;
 
       .location {
         color: #FC0606;
@@ -1688,7 +1690,6 @@ body {
         .address {
           width: 50%;
         }
-
       }
     }
   }
@@ -2305,6 +2306,25 @@ body.light-mode {
   }
 }
 
+@media screen and (max-width: 666px) {
+  body *{
+    display: none!important;
+  }
+
+  body .mobile {
+    display: flex!important;
+    flex-direction: column;
+    *{
+      display: block!important;
+    }
+    img{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+}
+
 /** *********************
   Fino al table
  ******* */
@@ -2314,10 +2334,6 @@ body.light-mode {
    ******* */
   .cursor {
     display: none;
-  }
-  .mobile {
-    display: flex;
-    flex-direction: column;
   }
 
   .header {
