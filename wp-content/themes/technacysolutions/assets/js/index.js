@@ -24,6 +24,9 @@ function moveCursor(e) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  if (window.mobileCheck() === true) {
+    document.body.classList.add('is-mobile')
+  }
   //CAMBIO COLORE
   //Controllo il cookie
   if(getCookie('dmode') == '1'){
@@ -85,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     /// 2° SECTION: Animazione video sotto
-    if (window.mobileCheck() === false) {
+    if (window.mobileCheck() === false || 1==1) {
       var controller = new ScrollMagic.Controller({
         globalSceneOptions: {
           triggerHook: 0.05,
@@ -109,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /// 3° SECTION: video in bg on over text
-    if (window.mobileCheck() === false) {
+    if (window.mobileCheck() === false || 1==1) {
       // element has gone out of viewport
       jQuery('.effetto-fascia-rossa').on('inview', function (event, isInView) {
         if (isInView) {

@@ -31,7 +31,7 @@ get_header();
     </div>
 
     <div class="home-intro-top-hover">
-      <video class="video-4" src="/wp-content/uploads/Homevideo_Hero_720.mp4" autoplay muted loop></video>
+      <video class="video-4" src="/wp-content/uploads/Homevideo_Hero_720.mp4" autoplay playsinline muted loop></video>
     </div>
   </section>
 
@@ -39,14 +39,16 @@ get_header();
     <div class="home-video-scroll-inner">
       <div class="home-video-scroll-livello-base">
         <div class="home-video-scroll-elem video-2">
-          <video src="/wp-content/uploads/technacy-home-1-1.mp4" autoplay muted loop></video>
+          <video src="/wp-content/uploads/technacy-home-1-1.mp4" autoplay playsinline muted loop></video>
         </div>
         <div class="home-video-scroll-elem video-4">
-          <video src="/wp-content/uploads/technacy-home-1-2.mp4" autoplay muted loop></video>
+          <video src="/wp-content/uploads/technacy-home-1-2.mp4" autoplay playsinline muted loop></video>
         </div>
+        <!--
         <div class="home-video-scroll-elem video-1" style="">
-          <video src="/wp-content/uploads/technacy-home-1-3.mp4" autoplay="" muted="" loop=""></video>
+          <video src="/wp-content/uploads/technacy-home-1-3.mp4" autoplay playsinline="" muted="" loop=""></video>
         </div>
+        -->
       </div>
       <div class="home-video-scroll-livello-medio">
         <div class="home-video-scroll-text">
@@ -62,11 +64,11 @@ get_header();
       <div class="home-video-scroll-livello-top">
 
         <div class="home-video-scroll-elem video-1">
-          <!--  <video src="/wp-content/uploads/technacy-home-3.mp4" autoplay muted loop></video> -->
+          <video src="/wp-content/uploads/technacy-home-3.mp4" autoplay playsinline muted loop></video>
         </div>
 
         <div class="home-video-scroll-elem video-3">
-          <video src="/wp-content/uploads/technacy-home-1-4.mp4" autoplay muted loop></video>
+          <video src="/wp-content/uploads/technacy-home-1-4.mp4" autoplay playsinline muted loop></video>
         </div>
       </div>
     </div>

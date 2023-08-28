@@ -1576,12 +1576,14 @@ body {
   width: 100%;
 }
 .home-video-scroll .home-video-scroll-inner .home-video-scroll-livello-medio .home-video-scroll-text {
-  position: relative;
-  height: calc(100vh - 46px);
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: calc(100vh - 46px);
   justify-content: center;
+  padding-bottom: 46px;
+  padding-top: 46px;
+  position: relative;
   transition: all 250ms ease-in-out;
 }
 .home-video-scroll .home-video-scroll-inner .home-video-scroll-livello-top {
@@ -1602,8 +1604,7 @@ body {
 .home-video-scroll .video-1 {
   height: 580px;
   overflow: hidden;
-  transform: rotate(-15deg) translate(120%, -5%);
-  transform: rotate(-15deg) translate(160%, -100%);
+  transform: rotate(-15deg) translate(160%, -5%);
   width: 350px;
 }
 .home-video-scroll .video-1 video {
@@ -1690,14 +1691,17 @@ body {
 }
 .home-iptv.panel .home-iptv-container h2.row-ivy {
   font-size: 96px;
+  font-size: 3.6vw;
   line-height: 130%;
 }
 .home-iptv.panel .home-iptv-container h2.row-neue {
   font-size: 96px;
+  font-size: 3.6vw;
   line-height: 130%;
 }
 .home-iptv.panel .home-iptv-container .text {
   font-size: 16px;
+  font-size: 1.4vw;
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 300;
   line-height: 145%;
@@ -1736,10 +1740,12 @@ body {
 }
 .home-computer .home-iptv-container h2.row-ivy {
   font-size: 96px;
+  font-size: 3.6vw;
   line-height: 130%;
 }
 .home-computer .home-iptv-container .text {
   font-size: 16px;
+  font-size: 1.4vw;
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 300;
   line-height: 145%;
@@ -2588,6 +2594,7 @@ body {
 .site-footer .row-sedi .sede-i {
   color: #F4F4F4;
   font-size: 30px;
+  font-size: 1.5vw;
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 700;
   line-height: 150%;
@@ -3087,7 +3094,7 @@ body.light-mode .site-footer .row-sedi .sede-i {
   }
 }
 /** *********************
-  Fino al table
+  Fino al tablet
  ******* */
 @media screen and (max-width: 767px) {
   /** *********************
@@ -3197,6 +3204,36 @@ body.archive .page-link-bottom-line {
   }
   .site-footer .row-sedi .sede-i {
     width: 100%;
+  }
+}
+@media screen and (max-width: 844px) {
+  .home-video-scroll .video-1 {
+    height: 290px;
+    width: 175px;
+  }
+  .home-video-scroll .video-1 video {
+    transform: translateX(calc(-1 * calc(50% - 87px)));
+  }
+  .home-video-scroll .video-2 {
+    height: 150px;
+    width: 260px;
+  }
+  .home-video-scroll .video-2 video {
+    transform: translateX(calc(-1 * calc(50% - 130px)));
+  }
+  .home-video-scroll .video-3 {
+    height: 200px;
+    width: 150px;
+  }
+  .home-video-scroll .video-3 video {
+    transform: translateX(calc(-1 * calc(50% - 75px)));
+  }
+  .home-video-scroll .video-4 {
+    width: 250px;
+    height: 125px;
+  }
+  .home-video-scroll .video-4 video {
+    transform: translateX(calc(-1 * calc(50% - 125px)));
   }
 }
 /** *********************
