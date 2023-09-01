@@ -103,8 +103,9 @@
 <div class="cursor"></div>
 <div class="mobile">
   <div class="text">
-    <div><img class="" src="/wp-content/themes/technacysolutions/assets/img/logo-technacy-full.svg" alt="Logo"></div>
-    <div>This site has been optimized for desktop</div>
+    <div>Rotate your phone</div>
+    <div style="padding: 5rem 0;"><img class="rotate-logo" src="/wp-content/themes/technacysolutions/assets/img/logo-technacy-full.svg" alt="Logo"></div>
+    <div>for better esperience</div>
   </div>
 </div>
 </body>

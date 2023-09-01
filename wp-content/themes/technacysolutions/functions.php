@@ -123,28 +123,28 @@ function technacysolutions_scripts()
   // Print styles.
   wp_enqueue_style('technacysolutions-print-style', get_template_directory_uri() . '/assets/css/print.css', array(), wp_get_theme()->get('Version'), 'print');
 
-  wp_enqueue_script( 'gsap', get_template_directory_uri() . '/assets/js/gsap/minified/gsap.min.js', array( 'jquery', 'script', 'script-home' ), 1.3);
-  wp_enqueue_script( 'ScrollMagic', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js', array( 'jquery', 'gsap', 'script', 'script-home' ), 1.3);
-  wp_enqueue_script( 'animation-gsap', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js', array( 'jquery', 'gsap', 'ScrollMagic', 'script', 'script-home' ), 1.3);
-  wp_enqueue_script( 'indicators', '//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js', array( 'jquery', 'gsap', 'ScrollMagic', 'animation-gsap', 'script', 'script-home' ), 1.3);
+  wp_enqueue_script( 'gsap', get_template_directory_uri() . '/assets/js/gsap/minified/gsap.min.js', array( 'jquery', 'script', 'script-home' ), 1.4);
+  wp_enqueue_script( 'ScrollMagic', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js', array( 'jquery', 'gsap', 'script', 'script-home' ), 1.4);
+  wp_enqueue_script( 'animation-gsap', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js', array( 'jquery', 'gsap', 'ScrollMagic', 'script', 'script-home' ), 1.4);
+  wp_enqueue_script( 'indicators', '//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js', array( 'jquery', 'gsap', 'ScrollMagic', 'animation-gsap', 'script', 'script-home' ), 1.4);
 
 
-  wp_enqueue_script( 'paroller', get_template_directory_uri() . '/assets/js/paroller/dist/jquery.paroller.min.js', array( 'jquery', 'script', 'script-home' ), 1.3);
-  wp_enqueue_script( 'jquery-inview', get_template_directory_uri() . '/assets/js/jquery-inview/jquery.inview.min.js', array( 'jquery', 'script', 'script-home' ), 1.3);
+  wp_enqueue_script( 'paroller', get_template_directory_uri() . '/assets/js/paroller/dist/jquery.paroller.min.js', array( 'jquery', 'script', 'script-home' ), 1.4);
+  wp_enqueue_script( 'jquery-inview', get_template_directory_uri() . '/assets/js/jquery-inview/jquery.inview.min.js', array( 'jquery', 'script', 'script-home' ), 1.4);
 
   if(is_singular('projects')){
     wp_enqueue_style('owl-style', get_template_directory_uri() . '/assets/js/OwlCarousel2/dist/assets/owl.carousel.min.css', array(), wp_get_theme()->get('Version'));
     wp_enqueue_style('owl-style-theme', get_template_directory_uri() . '/assets/js/OwlCarousel2/dist/assets/owl.theme.default.min.css', array(), wp_get_theme()->get('Version'));
-    wp_enqueue_script( 'owl', get_template_directory_uri() . '/assets/js/OwlCarousel2/dist/owl.carousel.min.js', array( 'jquery', 'script', 'script-home' ), 1.3);
+    wp_enqueue_script( 'owl', get_template_directory_uri() . '/assets/js/OwlCarousel2/dist/owl.carousel.min.js', array( 'jquery', 'script', 'script-home' ), 1.4);
   } else {
-    wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper/swiper-bundle.min.js', array( 'jquery', 'script', 'script-home' ), 1.3);
+    wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper/swiper-bundle.min.js', array( 'jquery', 'script', 'script-home' ), 1.4);
     wp_enqueue_style('swiper-style', get_template_directory_uri() . '/assets/js/swiper/swiper-bundle.min.css', array(), wp_get_theme()->get('Version'));
   }
 
-  wp_enqueue_script( 'lettering', get_template_directory_uri() . '/assets/js/jquery.lettering.js', array( 'jquery' ), 1.3);
+  wp_enqueue_script( 'lettering', get_template_directory_uri() . '/assets/js/jquery.lettering.js', array( 'jquery' ), 1.4);
 
-  wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/index.js', array( 'jquery' ), 1.3);
-  wp_enqueue_script( 'script-home', get_template_directory_uri() . '/assets/js/home.js', array( 'jquery' ), 1.3);
+  wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/index.js', array( 'jquery' ), 1.4);
+  wp_enqueue_script( 'script-home', get_template_directory_uri() . '/assets/js/home.js', array( 'jquery' ), 1.4);
 
 
 

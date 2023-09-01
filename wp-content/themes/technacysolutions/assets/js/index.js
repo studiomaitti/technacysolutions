@@ -22,7 +22,14 @@ function moveCursor(e) {
     }, 300);
   }
 }
-
+window.onorientationchange = function() {
+  var orientation = window.orientation;
+  switch(orientation) {
+    case 0:
+    case 90:
+    case -90: window.location.reload();
+      break; }
+};
 document.addEventListener("DOMContentLoaded", () => {
   if (window.mobileCheck() === true) {
     document.body.classList.add('is-mobile')
