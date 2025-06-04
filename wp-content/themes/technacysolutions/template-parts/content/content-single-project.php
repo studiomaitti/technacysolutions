@@ -42,6 +42,8 @@
 
   <?php
   $images = get_field('gallery');
+  $video_embed = get_field('video_embed');
+  
   $size = 'prj-gallery'; // (thumbnail, medium, large, full or custom size)
   if ($images) {
 
@@ -68,6 +70,41 @@
         ?>
 
       </div>
+    </div>
+    <?php
+  }
+  else if($video_embed){
+        ?>
+    <div class="prj-image-container content-width inview-elem inview-elem-left">
+      <div class="video-responsive">
+        <?php echo $video_embed; ?>
+      </div>
+<style type="text/css">
+  .video-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.video-responsive::before {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+</style>
+      
     </div>
     <?php
   }
