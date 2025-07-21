@@ -16,6 +16,73 @@
 
 get_header();
 ?>
+  <section class="home-section home-intro-section">
+    <div class="column column-1 inview-elem inview-elem-top">
+      <div class="column-container">
+        <div class="section-image">
+          <a href="/about-us" class="section-link" title="About us"><img src="https://picsum.photos/380/768?random=1" alt="placeholder"></a>
+        </div>
+        <h2 class="section-title">About us</h2>
+        <div class="section-description">
+          <h3 class="section-sub-title">About us</h3>
+          <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column column-2 inview-elem inview-elem-top">
+      <div class="column-container">
+        <div class="section-image">
+          <a href="/our-sectors" class="section-link" title="Our Sectors"><img src="https://picsum.photos/380/768?random=2" alt="placeholder"></a>
+        </div>
+        <h2 class="section-title">Our Sectors</h2>
+        <div class="section-description">
+          <h3 class="section-sub-title">Our Sectors</h3>
+          <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column column-3 inview-elem inview-elem-top">
+      <div class="column-container">
+        <div class="section-image">
+          <a href="/our-references" class="section-link" title="Our References"><img src="https://picsum.photos/380/768?random=3" alt="placeholder"></a>
+        </div>
+        <h2 class="section-title">Our References</h2>
+        <div class="section-description">
+          <h3 class="section-sub-title">Our References</h3>
+          <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column column-4 inview-elem inview-elem-top">
+      <div class="column-container">
+        <div class="section-image">
+          <a href="/our-clients" class="section-link" title="Our Clients"><img src="https://picsum.photos/380/768?random=4" alt="placeholder"></a>
+        </div>
+        <h2 class="section-title">Our Clients</h2>
+        <div class="section-description">
+          <h3 class="section-sub-title">Our Clients</h3>
+          <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column column-5 inview-elem inview-elem-top">
+      <div class="column-container">
+        <div class="section-image">
+          <a href="/contact-us" class="section-link" title="Contact Us"><img src="https://picsum.photos/380/768?random=5" alt="placeholder"></a>
+        </div>
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-description">
+          <h3 class="section-sub-title">Contact Us</h3>
+          <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="home-section home-intro-top">
     <div class="home-intro-top-base content-width">
       <div class="home-intro-top-base-testo">
@@ -26,7 +93,8 @@ get_header();
         <div class="row-i row-3 row-neue inview-elem inview-elem-left td-1400" data-id-video="3">
           <span class="txt"><span class="bg"></span>DYNAMIC CREATIVES</span></div>
         <div class="row-i row-4 row-ivy inview-elem inview-elem-left td-620 js-hover-intro" data-id-video="4">
-          <span class="txt js-dot-to-cicle js-white-cicle"><span class="bg js-dot-to-cicle js-white-cicle"></span>BASED IN BAHRAIN.</span></div>
+          <span class="txt js-dot-to-cicle js-white-cicle"><span class="bg js-dot-to-cicle js-white-cicle"></span>BASED IN BAHRAIN.</span>
+        </div>
       </div>
     </div>
 
@@ -34,7 +102,6 @@ get_header();
       <video class="video-4" src="/wp-content/uploads/Homevideo_Hero_720.mp4" autoplay playsinline muted loop></video>
     </div>
   </section>
-
   <section class="home-section home-video-scroll">
     <div class="home-video-scroll-inner">
       <div class="home-video-scroll-livello-base">
@@ -90,7 +157,12 @@ get_header();
           <h2 class="row-ivy inview-elem inview-elem-left td-400">TELECOMMUNICATION</h2>
           <h2 class="row-neue inview-elem inview-elem-right td-550">IPTV & MEDIA</h2>
           <div class="text inview-elem inview-elem-bottom">
-            The Technacy Team offers cutting-edge IPTV technology and global content for an unparalleled viewer experience. With industry giants and leading brands as our partners, we have built strong relationships based on excellent communication and trust. Our customer-centric approach ensures your unique needs are met, providing an incredible IPTV experience. <br>We are committed to customer satisfaction with 24/7 support. Our operational flexibility and technical expertise set new benchmarks in IPTV provision across industries. Join us as we revolutionize the IPTV experience together.
+            The Technacy Team offers cutting-edge IPTV technology and global content for an unparalleled viewer
+            experience. With industry giants and leading brands as our partners, we have built strong relationships
+            based on excellent communication and trust. Our customer-centric approach ensures your unique needs are met,
+            providing an incredible IPTV experience. <br>We are committed to customer satisfaction with 24/7 support.
+            Our operational flexibility and technical expertise set new benchmarks in IPTV provision across industries.
+            Join us as we revolutionize the IPTV experience together.
           </div>
         </div>
       </div>
@@ -103,7 +175,12 @@ get_header();
           <h2 class="row-ivy inview-elem inview-elem-left td-400">DIGITAL</h2>
           <h2 class="row-neue inview-elem inview-elem-right td-550">COMMUNICATION</h2>
           <div class="text inview-elem inview-elem-bottom">
-            The Technacy Team is passionate about cutting-edge technologies. We use the likes of virtual reality, augmented reality, holographic technology, and AI-generated content to create interactive and immersive state-of-the-art projects. There is immense potential these technologies hold for transforming user experiences and engaging audiences in entirely new ways. We take care of all creative and technical aspects from concept to development and deployment and provide 24/7 support. We have the know-how and expertise to translate our client’s visions into jaw dropping projects. Let’s create something awesome together!
+            The Technacy Team is passionate about cutting-edge technologies. We use the likes of virtual reality,
+            augmented reality, holographic technology, and AI-generated content to create interactive and immersive
+            state-of-the-art projects. There is immense potential these technologies hold for transforming user
+            experiences and engaging audiences in entirely new ways. We take care of all creative and technical aspects
+            from concept to development and deployment and provide 24/7 support. We have the know-how and expertise to
+            translate our client’s visions into jaw dropping projects. Let’s create something awesome together!
           </div>
         </div>
       </div>
@@ -111,10 +188,10 @@ get_header();
   </section>
 
 <?php
-  $a = [];
-  for ($i = 0; $i < 30; $i++) {
-    $a[] = '<a href="/about">about</a>';
-  }
+$a = [];
+for ($i = 0; $i < 30; $i++) {
+  $a[] = '<a href="/about">about</a>';
+}
 ?>
   <section class="page-link">
     <div class="page-link-top-line" data-paroller-factor="0.35" data-paroller-type="foreground" data-paroller-direction="horizontal" data-paroller-transition="transform .35s linear">
