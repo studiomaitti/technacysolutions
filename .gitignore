@@ -47,3 +47,13 @@ wp-config.php
 # uncomment the next line
 #/wp-content/themes
 ./.idea
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/jsLinters/jshint.xml
+/.idea/.gitignore
+/.idea/deployment.xml
+/.idea/modules.xml
+/.idea/php.xml
+/.idea/technacysolutions.iml
+/.idea/vcs.xml
+/.idea/watcherTasks.xml
+/.idea/webServers.xml

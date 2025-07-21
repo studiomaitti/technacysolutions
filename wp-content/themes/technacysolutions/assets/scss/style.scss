@@ -914,8 +914,8 @@ body {
           line-height: 1.1;
           letter-spacing: 0em;
 
-          &:hover + .sent-3-2{
-            .video{
+          &:hover + .sent-3-2 {
+            .video {
               opacity: 1;
             }
           }
@@ -1311,6 +1311,10 @@ body {
     display: flex;
     justify-content: space-between;
 
+    &.mbl{
+      display: none;
+    }
+
     .img-i {
       display: flex;
       flex-direction: column;
@@ -1381,6 +1385,10 @@ body {
   .logo-row {
     display: flex;
     justify-content: space-between;
+
+    &.mbl{
+      display: none;
+    }
 
     .img-i {
       display: flex;
@@ -1847,13 +1855,13 @@ body.archive {
       .img {
         position: relative;
 
-        &:hover{
-          .blob-big.white{
+        &:hover {
+          .blob-big.white {
             animation: pulse-white-big 1.7s infinite;
           }
         }
 
-        a{
+        a {
           display: block;
           border-radius: 2rem;
           overflow: hidden;
@@ -2143,7 +2151,7 @@ body.light-mode {
     color: #161616;
   }
 
-  .home-intro-top{
+  .home-intro-top {
     .home-intro-top-hover {
       background-color: #ffffff;
     }
@@ -2316,22 +2324,19 @@ body.light-mode {
 }
 
 @media screen and (max-width: 666px) {
-  body *{
-    display: none!important;
-  }
-
   body .mobile {
-    display: flex!important;
+    //display: flex!important;
     flex-direction: column;
-    *{
-      display: block!important;
+
+    * {
+      display: block !important;
     }
-    img{
+
+    img {
       margin-left: auto;
       margin-right: auto;
     }
   }
-
 }
 
 /** *********************
@@ -2355,6 +2360,7 @@ body.light-mode {
     }
   }
 
+  /** HOME PAGE **/
   body.home {
     .home-section {
       .row-ivy {
@@ -2363,6 +2369,52 @@ body.light-mode {
 
       .row-neue {
         font-size: 26px;
+      }
+    }
+    .home-iptv.panel {
+      .home-iptv-container {
+        h2.row-ivy {
+          font-size: 27px;
+          font-size: 7vw;
+          line-height: 130%;
+        }
+        h2.row-neue {
+          font-size: 27px;
+          font-size: 7vw;
+          line-height: 130%;
+        }
+
+        .home-iptv-text .text {
+          font-size: 3.2vw;
+
+          br{
+            display: block;
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+    .home-computer.panel {
+      .home-iptv-container {
+        h2.row-ivy {
+          font-size: 27px;
+          font-size: 7vw;
+          line-height: 130%;
+        }
+        h2.row-neue {
+          font-size: 27px;
+          font-size: 7vw;
+          line-height: 130%;
+        }
+
+        .home-iptv-text .text {
+          font-size: 3.2vw;
+
+          br{
+            display: block;
+            margin: 10px 0;
+          }
+        }
       }
     }
 
@@ -2473,8 +2525,8 @@ body.light-mode {
   .site-footer {
     height: auto;
 
-    .row-email {
-      font-size: 14px;
+    .row-email,{
+      font-size: 12px;
       letter-spacing: normal;
     }
 
@@ -2490,10 +2542,79 @@ body.light-mode {
       }
     }
   }
+
+  .menu-container .menu-area .main-navigation ul li{
+    margin: 15px 0;
+  }
+
+  .about-intro-top .testo {
+    font-size: 96px;
+    font-size: 7vw;
+  }
+
+  .about-intro-top .testo span{
+    font-size: 96px;
+    font-size: 7vw;
+  }
+
+  body .about-we-crush .panel .content-width {
+    padding-left: 3rem;
+  }
+
+  body.is-mobile .about-testimonial .testimonial-slide .data .description {
+    font-size: 16px;
+  }
+  .about-partners .logo-row .img-i {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    max-width: 18%;
+    max-height: 4.4rem;
+    text-align: center;
+  }
+
+  .about-clients .logo-row.dsk,
+  .about-partners .logo-row.dsk {
+    display: none!important;
+  }
+
+  .about-clients .logo-row.mbl,
+  .about-partners .logo-row.mbl {
+    display: flex!important;
+  }
+
+  .about-partners .logo-row.mbl .img-i{
+    max-width: 30%;
+  }
+
+  .about-clients .logo-row.mbl .img-i{
+    max-width: 22%;
+  }
+
+  .sections-from-bottom .panel .content-width,
+  .category-section .panel .content-width {
+    margin: 20% auto;
+  }
+
+  body.is-mobile .about-testimonial .testimonial-slide .img {
+    background-position: center;
+    display: none;
+  }
+  .about-testimonial .testimonial-slide .data-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    width: 100%;
+  }
+  .about-testimonial .testimonial-slide .data .nome,
+  .about-testimonial .testimonial-slide .data .societa {
+    font-size: 5vw;
+  }
 }
 
-@media screen and (max-width: 844px){
-  .home-video-scroll{
+@media screen and (max-width: 844px) {
+  .home-video-scroll {
     .video-1 {
       height: 290px;
       width: 175px;
@@ -2503,11 +2624,11 @@ body.light-mode {
       }
     }
 
-    .video-2{
+    .video-2 {
       height: 150px;
       width: 260px;
 
-      video{
+      video {
         transform: translateX(calc(-1 * calc(50% - 130px)));
       }
     }
@@ -2516,7 +2637,7 @@ body.light-mode {
       height: 200px;
       width: 150px;
 
-      video{
+      video {
         transform: translateX(calc(-1 * calc(50% - 75px)));
       }
     }
@@ -2525,7 +2646,7 @@ body.light-mode {
       width: 250px;
       height: 125px;
 
-      video{
+      video {
         transform: translateX(calc(-1 * calc(50% - 125px)));
       }
     }
