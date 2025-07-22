@@ -24,8 +24,16 @@ get_header();
         </div>
         <h2 class="section-title">About us</h2>
         <div class="section-description">
-          <h3 class="section-sub-title">About us</h3>
-          <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
+          <div class="content-wrapper">
+            <h3 class="section-sub-title">About us</h3>
+            <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
+          </div>
+          <div class="dot dot-arrow">
+            <span class="blob"></span>
+            <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"></path>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -37,8 +45,16 @@ get_header();
         </div>
         <h2 class="section-title">Our Sectors</h2>
         <div class="section-description">
-          <h3 class="section-sub-title">Our Sectors</h3>
-          <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
+          <div class="content-wrapper">
+            <h3 class="section-sub-title">About us</h3>
+            <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
+          </div>
+          <div class="dot dot-arrow">
+            <span class="blob"></span>
+            <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"></path>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -50,8 +66,16 @@ get_header();
         </div>
         <h2 class="section-title">Our References</h2>
         <div class="section-description">
-          <h3 class="section-sub-title">Our References</h3>
-          <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
+          <div class="content-wrapper">
+            <h3 class="section-sub-title">About us</h3>
+            <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
+          </div>
+          <div class="dot dot-arrow">
+            <span class="blob"></span>
+            <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"></path>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -63,8 +87,16 @@ get_header();
         </div>
         <h2 class="section-title">Our Clients</h2>
         <div class="section-description">
-          <h3 class="section-sub-title">Our Clients</h3>
-          <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
+          <div class="content-wrapper">
+            <h3 class="section-sub-title">About us</h3>
+            <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
+          </div>
+          <div class="dot dot-arrow">
+            <span class="blob"></span>
+            <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"></path>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -76,8 +108,16 @@ get_header();
         </div>
         <h2 class="section-title">Contact Us</h2>
         <div class="section-description">
-          <h3 class="section-sub-title">Contact Us</h3>
-          <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
+          <div class="content-wrapper">
+            <h3 class="section-sub-title">About us</h3>
+            <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
+          </div>
+          <div class="dot dot-arrow">
+            <span class="blob"></span>
+            <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"></path>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
