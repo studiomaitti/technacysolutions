@@ -133,58 +133,62 @@ get_header();
     </div>
   </section>
 
-  <section class="technacy-numbers-section">
-    <div class="content-width">
-      <h2 class="section-title">
-        <span class="sent-1">We crush</span>
-        <span class="sent-2">every challenge</span>
-        <span class="sent-amp">&amp;</span>
-        <span class="sent-3">deliver with</span>
-      </h2>
-      
-      <div class="numbers-grid">
-        <div class="number-item inview-elem inview-elem-bottom">
-          <div class="number">32</div>
-          <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2L1 12l3 9h16l3-9-11-10zm0 2.8L19.3 12H4.7L12 4.8z"/>
-            </svg>
-          </div>
-          <div class="description">projects delivered</div>
-        </div>
-        
-        <div class="number-item inview-elem inview-elem-bottom">
-          <div class="number">5</div>
-          <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-              <path d="M16.59 7.58L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/>
-            </svg>
-          </div>
-          <div class="description">nationalities</div>
-        </div>
-        
-        <div class="number-item inview-elem inview-elem-bottom">
-          <div class="number">50</div>
-          <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-            </svg>
-          </div>
-          <div class="description">clients</div>
-        </div>
-        
-        <div class="number-item inview-elem inview-elem-bottom">
-          <div class="number">15</div>
-          <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
-              <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
-            </svg>
-          </div>
-          <div class="description">years of experience</div>
+  <section class="home-section home-intro-top">
+    <div class="home-intro-top-base content-width">
+      <div class="home-intro-top-base-testo">
+        <div class="row-i row-1 row-ivy inview-elem inview-elem-left td-1200" data-id-video="1">
+          <span class="txt"><span class="bg"></span>WE ARE TECHNACY</span></div>
+        <div class="row-i row-2 row-neue inview-elem inview-elem-left td-1300" data-id-video="2">
+          <span class="txt"><span class="bg"></span>A TEAM OF VIBRANT &</span></div>
+        <div class="row-i row-3 row-neue inview-elem inview-elem-left td-1400" data-id-video="3">
+          <span class="txt"><span class="bg"></span>DYNAMIC CREATIVES</span></div>
+        <div class="row-i row-4 row-ivy inview-elem inview-elem-left td-620 js-hover-intro" data-id-video="4">
+          <span class="txt js-dot-to-cicle js-white-cicle"><span class="bg js-dot-to-cicle js-white-cicle"></span>BASED IN BAHRAIN.</span>
         </div>
       </div>
+    </div>
+
+    <div class="home-intro-top-hover">
+      <video class="video-4" src="/wp-content/uploads/Homevideo_Hero_720.mp4" autoplay playsinline muted loop></video>
+    </div>
+  </section>
+  <section class="home-section home-video-scroll">
+    <div class="home-video-scroll-inner">
+      <div class="home-video-scroll-livello-base">
+        <div class="home-video-scroll-elem video-2">
+          <video src="/wp-content/uploads/technacy-home-1-1.mp4" autoplay playsinline muted loop></video>
+        </div>
+        <div class="home-video-scroll-elem video-4">
+          <video src="/wp-content/uploads/technacy-home-1-2.mp4" autoplay playsinline muted loop></video>
+        </div>
+        <!--
+        <div class="home-video-scroll-elem video-1" style="">
+          <video src="/wp-content/uploads/technacy-home-1-3.mp4" autoplay playsinline="" muted="" loop=""></video>
+        </div>
+        -->
+      </div>
+      <div class="home-video-scroll-livello-medio">
+        <div class="home-video-scroll-text">
+          <div class="row-ivy inview-elem inview-elem-top td-200">WE DELIVER</div>
+          <div class="row-neue inview-elem inview-elem-top td-400">CUTTING-EDGE</div>
+          <div class="row-ivy inview-elem inview-elem-top td-550">IPTV SOLUTIONS</div>
+          <div class="row-ivy inview-elem inview-elem-top td-620">& DIGITAL EXPERIENCES</div>
+          <div class="row-neue inview-elem inview-elem-top td-700">WELCOME</div>
+          <div class="row-ivy inview-elem inview-elem-top td-710">TO THE NEW</div>
+          <div class="row-neue inview-elem inview-elem-top td-740">DIGITAL ERA</div>
+        </div>
+      </div>
+      <div class="home-video-scroll-livello-top">
+
+        <div class="home-video-scroll-elem video-1">
+          <video src="/wp-content/uploads/technacy-home-3.mp4" autoplay playsinline muted loop></video>
+        </div>
+
+        <div class="home-video-scroll-elem video-3">
+          <video src="/wp-content/uploads/technacy-home-1-4.mp4" autoplay playsinline muted loop></video>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
 

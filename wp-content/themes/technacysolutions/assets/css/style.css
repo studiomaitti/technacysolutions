@@ -1157,6 +1157,139 @@ table.wp-calendar-table caption {
   border: 4px solid #ffffff;
 }
 
+/* Technacy Numbers Section */
+.technacy-numbers-section {
+  background-color: #000;
+  color: #fff;
+  padding: 100px 0;
+  overflow: hidden;
+  position: relative;
+}
+.technacy-numbers-section .content-width {
+  padding: 0 5vw;
+}
+.technacy-numbers-section .section-title {
+  font-size: 4.5vw;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .technacy-numbers-section .section-title {
+    font-size: 6vw;
+  }
+}
+@media (max-width: 768px) {
+  .technacy-numbers-section .section-title {
+    font-size: 8vw;
+    margin-bottom: 60px;
+  }
+}
+.technacy-numbers-section .section-title .sent-1 {
+  color: #ff0000;
+  display: block;
+  font-family: "Neue Machina", sans-serif;
+}
+.technacy-numbers-section .section-title .sent-2 {
+  display: block;
+  font-family: "ivypresto-display", serif;
+  font-style: italic;
+  font-weight: 300;
+  z-index: 10;
+  position: relative;
+}
+.technacy-numbers-section .section-title .sent-amp {
+  color: #ff0000;
+  display: inline-block;
+  margin: 0 10px;
+  font-family: "ivypresto-display", serif;
+  font-size: 10vw;
+  font-style: italic;
+  font-weight: 300;
+  position: absolute;
+  right: 3vw;
+  bottom: 3vw;
+}
+@media (max-width: 1024px) {
+  .technacy-numbers-section .section-title .sent-amp {
+    font-size: 8vw;
+  }
+}
+.technacy-numbers-section .section-title .sent-3 {
+  display: inline-block;
+  font-family: "Neue Machina", sans-serif;
+}
+.technacy-numbers-section .numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+@media (max-width: 1024px) {
+  .technacy-numbers-section .numbers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 30px;
+  }
+}
+@media (max-width: 576px) {
+  .technacy-numbers-section .numbers-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+.technacy-numbers-section .number-item {
+  text-align: center;
+}
+.technacy-numbers-section .number-item .number {
+  color: #ff0000;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+@media (max-width: 1024px) {
+  .technacy-numbers-section .number-item .number {
+    font-size: 3.5rem;
+  }
+}
+.technacy-numbers-section .number-item .icon {
+  color: #ff0000;
+  height: 40px;
+  margin: 0 auto 15px;
+  width: 40px;
+}
+.technacy-numbers-section .number-item .icon svg {
+  height: 100%;
+  width: 100%;
+}
+.technacy-numbers-section .number-item .description {
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+@media (max-width: 1024px) {
+  .technacy-numbers-section .number-item .description {
+    font-size: 1rem;
+  }
+}
+.technacy-numbers-section .number-item:nth-child(1) {
+  transition-delay: 0.15s;
+}
+.technacy-numbers-section .number-item:nth-child(2) {
+  transition-delay: 0.3s;
+}
+.technacy-numbers-section .number-item:nth-child(3) {
+  transition-delay: 0.45s;
+}
+.technacy-numbers-section .number-item:nth-child(4) {
+  transition-delay: 0.6s;
+}
+
 body {
   background-color: #000;
   transition: all 0.4s linear;
@@ -1511,6 +1644,7 @@ body {
 }
 .home-intro-section .section-image a {
   display: block;
+  height: 100%;
 }
 .home-intro-section .section-image img {
   width: 100%;
@@ -3077,9 +3211,6 @@ body.light-mode {
 body.light-mode a {
   color: #161616;
 }
-body.light-mode .header .dark-mode-hamburger .dark-mode-container span {
-  color: #161616;
-}
 body.light-mode .menu-container-opener svg path {
   fill: #000000;
 }
@@ -3218,9 +3349,6 @@ body.light-mode .site-footer .row-sedi .sede-i {
     Elementi vari
    ******* */
   .cursor {
-    display: none;
-  }
-  .header .dark-mode-hamburger .dark-mode-container span {
     display: none;
   }
   /** HOME PAGE **/

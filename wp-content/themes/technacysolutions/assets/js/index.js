@@ -1,6 +1,8 @@
 
 jQuery(window).on('mousemove', moveCursor);
 
+// Animate Technacy Numbers on scroll
+
 function moveCursor(e) {
   if (window.mobileCheck() === false) {
     var $cursor = jQuery('.cursor');
@@ -73,24 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (window.mobileCheck() === true) {
     document.body.classList.add('is-mobile')
   }
-
-  //CAMBIO COLORE
-  //Controllo il cookie
-  if(getCookie('dmode') == '1'){
-    document.body.classList.add('light-mode');
-    document.querySelector('.js-dark-mode').checked = true;
-  }
-
-  document.querySelector('.js-dark-mode').addEventListener('change', function (ev) {
-    if (ev.target.checked === true) {
-      document.body.classList.add('light-mode');
-      setCookie('dmode', '1', 1);
-    }
-    else {
-      document.body.classList.remove('light-mode');
-      setCookie('dmode', '0', -1);
-    }
-  })
 
   //MENU
   document.querySelector('.js-close-menu').addEventListener('click', function (ev) {

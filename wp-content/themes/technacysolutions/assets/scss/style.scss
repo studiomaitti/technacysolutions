@@ -5,6 +5,139 @@
 @import "_base_wp";
 @import "_animations";
 
+/* Technacy Numbers Section */
+.technacy-numbers-section {
+  background-color: #000;
+  color: #fff;
+  padding: 100px 0;
+  overflow: hidden;
+  position: relative;
+  
+  .content-width {
+    padding: 0 5vw;
+  }
+  
+  .section-title {
+    font-size: 4.5vw;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    
+    @media (max-width: 1024px) {
+      font-size: 6vw;
+    }
+    
+    @media (max-width: 768px) {
+      font-size: 8vw;
+      margin-bottom: 60px;
+    }
+    
+    .sent-1 {
+      color: #ff0000;
+      display: block;
+      font-family: "Neue Machina", sans-serif;
+    }
+    
+    .sent-2 {
+      display: block;
+      font-family: "ivypresto-display", serif;
+      font-style: italic;
+      font-weight: 300;
+      z-index: 10;
+      position: relative;
+    }
+    
+    .sent-amp {
+      color: #ff0000;
+      display: inline-block;
+      margin: 0 10px;
+      font-family: "ivypresto-display", serif;
+      font-size: 10vw;
+      font-style: italic;
+      font-weight: 300;
+      position: absolute;
+      right: 3vw;
+      bottom: 3vw;
+
+      @media (max-width: 1024px) {
+        font-size: 8vw;
+      }
+    }
+    
+    .sent-3 {
+      display: inline-block;
+      font-family: "Neue Machina", sans-serif;
+    }
+  }
+  
+  .numbers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1400px;
+    
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 30px;
+    }
+    
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+  
+  .number-item {
+    text-align: center;
+
+    .number {
+      color: #ff0000;
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 15px;
+      
+      @media (max-width: 1024px) {
+        font-size: 3.5rem;
+      }
+    }
+    
+    .icon {
+      color: #ff0000;
+      height: 40px;
+      margin: 0 auto 15px;
+      width: 40px;
+      
+      svg {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    
+    .description {
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+      line-height: 1.4;
+      text-transform: uppercase;
+      
+      @media (max-width: 1024px) {
+        font-size: 1rem;
+      }
+    }
+    
+    // Staggered animation delays
+    @for $i from 1 through 4 {
+      &:nth-child(#{$i}) {
+        transition-delay: #{$i * 0.15}s;
+      }
+    }
+  }
+}
+
 body {
   background-color: #000;
   transition: all 0.4s linear;
@@ -432,6 +565,7 @@ body {
 
     a {
       display: block;
+      height: 100%;
     }
 
     img {
@@ -2275,10 +2409,6 @@ body.light-mode {
   }
 
   /* HEADER */
-  .header .dark-mode-hamburger .dark-mode-container span {
-    color: #161616;
-  }
-
   .menu-container-opener {
     svg {
       path {
@@ -2492,16 +2622,6 @@ body.light-mode {
    ******* */
   .cursor {
     display: none;
-  }
-
-  .header {
-    .dark-mode-hamburger {
-      .dark-mode-container {
-        span {
-          display: none;
-        }
-      }
-    }
   }
 
   /** HOME PAGE **/
