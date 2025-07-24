@@ -1,7 +1,48 @@
-
 jQuery(window).on('mousemove', moveCursor);
 
-// Animate Technacy Numbers on scroll
+// Video Modal Functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const videoThumbnail = document.querySelector('.video-thumbnail .image-container');
+  const videoModal = document.getElementById('videoModal');
+  const closeModal = document.querySelector('.close-modal');
+  const videoFrame = document.getElementById('videoFrame');
+  const videoUrl = 'https://www.youtube.com/embed/YOUR_VIDEO_ID'; // Replace with your video URL
+
+  if (videoThumbnail && videoModal) {
+    // Open modal when clicking the video thumbnail
+    videoThumbnail.addEventListener('click', function() {
+      videoModal.classList.add('active');
+      videoFrame.src = videoUrl;
+      document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+    });
+
+    // Close modal when clicking the close button
+    closeModal.addEventListener('click', function() {
+      videoModal.classList.remove('active');
+      videoFrame.src = ''; // Stop the video when closing
+      document.body.style.overflow = ''; // Re-enable scrolling
+    });
+
+    // Close modal when clicking outside the video
+    videoModal.addEventListener('click', function(e) {
+      if (e.target === videoModal) {
+        videoModal.classList.remove('active');
+        videoFrame.src = ''; // Stop the video when closing
+        document.body.style.overflow = ''; // Re-enable scrolling
+      }
+    });
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && videoModal.classList.contains('active')) {
+        videoModal.classList.remove('active');
+        videoFrame.src = ''; // Stop the video when closing
+        document.body.style.overflow = ''; // Re-enable scrolling
+      }
+    });
+  }
+});
+
 
 function moveCursor(e) {
   if (window.mobileCheck() === false) {

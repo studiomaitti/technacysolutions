@@ -16,7 +16,7 @@
 
 get_header();
 ?>
-  <section class="home-section home-intro-section">
+  <section class="home-intro-section">
     <div class="column column-1 inview-elem inview-elem-left">
       <div class="column-container">
         <div class="section-image">
@@ -183,6 +183,58 @@ get_header();
             </svg>
           </div>
           <div class="description">years of experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="technacy-description-section">
+    <div class="content-width">
+      <div class="description-grid">
+        <!-- First Column: Text Content -->
+        <div class="description-content">
+          <h2 class="section-title">Technacy Solutions</h2>
+          <div class="text-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-icon">→</span>
+                <span>dolor sit amet consectetur</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">→</span>
+                <span>ipsum dolor sit. Quae, quia.</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">→</span>
+                <span>consectetur adipisicing elit. Quae, quia.</span>
+              </li>
+            </ul>
+            <p>Quae, quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</p>
+            <button class="download-brochure-btn">Download Brochure</button>
+          </div>
+        </div>
+        
+        <!-- Second Column: Video Thumbnail -->
+        <div class="video-thumbnail">
+          <div class="image-container">
+            <img src="https://picsum.photos/800/600?random=1" alt="Technacy Solutions" class="thumbnail-image">
+            <div class="play-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="video-container">
+          <iframe id="videoFrame" width="100%" height="100%" src="" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
