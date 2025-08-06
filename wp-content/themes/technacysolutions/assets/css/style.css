@@ -1818,7 +1818,7 @@ body {
 .home-intro-section {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 80vh;
   overflow: hidden;
   position: relative;
 }

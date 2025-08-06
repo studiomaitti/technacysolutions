@@ -17,18 +17,19 @@
 get_header();
 ?>
   <section class="home-intro-section">
+    <!-- ABOUT US -->
     <div class="column column-1 inview-elem inview-elem-left">
       <div class="column-container">
         <div class="section-image">
-          <a href="/about-us" class="section-link" title="About us">
-            <img src="https://fastly.picsum.photos/id/888/380/768.jpg?hmac=tbxxvELtojhlPRBEO6_dVFzlK-kykyibQkSu9jnPM0M" alt="About us">
+          <a href="/about" class="section-link" title="About us">
+            <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-lab--about-us.jpg" alt="About us">
           </a>
         </div>
         <h2 class="section-title">About us</h2>
         <div class="section-description">
           <div class="content-wrapper">
             <h3 class="section-sub-title">About us</h3>
-            <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
+            <div class="short-description">We are here to turn your ideas into reality!</div>
           </div>
           <div class="dot dot-arrow">
             <span class="blob"></span>
@@ -40,18 +41,19 @@ get_header();
       </div>
     </div>
 
+    <!-- OUR SERVICES -->
     <div class="column column-2 inview-elem inview-elem-top">
       <div class="column-container">
         <div class="section-image">
-          <a href="/our-sectors" class="section-link" title="Our Sectors">
-            <img src="https://fastly.picsum.photos/id/117/380/768.jpg?hmac=lTA2a4NE3OSzddv57W5IZPkWdqIkBMraavw4Dm92o8s" alt="Our Sectors">
+          <a href="/our-sectors" class="section-link" title="Our Services">
+            <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-lab--our-services.jpg" alt="Our Services">
           </a>
         </div>
-        <h2 class="section-title">Our Sectors</h2>
+        <h2 class="section-title">Our Services</h2>
         <div class="section-description">
           <div class="content-wrapper">
-            <h3 class="section-sub-title">About us</h3>
-            <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
+            <h3 class="section-sub-title">Our Services</h3>
+            <div class="short-description">We deliver a powerful suite of digital transformation!</div>
           </div>
           <div class="dot dot-arrow">
             <span class="blob"></span>
@@ -63,6 +65,7 @@ get_header();
       </div>
     </div>
 
+    <!-- OUR REFERENCES -->
     <div class="column column-3 inview-elem inview-elem-top td-200">
       <div class="column-container">
         <div class="section-image">
@@ -74,8 +77,8 @@ get_header();
         <h2 class="section-title">Our References</h2>
         <div class="section-description">
           <div class="content-wrapper">
-            <h3 class="section-sub-title">About us</h3>
-            <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
+            <h3 class="section-sub-title">Our References</h3>
+            <div class="short-description">We have worked on over 80 projects for more than 140 clients.</div>
           </div>
           <div class="dot dot-arrow">
             <span class="blob"></span>
@@ -87,15 +90,18 @@ get_header();
       </div>
     </div>
 
+    <!-- OUR CLIENTS -->
     <div class="column column-4 inview-elem inview-elem-top">
       <div class="column-container">
         <div class="section-image">
-          <a href="/our-clients" class="section-link" title="Our Clients"><img src="https://picsum.photos/380/768?random=4" alt="placeholder"></a>
+          <a href="/our-clients" class="section-link" title="Our Clients">
+            <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-lab--our-clients.jpg" alt="Our Clients">
+          </a>
         </div>
         <h2 class="section-title">Our Clients</h2>
         <div class="section-description">
           <div class="content-wrapper">
-            <h3 class="section-sub-title">About us</h3>
+            <h3 class="section-sub-title">Our Clients</h3>
             <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
           </div>
           <div class="dot dot-arrow">
