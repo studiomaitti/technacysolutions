@@ -79,18 +79,20 @@ for ($i = 0; $i < 30; $i++) {
 
           // End the loop.
         endwhile;
-        // Previous/next page navigation.
-        /*
-          the_posts_pagination(
-            array(
-              'prev_text' => __('Previous page', 'artetonlus'),
-              'next_text' => __('Next page', 'artetonlus'),
-              'before_page_number' => '<span class="meta-nav screen-reader-text">' . __('Page', 'artetonlus') . ' </span>',
-            )
-          );
-    */
       endif;
       ?>
+    </div>
+
+    <div class="content-width">
+    <?php
+    the_posts_pagination(
+      array(
+        'prev_text' => __('Previous page', 'artetonlus'),
+        'next_text' => __('Next page', 'artetonlus'),
+        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __('Page', 'artetonlus') . ' </span>',
+      )
+    );
+    ?>
     </div>
 
   </main><!-- .site-main -->

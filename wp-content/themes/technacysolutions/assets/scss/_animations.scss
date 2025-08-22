@@ -113,11 +113,11 @@
   opacity: 0;
   top: -40px;
   transition: all 850ms ease-in-out;
-}
 
-.inview-elem-top.is-inview-elem {
-  opacity: 1;
-  top: 0;
+  &.is-inview-elem {
+    opacity: 1;
+    top: 0;
+  }
 }
 
 .inview-elem-left {
@@ -125,12 +125,25 @@
   opacity: 0;
   left: -40px;
   transition: all 850ms ease-in-out;
+
+  &.is-inview-elem {
+    opacity: 1;
+    left: 0;
+  }
 }
 
-.inview-elem-left.is-inview-elem {
-  opacity: 1;
-  left: 0;
+.inview-elem-left--opacity-i{
+  position: relative;
+  opacity: 0;
+  left: -40px;
+  transition: all 850ms ease-in-out;
+
+  &.is-inview-elem {
+    opacity: 0.4;
+    left: 0;
+  }
 }
+
 
 .inview-elem-right {
   position: relative;

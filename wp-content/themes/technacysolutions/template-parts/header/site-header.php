@@ -19,8 +19,17 @@
 </g>
 </svg> </a>
     </div>
-    <div class="dark-mode-hamburger">
-      <div class="menu-container-opener js-dot-to-cicle">
+    <div class="header-content-right">
+      <div class="menu-desktop-container">
+        <?php
+        wp_nav_menu( array(
+          'theme_location' => 'primary',
+          'menu_id' => 'primary-menu',
+          'menu_class' => 'primary-menu',
+        ) );
+        ?>
+      </div>
+      <div class="menu-mobile-opener js-dot-to-cicle">
         <a href="#" class="js-open-menu">
           <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 12H18V10H0V12ZM0 7H18V5H0V7ZM0 0V2H18V0H0Z" fill="white"/>

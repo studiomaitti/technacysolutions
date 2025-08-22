@@ -2,11 +2,48 @@ jQuery(window).on('mousemove', moveCursor);
 
 // Video Modal Functionality
 document.addEventListener('DOMContentLoaded', function() {
+  /// Contact Form
+  let cFormModal = document.getElementById('modal-cform');
+  if(cFormModal){
+    let cFormOpener = document.querySelector('.js-contact-modal');
+    let cFormCloseModal = cFormModal.querySelector('.close-modal');
+
+    // Open modal when clicking the video thumbnail
+    cFormOpener.addEventListener('click', function() {
+      cFormModal.classList.add('active');
+      document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+    });
+
+    // Close modal when clicking the close button
+    cFormCloseModal.addEventListener('click', function() {
+      cFormModal.classList.remove('active');
+      document.body.style.overflow = ''; // Re-enable scrolling
+    });
+
+    // Close modal when clicking outside the video
+    cFormModal.addEventListener('click', function(e) {
+      if (e.target === cFormModal) {
+        cFormModal.classList.remove('active');
+        document.body.style.overflow = ''; // Re-enable scrolling
+      }
+    });
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && cFormModal.classList.contains('active')) {
+        cFormModal.classList.remove('active');
+        document.body.style.overflow = ''; // Re-enable scrolling
+      }
+    });
+
+  }
+
+  /// Video Modal
   const videoThumbnail = document.querySelector('.video-thumbnail .image-container');
   const videoModal = document.getElementById('videoModal');
-  const closeModal = document.querySelector('.close-modal');
+  const closeModal = document.querySelector('.video-modal .close-modal');
   const videoFrame = document.getElementById('videoFrame');
-  const videoUrl = 'https://www.youtube.com/embed/YOUR_VIDEO_ID'; // Replace with your video URL
+  const videoUrl = '/wp-content/uploads/Homevideo_Hero_720.mp4'; // Replace with your video URL
 
   if (videoThumbnail && videoModal) {
     // Open modal when clicking the video thumbnail
@@ -132,6 +169,19 @@ document.addEventListener("DOMContentLoaded", () => {
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   //HOME PAGE
   if (document.body.classList.contains('home')) {
+
+    /** Swiper Home Page */
+    var homeSwiper = document.querySelector('.home-intro-section .swiper');
+    if (homeSwiper) {
+      const homeSwiper = new Swiper('.home-intro-section .swiper', {
+        loop: true,
+        pagination: {
+          el: '.home-intro-section .swiper-pagination',
+          clickable: true
+        }
+      });
+    }
+
     /// 1° SECTION: video in bg on over text
     var intro_sentence = document.querySelectorAll('.js-hover-intro');
 

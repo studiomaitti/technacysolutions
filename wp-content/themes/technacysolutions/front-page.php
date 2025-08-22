@@ -16,128 +16,272 @@
 
 get_header();
 ?>
-  <section class="home-intro-section">
-    <!-- ABOUT US -->
-    <div class="column column-1 inview-elem inview-elem-left">
-      <div class="column-container">
-        <div class="section-image">
-          <a href="/about" class="section-link" title="About us">
-            <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-lab--about-us.jpg" alt="About us">
-          </a>
-        </div>
-        <h2 class="section-title">About us</h2>
-        <div class="section-description">
-          <div class="content-wrapper">
-            <h3 class="section-sub-title">About us</h3>
-            <div class="short-description">We are here to turn your ideas into reality!</div>
+  <div class="desktop-only">
+    <section class="home-intro-section">
+      <!-- ABOUT US -->
+      <div class="column column-1 inview-elem inview-elem-left">
+        <div class="column-container">
+          <div class="section-image">
+            <a href="/about-us" class="section-link" title="About us">
+              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-Bahrain-Headquarters.jpg" alt="Industries We Serve">
+            </a>
           </div>
-          <div class="dot dot-arrow">
-            <span class="blob"></span>
-            <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"></path>
-            </svg>
+          <h2 class="section-title">About us</h2>
+          <div class="section-description">
+            <div class="content-wrapper">
+              <h3 class="section-sub-title">About us</h3>
+              <div class="short-description">We are here to turn your ideas into reality!</div>
+            </div>
+            <div class="dot dot-arrow">
+              <span class="blob"></span>
+              <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"></path>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- OUR SERVICES -->
-    <div class="column column-2 inview-elem inview-elem-top">
-      <div class="column-container">
-        <div class="section-image">
-          <a href="/our-sectors" class="section-link" title="Our Services">
-            <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-lab--our-services.jpg" alt="Our Services">
-          </a>
-        </div>
-        <h2 class="section-title">Our Services</h2>
-        <div class="section-description">
-          <div class="content-wrapper">
-            <h3 class="section-sub-title">Our Services</h3>
-            <div class="short-description">We deliver a powerful suite of digital transformation!</div>
+      <!-- OUR SERVICES -->
+      <div class="column column-2 inview-elem inview-elem-top">
+        <div class="column-container">
+          <div class="section-image">
+            <a href="#our-sector" class="section-link" title="Our Services">
+              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-lab--our-services-1.jpg" alt="Our Services">
+            </a>
           </div>
-          <div class="dot dot-arrow">
-            <span class="blob"></span>
-            <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"></path>
-            </svg>
+          <h2 class="section-title">Services</h2>
+          <div class="section-description">
+            <div class="content-wrapper">
+              <h3 class="section-sub-title">Our Services</h3>
+              <div class="short-description">We deliver a powerful suite of digital transformation!</div>
+            </div>
+            <div class="dot dot-arrow">
+              <span class="blob"></span>
+              <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"></path>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- OUR REFERENCES -->
-    <div class="column column-3 inview-elem inview-elem-top td-200">
-      <div class="column-container">
-        <div class="section-image">
-          <a href="/our-references" class="section-link" title="Our References">
-            <img src="https://fastly.picsum.photos/id/985/380/768.jpg?hmac=05qtXYq0skdeLRIsU3b02UCyjpoccIGZUwoET14UTwM" alt="placeholder">
-            <!--<img src="https://picsum.photos/380/768?random=3" alt="placeholder">-->
-          </a>
-        </div>
-        <h2 class="section-title">Our References</h2>
-        <div class="section-description">
-          <div class="content-wrapper">
-            <h3 class="section-sub-title">Our References</h3>
-            <div class="short-description">We have worked on over 80 projects for more than 140 clients.</div>
+      <!-- OUR REFERENCES -->
+      <div class="column column-3 inview-elem inview-elem-top td-200">
+        <div class="column-container">
+          <div class="section-image">
+            <a href="/references" class="section-link" title="Our References">
+              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-lab--our-references.jpg" alt="placeholder">
+            </a>
           </div>
-          <div class="dot dot-arrow">
-            <span class="blob"></span>
-            <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"></path>
-            </svg>
+          <h2 class="section-title">References</h2>
+          <div class="section-description">
+            <div class="content-wrapper">
+              <h3 class="section-sub-title">Our References</h3>
+              <div class="short-description">We have worked on over 80 projects for more than 140 clients.</div>
+            </div>
+            <div class="dot dot-arrow">
+              <span class="blob"></span>
+              <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"></path>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- OUR CLIENTS -->
-    <div class="column column-4 inview-elem inview-elem-top">
-      <div class="column-container">
-        <div class="section-image">
-          <a href="/our-clients" class="section-link" title="Our Clients">
-            <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-lab--our-clients.jpg" alt="Our Clients">
-          </a>
-        </div>
-        <h2 class="section-title">Our Clients</h2>
-        <div class="section-description">
-          <div class="content-wrapper">
-            <h3 class="section-sub-title">Our Clients</h3>
-            <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
+      <!-- OUR CLIENTS
+      <div class="column column-4 inview-elem inview-elem-top">
+        <div class="column-container">
+          <div class="section-image">
+            <a href="/our-clients" class="section-link" title="Our Clients">
+              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-lab--our-clients.jpg" alt="Our Clients">
+            </a>
           </div>
-          <div class="dot dot-arrow">
-            <span class="blob"></span>
-            <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"></path>
-            </svg>
+          <h2 class="section-title">Our Clients</h2>
+          <div class="section-description">
+            <div class="content-wrapper">
+              <h3 class="section-sub-title">Our Clients</h3>
+              <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
+            </div>
+            <div class="dot dot-arrow">
+              <span class="blob"></span>
+              <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"></path>
+              </svg>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div>-->
 
-    <div class="column column-5 inview-elem inview-elem-right">
-      <div class="column-container">
-        <div class="section-image">
-          <a href="/contact-us" class="section-link" title="Contact Us">
-            <img src="https://fastly.picsum.photos/id/1049/380/768.jpg?hmac=fB7MHkKo1xzl5BQmZ5xesktEsh6VzhJQJJWE-abyu8Y" alt="placeholder">
-            <!--<img src="https://picsum.photos/380/768?random=5" alt="placeholder">-->
-          </a>
-        </div>
-        <h2 class="section-title">Contact Us</h2>
-        <div class="section-description">
-          <div class="content-wrapper">
-            <h3 class="section-sub-title">Contact Us</h3>
-            <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
+      <!-- INDUSTRIES WE SERVE -->
+      <div class="column column-4 inview-elem inview-elem-top">
+        <div class="column-container">
+          <div class="section-image">
+            <a href="#industry-we-serve" class="section-link" title="Industries We Serve">
+              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-industries.jpg" alt="Our References">
+            </a>
           </div>
-          <div class="dot dot-arrow">
-            <span class="blob"></span>
-            <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"></path>
-            </svg>
+          <h2 class="section-title">Industries</h2>
+          <div class="section-description">
+            <div class="content-wrapper">
+              <h3 class="section-sub-title">Industry We Serve</h3>
+              <div class="short-description">From airports to hospitals, and from universities to royal residences</div>
+            </div>
+            <div class="dot dot-arrow">
+              <span class="blob"></span>
+              <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"></path>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+
+      <!-- CONTACT US -->
+      <div class="column column-5 inview-elem inview-elem-right">
+        <div class="column-container">
+          <div class="section-image">
+            <a href="/contact-us" class="section-link" title="Contact Us">
+              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-lab--contact-us.jpg" alt="Contact Us">
+            </a>
+          </div>
+          <h2 class="section-title">Contact Us</h2>
+          <div class="section-description">
+            <div class="content-wrapper">
+              <h3 class="section-sub-title">Contact Us</h3>
+              <div class="short-description">We appreciate your interest in Technacy Solutions Lab!</div>
+            </div>
+            <div class="dot dot-arrow">
+              <span class="blob"></span>
+              <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <div class="mobile-only" style="color: white;font-size: 55px;">
+    <section class="home-intro-section">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- ABOUT US -->
+          <div class="swiper-slide">
+            <div class="section-image">
+              <a href="/about-us" class="section-link" title="About us">
+                <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-Bahrain-Headquarters.jpg" alt="About Us">
+              </a>
+            </div>
+            <div class="section-description-mobile">
+              <div class="content-wrapper">
+                <h3 class="section-sub-title">About us</h3>
+                <div class="short-description">We are here to turn your ideas into reality!</div>
+              </div>
+              <div class="dot dot-arrow">
+                <span class="blob"></span>
+                <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Our Services -->
+          <div class="swiper-slide">
+            <div class="section-image">
+              <a href="#our-sector" class="section-link" title="Our Services">
+                <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-lab--our-services-1.jpg" alt="Our Services">
+              </a>
+            </div>
+            <div class="section-description-mobile">
+              <div class="content-wrapper">
+                <h3 class="section-sub-title">Our Services</h3>
+                <div class="short-description">We deliver a powerful suite of digital transformation!</div>
+              </div>
+              <div class="dot dot-arrow">
+                <span class="blob"></span>
+                <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Our References -->
+          <div class="swiper-slide">
+            <div class="section-image">
+              <a href="/references" class="section-link" title="Our References">
+                <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-lab--our-references.jpg" alt="placeholder">
+              </a>
+            </div>
+            <div class="section-description-mobile">
+              <div class="content-wrapper">
+                <h3 class="section-sub-title">Our References</h3>
+                <div class="short-description">We have worked on over 80 projects for more than 140 clients.</div>
+              </div>
+              <div class="dot dot-arrow">
+                <span class="blob"></span>
+                <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"></path>
+                </svg>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="swiper-slide">
+            <div class="section-image">
+              <a href="#industry-we-serve" class="section-link" title="Industries We Serve">
+                <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-industries.jpg" alt="Our References">
+              </a>
+            </div>
+            <div class="section-description-mobile">
+              <div class="content-wrapper">
+                <h3 class="section-sub-title">Industry We Serve</h3>
+                <div class="short-description">From airports to hospitals, and from universities to royal residences
+                </div>
+              </div>
+              <div class="dot dot-arrow">
+                <span class="blob"></span>
+                <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"></path>
+                </svg>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Contact Us -->
+          <div class="swiper-slide">
+            <div class="section-image">
+              <a href="/contact-us" class="section-link" title="Contact Us">
+                <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-lab--contact-us.jpg" alt="About us">
+                <!--<img src="https://picsum.photos/380/768?random=5" alt="placeholder">-->
+              </a>
+            </div>
+            <div class="section-description-mobile">
+              <div class="content-wrapper">
+                <h3 class="section-sub-title">Contact Us</h3>
+                <div class="short-description">We appreciate your interest in Technacy Solutions Lab!</div>
+              </div>
+              <div class="dot dot-arrow">
+                <span class="blob"></span>
+                <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  </div>
 
   <section class="technacy-numbers-section">
     <div class="content-width">
@@ -147,18 +291,18 @@ get_header();
         <span class="sent-amp">&amp;</span>
         <span class="sent-3">deliver with</span>
       </h2>
-      
+
       <div class="numbers-grid">
         <div class="number-item inview-elem inview-elem-bottom">
-          <div class="number">32</div>
+          <div class="number">10+</div>
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 2L1 12l3 9h16l3-9-11-10zm0 2.8L19.3 12H4.7L12 4.8z"/>
             </svg>
           </div>
-          <div class="description">projects delivered</div>
+          <div class="description">Special Projects</div>
         </div>
-        
+
         <div class="number-item inview-elem inview-elem-bottom">
           <div class="number">5</div>
           <div class="icon">
@@ -169,7 +313,7 @@ get_header();
           </div>
           <div class="description">nationalities</div>
         </div>
-        
+
         <div class="number-item inview-elem inview-elem-bottom">
           <div class="number">50</div>
           <div class="icon">
@@ -179,7 +323,7 @@ get_header();
           </div>
           <div class="description">clients</div>
         </div>
-        
+
         <div class="number-item inview-elem inview-elem-bottom">
           <div class="number">15</div>
           <div class="icon">
@@ -195,13 +339,15 @@ get_header();
   </section>
 
   <section class="technacy-description-section">
+    <div class="bg-img-container inview-elem inview-elem-left--opacity-i"></div>
     <div class="content-width">
       <div class="description-grid">
         <!-- First Column: Text Content -->
         <div class="description-content">
-          <h2 class="section-title">Technacy Solutions</h2>
+          <h2 class="section-title">Technacy Solutions Lab</h2>
           <div class="text-content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit.</p>
             <ul class="feature-list">
               <li class="feature-item">
                 <span class="feature-icon">→</span>
@@ -220,11 +366,11 @@ get_header();
             <button class="download-brochure-btn">Download Brochure</button>
           </div>
         </div>
-        
+
         <!-- Second Column: Video Thumbnail -->
         <div class="video-thumbnail">
           <div class="image-container">
-            <img src="https://picsum.photos/800/600?random=1" alt="Technacy Solutions" class="thumbnail-image">
+            <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-lab--our-services.jpg" alt="Technacy Solutions" class="thumbnail-image">
             <div class="play-button">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M8 5v14l11-7z"/>
@@ -234,7 +380,7 @@ get_header();
         </div>
       </div>
     </div>
-    
+
     <!-- Video Modal -->
     <div class="video-modal" id="videoModal">
       <div class="modal-content">
@@ -246,55 +392,11 @@ get_header();
     </div>
   </section>
 
-  <section class="home-section category-section" id="pinCategorySection">
-    <div class="panel panel-1 home-iptv">
-      <div class="home-iptv-container content-width">
-        <div class="home-iptv-img-container">
-          <div class="effetto-fascia-rossa">
-            <img class="inview-elem inview-elem-top td-200" src="/wp-content/themes/technacysolutions/assets/img/logo-technacy-rosso.svg" alt="Logo">
-          </div>
-          <div class="home-iptv-img">
-            <img class="inview-elem inview-elem-top td-200" src="/wp-content/themes/technacysolutions/assets/img/logo-technacy-rosso.svg" alt="Logo">
-          </div>
-        </div>
-        <div class="home-iptv-text">
-          <h2 class="row-ivy inview-elem inview-elem-left td-400">TELECOMMUNICATION</h2>
-          <h2 class="row-neue inview-elem inview-elem-right td-550">IPTV & MEDIA</h2>
-          <div class="text inview-elem inview-elem-bottom">
-            The Technacy Team offers cutting-edge IPTV technology and global content for an unparalleled viewer
-            experience. With industry giants and leading brands as our partners, we have built strong relationships
-            based on excellent communication and trust. Our customer-centric approach ensures your unique needs are met,
-            providing an incredible IPTV experience. <br>We are committed to customer satisfaction with 24/7 support.
-            Our operational flexibility and technical expertise set new benchmarks in IPTV provision across industries.
-            Join us as we revolutionize the IPTV experience together.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel panel-2 home-computer">
-      <div class="home-iptv-container content-width">
-        <img class="inview-elem inview-elem-top td-200" src="/wp-content/themes/technacysolutions/assets/img/logo-technacy-full.svg" alt="Logo">
-        <div class="home-iptv-text">
-          <h2 class="row-ivy inview-elem inview-elem-left td-400">DIGITAL</h2>
-          <h2 class="row-neue inview-elem inview-elem-right td-550">COMMUNICATION</h2>
-          <div class="text inview-elem inview-elem-bottom">
-            The Technacy Team is passionate about cutting-edge technologies. We use the likes of virtual reality,
-            augmented reality, holographic technology, and AI-generated content to create interactive and immersive
-            state-of-the-art projects. There is immense potential these technologies hold for transforming user
-            experiences and engaging audiences in entirely new ways. We take care of all creative and technical aspects
-            from concept to development and deployment and provide 24/7 support. We have the know-how and expertise to
-            translate our client’s visions into jaw dropping projects. Let’s create something awesome together!
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
 <?php
 $a = [];
 for ($i = 0; $i < 30; $i++) {
-  $a[] = '<a href="/about">about</a>';
+  $a[] = '<a href="/about-us">about</a>';
 }
 ?>
   <section class="page-link">

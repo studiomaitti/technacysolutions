@@ -35,7 +35,7 @@
       <div class="logo">
         <a href="/" title="Back to home"><img src="/wp-content/themes/technacysolutions/assets/img/logo-technacy-negativo.svg" alt="Logo Technacy"></a>
       </div>
-      <div class="dark-mode-hamburger">
+      <div class="header-content-right">
         <div class="menu-close">
           <a href="#" class="js-close-menu">X</a>
         </div>
@@ -126,5 +126,14 @@
     <div>for better esperience</div>
   </div>
 </div>
+<div id="modal-cform" class="modal-cform">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <div class="modal-body">
+      <?php echo do_shortcode('[contact-form-7 id="a54001c" title="request a demo"]'); ?>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
