@@ -130,6 +130,8 @@
   <div class="modal-content">
     <span class="close-modal">&times;</span>
     <div class="modal-body">
+      <h2>Request a Demo</h2>
+      <p>Please fill in your details to request a demo. We will contact you shortly.</p>
       <?php echo do_shortcode('[contact-form-7 id="a54001c" title="request a demo"]'); ?>
     </div>
   </div>
