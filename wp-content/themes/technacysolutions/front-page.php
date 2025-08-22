@@ -46,7 +46,7 @@ get_header();
       <div class="column column-2 inview-elem inview-elem-top">
         <div class="column-container">
           <div class="section-image">
-            <a href="#our-sector" class="section-link" title="Our Services">
+            <a href="#our-services" class="section-link" title="Our Services">
               <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-lab--our-services-1.jpg" alt="Our Services">
             </a>
           </div>
@@ -118,14 +118,14 @@ get_header();
       <div class="column column-4 inview-elem inview-elem-top">
         <div class="column-container">
           <div class="section-image">
-            <a href="#industry-we-serve" class="section-link" title="Industries We Serve">
+            <a href="#industries-we-serve" class="section-link" title="Industries We Serve">
               <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-industries.jpg" alt="Our References">
             </a>
           </div>
           <h2 class="section-title">Industries</h2>
           <div class="section-description">
             <div class="content-wrapper">
-              <h3 class="section-sub-title">Industry We Serve</h3>
+              <h3 class="section-sub-title">Industries We Serve</h3>
               <div class="short-description">From airports to hospitals, and from universities to royal residences</div>
             </div>
             <div class="dot dot-arrow">
