@@ -8,6 +8,14 @@
   transform: scale(1);
   animation: pulse-black 2s infinite;
 }
+.blob-white {
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+  margin: 10px;
+  transform: scale(1);
+  animation: pulse-white 2s infinite;
+}
 
 @keyframes pulse-black {
   0% {
@@ -23,6 +31,22 @@
   100% {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+@keyframes pulse-white {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
 }
 
@@ -139,7 +163,7 @@
   transition: all 850ms ease-in-out;
 
   &.is-inview-elem {
-    opacity: 0.4;
+    opacity: 0.3;
     left: 0;
   }
 }

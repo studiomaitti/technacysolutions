@@ -698,21 +698,5 @@ get_header();
       </div>
     </div>
   </section>
-
-<?php
-$a = [];
-for ($i = 0; $i < 20; $i++) {
-  $a[] = '<a href="/projects">projects</a>';
-}
-?>
-  <section class="page-link">
-    <div class="page-link-top-line" data-paroller-factor="0.35" data-paroller-type="foreground" data-paroller-direction="horizontal" data-paroller-transition="transform .35s linear">
-      <?php echo implode('<span class="trattino">-</span>', $a); ?>
-    </div>
-    <div class="page-link-bottom-line" data-paroller-factor="-0.35" data-paroller-type="foreground" data-paroller-direction="horizontal" data-paroller-transition="transform .35s linear">
-      <?php echo implode('<span class="trattino">-</span>', $a); ?>
-    </div>
-  </section>
-
 <?php
 get_footer();

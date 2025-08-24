@@ -2,6 +2,24 @@ jQuery(window).on('mousemove', moveCursor);
 
 // Video Modal Functionality
 document.addEventListener('DOMContentLoaded', function() {
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  // Inview elementi
+  jQuery('.inview-elem').on('inview', function (event, isInView) {
+    console.log(event.currentTarget);
+    if (isInView) {
+      // element is now visible in the viewport
+      jQuery(this).addClass('is-inview-elem');
+    }
+    else {
+      if (window.mobileCheck() === false) {
+        // element has gone out of viewport
+        jQuery(this).removeClass('is-inview-elem');
+      }
+    }
+  });
+
+
   /// Contact Form
   let cFormModal = document.getElementById('modal-cform');
   if(cFormModal){
@@ -9,7 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let cFormCloseModal = cFormModal.querySelector('.close-modal');
 
     // Open modal when clicking the video thumbnail
-    cFormOpener.addEventListener('click', function() {
+    cFormOpener.addEventListener('click', function(ev) {
+      ev.preventDefault();
       cFormModal.classList.add('active');
       document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
     });
@@ -406,6 +425,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   /// ARCHIVE
+  /*
   if (document.body.classList.contains('archive')) {
     var controller = new ScrollMagic.Controller();
 
@@ -422,6 +442,7 @@ document.addEventListener("DOMContentLoaded", () => {
       //.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
       .addTo(controller);
   }
+  */
 
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   /// SINGLE PROJECT
@@ -442,21 +463,6 @@ document.addEventListener("DOMContentLoaded", () => {
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   /// PAROLE IN FONDO
   jQuery("[data-paroller-factor]").paroller();
-
-  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  // Inview elementi
-  jQuery('.inview-elem').on('inview', function (event, isInView) {
-    if (isInView) {
-      // element is now visible in the viewport
-      jQuery(this).addClass('is-inview-elem');
-    }
-    else {
-      if (window.mobileCheck() === false) {
-        // element has gone out of viewport
-        jQuery(this).removeClass('is-inview-elem');
-      }
-    }
-  });
 
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // Inview elementi per attivare animazioni

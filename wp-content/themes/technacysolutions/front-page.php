@@ -15,6 +15,12 @@
  */
 
 get_header();
+
+// Latest 4 references
+$latest_references = new WP_Query([
+  'post_type' => 'reference',
+  'posts_per_page' => 4,
+]);
 ?>
   <div class="desktop-only">
     <section class="home-intro-section">
@@ -23,7 +29,7 @@ get_header();
         <div class="column-container">
           <div class="section-image">
             <a href="/about-us" class="section-link" title="About us">
-              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-Bahrain-Headquarters.jpg" alt="Industries We Serve">
+              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-Bahrain-Headquarters.jpg" alt="About Us">
             </a>
           </div>
           <h2 class="section-title">About us</h2>
@@ -47,7 +53,7 @@ get_header();
         <div class="column-container">
           <div class="section-image">
             <a href="#our-services" class="section-link" title="Our Services">
-              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-lab--our-services-1.jpg" alt="Our Services">
+              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-colonna-i.jpg" alt="Our Services">
             </a>
           </div>
           <h2 class="section-title">Services</h2>
@@ -71,7 +77,7 @@ get_header();
         <div class="column-container">
           <div class="section-image">
             <a href="/references" class="section-link" title="Our References">
-              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-lab--our-references.jpg" alt="placeholder">
+              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-colonna-i-1.jpg" alt="placeholder">
             </a>
           </div>
           <h2 class="section-title">References</h2>
@@ -114,18 +120,18 @@ get_header();
         </div>
       </div>-->
 
-      <!-- INDUSTRIES WE SERVE -->
+      <!-- INDUSTRIES -->
       <div class="column column-4 inview-elem inview-elem-top">
         <div class="column-container">
           <div class="section-image">
-            <a href="#industries-we-serve" class="section-link" title="Industries We Serve">
-              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-industries.jpg" alt="Our References">
+            <a href="#industries-we-serve" class="section-link" title="Industries">
+              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-colonna-i-4-3.jpg" alt="Our References">
             </a>
           </div>
           <h2 class="section-title">Industries</h2>
           <div class="section-description">
             <div class="content-wrapper">
-              <h3 class="section-sub-title">Industries We Serve</h3>
+              <h3 class="section-sub-title">Industries</h3>
               <div class="short-description">From airports to hospitals, and from universities to royal residences</div>
             </div>
             <div class="dot dot-arrow">
@@ -194,7 +200,7 @@ get_header();
           <div class="swiper-slide">
             <div class="section-image">
               <a href="#our-sector" class="section-link" title="Our Services">
-                <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-lab--our-services-1.jpg" alt="Our Services">
+                <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-colonna-i.jpg" alt="Our Services">
               </a>
             </div>
             <div class="section-description-mobile">
@@ -215,7 +221,7 @@ get_header();
           <div class="swiper-slide">
             <div class="section-image">
               <a href="/references" class="section-link" title="Our References">
-                <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-lab--our-references.jpg" alt="placeholder">
+                <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-colonna-i-1.jpg" alt="placeholder">
               </a>
             </div>
             <div class="section-description-mobile">
@@ -236,7 +242,7 @@ get_header();
           <div class="swiper-slide">
             <div class="section-image">
               <a href="#industry-we-serve" class="section-link" title="Industries We Serve">
-                <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-industries.jpg" alt="Our References">
+                <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-colonna-i-4-3.jpg" alt="Industries We Serve">
               </a>
             </div>
             <div class="section-description-mobile">
@@ -392,19 +398,31 @@ get_header();
     </div>
   </section>
 
-
-<?php
-$a = [];
-for ($i = 0; $i < 30; $i++) {
-  $a[] = '<a href="/about-us">about</a>';
-}
-?>
-  <section class="page-link">
-    <div class="page-link-top-line" data-paroller-factor="0.35" data-paroller-type="foreground" data-paroller-direction="horizontal" data-paroller-transition="transform .35s linear">
-      <?php echo implode('<span class="trattino">-</span>', $a); ?>
-    </div>
-    <div class="page-link-bottom-line" data-paroller-factor="-0.35" data-paroller-type="foreground" data-paroller-direction="horizontal" data-paroller-transition="transform .35s linear">
-      <?php echo implode('<span class="trattino">-</span>', $a); ?>
+  <section class="technacy-references-section">
+    <div class="references-container">
+      <h2 class="section-title">
+        <a href="/references" class="section-link" title="Our References">
+          <span class="main">Our References</span>
+          <span class="behind">Works</span>
+          <span class="dot-container">
+            <div class="dot dot-arrow">
+              <span class="blob-white"></span>
+              <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="black" stroke="black" stroke-width="2"></path>
+              </svg>
+            </div>
+            </span>
+        </a>
+      </h2>
+      <div class="references-grid">
+        <?php
+        if ($latest_references->have_posts()) {
+          while ($latest_references->have_posts()) {
+            $latest_references->the_post();
+            get_template_part('template-parts/content/content-reference');
+          }
+        } ?>
+      </div>
     </div>
   </section>
 

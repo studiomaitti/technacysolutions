@@ -11,12 +11,12 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-  <header class="entry-header alignwide">
-    <?php get_template_part('template-parts/header/entry-header'); ?>
+  <header class="entry-header alignwide content-width">
+    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
     <div class="cat-links-date">
       <div class="cat-links">
         <?php
-        $a_links = technacysolutions_get_categories(get_the_ID());
+        $a_links = get_the_category(get_the_ID());
 
         if (!empty($a_links)) {
           $a_links_print = [];
@@ -31,16 +31,8 @@
     </div>
   </header><!-- .entry-header -->
 
-  <div class="entry-content">
+  <div class="entry-content content-width inview-elem inview-elem-top td-550">
     <?php the_content(); ?>
   </div><!-- .entry-content -->
-
-  <?php if (get_edit_post_link()) : ?>
-    <footer class="entry-footer default-max-width">
-      <?php
-      edit_post_link(sprintf(/* translators: %s: Post title. Only visible to screen readers. */ esc_html__('Edit %s', 'technacysolutions'), '<span class="screen-reader-text">' . get_the_title() . '</span>'), '<span class="edit-link">', '</span>');
-      ?>
-    </footer><!-- .entry-footer -->
-  <?php endif; ?>
 
 </article><!-- #post-<?php the_ID(); ?> -->

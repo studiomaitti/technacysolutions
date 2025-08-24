@@ -32,7 +32,7 @@
   <link rel="stylesheet" href="https://use.typekit.net/cqc4bfc.css">
 
   <link rel="preload" href="/wp-content/themes/technacysolutions/assets/fonts/PPNeueMachinaInktrapUltrabold.woff2" as="font" type="font/woff2" crossorigin>
-
+  <script src="https://kit.fontawesome.com/6d0fda75df.js" crossorigin="anonymous"></script>
 
   <?php wp_head(); ?>
 
@@ -43,70 +43,7 @@
   </script>
 
   <style type="text/css">
-      .home-iptv-container img {
-          max-width: 39vw;
-      }
-
-      .site-footer .footer-continer .address-container {
-          white-space: normal;
-      }
-
-      .header .logo a {
-          display: flex;
-      }
-
-      .header .logo svg {
-          margin: 7px 0 0 7px;
-      }
-
-      .site-footer .row-email {
-          margin-bottom: 1rem;
-      }
-
-      .site-footer .row-email,
-      .site-footer .row-sentence {
-          line-height: 1.1;
-      }
-
-      body.light-mode .blob.white {
-          background: #000000;
-          box-shadow: 0 0 0 0 #000000;
-      }
-
-      body.light-mode .dot.dot-arrow svg path {
-          fill: #ffffff;
-      }
-
-      body.light-mode .header .logo svg path {
-          fill: #000000;
-      }
-
-      body.light-mode .about-partners,
-      body.light-mode .about-clients {
-          background-color: #ffffff;
-          color: #000000;
-      }
-
-      body.light-mode.archive .project-category .container-1 .star svg path {
-          fill: #000000;
-      }
-
-      body.light-mode.archive .content-area article .tit-container .location::before {
-          background-color: #000000;
-      }
-
-      body.light-mode.single-projects .post-title,
-      body.light-mode.single-projects .location,
-      body.light-mode.single-projects .entry-content {
-          color: #000000;
-      }
-
-
       @media screen and (max-width: 852px) {
-          body.is-mobile .dark-mode-container {
-              display: none !important;
-          }
-
           body.is-mobile .about-partners .testo .title,
           body.is-mobile .about-clients .testo .title {
               line-height: 1.2;
@@ -141,7 +78,7 @@
               margin-right: auto;
           }
 
-          body.is-mobile .footer-continer .row-email img {
+          body.is-mobile .footer-container .row-email img {
               width: 50px;
           }
 

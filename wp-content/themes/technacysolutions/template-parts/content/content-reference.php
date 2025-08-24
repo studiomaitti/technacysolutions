@@ -10,42 +10,9 @@
  */
 
 $link = get_the_permalink();
-
-//RANDOM
-$css_class_container = [];
-//Nella sua colonna, l'articolo occupa meno spazio, un massimo del 70% e questo è allineato orizzontalmente a caso
-$a_pos = array('left', 'center', 'right');
-if ($i == 1) {
-  $css_class_container[] = 'left';
-  //$css_class[] = 'inview-elem inview-elem-left';
-}
-else if ($i == 2) {
-  $css_class_container[] = 'right';
-  //$css_class[] = 'inview-elem inview-elem-left';
-}
-else if ($i == 3) {
-  $css_class_container[] = 'center';
-  $css_class[] = 'upper-upper';
-  //$css_class[] = 'inview-elem inview-elem-left';
-}
-else if ($i == 6) {
-  $css_class[] = 'upper';
-  //$css_class[] = 'inview-elem inview-elem-right';
-}
-else {
-  $css_class_container[] = $a_pos[array_rand($a_pos, 1)];
-
-  if ($i % 2) {
-    //$css_class[] = 'inview-elem inview-elem-left';
-  }
-  else {
-    //$css_class[] = 'inview-elem inview-elem-right';
-  }
-}
-
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class(implode(' ', $css_class)); ?>>
-  <div class="article-container <?php echo implode(' ', $css_class_container) ?>">
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <div class="article-container">
     <div class="column">
       <div class="column-container">
         <div class="section-image">

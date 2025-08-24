@@ -26,23 +26,12 @@ for ($i = 0; $i < 30; $i++) {
 ?>
 <h1 class="page-title"><?php echo $title; ?></h1>
 
-<section class="page-link">
-  <div class="page-link-top-line" data-paroller-factor="0.35" data-paroller-type="foreground" data-paroller-direction="horizontal" data-paroller-transition="transform .35s linear">
-    <?php echo implode('<span class="trattino">-</span>', $a); ?>
-  </div>
-  <div class="page-link-bottom-line" data-paroller-factor="-0.35" data-paroller-type="foreground" data-paroller-direction="horizontal" data-paroller-transition="transform .35s linear">
-    <?php echo implode('<span class="trattino">-</span>', $a); ?>
-  </div>
-</section>
-
 <section id="primary" class="content-area">
   <div class="archive-description sticky-elem">
-    <div class="content-width">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo sagittis nulla, sed cursus risus
-      pharetra a. In augue erat,
-      rutrum eget blandit iaculis, sagittis et erat. Quisque et finibus leo. Nulla nisi diam, accumsan quis nisi in,
-      tincidunt consectetur nisi. Praesent in ornare neque.
-    </div>
+    <h1 class="page-title">
+      <span class="main"><?php echo $title; ?></span>
+    </h1>
+    <div class="content-width"></div>
   </div>
   <main id="main" class="site-main" role="main">
     <div class="content-width">

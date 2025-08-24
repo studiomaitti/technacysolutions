@@ -17,7 +17,7 @@
   <div class="cat-links-date">
     <div class="cat-links">
       <?php
-      $a_links = technacysolutions_get_categories(get_the_ID());
+      $a_links = get_the_category(get_the_ID());
 
       if (!empty($a_links)) {
         $a_links_print = [];
