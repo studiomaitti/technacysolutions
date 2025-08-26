@@ -3818,7 +3818,6 @@ body:not(.home) .header::before {
 .site-footer {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   position: relative;
 }
 .site-footer .footer-container {
@@ -4008,7 +4007,7 @@ body.archive .page-title .behind {
 }
 @media (max-width: 576px) {
   body.archive .page-title .behind {
-    font-size: 100px;
+    font-size: 90px;
   }
 }
 body.archive .archive-description {
@@ -4254,6 +4253,9 @@ body.archive .content-area article .column .section-description .content-wrapper
   padding: 1em;
   width: calc(100% - 58px);
 }
+body.archive .content-area article .column .section-description .content-wrapper .section-sub-title {
+  margin-bottom: 1rem;
+}
 body.archive .content-area article .column .section-description .dot {
   display: flex;
   flex-direction: column;
@@ -4318,16 +4320,64 @@ body.archive .content-area article .tit-container .location:before {
   right: 0;
   width: 1px;
 }
-body.archive .site-footer {
-  background-color: #000000;
+body.archive .content-area article.post-industry-1, body.archive .content-area article.post-industry-7 {
+  width: 66%;
 }
-body.archive .site-footer .footer-container.content-width {
-  padding-top: 0;
+body.archive .content-area article.post-industry-1 .column, body.archive .content-area article.post-industry-7 .column {
+  aspect-ratio: 2.033/1;
+}
+@media (max-width: 1180px) {
+  body.archive .content-area article.post-industry-1, body.archive .content-area article.post-industry-7 {
+    width: calc(50% - 0.5rem);
+  }
+  body.archive .content-area article.post-industry-1 .column, body.archive .content-area article.post-industry-7 .column {
+    aspect-ratio: 1/1;
+  }
+}
+@media (max-width: 1024px) {
+  body.archive .content-area article.post-industry-1, body.archive .content-area article.post-industry-7 {
+    width: calc(50% - 0.5rem);
+  }
+}
+@media (max-width: 576px) {
+  body.archive .content-area article.post-industry-1, body.archive .content-area article.post-industry-7 {
+    width: 100%;
+  }
+}
+body.archive.post-type-archive-service .content-area {
+  min-height: auto;
+}
+body.archive.post-type-archive-service .content-area .site-main .content-width {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  max-width: 80%;
+}
+@media (max-width: 1180px) {
+  body.archive.post-type-archive-service .content-area .site-main .content-width {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  body.archive.post-type-archive-service .content-area .site-main .content-width article .column .column-container .section-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 576px) {
+  body.archive.post-type-archive-service .content-area .site-main .content-width {
+    flex-wrap: wrap;
+  }
 }
 
 /** *********************
   SINGLE
  ******* */
+body.page,
+body.single {
+  /* Contenitore dell'immagine in evidenza */
+}
 body.page .hentry,
 body.single .hentry {
   margin-top: 4rem;
@@ -4369,6 +4419,26 @@ body.single .post-title {
   body.single .post-title {
     font-size: 30px;
   }
+}
+body.page .featured-image-container,
+body.single .featured-image-container {
+  width: 100vw;
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: #000; /* Opzionale: colore di fallback */
+}
+body.page .featured-image-container img,
+body.single .featured-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* L'immagine copre tutto lo spazio mantenendo le proporzioni */
+  object-position: top; /* Centra l'immagine */
+  display: block;
 }
 body.page .entry-content,
 body.single .entry-content {
@@ -4527,110 +4597,6 @@ body.single-reference .dot svg {
   pointer-events: none;
   transform: translateX(2px);
   z-index: 10;
-}
-
-/** *********************
-  LIGHT MODE
- ******* */
-body.light-mode {
-  background-color: #fff;
-  color: #161616;
-  /* HEADER */
-  /* HOME PAGE */
-  /* ABOUT */
-  /* FOOTER */
-}
-body.light-mode a {
-  color: #161616;
-}
-body.light-mode .menu-mobile-opener svg path {
-  fill: #000000;
-}
-body.light-mode .home-intro-top .home-intro-top-base,
-body.light-mode .home-video-scroll,
-body.light-mode .home-iptv,
-body.light-mode .home-computer {
-  color: #161616;
-}
-body.light-mode .home-intro-top .home-intro-top-hover {
-  background-color: #ffffff;
-}
-body.light-mode .category-section .panel {
-  background-color: #ffffff;
-}
-body.light-mode .about-we-crush .about-we-crush-slide.about-we-crush-slide-1 {
-  background-color: #ffffff;
-  color: #000000;
-}
-body.light-mode .about-our-client-have .testo-container {
-  color: #000000;
-}
-body.light-mode .about-our-client-have .testo-container a {
-  color: #000000;
-}
-body.light-mode .about-partners,
-body.light-mode .about-clients {
-  color: #000000;
-}
-body.light-mode .logo-row.logo-row-white {
-  height: 0;
-  opacity: 0;
-}
-body.light-mode .logo-row.logo-row-black {
-  height: auto;
-  opacity: 1;
-}
-body.light-mode .about-testimonial {
-  color: #000000;
-}
-body.light-mode .about-testimonial .testimonial-slide .img {
-  background-blend-mode: luminosity;
-  background-color: #ffffff;
-}
-body.light-mode .about-testimonial .testimonial-slide .img img {
-  max-width: 100%;
-  visibility: hidden;
-}
-body.light-mode .about-testimonial .testimonial-slide .img:after {
-  background: linear-gradient(180deg, rgba(100, 100, 100, 0) 62.03%, rgba(0, 0, 0, 0.8) 90%);
-}
-body.light-mode .about-testimonial .testimonial-slide .data {
-  color: #000000;
-}
-body.light-mode .about-testimonial .testimonial-slide .data .logo {
-  position: relative;
-  margin-left: 20px;
-  padding-left: 21px;
-}
-body.light-mode .about-testimonial .testimonial-slide .data .logo .logo-white {
-  display: none;
-}
-body.light-mode .about-testimonial .testimonial-slide .data .logo .logo-black {
-  display: block;
-}
-body.light-mode .about-testimonial .testimonial-slide .data .logo:before {
-  background-color: #000000;
-}
-body.light-mode .about-testimonial .testimonial-slide .data .societa {
-  color: #000000;
-}
-body.light-mode .about-testimonial .swiper-buttons .swiper-pagination .swiper-pagination-bullet {
-  background-color: #8D8D8D;
-}
-body.light-mode .about-testimonial .swiper-buttons .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #000000;
-}
-body.light-mode .about-testimonial .swiper-button-next svg circle,
-body.light-mode .about-testimonial .swiper-button-prev svg circle {
-  fill: #000000;
-}
-body.light-mode .about-testimonial .swiper-button-next svg path,
-body.light-mode .about-testimonial .swiper-button-prev svg path {
-  fill: #ffffff;
-}
-body.light-mode .site-footer .row-sentence,
-body.light-mode .site-footer .row-sedi .sede-i {
-  color: #000000;
 }
 
 /** *********************

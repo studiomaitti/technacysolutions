@@ -7,11 +7,14 @@
  * @package WordPress
  * @subpackage Technacysolutions
  * @since Technacysolutions 1.0
+ *
+ * @var integer $i
+ * @var integer $css_class
  */
 
 $link = get_the_permalink();
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(implode(' ', $css_class)); ?>>
   <div class="article-container">
     <div class="column">
       <div class="column-container">

@@ -27,9 +27,13 @@ for ($i = 0; $i < 30; $i++) {
 <section id="primary" class="content-area">
   <div class="archive-description sticky-elem">
     <h1 class="page-title">
-      <span class="main"><?php echo $title; ?></span>
+      <span class="main">Our Services</span>
+      <span class="behind">Solutions</span>
     </h1>
-    <div class="content-width"></div>
+    <div class="content-width">
+      At Technacy Solutions Lab, we deliver a powerful suite of digital transformation tools designed to enhance content
+      delivery, data intelligence, and security infrastructure across industries.
+    </div>
   </div>
   <main id="main" class="site-main" role="main">
     <div class="content-width">
@@ -43,7 +47,7 @@ for ($i = 0; $i < 30; $i++) {
           $css_class = [];
           $css_class[] = 'post-i-' . $i;
 
-          include(locate_template('template-parts/content/content-general.php', false, false));
+          include(locate_template('template-parts/content/content-service.php', false, false));
 
           // End the loop.
         endwhile;

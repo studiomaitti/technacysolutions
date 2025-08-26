@@ -52,7 +52,7 @@ $latest_references = new WP_Query([
       <div class="column column-2 inview-elem inview-elem-top">
         <div class="column-container">
           <div class="section-image">
-            <a href="#our-services" class="section-link" title="Our Services">
+            <a href="/services" class="section-link" title="Our Services">
               <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-colonna-i.jpg" alt="Our Services">
             </a>
           </div>
@@ -124,8 +124,8 @@ $latest_references = new WP_Query([
       <div class="column column-4 inview-elem inview-elem-top">
         <div class="column-container">
           <div class="section-image">
-            <a href="#industries-we-serve" class="section-link" title="Industries">
-              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-colonna-i-4-3.jpg" alt="Our References">
+            <a href="/industries" class="section-link" title="Industries">
+              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-colonna-i-4-3.jpg" alt="Industries">
             </a>
           </div>
           <h2 class="section-title">Industries</h2>
@@ -196,10 +196,10 @@ $latest_references = new WP_Query([
             </div>
           </div>
 
-          <!-- Our Services -->
+          <!-- OUR SERVICES -->
           <div class="swiper-slide">
             <div class="section-image">
-              <a href="#our-sector" class="section-link" title="Our Services">
+              <a href="/services" class="section-link" title="Our Services">
                 <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-colonna-i.jpg" alt="Our Services">
               </a>
             </div>
@@ -217,7 +217,7 @@ $latest_references = new WP_Query([
             </div>
           </div>
 
-          <!-- Our References -->
+          <!-- OUR REFERENCES -->
           <div class="swiper-slide">
             <div class="section-image">
               <a href="/references" class="section-link" title="Our References">
@@ -239,15 +239,16 @@ $latest_references = new WP_Query([
 
           </div>
 
+          <!-- INDUSTRIES -->
           <div class="swiper-slide">
             <div class="section-image">
-              <a href="#industry-we-serve" class="section-link" title="Industries We Serve">
-                <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-colonna-i-4-3.jpg" alt="Industries We Serve">
+              <a href="/industries" class="section-link" title="Industries">
+                <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-colonna-i-4-3.jpg" alt="Industries">
               </a>
             </div>
             <div class="section-description-mobile">
               <div class="content-wrapper">
-                <h3 class="section-sub-title">Industry We Serve</h3>
+                <h3 class="section-sub-title">Industries</h3>
                 <div class="short-description">From airports to hospitals, and from universities to royal residences
                 </div>
               </div>

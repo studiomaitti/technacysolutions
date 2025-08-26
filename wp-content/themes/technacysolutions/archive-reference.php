@@ -36,15 +36,6 @@ for ($i = 0; $i < 30; $i++) {
   </div>
   <main id="main" class="site-main" role="main">
     <div class="content-icons">
-      <!--
-      create 6 icons with number, like in front-page.php > .numbers-grid:
-Airports 	5
-Stadiums	1
-Data Centers
-VIP Residences 	20+
-Hotel References 	10+
-Special Projects 	10+
-       -->
       <div class="numbers-grid">
         <div class="number-item inview-elem inview-elem-bottom">
           <div class="number">5</div>
@@ -133,10 +124,11 @@ Special Projects 	10+
         <?php
         // Start the Loop.
         $i = 0;
-        $mod = 0;
         while (have_posts()) :
           the_post();
           $i++;
+          $css_class = [];
+          $css_class[] = 'post-i-' . $i;
 
           include(locate_template('template-parts/content/content-reference.php', false, false));
 

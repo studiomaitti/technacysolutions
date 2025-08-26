@@ -27,9 +27,12 @@ for ($i = 0; $i < 30; $i++) {
 <section id="primary" class="content-area">
   <div class="archive-description sticky-elem">
     <h1 class="page-title">
-      <span class="main"><?php echo $title; ?></span>
+      <span class="main">Industries</span>
+      <span class="behind">Digital</span>
     </h1>
-    <div class="content-width"></div>
+    <div class="content-width">
+      At Technacy Solutions Lab, our IPTV ecosystem TM10 AI 360 powers next-generation digital experiences across multiple industries. From airports to hospitals, and from universities to royal residences, our platform is setting the new standard for immersive, intelligent viewing.
+    </div>
   </div>
   <main id="main" class="site-main" role="main">
     <div class="content-width">
@@ -42,8 +45,9 @@ for ($i = 0; $i < 30; $i++) {
           $i++;
           $css_class = [];
           $css_class[] = 'post-i-' . $i;
+          $css_class[] = 'post-industry-' . $i;
 
-          include(locate_template('template-parts/content/content-general.php', false, false));
+          include(locate_template('template-parts/content/content-industry.php', false, false));
 
           // End the loop.
         endwhile;

@@ -13,7 +13,6 @@
  */
 
 $link = get_the_permalink();
-
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(implode(' ', $css_class)); ?>>
   <div class="article-container">
@@ -28,9 +27,7 @@ $link = get_the_permalink();
         <div class="section-description">
           <div class="content-wrapper">
             <h3 class="section-sub-title"><?php the_title(); ?></h3>
-            <div class="short-description">
-              <span class="client"><?php the_field('client'); ?></span>
-              <span class="location"><?php the_field('location'); ?></span>
+            <div class="short-description"><?php the_excerpt(); ?></span>
             </div>
           </div>
           <div class="dot dot-arrow">
@@ -41,14 +38,6 @@ $link = get_the_permalink();
           </div>
         </div>
       </div>
-    </div>
-    <div class="tit-container">
-      <a class="post-thumbnail-inner alignwide" href="<?php echo $link; ?>" aria-hidden="true" tabindex="-1">
-        <span class="info-project">
-          <span class="client"><?php the_field('client'); ?></span>
-          <span class="location"><?php the_field('location'); ?></span>
-        </span>
-      </a>
     </div>
   </div>
 </article><!-- #post-<?php the_ID(); ?> -->
