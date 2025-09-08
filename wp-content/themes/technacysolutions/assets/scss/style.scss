@@ -1538,7 +1538,7 @@ body:not(.home) {
 
             @media (max-width: 576px) {
               padding: 1.3rem 1rem 0 0.8rem;
-              font-size: 16px;
+              font-size: 18px;
             }
 
           }
@@ -3060,7 +3060,6 @@ body:not(.home) {
           display: block;
         }
       }
-
     }
   }
 
@@ -3068,6 +3067,7 @@ body:not(.home) {
     .row-sedi {
       display: flex;
       gap: 20px;
+      text-align: center;
 
       @media (max-width: 1024px) {
         flex-wrap: wrap;
@@ -3079,6 +3079,7 @@ body:not(.home) {
         font-weight: 700;
         line-height: 150%;
         width: 100%;
+        z-index: 10;
 
         @media (max-width: 1180px) {
           margin-top: 1rem;
@@ -3096,14 +3097,131 @@ body:not(.home) {
 
         .location {
           color: #FC0606;
-          font-size: 26px;
+          font-size: 30px;
+          margin-bottom: 20px;
         }
 
         .address-container {
           font-size: 16px;
           white-space: normal;
+
+          .phone {
+            a {
+              display: inline-block;
+              padding: 0 20px;
+              position: relative;
+
+              i {
+                font-size: 11px;
+              }
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+
+          .email {
+            a {
+              color: red;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
         }
       }
+    }
+  }
+
+
+  .bg-image {
+    background-image: url("../img/bg-footer-image-2025.jpg");
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    padding: 100px 0 10px 0;
+
+    @media (max-width: 1180px) {
+      padding: 0 0 10px 0;
+    }
+
+    &:before {
+      content: "";
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+
+    @media (max-width: 576px) {
+      background-image: url("../img/bg-footer-image-2025-vertical.jpg");
+      &:before {
+        background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)
+      }
+    }
+  }
+
+  .footer-social {
+    text-align: center;
+
+    .content-width {
+      padding: 10px 0;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      height: 1px;
+      border-top: 1px dashed white;
+      width: 50%;
+      margin: 0 auto;
+      max-width: 400px;
+    }
+
+    .text {
+      color: white;
+    }
+
+    .social {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+
+      a {
+        margin: 0 5px;
+
+        svg {
+          height: 50px;
+          width: 50px;
+
+          @media (max-width: 576px) {
+            height: 40px;
+            width: 40px;
+          }
+
+        }
+      }
+    }
+  }
+
+  .copy {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 30px;
+
+    @media (max-width: 1024px) {
+      text-align: center;
+    }
+
+    .content-width {
+      padding: 15px 0;
     }
   }
 }
@@ -3611,7 +3729,7 @@ body.single {
   /* Contenitore dell'immagine in evidenza */
   .featured-image-container {
     width: 100vw;
-    height: 50vh;
+    height: 350px;
     overflow: hidden;
     position: relative;
     left: 50%;
@@ -3619,14 +3737,62 @@ body.single {
     margin-left: -50vw;
     margin-right: -50vw;
     background-color: #000; /* Opzionale: colore di fallback */
-  }
 
-  .featured-image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* L'immagine copre tutto lo spazio mantenendo le proporzioni */
-    object-position: top; /* Centra l'immagine */
-    display: block;
+    @media (max-width: 576px) {
+      height: 250px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+
+      &.tbl {
+        display: none;
+      }
+      &.mbl {
+        display: none;
+      }
+
+      @media (max-width: 1180px) {
+        &.dsk {
+          display: none;
+        }
+        &.tbl {
+          display: block;
+        }
+        &.mbl {
+          display: none;
+        }
+      }
+      @media (max-width: 1024px) {
+
+        &.dsk {
+          display: none;
+        }
+        &.tbl {
+          display: block;
+        }
+        &.mbl {
+          display: none;
+        }
+      }
+      @media (max-width: 576px) {
+        object-fit: contain;
+
+        &.dsk {
+          display: none;
+        }
+        &.tbl {
+          display: none;
+        }
+        &.mbl {
+          display: block;
+        }
+      }
+    }
   }
 
   .entry-content {

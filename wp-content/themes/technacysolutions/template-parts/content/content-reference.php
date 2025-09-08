@@ -41,6 +41,7 @@ $link = get_the_permalink();
         </div>
       </div>
     </div>
+    <?php /*
     <div class="tit-container">
       <a class="post-thumbnail-inner alignwide" href="<?php echo $link; ?>" aria-hidden="true" tabindex="-1">
         <span class="info-project">
@@ -49,5 +50,6 @@ $link = get_the_permalink();
         </span>
       </a>
     </div>
+ */?>
   </div>
 </article><!-- #post-<?php the_ID(); ?> -->

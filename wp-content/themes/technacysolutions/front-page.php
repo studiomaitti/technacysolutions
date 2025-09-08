@@ -418,9 +418,14 @@ $latest_references = new WP_Query([
       <div class="references-grid">
         <?php
         if ($latest_references->have_posts()) {
+          $i = 0;
           while ($latest_references->have_posts()) {
             $latest_references->the_post();
-            get_template_part('template-parts/content/content-reference');
+            $i++;
+            $css_class = [];
+            $css_class[] = 'post-i-' . $i;
+
+            include(locate_template('template-parts/content/content-reference.php', false, false));
           }
         } ?>
       </div>
