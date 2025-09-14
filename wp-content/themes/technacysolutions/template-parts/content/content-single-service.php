@@ -74,7 +74,7 @@ $header_image_html_mbl = $header_image_mobile ? '<img class="mbl" src="' . $head
   <div class="reference">
     <?php
     // 4. Loop sui risultati
-    if ($related_query->have_posts()) {
+    if ($terms && $related_query->have_posts()) {
       ?>
       <section class="technacy-references-section">
         <div class="references-container">
