@@ -10,7 +10,23 @@
   <div class="footer-sedi-container content-width">
     <div class="row-sedi">
       <div class="sede-i">
-        <div class="location">HQ BAHRAIN</div>
+        <div class="location">BAHRAIN HQ</div>
+        <div class="address-container">
+          <div class="address">
+            Dubai Internet City, Building 2, Office 113<br>
+            P.O. Box 500263<br>
+            Dubai, United Arab Emirates
+          </div>
+          <div class="phone">
+            <a href="tel:+97317009819"><i class="fa-solid fa-phone"></i> +973 17009819</a>
+          </div>
+          <div class="email">
+            <a href="mailto:presales@technacysolutions.com">presales@technacysolutions.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="sede-i">
+        <div class="location">DUBAI OFFICE</div>
         <div class="address-container">
           <div class="address">
             Office 12, Building 1144, Road 4617, Block 346<br>
@@ -25,26 +41,11 @@
         </div>
       </div>
       <div class="sede-i">
-        <div class="location">UAE OFFICE</div>
+        <div class="location">RIYADH OFFICE</div>
         <div class="address-container">
           <div class="address">
-            Office 12, Building 1144, Road 4617, Block 346<br>
-            Bahrain Bay Seafront, Bahrain
-          </div>
-          <div class="phone">
-            <a href="tel:+97317009819"><i class="fa-solid fa-phone"></i> +973 17009819</a>
-          </div>
-          <div class="email">
-            <a href="mailto:presales@technacysolutions.com">presales@technacysolutions.com</a>
-          </div>
-        </div>
-      </div>
-      <div class="sede-i">
-        <div class="location">SAUDI OFFICE</div>
-        <div class="address-container">
-          <div class="address">
-            Office 12, Building 1144, Road 4617, Block 346<br>
-            Bahrain Bay Seafront, Bahrain
+            Riyadh 2560 At Taawun Bldg, Riyadh, KSA P.O. <br>
+            Box: 57967 Riyadh 12475
           </div>
           <div class="phone">
             <a href="tel:+97317009819"><i class="fa-solid fa-phone"></i> +973 17009819</a>

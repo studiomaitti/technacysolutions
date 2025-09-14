@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: about
+ * Template Name: about-old
  * The template for displaying all single posts
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
@@ -12,19 +12,39 @@
 
 get_header();
 ?>
+  <section class="about-section about-intro-top">
+    <div class="video">
+      <video src="/wp-content/uploads/technacy-we-are-technacy-smaller.mp4" autoplay playsinline muted loop></video>
+    </div>
+
+    <div class="testo-container js-about-1-section-video">
+      <div class="testo inview-elem inview-elem-top js-about-1-section">
+        WE ARE <span>TECHNACY</span>
+      </div>
+    </div>
+
+    <div class="arrow-down bounce-down">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="Icon / Chevron Down">
+          <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M12.3982 15.2025C12.1785 15.4221 11.8224 15.4221 11.6027 15.2025L5.86788 9.46759C5.64821 9.24792 5.64821 8.89182 5.86788 8.67214L6.13305 8.40694C6.35271 8.18727 6.70887 8.18727 6.92854 8.40694L12.0005 13.4789L17.0724 8.40694C17.2921 8.18727 17.6482 8.18727 17.8679 8.40694L18.1331 8.67214C18.3527 8.89182 18.3527 9.24792 18.1331 9.46759L12.3982 15.2025Z" fill="white"/>
+        </g>
+      </svg>
+    </div>
+  </section>
 
   <section class="about-section about-we-crush" id="pinContainer">
     <div class="panel panel-1">
       <div class="panel-content">
         <div class="content-width">
-          <span class="tit-technacy">Technacy Solutions Lab</span>, based in Bahrain, is a leading technology partner delivering IPTV, AI, and smart
-          digital solutions across the Middle East. We empower residential, hospitality, healthcare, airports,
-          and public sector projects with innovative platforms that transform the way people connect, interact,
-          and experience content.<br>
-          <br>
-          Through strong partnerships with Minerva, Yukuan, Broadpeak, Amino, Harmonic, and BriefCam, we integrate IPTV,
-          video analytics, and digital signage into a seamless ecosystem—TM10 AI 360 powered by Minerva—bringing
-          entertainment, intelligence, and connectivity together in one platform.
+          <div class="sent-1 inview-elem inview-elem-top td-400">We crush</div>
+          <div class="sent-2 inview-elem inview-elem-top td-550">every challenge <span class="sent-amp">&amp;</span></div>
+          <div class="sent-3 inview-elem inview-elem-top td-620">
+            <span class="sent-3-1 inview-elem inview-elem-top td-740">deliver with </span> <span class="sent-3-2 inview-elem inview-elem-top">style
+            <span class="video">
+              <video src="/wp-content/uploads/fashion-style.mp4" autoplay playsinline muted loop></video>
+            </span>
+          </span>
+          </div>
         </div>
         <div class="dot dot-arrow">
           <span class="blob"></span>
@@ -38,11 +58,13 @@ get_header();
     <div class="panel panel-2">
       <div class="panel-content">
         <div class="content-width">
-          <span class="tit-1">Our mission is simple</span>: <br>
-          to provide innovative, reliable, and scalable solutions that enhance customer
-          experience, create new revenue opportunities, and support digital transformation.<br>
-          <br>
-          At <span class="tit-technacy">Technacy</span>, we don’t just deliver technology—we deliver end-to-end ecosystems that make organizations smarter, more connected, and future-ready.
+          <div class="sent-1 inview-elem inview-elem-top td-620">No project is </div>
+          <div class="sent-2 inview-elem inview-elem-top td-400">off-<br>limits-</div>
+          <div class="sent-3 inview-elem inview-elem-top td-550">we've been<br> <span class="rocking">rocking</span> <span class="video">
+              <video src="/wp-content/uploads/astronaut-smaller.mp4" autoplay playsinline muted loop></video>
+            </span>
+          </div>
+          <div class="sent-4 inview-elem inview-elem-top td-550">it for a<br> decade!</div>
         </div>
         <div class="dot dot-arrow">
           <span class="blob white"></span>
@@ -53,6 +75,56 @@ get_header();
       </div>
     </div>
   </section>
+
+  <?php
+  $txt = 'Our clients have been with us since the beginning, hooked on our top-notch solutions, service and transparency.<br><br>we are here to turn your ideas into reality!';
+  $a_tmp = explode(' ', $txt);
+  $a_tmp_finale = [];
+  foreach ($a_tmp as $k => $v) {
+    if ($k % 4 == 0) {
+      $a_tmp_finale[] = '<span class="word-mod inview-elem inview-elem-left">' . $v . '</span>';
+    }
+    else if ($k % 3 == 0) {
+      $a_tmp_finale[] = '<span class="slide-from-top delay-500">' . $v . '</span>';
+    }
+    else if ($k % 2 == 0) {
+      $a_tmp_finale[] = '<span class="slide-from-top delay-700">' . $v . '</span>';
+    }
+    else {
+      $a_tmp_finale[] = '<span class="slide-from-top delay-900">' . $v . '</span>';
+    }
+  }
+  ?>
+  <section class="about-section about-our-client-have">
+    <div class="testo-container">
+      <div class="content-width testo"><?php echo implode(' ', $a_tmp_finale); ?></div>
+    </div>
+  </section>
+
+  <section class="sections-from-bottom" id="pinSectionFromBottom">
+    <section class="panel panel-1 about-section about-world">
+      <div class="video">
+        <video class="js-video" src="/wp-content/uploads/technacysolutions-we-work-globally.mp4" autoplay playsinline muted loop></video>
+      </div>
+
+      <div class="testo-container">
+        <div class="content-width testo inview-elem inview-elem-top">
+          <div class="sent-1"><span class="js-video-hover">We work</span></div>
+          <div class="sent-2"><span class="js-video-hover">Globally</span></div>
+        </div>
+        <div class="country-list">
+          <div class="country country-1 inview-elem-top td-550">Saudi</div>
+          <div class="country country-2 inview-elem-top td-740">Bahrain</div>
+          <div class="country country-3 inview-elem-bottom td-620">Qatar</div>
+          <div class="country country-4 inview-elem-bottom td-400">Oman</div>
+          <div class="country country-5 inview-elem-bottom td-200">UAE</div>
+          <div class="country country-6 inview-elem-top td-550">Holland</div>
+          <div class="country country-7 inview-elem-bottom td-700">Mauritius</div>
+          <div class="country country-8 inview-elem-right td-200">Seychelles</div>
+          <div class="country country-9 inview-elem-right td-710">Egypt</div>
+        </div>
+      </div>
+    </section>
 
     <section class="panel panel-2 about-partners">
       <div class="testo-container">

@@ -2216,7 +2216,27 @@ body:not(.home) {
   height: 100vh;
   overflow: hidden;
   position: relative;
-  white-space: nowrap;
+  font-size: 22px;
+
+  .tit-1{
+    font-family: "ivypresto-display", serif;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: 0em;
+    position: relative;
+  }
+  .tit-technacy{
+    font-family: "ivypresto-display", serif;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: 0em;
+    position: relative;
+    color: red;
+  }
 
   .panel {
     height: 100%;
@@ -3170,6 +3190,8 @@ body:not(.home) {
 
   .footer-social {
     text-align: center;
+    z-index: 10;
+    position: relative;
 
     .content-width {
       padding: 10px 0;
