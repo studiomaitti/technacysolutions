@@ -1,7 +1,40 @@
 jQuery(window).on('mousemove', moveCursor);
 
+function animateNumber(element, duration) {
+  if (!element) return;
+
+  const finalNumber = parseInt(element.textContent, 10);
+  const suffix = element.getAttribute('data-finale-suffix') || '';
+
+  let currentNumber = 0;
+  const interval = 10;
+  const steps = duration / interval;
+  const increment = finalNumber / steps;
+
+  const timer = setInterval(() => {
+    currentNumber += increment;
+    if (currentNumber >= finalNumber) {
+      currentNumber = finalNumber;
+      clearInterval(timer);
+      element.textContent = finalNumber + suffix;
+      return;
+    }
+    element.textContent = Math.round(currentNumber);
+  }, interval);
+}
 // Video Modal Functionality
 document.addEventListener('DOMContentLoaded', function() {
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  // Numeri di crescono
+  var elemNumGrowing = document.querySelectorAll('.js-number-growing');
+  jQuery('.js-number-growing').on('inview', function (event, isInView) {
+    elemNumGrowing.forEach(function (elem) {
+      const finalNumber = parseInt(elem.textContent, 10);
+      console.log(finalNumber);
+      animateNumber(elem, 1000);
+    });
+  });
 
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // Inview elementi
