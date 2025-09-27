@@ -321,6 +321,34 @@ document.addEventListener("DOMContentLoaded", () => {
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   //ABOUT
   if (document.body.classList.contains('page-template-page-template--about')) {
+    const masthead = document.getElementById('masthead');
+    const sections = document.querySelectorAll('.section-bg');
+
+    function updateMastheadColor() {
+      const mastheadBottom = masthead.offsetHeight; // 72px
+      let currentColor = 'transparent'; // ✅ fallback trasparente
+
+      for (let section of sections) {
+        const rect = section.getBoundingClientRect();
+
+        // Controlla se la sezione interseca il bordo inferiore del masthead
+        if (rect.top <= mastheadBottom && rect.bottom >= mastheadBottom) {
+          const sectionColor = section.getAttribute('data-masthead-color');
+          if (sectionColor) {
+            currentColor = sectionColor;
+            break; // Prendi la prima valida
+          }
+        }
+      }
+
+      // Aggiorna la variabile CSS
+      masthead.style.setProperty('--masthead-bg-color', currentColor);
+    }
+
+// Attiva su scroll, caricamento e resize
+    window.addEventListener('scroll', updateMastheadColor);
+    window.addEventListener('load', updateMastheadColor);
+    window.addEventListener('resize', updateMastheadColor);
     document.querySelector('.star').addEventListener('click', function (ev) {
       document.querySelectorAll('.cat-i').forEach(function (elem) {
         if (elem.classList.contains('opened')) {

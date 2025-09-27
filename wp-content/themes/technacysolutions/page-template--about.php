@@ -14,471 +14,575 @@ get_header();
 ?>
 
   <section class="about-section about-we-crush" id="pinContainer">
-    <div class="panel panel-1">
+    <div class="panel panel-1 section-bg" data-masthead-color="transparent">
       <div class="panel-content">
         <div class="content-width">
-          <span class="tit-technacy">Technacy Solutions Lab</span>, based in Bahrain, is a leading technology partner delivering IPTV, AI, and smart
-          digital solutions across the Middle East. We empower residential, hospitality, healthcare, airports,
-          and public sector projects with innovative platforms that transform the way people connect, interact,
-          and experience content.<br>
+          <span class="tit-technacy">Technacy Solutions Lab</span>, based in Bahrain, is a leading technology partner
+          delivering IPTV, AI, and smart digital solutions across the Middle East.<br>
           <br>
-          Through strong partnerships with Minerva, Yukuan, Broadpeak, Amino, Harmonic, and BriefCam, we integrate IPTV,
-          video analytics, and digital signage into a seamless ecosystem—TM10 AI 360 powered by Minerva—bringing
-          entertainment, intelligence, and connectivity together in one platform.
+          We empower <strong>residential</strong>, hospitality, healthcare, airports, and public sector projects with innovative platforms that transform the way people connect, interact,
+          and experience content.<br>
         </div>
+
         <div class="dot dot-arrow">
-          <span class="blob"></span>
-          <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"/>
+          <span class="blob white"></span>
+          <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="black" stroke="white" stroke-width="2"/>
           </svg>
         </div>
       </div>
     </div>
 
-    <div class="panel panel-2">
+    <div class="panel panel-2 section-bg" data-masthead-color="transparent">
       <div class="panel-content">
         <div class="content-width">
+          Through strong partnerships with Minerva, Yukuan, Broadpeak, Amino, Harmonic, and BriefCam, we integrate IPTV,
+          video analytics, and digital signage into a seamless ecosystem—TM10 AI 360 powered by Minerva—bringing
+          entertainment, intelligence, and connectivity together in one platform.<br><br>
+
           <span class="tit-1">Our mission is simple</span>: <br>
           to provide innovative, reliable, and scalable solutions that enhance customer
           experience, create new revenue opportunities, and support digital transformation.<br>
           <br>
-          At <span class="tit-technacy">Technacy</span>, we don’t just deliver technology—we deliver end-to-end ecosystems that make organizations smarter, more connected, and future-ready.
+          At <span class="tit-technacy">Technacy</span>, we don’t just deliver technology—we deliver end-to-end
+          ecosystems that make organizations smarter, more connected, and future-ready.
+
         </div>
         <div class="dot dot-arrow">
-          <span class="blob white"></span>
-          <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M25.3712 14.1199L26.0783 13.4128L25.3712 12.7057L23.4912 10.8257L22.7847 10.1192L22.0776 10.825L16.3307 16.5616L16.3307 2.74609L16.3307 1.74609L15.3307 1.74609L12.6641 1.74609L11.6641 1.74609L11.6641 2.74609L11.6641 16.5616L5.9172 10.825L5.2101 10.1192L4.50362 10.8257L2.62362 12.7057L1.91651 13.4128L2.62362 14.1199L13.2903 24.7865L13.9974 25.4936L14.7045 24.7865L25.3712 14.1199Z" fill="black" stroke="white" stroke-width="2"/>
+          <span class="blob"></span>
+          <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25.3712 14.1199L26.0783 13.4128L25.3712 12.7057L23.4912 10.8257L22.7847 10.1192L22.0776 10.825L16.3307 16.5616L16.3307 2.74609L16.3307 1.74609L15.3307 1.74609L12.6641 1.74609L11.6641 1.74609L11.6641 2.74609L11.6641 16.5616L5.9172 10.825L5.2101 10.1192L4.50362 10.8257L2.62362 12.7057L1.91651 13.4128L2.62362 14.1199L13.2903 24.7865L13.9974 25.4936L14.7045 24.7865L25.3712 14.1199Z" fill="white" stroke="white" stroke-width="2"/>
+
           </svg>
         </div>
       </div>
     </div>
   </section>
 
-    <section class="panel panel-2 about-partners">
-      <div class="testo-container">
-        <div class="content-width testo">
-          <div class="title">Partners</div>
-
-          <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Active.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-amino.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-amt.png" alt=""></div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-bns.png" alt=""></div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-broadback.png" alt="">
-            </div>
-          </div>
-          <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-CGC.png" alt=""></div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-cubedots.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Dell.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Fortinet.png" alt="">
-            </div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Harmonic.png" alt="">
-            </div>
-          </div>
-          <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-IPmagic.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-JMC-Group.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Min-erva.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Notomi.png" alt="">
-            </div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Visual.png" alt="">
-            </div>
-          </div>
-          <div class="dsk logo-row logo-row-black inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Active.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-amino.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-amt.png" alt=""></div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-bns.png" alt=""></div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-broadback.png" alt="">
-            </div>
-          </div>
-          <div class="dsk logo-row logo-row-black inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-CGC.png" alt=""></div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-cubedots.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Dell.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Fortinet.png" alt="">
-            </div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Harmonic.png" alt="">
-            </div>
-          </div>
-          <div class="dsk logo-row logo-row-black inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-IPmagic.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-JMC-Group.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Min-erva.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Notomi.png" alt="">
-            </div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Visual.png" alt="">
-            </div>
-          </div>
-
-          <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Active.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-amino.png" alt="">
-            </div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-amt.png" alt=""></div>
-          </div>
-
-          <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-bns.png" alt=""></div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-broadback.png" alt="">
-            </div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-CGC.png" alt=""></div>
-          </div>
-
-          <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-cubedots.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Dell.png" alt="">
-            </div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Fortinet.png" alt="">
-            </div>
-          </div>
-
-          <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Harmonic.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-IPmagic.png" alt="">
-            </div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-JMC-Group.png" alt="">
-            </div>
-          </div>
-
-          <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Min-erva.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Notomi.png" alt="">
-            </div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Visual.png" alt="">
-            </div>
-          </div>
-
-        </div>
+  <section class="table-section section-bg" data-masthead-color="#000000">
+    <div class="content-width">
+    <section class="our-solutions-intro">
+      <div class="">
+        <div class="tit-technacy">Technacy Solutions Lab</div>
+        <p class="text-xl mb-6">One Platform. Multiple Industries. Infinite Possibilities.</p>
+        <p class="text-lg">Delivering IPTV • Digital Signage • Video Analytics • AI with Minerva’s Minnie<br>
+          Across Aviation • Education • Hospitality • Banking • Residential • Healthcare • Telcos</p>
+        <button onclick="location.href='/services';">Discover Our Services</button>
       </div>
     </section>
 
+    <!-- Sector Grid -->
+    <section class="our-solutions">
 
-    <section class="panel panel-3 about-section about-clients">
-      <div class="testo-container">
-        <div class="content-width testo">
-          <div class="title">Clients</div>
-          <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-bairport.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-batelco.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-BIC.png" alt=""></div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-BTC.png" alt=""></div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-ccp.png" alt=""></div>
-          </div>
-          <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-Emar.png" alt=""></div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-F1.png" alt=""></div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-formula-E.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-gulfir.png" alt="">
-            </div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-icad.png" alt=""></div>
-          </div>
-          <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-Kapsark.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-kohei.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-lambo.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-orange.png" alt="">
-            </div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-stc.png" alt=""></div>
-          </div>
-          <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-trined.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-vodafon.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-whirpool.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-youth.png" alt="">
-            </div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-zain.png" alt=""></div>
-          </div>
-          <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-bairport.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-batelco.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-BIC.png" alt=""></div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-BTC.png" alt=""></div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-ccp.png" alt=""></div>
-          </div>
-          <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-Emar.png" alt=""></div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-F1.png" alt=""></div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-formula-E.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-gulfir.png" alt="">
-            </div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-icad.png" alt=""></div>
-          </div>
-          <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-Kapsark.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-kohei.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-lambo.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-orange.png" alt="">
-            </div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-stc.png" alt=""></div>
-          </div>
-          <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-trined.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-vodafon.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-whirpool.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-youth.png" alt="">
-            </div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-zain.png" alt=""></div>
-          </div>
-
-
-
-
-          <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-bairport.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-batelco.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-BIC.png" alt=""></div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-BTC.png" alt=""></div>
-          </div>
-          <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-ccp.png" alt=""></div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-Emar.png" alt=""></div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-F1.png" alt=""></div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-formula-E.png" alt="">
-            </div>
-          </div>
-          <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-gulfir.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-icad.png" alt=""></div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-Kapsark.png" alt="">
-            </div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-kohei.png" alt="">
-            </div>
-          </div>
-          <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-lambo.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-orange.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-stc.png" alt=""></div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-trined.png" alt="">
-            </div>
-          </div>
-          <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
-            <div class="img-i img-i-first">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-vodafon.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-whirpool.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-youth.png" alt="">
-            </div>
-            <div class="img-i img-i-last">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-zain.png" alt=""></div>
-          </div>
-
-
-
-
-
-          <div class="dsk logo-row logo-row-black inview-elem inview-elem-top">
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-bairport.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-batelco.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-BIC.png" alt=""></div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-BTC.png" alt=""></div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-ccp.png" alt=""></div>
-          </div>
-          <div class="dsk logo-row logo-row-black inview-elem inview-elem-top">
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-Emar.png" alt=""></div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-F1.png" alt=""></div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-formula-E.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-gulfir.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-icad.png" alt=""></div>
-          </div>
-          <div class="dsk logo-row logo-row-black inview-elem inview-elem-top">
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-Kapsark.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-kohei.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-lambo.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-orange.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-stc.png" alt=""></div>
-          </div>
-          <div class="dsk logo-row logo-row-black inview-elem inview-elem-top">
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-trined.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-vodafon.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-whirpool.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-youth.png" alt="">
-            </div>
-            <div class="img-i">
-              <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-zain.png" alt=""></div>
-          </div>
-        </div>
+      <!-- Aviation -->
+      <div class="panel-solution">
+        <h2 class="text-2xl font-bold mb-3">✈️ Aviation – Smart Airports, Smarter Journeys</h2>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>IPTV integrated with FIDS & PA systems</li>
+          <li>Passenger entertainment in lounges</li>
+          <li>Digital signage for safety alerts & advertising</li>
+          <li>AI crowd & queue monitoring</li>
+        </ul>
+        <p class="mt-4 text-sm font-semibold text-red-600">Reference: KAIA Airport (Jeddah)</p>
       </div>
+
+      <!-- Education -->
+      <div class="panel-solution">
+        <h2 class="text-2xl font-bold mb-3">🎓 Education – Smart Campuses & Universities</h2>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>Lecture capture & remote IPTV access</li>
+          <li>Digital signage for events & wayfinding</li>
+          <li>Video analytics for occupancy & safety</li>
+          <li>AI tools for hybrid learning engagement</li>
+        </ul>
+        <p class="mt-4 text-sm font-semibold text-red-600">References: KAPSARC, Princess Nourah University
+          (PNU)</p>
+      </div>
+
+      <!-- Hospitality -->
+      <div class="panel-solution">
+        <h2 class="text-2xl font-bold mb-3">🏨 Hospitality – Smart Guest Experiences</h2>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>In-room IPTV with OTT & FAST channels</li>
+          <li>Digital signage for lobbies, events, upselling</li>
+          <li>Minnie AI assistant as a virtual concierge</li>
+          <li>Analytics for guest flow & service optimization</li>
+        </ul>
+        <p class="mt-4 text-sm font-semibold text-red-600">References: Leading hotels & resorts in GCC</p>
+      </div>
+
+      <!-- Banking -->
+      <div class="panel-solution">
+        <h2 class="text-2xl font-bold mb-3">💳 Banking & Finance – Secure, Connected, Compliant</h2>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>IPTV for executive messaging & compliance</li>
+          <li>Digital signage for branch promotions & KPIs</li>
+          <li>AI video analytics for ATM & branch monitoring</li>
+          <li>Air-gapped, compliant deployments</li>
+        </ul>
+        <p class="mt-4 text-sm font-semibold text-red-600">Reference: SAMA – Saudi Central Bank</p>
+      </div>
+
+      <!-- Residential & Palaces -->
+      <div class="panel-solution">
+        <h2 class="text-2xl font-bold mb-3">🏡👑 Residential Compounds & Royal Palaces</h2>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>Centralized IPTV with subscription/perpetual models</li>
+          <li>Digital signage for communities & luxury branding</li>
+          <li>AI security analytics for perimeter & staff monitoring</li>
+          <li>Lifestyle analytics for facilities usage</li>
+        </ul>
+        <p class="mt-4 text-sm font-semibold text-red-600">References: Luxury villas & palaces in GCC</p>
+      </div>
+
+      <!-- Healthcare -->
+      <div class="panel-solution">
+        <h2 class="text-2xl font-bold mb-3">🏥 Healthcare – Smarter Hospitals & Patient Care</h2>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>Bedside IPTV entertainment & HIS integration</li>
+          <li>Digital signage for wayfinding & health info</li>
+          <li>Minnie AI assistant as a digital care companion</li>
+          <li>Analytics for patient flow & hygiene compliance</li>
+        </ul>
+        <p class="mt-4 text-sm font-semibold text-red-600">References: Healthcare projects in GCC</p>
+      </div>
+
+      <!-- Telcos -->
+      <div class="panel-solution">
+        <h2 class="text-2xl font-bold mb-3">📡 Telcos – Next-Gen IPTV & Super Aggregation</h2>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>IPTV & OTT bundling into broadband & mobile</li>
+          <li>Operator-branded platforms with Super Aggregation</li>
+          <li>Minnie AI assistant for discovery & upselling services</li>
+          <li>Analytics for churn prediction & QoE monitoring</li>
+        </ul>
+        <p class="mt-4 text-sm font-semibold text-red-600">References: Vodafone Egypt, Orange Egypt, Dhiraagu,
+          Skytel Mongolia</p>
+      </div>
+
     </section>
+    </div>
   </section>
 
-  <section class="about-section about-testimonial">
+  <section class="panel panel-2 about-partners section-bg" data-masthead-color="#000000">
+    <div class="testo-container">
+      <div class="content-width testo">
+        <div class="title">Partners</div>
+
+        <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Active.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-amino.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-amt.png" alt=""></div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-bns.png" alt=""></div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-broadback.png" alt="">
+          </div>
+        </div>
+        <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-CGC.png" alt=""></div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-cubedots.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Dell.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Fortinet.png" alt="">
+          </div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Harmonic.png" alt="">
+          </div>
+        </div>
+        <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-IPmagic.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-JMC-Group.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Min-erva.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Notomi.png" alt="">
+          </div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Visual.png" alt="">
+          </div>
+        </div>
+        <div class="dsk logo-row logo-row-black inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Active.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-amino.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-amt.png" alt=""></div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-bns.png" alt=""></div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-broadback.png" alt="">
+          </div>
+        </div>
+        <div class="dsk logo-row logo-row-black inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-CGC.png" alt=""></div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-cubedots.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Dell.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Fortinet.png" alt="">
+          </div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Harmonic.png" alt="">
+          </div>
+        </div>
+        <div class="dsk logo-row logo-row-black inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-IPmagic.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-JMC-Group.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Min-erva.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Notomi.png" alt="">
+          </div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Visual.png" alt="">
+          </div>
+        </div>
+
+        <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Active.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-amino.png" alt="">
+          </div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-amt.png" alt=""></div>
+        </div>
+
+        <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-bns.png" alt=""></div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-broadback.png" alt="">
+          </div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-CGC.png" alt=""></div>
+        </div>
+
+        <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-cubedots.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Dell.png" alt="">
+          </div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Fortinet.png" alt="">
+          </div>
+        </div>
+
+        <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Harmonic.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-IPmagic.png" alt="">
+          </div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-JMC-Group.png" alt="">
+          </div>
+        </div>
+
+        <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Min-erva.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Notomi.png" alt="">
+          </div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Visual.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="panel panel-3 about-section about-clients section-bg" data-masthead-color="#000000">
+    <div class="testo-container">
+      <div class="content-width testo">
+        <div class="title">Clients</div>
+        <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-bairport.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-batelco.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-BIC.png" alt=""></div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-BTC.png" alt=""></div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-ccp.png" alt=""></div>
+        </div>
+        <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-Emar.png" alt=""></div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-F1.png" alt=""></div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-formula-E.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-gulfir.png" alt="">
+          </div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-icad.png" alt=""></div>
+        </div>
+        <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-Kapsark.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-kohei.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-lambo.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-orange.png" alt="">
+          </div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-stc.png" alt=""></div>
+        </div>
+        <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-trined.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-vodafon.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-whirpool.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-youth.png" alt="">
+          </div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-zain.png" alt=""></div>
+        </div>
+        <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-bairport.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-batelco.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-BIC.png" alt=""></div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-BTC.png" alt=""></div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-ccp.png" alt=""></div>
+        </div>
+        <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-Emar.png" alt=""></div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-F1.png" alt=""></div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-formula-E.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-gulfir.png" alt="">
+          </div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-icad.png" alt=""></div>
+        </div>
+        <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-Kapsark.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-kohei.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-lambo.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-orange.png" alt="">
+          </div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-stc.png" alt=""></div>
+        </div>
+        <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-trined.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-vodafon.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-whirpool.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-youth.png" alt="">
+          </div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-zain.png" alt=""></div>
+        </div>
+
+
+        <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-bairport.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-batelco.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-BIC.png" alt=""></div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-BTC.png" alt=""></div>
+        </div>
+        <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-ccp.png" alt=""></div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-Emar.png" alt=""></div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-F1.png" alt=""></div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-formula-E.png" alt="">
+          </div>
+        </div>
+        <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-gulfir.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-icad.png" alt=""></div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-Kapsark.png" alt="">
+          </div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-kohei.png" alt="">
+          </div>
+        </div>
+        <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-lambo.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-orange.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-stc.png" alt=""></div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-trined.png" alt="">
+          </div>
+        </div>
+        <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-vodafon.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-whirpool.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-youth.png" alt="">
+          </div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-zain.png" alt=""></div>
+        </div>
+
+
+        <div class="dsk logo-row logo-row-black inview-elem inview-elem-top">
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-bairport.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-batelco.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-BIC.png" alt=""></div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-BTC.png" alt=""></div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-ccp.png" alt=""></div>
+        </div>
+        <div class="dsk logo-row logo-row-black inview-elem inview-elem-top">
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-Emar.png" alt=""></div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-F1.png" alt=""></div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-formula-E.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-gulfir.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-icad.png" alt=""></div>
+        </div>
+        <div class="dsk logo-row logo-row-black inview-elem inview-elem-top">
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-Kapsark.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-kohei.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-lambo.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-orange.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-stc.png" alt=""></div>
+        </div>
+        <div class="dsk logo-row logo-row-black inview-elem inview-elem-top">
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-trined.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-vodafon.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-whirpool.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-youth.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/black/logo-zain.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section about-testimonial section-bg" data-masthead-color="#000000">
     <div class="testo-container">
       <div class="content-width testo">
         <div class="title inview-elem inview-elem-top">What <span>they</span> say</div>
@@ -504,7 +608,10 @@ get_header();
 </svg></span>
                   </div>
                   <div class="description">
-                    "Technacy Solutions has strong expertise in system integration and high commitment to service excellence. They've demonstrated to be a trusted partner in the Video space, with in-depth technology know-how and a customer driven approach. Our overall experience has been extremely positive and we look forward to our continued collaboration in the years to come."
+                    "Technacy Solutions has strong expertise in system integration and high commitment to service
+                    excellence. They've demonstrated to be a trusted partner in the Video space, with in-depth
+                    technology know-how and a customer driven approach. Our overall experience has been extremely
+                    positive and we look forward to our continued collaboration in the years to come."
                   </div>
                   <div class="societa">
                     <div class="container">
@@ -544,7 +651,9 @@ get_header();
 </svg></span>
                   </div>
                   <div class="description">
-                    "I have always had positive experiences working with Technacy for the past couple of years. Technacy has always provided the most suitable and recommended solutions with the best price that is suitable for our business. I would highly recommend Technacy in the field of Innovation."
+                    "I have always had positive experiences working with Technacy for the past couple of years. Technacy
+                    has always provided the most suitable and recommended solutions with the best price that is suitable
+                    for our business. I would highly recommend Technacy in the field of Innovation."
                   </div>
                   <div class="societa">
                     <div class="container">
@@ -586,7 +695,9 @@ get_header();
 </svg></span>
                   </div>
                   <div class="description">
-                    "I have always had positive experiences working with Technacy for the past couple of years. Technacy has always provided the most suitable and recommended solutions with the best price that is suitable for our business. I would highly recommend Technacy in the field of Innovation."
+                    "I have always had positive experiences working with Technacy for the past couple of years. Technacy
+                    has always provided the most suitable and recommended solutions with the best price that is suitable
+                    for our business. I would highly recommend Technacy in the field of Innovation."
                   </div>
                   <div class="societa">
                     <div class="container">

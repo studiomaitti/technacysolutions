@@ -582,7 +582,7 @@ input[type=reset]:hover,
 input[type=reset]:focus,
 input[type=submit]:hover,
 input[type=submit]:focus {
-  background: #ea1c3c;
+  background: #ff0000;
 }
 
 button:focus,
@@ -3084,6 +3084,22 @@ body:not(.home) .header::before {
 /** *********************
   ABOUT
  ************************ */
+body.page-template-page-template--about .header {
+  --masthead-bg-color: transparent;
+}
+body.page-template-page-template--about .header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--masthead-bg-color);
+  z-index: -1;
+  opacity: 0.9;
+  transition: background-color 0.3s ease;
+}
+
 .about-intro-top {
   color: #ffffff;
   height: 100vh;
@@ -3187,78 +3203,26 @@ body:not(.home) .header::before {
   height: 100%;
 }
 .about-we-crush .panel.panel-1 {
-  background-color: #ffffff;
-  color: #000000;
-  text-transform: uppercase;
-}
-.about-we-crush .panel.panel-1 .sent-1 {
-  font-family: "Neue Machina", sans-serif;
-  font-size: 96px;
-  font-size: 4.8vw;
-  font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: 0em;
-}
-.about-we-crush .panel.panel-1 .sent-2 {
-  font-family: "ivypresto-display", serif;
-  font-size: 96px;
-  font-size: 4.8vw;
-  font-style: italic;
-  font-weight: 300;
-  line-height: 1.1;
-  letter-spacing: 0em;
-  position: relative;
-}
-.about-we-crush .panel.panel-1 .sent-2 .sent-amp {
-  display: inline-block;
-  font-family: "ivypresto-display", serif;
-  font-size: 240px;
-  font-size: 12.5vw;
-  font-style: italic;
-  font-weight: 300;
-  line-height: 1.1;
-  letter-spacing: 0em;
-  padding-left: 5rem;
+  background-color: #000000;
+  background-image: url("../img/Technacysolutions-office-pen.jpg");
+  background-size: cover;
+  background-position: top center;
+  color: #ffffff;
   position: absolute;
-  bottom: 0;
 }
-.about-we-crush .panel.panel-1 .sent-3 .sent-3-1 {
-  font-family: "Neue Machina", sans-serif;
-  font-size: 96px;
-  font-size: 4.8vw;
-  font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: 0em;
-}
-.about-we-crush .panel.panel-1 .sent-3 .sent-3-1:hover + .sent-3-2 .video {
-  opacity: 1;
-}
-.about-we-crush .panel.panel-1 .sent-3 .sent-3-2 {
-  font-family: "ivypresto-display", serif;
-  font-size: 96px;
-  font-size: 4.8vw;
-  font-style: italic;
-  font-weight: 300;
-  line-height: 1.1;
-  letter-spacing: 0em;
-  position: relative;
-}
-.about-we-crush .panel.panel-1 .sent-3 .sent-3-2 .video {
-  height: 358px;
-  opacity: 0;
+.about-we-crush .panel.panel-1:before {
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.5) 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
   position: absolute;
-  right: 0px;
-  overflow: hidden;
-  top: -50px;
-  transform: rotate(-10.488deg);
-  transition: all 0.4s ease-in-out;
-  width: 250px;
-}
-.about-we-crush .panel.panel-1 .sent-3 .sent-3-2 .video video {
+  top: 0;
   width: 100%;
 }
-.about-we-crush .panel.panel-1 .sent-3 .sent-3-2:hover .video {
-  opacity: 1;
+.about-we-crush .panel.panel-1 .panel-content {
+  z-index: 1;
+  position: relative;
 }
 .about-we-crush .panel.panel-1 .dot {
   display: flex;
@@ -3282,57 +3246,27 @@ body:not(.home) .header::before {
   z-index: 10;
 }
 .about-we-crush .panel.panel-2 {
-  background-color: #000000;
-  color: #ffffff;
-  text-transform: uppercase;
+  background-color: #ffffff;
+  background-image: url("../img/Technacysolutions-office-pen.jpg");
+  background-size: cover;
+  background-position: top center;
+  color: #000000;
+  position: relative;
   z-index: 10;
 }
-.about-we-crush .panel.panel-2 .sent-1,
-.about-we-crush .panel.panel-2 .sent-3 {
-  display: inline;
-  font-family: "ivypresto-display", serif;
-  font-size: 96px;
-  font-size: 4.8vw;
-  font-style: italic;
-  font-weight: 300;
-  line-height: 1.1;
-  letter-spacing: 0em;
-  position: relative;
-}
-.about-we-crush .panel.panel-2 .sent-1 .video,
-.about-we-crush .panel.panel-2 .sent-3 .video {
-  height: 254px;
-  opacity: 0;
+.about-we-crush .panel.panel-2:before {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.31) 0%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.7) 90%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
   position: absolute;
-  left: -80%;
-  overflow: hidden;
-  top: 20%;
-  transform: rotate(-10.488deg);
-  transition: all 0.4s ease-in-out;
-  width: 450px;
-  z-index: -1;
-}
-.about-we-crush .panel.panel-2 .sent-1 .video video,
-.about-we-crush .panel.panel-2 .sent-3 .video video {
+  top: 0;
   width: 100%;
 }
-.about-we-crush .panel.panel-2 .sent-1:hover,
-.about-we-crush .panel.panel-2 .sent-3:hover {
-  color: #FC0606;
-}
-.about-we-crush .panel.panel-2 .sent-1:hover .video,
-.about-we-crush .panel.panel-2 .sent-3:hover .video {
-  opacity: 1;
-}
-.about-we-crush .panel.panel-2 .sent-2,
-.about-we-crush .panel.panel-2 .sent-4 {
-  display: inline;
-  font-family: "Neue Machina", sans-serif;
-  font-size: 96px;
-  font-size: 4.8vw;
-  font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: 0em;
+.about-we-crush .panel.panel-2 .panel-content {
+  z-index: 1;
+  position: relative;
 }
 .about-we-crush .panel.panel-2 .dot {
   display: flex;
@@ -3355,6 +3289,45 @@ body:not(.home) .header::before {
   margin: auto;
   z-index: 10;
 }
+.table-section {
+  color: #ffffff;
+  font-size: 22px;
+}
+.table-section .tit-technacy {
+  font-family: "ivypresto-display", serif;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  position: relative;
+  color: red;
+}
+.table-section .our-solutions-intro {
+  padding: 1rem 0;
+}
+.table-section .our-solutions {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  max-width: 100%;
+  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+@media (min-width: 768px) {
+  .table-section .our-solutions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.table-section .our-solutions .panel-solution {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
+  padding: 2rem;
+  border-radius: 1rem;
+  font-size: 18px;
+}
+
 .about-our-client-have {
   display: flex;
   min-height: 100vh;
