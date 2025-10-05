@@ -17,11 +17,24 @@ get_header();
     <div class="panel panel-1 section-bg" data-masthead-color="transparent">
       <div class="panel-content">
         <div class="content-width">
-          <span class="tit-technacy">Technacy Solutions Lab</span>, based in Bahrain, is a leading technology partner
-          delivering IPTV, AI, and smart digital solutions across the Middle East.<br>
-          <br>
-          We empower <strong>residential</strong>, hospitality, healthcare, airports, and public sector projects with innovative platforms that transform the way people connect, interact,
-          and experience content.<br>
+          <p><span class="tit-technacy">Technacy Solutions Lab</span>, headquartered in Bahrain, is a leading technology
+            partner shaping the future of <strong>IPTV</strong>, <strong>AI</strong>, and <strong>smart digital
+              ecosystems</strong> across the Middle East.</p>
+
+          <p>We empower <strong>residential communities</strong>, <strong>hospitality groups</strong>, <strong>healthcare
+              providers</strong>, <strong>airports</strong>, <strong>universities</strong>, and <strong>financial
+              institutions</strong> with innovative platforms that redefine the way people connect, interact, and
+            experience digital content.</p>
+
+          <p>At the heart of our portfolio is <strong>TM10 AI 360</strong> powered by <strong>Minerva</strong>, a
+            next-generation platform that integrates <strong>IPTV</strong>, <strong>digital signage</strong>, <strong>video
+              analytics</strong>, and <strong>AI-driven personalization</strong> into one seamless ecosystem. This
+            unified approach delivers entertainment, intelligence, and connectivity on a single, scalable platform.</p>
+
+          <p>Through strong partnerships with <strong>Minerva</strong>, <strong>Yukuan</strong>,
+            <strong>Broadpeak</strong>, <strong>Amino</strong>, <strong>Harmonic</strong>, and <strong>BriefCam</strong>,
+            we provide end-to-end solutions—from content aggregation and delivery to <strong>AI analytics</strong> and
+            monetization—ensuring unmatched reliability, scalability, and user experience.</p>
         </div>
 
         <div class="dot dot-arrow">
@@ -40,13 +53,12 @@ get_header();
           video analytics, and digital signage into a seamless ecosystem—TM10 AI 360 powered by Minerva—bringing
           entertainment, intelligence, and connectivity together in one platform.<br><br>
 
-          <span class="tit-1">Our mission is simple</span>: <br>
+          <span class="tit-1 tit-technacy">Our mission is simple</span>: <br>
           to provide innovative, reliable, and scalable solutions that enhance customer
           experience, create new revenue opportunities, and support digital transformation.<br>
           <br>
           At <span class="tit-technacy">Technacy</span>, we don’t just deliver technology—we deliver end-to-end
           ecosystems that make organizations smarter, more connected, and future-ready.
-
         </div>
         <div class="dot dot-arrow">
           <span class="blob"></span>
@@ -59,108 +71,162 @@ get_header();
     </div>
   </section>
 
-  <section class="table-section section-bg" data-masthead-color="#000000">
+  <section class="section-oursolutions section-bg" data-masthead-color="#000000">
     <div class="content-width">
-    <section class="our-solutions-intro">
-      <div class="">
-        <div class="tit-technacy">Technacy Solutions Lab</div>
-        <p class="text-xl mb-6">One Platform. Multiple Industries. Infinite Possibilities.</p>
-        <p class="text-lg">Delivering IPTV • Digital Signage • Video Analytics • AI with Minerva’s Minnie<br>
-          Across Aviation • Education • Hospitality • Banking • Residential • Healthcare • Telcos</p>
-        <button onclick="location.href='/services';">Discover Our Services</button>
-      </div>
-    </section>
+      <!-- Sector Grid -->
+      <h2>Our Services</h2>
+      <section class="our-solutions">
 
-    <!-- Sector Grid -->
-    <section class="our-solutions">
+        <!-- Aviation -->
+        <div class="card-i">
+          <div class="card-image">
+            <img src="/wp-content/uploads/2025/09/technacysolutions-KAIA-Terminal-North-mobile.jpg" width="500" height="320">
+          </div>
+          <div class="card-info">
+            <h2>Aviation – Smart Airports, Smarter Journeys</h2>
+            <ul>
+              <li>IPTV integrated with FIDS & PA systems</li>
+              <li>Passenger entertainment in lounges</li>
+              <li>Digital signage for safety alerts & advertising</li>
+              <li>AI crowd & queue monitoring</li>
+            </ul>
+          </div>
+          <div class="card-link">
+            <div class="card-link-label">References</div>
+            <a href="/reference/king-abdulaziz-international-airport-kaia-jeddah-saudi-arabia/">KAIA Airport
+              (Jeddah)</a>
+          </div>
+        </div>
 
-      <!-- Aviation -->
-      <div class="panel-solution">
-        <h2 class="text-2xl font-bold mb-3">✈️ Aviation – Smart Airports, Smarter Journeys</h2>
-        <ul class="list-disc pl-5 space-y-1">
-          <li>IPTV integrated with FIDS & PA systems</li>
-          <li>Passenger entertainment in lounges</li>
-          <li>Digital signage for safety alerts & advertising</li>
-          <li>AI crowd & queue monitoring</li>
-        </ul>
-        <p class="mt-4 text-sm font-semibold text-red-600">Reference: KAIA Airport (Jeddah)</p>
-      </div>
+        <!-- Education -->
+        <div class="card-i">
+          <div class="card-image">
+            <img src="/wp-content/uploads/2025/09/technacysolutions-Kapsarc_Campus-IPTV-mobile.jpg" width="500" height="320">
+          </div>
+          <div class="card-info">
+            <h2>Education – Smart Campuses & Universities</h2>
+            <ul>
+              <li>Lecture capture & remote IPTV access</li>
+              <li>Digital signage for events & wayfinding</li>
+              <li>Video analytics for occupancy & safety</li>
+              <li>AI tools for hybrid learning engagement</li>
+            </ul>
+          </div>
+          <div class="card-link">
+            <div class="card-link-label">References</div>
+            <a href="/reference/kapsarc-king-abdullah-petroleum-studies-and-research-center-riyadh/">KAPSARC</a>
+          </div>
+        </div>
 
-      <!-- Education -->
-      <div class="panel-solution">
-        <h2 class="text-2xl font-bold mb-3">🎓 Education – Smart Campuses & Universities</h2>
-        <ul class="list-disc pl-5 space-y-1">
-          <li>Lecture capture & remote IPTV access</li>
-          <li>Digital signage for events & wayfinding</li>
-          <li>Video analytics for occupancy & safety</li>
-          <li>AI tools for hybrid learning engagement</li>
-        </ul>
-        <p class="mt-4 text-sm font-semibold text-red-600">References: KAPSARC, Princess Nourah University
-          (PNU)</p>
-      </div>
+        <!-- Hospitality -->
+        <div class="card-i">
+          <div class="card-image">
+            <img src="/wp-content/themes/technacysolutions/assets/img/our-solutions--residential/our-solutions--hospitality.jpg" width="500" height="320">
+          </div>
+          <div class="card-info">
+            <h2>Hospitality – Smart Guest Experiences</h2>
+            <ul>
+              <li>In-room IPTV with OTT & FAST channels</li>
+              <li>Digital signage for lobbies, events, upselling</li>
+              <li>Minnie AI assistant as a virtual concierge</li>
+              <li>Analytics for guest flow & service optimization</li>
+            </ul>
+          </div>
+          <div class="card-link">
+            <div class="card-link-label">References</div>
+            <a href="/reference/yamama-palace-jeddah/">Yamama Palace – Jeddah</a>
+            <span class="card-link-separator">•</span>
+            <a href="/reference/hassan-island-private-island-year-2020/">Hassan Island</a>
+          </div>
+        </div>
 
-      <!-- Hospitality -->
-      <div class="panel-solution">
-        <h2 class="text-2xl font-bold mb-3">🏨 Hospitality – Smart Guest Experiences</h2>
-        <ul class="list-disc pl-5 space-y-1">
-          <li>In-room IPTV with OTT & FAST channels</li>
-          <li>Digital signage for lobbies, events, upselling</li>
-          <li>Minnie AI assistant as a virtual concierge</li>
-          <li>Analytics for guest flow & service optimization</li>
-        </ul>
-        <p class="mt-4 text-sm font-semibold text-red-600">References: Leading hotels & resorts in GCC</p>
-      </div>
+        <!-- Banking -->
+        <div class="card-i">
+          <div class="card-image">
+            <img src="/wp-content/themes/technacysolutions/assets/img/our-solutions--residential/our-solutions--banking.jpg" width="500" height="320">
+          </div>
+          <div class="card-info">
+            <h2>Banking & Finance – Secure, Connected, Compliant</h2>
+            <ul>
+              <li>IPTV for executive messaging & compliance</li>
+              <li>Digital signage for branch promotions & KPIs</li>
+              <li>AI video analytics for ATM & branch monitoring</li>
+              <li>Air-gapped, compliant deployments</li>
+            </ul>
+          </div>
+          <div class="card-link">
+            <div class="card-link-label">References</div>
+            <a href="/reference/saudi-central-bank-sama-riyadh-saudi-arabia/">SAMA – Saudi Central Bank</a>
+          </div>
+        </div>
 
-      <!-- Banking -->
-      <div class="panel-solution">
-        <h2 class="text-2xl font-bold mb-3">💳 Banking & Finance – Secure, Connected, Compliant</h2>
-        <ul class="list-disc pl-5 space-y-1">
-          <li>IPTV for executive messaging & compliance</li>
-          <li>Digital signage for branch promotions & KPIs</li>
-          <li>AI video analytics for ATM & branch monitoring</li>
-          <li>Air-gapped, compliant deployments</li>
-        </ul>
-        <p class="mt-4 text-sm font-semibold text-red-600">Reference: SAMA – Saudi Central Bank</p>
-      </div>
+        <!-- Residential & Palaces -->
+        <div class="card-i">
+          <div class="card-image">
+            <img src="/wp-content/themes/technacysolutions/assets/img/our-solutions--residential/our-solutions--residential.jpg" width="500" height="320">
+          </div>
+          <div class="card-info">
+            <h2>Residential Compounds & Royal Palaces</h2>
+            <ul>
+              <li>Centralized IPTV with subscription/perpetual models</li>
+              <li>Digital signage for communities & luxury branding</li>
+              <li>AI security analytics for perimeter & staff monitoring</li>
+              <li>Lifestyle analytics for facilities usage</li>
+            </ul>
+          </div>
+          <div class="card-link">
+            <div class="card-link-label">References</div>
+            <a href="/reference/araqa-palace-riyadh/">Araqa Palace – Riyadh</a>
+          </div>
+        </div>
 
-      <!-- Residential & Palaces -->
-      <div class="panel-solution">
-        <h2 class="text-2xl font-bold mb-3">🏡👑 Residential Compounds & Royal Palaces</h2>
-        <ul class="list-disc pl-5 space-y-1">
-          <li>Centralized IPTV with subscription/perpetual models</li>
-          <li>Digital signage for communities & luxury branding</li>
-          <li>AI security analytics for perimeter & staff monitoring</li>
-          <li>Lifestyle analytics for facilities usage</li>
-        </ul>
-        <p class="mt-4 text-sm font-semibold text-red-600">References: Luxury villas & palaces in GCC</p>
-      </div>
+        <!-- Healthcare -->
+        <div class="card-i">
+          <div class="card-image">
+            <img src="/wp-content/themes/technacysolutions/assets/img/our-solutions--residential/our-solutions--healthcare.jpg" width="500" height="320">
+          </div>
+          <div class="card-info">
+            <h2>Healthcare – Smarter Hospitals & Patient Care</h2>
+            <ul>
+              <li>Bedside IPTV entertainment & HIS integration</li>
+              <li>Digital signage for wayfinding & health info</li>
+              <li>Minnie AI assistant as a digital care companion</li>
+              <li>Analytics for patient flow & hygiene compliance</li>
+            </ul>
+          </div>
+          <div class="card-link">
+            <!--
+            <a href="#">References: Luxury villas & palaces in GCC</a>
+            -->
+          </div>
+        </div>
 
-      <!-- Healthcare -->
-      <div class="panel-solution">
-        <h2 class="text-2xl font-bold mb-3">🏥 Healthcare – Smarter Hospitals & Patient Care</h2>
-        <ul class="list-disc pl-5 space-y-1">
-          <li>Bedside IPTV entertainment & HIS integration</li>
-          <li>Digital signage for wayfinding & health info</li>
-          <li>Minnie AI assistant as a digital care companion</li>
-          <li>Analytics for patient flow & hygiene compliance</li>
-        </ul>
-        <p class="mt-4 text-sm font-semibold text-red-600">References: Healthcare projects in GCC</p>
-      </div>
+        <!-- Telcos -->
+        <div class="card-i">
+          <div class="card-image">
+            <img src="/wp-content/themes/technacysolutions/assets/img/our-solutions--residential/our-solutions--telcos.jpg" width="500" height="320">
+          </div>
+          <div class="card-info">
+            <h2>Telcos – Next-Gen IPTV & Super Aggregation</h2>
+            <ul>
+              <li>IPTV & OTT bundling into broadband & mobile</li>
+              <li>Operator-branded platforms with Super Aggregation</li>
+              <li>Minnie AI assistant for discovery & upselling services</li>
+              <li>Analytics for churn prediction & QoE monitoring</li>
+            </ul>
+          </div>
+          <div class="card-link">
+            <div class="card-link-label">References</div>
+            <a href="/reference/vodafone-egypt-cairo-year-2023/">Vodafone Egypt</a>
+            <span class="card-link-separator">•</span>
+            <a href="/reference/orange-egypt-cairo-year-2023/">Orange Egypt</a>
+            <span class="card-link-separator">•</span>
+            <a href="/reference/dhiraagu-maldives/">Dhiraagu</a>
+            <span class="card-link-separator">•</span>
+            <a href="/reference/skytel-mongolia-year-2020/">Skytel Mongolia</a></div>
+        </div>
 
-      <!-- Telcos -->
-      <div class="panel-solution">
-        <h2 class="text-2xl font-bold mb-3">📡 Telcos – Next-Gen IPTV & Super Aggregation</h2>
-        <ul class="list-disc pl-5 space-y-1">
-          <li>IPTV & OTT bundling into broadband & mobile</li>
-          <li>Operator-branded platforms with Super Aggregation</li>
-          <li>Minnie AI assistant for discovery & upselling services</li>
-          <li>Analytics for churn prediction & QoE monitoring</li>
-        </ul>
-        <p class="mt-4 text-sm font-semibold text-red-600">References: Vodafone Egypt, Orange Egypt, Dhiraagu,
-          Skytel Mongolia</p>
-      </div>
-
-    </section>
+      </section>
     </div>
   </section>
 

@@ -320,35 +320,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   //ABOUT
-  if (document.body.classList.contains('page-template-page-template--about')) {
-    const masthead = document.getElementById('masthead');
-    const sections = document.querySelectorAll('.section-bg');
+  const masthead = document.getElementById('masthead');
+  const sections = document.querySelectorAll('.section-bg');
 
-    function updateMastheadColor() {
-      const mastheadBottom = masthead.offsetHeight; // 72px
-      let currentColor = 'transparent'; // ✅ fallback trasparente
+  function updateMastheadColor() {
+    const mastheadBottom = masthead.offsetHeight; // 72px
+    let currentColor = 'transparent'; // ✅ fallback trasparente
 
-      for (let section of sections) {
-        const rect = section.getBoundingClientRect();
+    for (let section of sections) {
+      const rect = section.getBoundingClientRect();
 
-        // Controlla se la sezione interseca il bordo inferiore del masthead
-        if (rect.top <= mastheadBottom && rect.bottom >= mastheadBottom) {
-          const sectionColor = section.getAttribute('data-masthead-color');
-          if (sectionColor) {
-            currentColor = sectionColor;
-            break; // Prendi la prima valida
-          }
+      // Controlla se la sezione interseca il bordo inferiore del masthead
+      if (rect.top <= mastheadBottom && rect.bottom >= mastheadBottom) {
+        const sectionColor = section.getAttribute('data-masthead-color');
+        if (sectionColor) {
+          currentColor = sectionColor;
+          break; // Prendi la prima valida
         }
       }
-
-      // Aggiorna la variabile CSS
-      masthead.style.setProperty('--masthead-bg-color', currentColor);
     }
 
-// Attiva su scroll, caricamento e resize
-    window.addEventListener('scroll', updateMastheadColor);
-    window.addEventListener('load', updateMastheadColor);
-    window.addEventListener('resize', updateMastheadColor);
+    // Aggiorna la variabile CSS
+    masthead.style.setProperty('--masthead-bg-color', currentColor);
+  }
+  // Attiva su scroll, caricamento e resize
+  window.addEventListener('scroll', updateMastheadColor);
+  window.addEventListener('load', updateMastheadColor);
+  window.addEventListener('resize', updateMastheadColor);
+
+  if (document.body.classList.contains('page-template-page-template--about')) {
+
     document.querySelector('.star').addEventListener('click', function (ev) {
       document.querySelectorAll('.cat-i').forEach(function (elem) {
         if (elem.classList.contains('opened')) {
@@ -507,7 +508,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   /// SINGLE PROJECT
-  if (document.body.classList.contains('single-projects')) {
+  if (document.body.classList.contains('single-reference')) {
+    let readMoreLink = document.querySelector('.js-read-more-link');
+    let secondPart = document.querySelector('.second-part');
+    if(secondPart){
+      readMoreLink.addEventListener('click', function (ev) {
+        ev.preventDefault();
+        secondPart.classList.add('open');
+
+        this.style.display = 'none';
+      });
+    }
+
     jQuery('.owl-carousel').owlCarousel({
       loop: true,
       autoWidth: true,

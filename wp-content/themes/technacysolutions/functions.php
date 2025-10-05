@@ -98,7 +98,7 @@ function technacysolutions_scripts()
   wp_enqueue_script('paroller', get_template_directory_uri() . '/assets/js/paroller/dist/jquery.paroller.min.js', array('jquery', 'script', 'script-home'), 1.4);
   wp_enqueue_script('jquery-inview', get_template_directory_uri() . '/assets/js/jquery-inview/jquery.inview.min.js', array('jquery', 'script', 'script-home'), 1.4);
 
-  if (is_singular('projects')) {
+  if (is_singular('reference')) {
     wp_enqueue_style('owl-style', get_template_directory_uri() . '/assets/js/OwlCarousel2/dist/assets/owl.carousel.min.css', array(), wp_get_theme()->get('Version'));
     wp_enqueue_style('owl-style-theme', get_template_directory_uri() . '/assets/js/OwlCarousel2/dist/assets/owl.theme.default.min.css', array(), wp_get_theme()->get('Version'));
     wp_enqueue_script('owl', get_template_directory_uri() . '/assets/js/OwlCarousel2/dist/owl.carousel.min.js', array('jquery', 'script', 'script-home'), 1.4);

@@ -13,9 +13,8 @@
         <div class="location">BAHRAIN HQ</div>
         <div class="address-container">
           <div class="address">
-            Dubai Internet City, Building 2, Office 113<br>
-            P.O. Box 500263<br>
-            Dubai, United Arab Emirates
+            Office 12, Building 1144, Road 4617, Block 346<br>
+            Bahrain Bay Seafront, Bahrain
           </div>
           <div class="phone">
             <a href="tel:+97317009819"><i class="fa-solid fa-phone"></i> +973 17009819</a>
@@ -29,8 +28,9 @@
         <div class="location">DUBAI OFFICE</div>
         <div class="address-container">
           <div class="address">
-            Office 12, Building 1144, Road 4617, Block 346<br>
-            Bahrain Bay Seafront, Bahrain
+            Dubai Internet City, Building 2, Office 113<br>
+            P.O. Box 500263<br>
+            Dubai, United Arab Emirates
           </div>
           <div class="phone">
             <a href="tel:+97317009819"><i class="fa-solid fa-phone"></i> +973 17009819</a>

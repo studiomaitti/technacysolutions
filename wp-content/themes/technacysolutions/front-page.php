@@ -125,7 +125,7 @@ $latest_references = new WP_Query([
         <div class="column-container">
           <div class="section-image">
             <a href="/industries" class="section-link" title="Industries">
-              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-colonna-i-4-3.jpg" alt="Industries">
+              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions--industries.jpg" alt="Industries">
             </a>
           </div>
           <h2 class="section-title">Industries</h2>
@@ -301,7 +301,7 @@ $latest_references = new WP_Query([
 
       <div class="numbers-grid">
         <div class="number-item inview-elem inview-elem-bottom">
-          <div class="number  js-number-growing" data-finale-suffix="+">10</div>
+          <div class="number  js-number-growing" data-finale-suffix="+">250</div>
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 2L1 12l3 9h16l3-9-11-10zm0 2.8L19.3 12H4.7L12 4.8z"/>
@@ -311,7 +311,7 @@ $latest_references = new WP_Query([
         </div>
 
         <div class="number-item inview-elem inview-elem-bottom">
-          <div class="number  js-number-growing" data-finale-suffix="">5</div>
+          <div class="number  js-number-growing" data-finale-suffix="+">15</div>
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
@@ -322,7 +322,7 @@ $latest_references = new WP_Query([
         </div>
 
         <div class="number-item inview-elem inview-elem-bottom">
-          <div class="number  js-number-growing" data-finale-suffix="">50</div>
+          <div class="number  js-number-growing" data-finale-suffix="+">500</div>
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
@@ -353,23 +353,13 @@ $latest_references = new WP_Query([
         <div class="description-content">
           <h2 class="section-title">Technacy Solutions Lab</h2>
           <div class="text-content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit.</p>
-            <ul class="feature-list">
-              <li class="feature-item">
-                <span class="feature-icon">→</span>
-                <span>dolor sit amet consectetur</span>
-              </li>
-              <li class="feature-item">
-                <span class="feature-icon">→</span>
-                <span>ipsum dolor sit. Quae, quia.</span>
-              </li>
-              <li class="feature-item">
-                <span class="feature-icon">→</span>
-                <span>consectetur adipisicing elit. Quae, quia.</span>
-              </li>
-            </ul>
-            <p>Quae, quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</p>
+            <p>Innovating IPTV, AI, and smart digital ecosystems across the Middle East.<br>
+<br>
+With TM10 AI 360 powered by Minerva, we unify IPTV, digital signage, video analytics, and AI personalization into one seamless platform.<br>
+<br>
+From airports to hotels, universities to banks, healthcare to residential communities—we help industries connect, engage, and transform.<br>
+<br>
+One platform. Infinite possibilities.</p>
             <button class="download-brochure-btn">Download Brochure</button>
           </div>
         </div>

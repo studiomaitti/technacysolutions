@@ -38,12 +38,20 @@ $header_image_html_mbl = $header_image_mobile ? '<img class="mbl" src="' . $head
         the_post_thumbnail('full', array('class' => 'featured-image'));
       }
       ?>
+      <header class="entry-header">
+        <?php the_title( '<div class="entry-title alignwide content-width">', '</div>' ); ?>
+      </header><!-- .entry-header -->
     </div>
+    <header class="entry-header entry-header-mobile alignwide content-width">
+      <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+    </header><!-- .entry-header -->    </div>
+  <?php else: ?>
+    <header class="entry-header">
+      <?php the_title( '<h1 class="entry-title alignwide content-width">', '</h1>' ); ?>
+    </header><!-- .entry-header -->
   <?php endif; ?>
 
-  <header class="entry-header alignwide content-width">
-    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-  </header><!-- .entry-header -->
+
 
   <div class="entry-content content-width inview-elem inview-elem-top td-550">
     <?php the_content(); ?>

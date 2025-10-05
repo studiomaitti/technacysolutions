@@ -62,14 +62,16 @@ $header_image_html_mbl = $header_image_mobile ? '<img class="mbl" src="' . $head
       ?>
     </div>
   <?php endif; ?>
+  <div class="content--contanier">
+    <header class="entry-header alignwide content-width">
+      <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
+    </header><!-- .entry-header -->
 
-  <header class="entry-header alignwide content-width">
-    <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
-  </header><!-- .entry-header -->
+    <div class="entry-content content-width inview-elem inview-elem-top td-550">
+      <?php the_content(); ?>
+    </div><!-- .entry-content -->
+  </div>
 
-  <div class="entry-content content-width inview-elem inview-elem-top td-550">
-    <?php the_content(); ?>
-  </div><!-- .entry-content -->
 
   <div class="reference">
     <?php
