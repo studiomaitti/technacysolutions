@@ -77,7 +77,7 @@ $latest_references = new WP_Query([
         <div class="column-container">
           <div class="section-image">
             <a href="/references" class="section-link" title="Our References">
-              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-colonna-i-1.jpg" alt="placeholder">
+              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-home-referemce--home-2.jpg" alt="placeholder">
             </a>
           </div>
           <h2 class="section-title">References</h2>
@@ -96,36 +96,12 @@ $latest_references = new WP_Query([
         </div>
       </div>
 
-      <!-- OUR CLIENTS
-      <div class="column column-4 inview-elem inview-elem-top">
-        <div class="column-container">
-          <div class="section-image">
-            <a href="/our-clients" class="section-link" title="Our Clients">
-              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-lab--our-clients.jpg" alt="Our Clients">
-            </a>
-          </div>
-          <h2 class="section-title">Our Clients</h2>
-          <div class="section-description">
-            <div class="content-wrapper">
-              <h3 class="section-sub-title">Our Clients</h3>
-              <div class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia.</div>
-            </div>
-            <div class="dot dot-arrow">
-              <span class="blob"></span>
-              <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="white" stroke="white" stroke-width="2"></path>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>-->
-
       <!-- INDUSTRIES -->
       <div class="column column-4 inview-elem inview-elem-top">
         <div class="column-container">
           <div class="section-image">
             <a href="/industries" class="section-link" title="Industries">
-              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions--industries.jpg" alt="Industries">
+              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions--industries-2--long.jpg" alt="Industries">
             </a>
           </div>
           <h2 class="section-title">Industries</h2>
@@ -221,7 +197,7 @@ $latest_references = new WP_Query([
           <div class="swiper-slide">
             <div class="section-image">
               <a href="/references" class="section-link" title="Our References">
-                <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-colonna-i-1.jpg" alt="placeholder">
+                <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-home-referemce--home-2.jpg" alt="placeholder">
               </a>
             </div>
             <div class="section-description-mobile">
@@ -301,7 +277,7 @@ $latest_references = new WP_Query([
 
       <div class="numbers-grid">
         <div class="number-item inview-elem inview-elem-bottom">
-          <div class="number  js-number-growing" data-finale-suffix="+">250</div>
+          <div class="number js-number-growing" data-finale-suffix="+">250</div>
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 2L1 12l3 9h16l3-9-11-10zm0 2.8L19.3 12H4.7L12 4.8z"/>

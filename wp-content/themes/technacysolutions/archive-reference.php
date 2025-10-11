@@ -31,14 +31,14 @@ for ($i = 0; $i < 30; $i++) {
       <span class="behind">Works</span>
     </h1>
     <div class="content-width">
-      Powered by Minnie AI: simple, powerful, personalized.
+      Over the years, Technacy Solutions Lab has delivered and integrated advanced IPTV, Cybersecurity, and Smart Video Analytics solutions across airports, hospitals, financial institutions, and residential developments — creating secure, intelligent, and connected environments for our clients across the GCC and beyond.
     </div>
   </div>
   <main id="main" class="site-main" role="main">
     <div class="content-icons">
       <div class="numbers-grid">
         <div class="number-item inview-elem inview-elem-bottom">
-          <div class="number">5</div>
+          <div class="number js-number-growing" data-finale-suffix="">5</div>
           <div class="icon-svg">
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 90.0 90.0">
               <path fill="#ff0000" d="m15.773 90h72.918c0.72266 0 1.3047-0.58203 1.3047-1.3047 0-0.72266-0.58203-1.3047-1.3047-1.3047l-11.926-0.003906v-15.605h-7.6875v15.605h-2.6133v-15.605h-7.6016v15.605h-2.6172v-15.605h-7.6055v15.605h-2.6133l0.003906-15.605h-7.6094v15.605h-2.6133l0.003906-15.605h-7.6875v15.605h-2.4492v-18.055h55.891v-6.8594l-55.891 0.003906v-18.094h-9.8984v43.004h-4.4727c-0.72266 0-1.3047 0.58594-1.3047 1.3047 0 0.72266 0.58203 1.3047 1.3047 1.3047zm53.812-63.379-18.777-3.9023c-0.89453-0.18359-1.7188-0.078125-2.5312 0.32422l-4.0156 1.9766 16.586 7.9648-5.5117 4.0156-3.2969 0.10156c-0.85937 0.023438-1.6211-0.14453-2.4023 0.22266l-3.2969 1.543 6.1016 3.4141c3.0781 1.7266 4.4922 1.0039 7.3477-0.47266l29.715-18.145c0.31641-0.19531 0.54688-1.4492 0.48047-1.8164-0.066406-0.37109-0.32812-0.64453-0.69531-0.72266-3.9023-0.82812-9.4883-0.25-13.969 1.3203zm-50.168-11.504v-3.8125c0-0.72266 0.58203-1.3047 1.3047-1.3047s1.3047 0.58203 1.3047 1.3047v3.8125h5.3984v5.25h4.0195v9.5312h-21.445v-9.5312h4.0195v-5.25zm-9.0117 17.398 2.9453 9.4141h14.742l2.9453-9.4141z" fill-rule="evenodd"/>
@@ -48,7 +48,7 @@ for ($i = 0; $i < 30; $i++) {
         </div>
 
         <div class="number-item inview-elem inview-elem-bottom">
-          <div class="number">1</div>
+          <div class="number js-number-growing" data-finale-suffix="">1</div>
           <div class="icon-svg">
             <svg version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
               <path d="m616.67 343.02v-13.379l134.71-41.051-134.71-28.223v-2.3281c0-6.1445-4.9688-11.113-11.113-11.113-6.1445 0-11.113 4.9688-11.113 11.113v84.938c1.8594 0 3.6953-0.035156 5.5547-0.035156 5.5977-0.03125 11.117 0.03125 16.672 0.078125z" fill="#ff0000"/>
@@ -62,7 +62,7 @@ for ($i = 0; $i < 30; $i++) {
         </div>
 
         <div class="number-item inview-elem inview-elem-bottom">
-          <div class="number">3</div>
+          <div class="number js-number-growing" data-finale-suffix="">3</div>
           <div class="icon-svg">
             <svg version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
               <path fill="#ff0000" d="m91.047 38.75c-0.69922 0-1.3906-0.1875-2.0039-0.54688l-36.062-21.113c-1.3047-0.76172-2.9922-0.76172-4.293 0l-36.062 21.113c-0.61328 0.35938-1.3047 0.54688-2.0039 0.54688-2.1953 0-3.9805-1.7852-3.9805-3.9766v-5.9102c0-1.4062 0.75391-2.7188 1.9688-3.4297l38.309-22.434c2.3711-1.3906 5.457-1.3906 7.8281 0l38.309 22.43c1.2148 0.71094 1.9648 2.0273 1.9648 3.4297v5.9102c0 1.0938-0.43359 2.1133-1.2188 2.8633-0.74219 0.72266-1.7266 1.1172-2.7539 1.1172zm-40.215-25.746c1.375 0 2.7266 0.36719 3.9141 1.0625l36.062 21.113c0.19922 0.11328 0.42578 0.074218 0.57422-0.070313 0.09375-0.089844 0.14063-0.19922 0.14063-0.33984v-5.9102c0-0.16797-0.089844-0.32422-0.23438-0.41016l-38.309-22.43c-1.3047-0.76172-2.9922-0.76172-4.293 0l-38.309 22.434c-0.14453 0.085937-0.23438 0.24219-0.23438 0.41016v5.9102c0 0.32422 0.28516 0.47656 0.48047 0.47656 0.078125 0 0.15625-0.023438 0.23438-0.066406l36.062-21.113c1.1836-0.69922 2.5352-1.0664 3.9102-1.0664z"/>
@@ -81,7 +81,7 @@ for ($i = 0; $i < 30; $i++) {
         </div>
 
         <div class="number-item inview-elem inview-elem-bottom">
-          <div class="number">20+</div>
+          <div class="number js-number-growing" data-finale-suffix="+">20+</div>
           <div class="icon-svg">
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 80">
               <g>
@@ -93,7 +93,7 @@ for ($i = 0; $i < 30; $i++) {
         </div>
 
         <div class="number-item inview-elem inview-elem-bottom">
-          <div class="number">10+</div>
+          <div class="number js-number-growing" data-finale-suffix="+">10+</div>
           <div class="icon">
             <i class="fa-solid fa-hotel"></i>
           </div>
@@ -101,9 +101,11 @@ for ($i = 0; $i < 30; $i++) {
         </div>
 
         <div class="number-item inview-elem inview-elem-bottom">
-          <div class="number">10+</div>
+          <div class="number js-number-growing" data-finale-suffix="+">10+</div>
           <div class="icon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 550 500"><g><g>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 550 500">
+              <g>
+                <g>
                   <path fill="#ff0000" d="M216,256c0-46.246-35.063-84.451-80-89.441V115.5c0-10.752,8.748-19.5,19.5-19.5H186    c5.523,0,10-4.478,10-10c0-5.522-4.477-10-10-10h-30.5c-21.78,0-39.5,17.72-39.5,39.5v51.059C71.063,171.549,36,209.754,36,256    s35.063,84.451,80,89.441V396.5c0,21.78,17.72,39.5,39.5,39.5H186c5.523,0,10-4.478,10-10c0-5.522-4.477-10-10-10h-30.5    c-10.752,0-19.5-8.748-19.5-19.5v-51.059C180.937,340.451,216,302.246,216,256z M96,246h25.858l27.071-27.071    c3.905-3.904,10.237-3.904,14.143,0c3.905,3.905,3.905,10.237,0,14.143l-30,30C131.196,264.946,128.652,266,126,266H96    c-5.523,0-10-4.478-10-10C86,250.477,90.477,246,96,246z"/>
                   <path fill="#ff0000" d="M286,46c0-16.542-13.458-30-30-30s-30,13.458-30,30c0,13.036,8.361,24.152,20,28.28v83.44    c-11.639,4.128-20,15.243-20,28.28c0,13.036,8.361,24.152,20,28.28v83.44c-11.639,4.128-20,15.243-20,28.28    c0,13.036,8.361,24.152,20,28.28v83.44c-11.639,4.128-20,15.243-20,28.28c0,16.542,13.458,30,30,30s30-13.458,30-30    c0-13.036-8.361-24.152-20-28.28v-83.44c11.639-4.128,20-15.243,20-28.28c0-13.036-8.361-24.152-20-28.28v-83.44    c11.639-4.128,20-15.243,20-28.28c0-13.036-8.361-24.152-20-28.28V74.28C277.639,70.152,286,59.036,286,46z"/>
                   <path fill="#ff0000" d="M466,16H326c-5.523,0-10,4.478-10,10v83.64c0,5.522,4.477,10,10,10h140c5.523,0,10-4.478,10-10V26    C476,20.478,471.523,16,466,16z M456,99.64H336V36h120V99.64z"/>
@@ -111,7 +113,10 @@ for ($i = 0; $i < 30; $i++) {
                   <path fill="#ff0000" d="M466,141.46H326c-5.523,0-10,4.478-10,10v83.63c0,5.523,4.477,10,10,10h140c5.523,0,10-4.477,10-10    v-83.63C476,145.938,471.523,141.46,466,141.46z M356,193.27c0-5.523,4.477-10,10-10h60c5.523,0,10,4.477,10,10s-4.477,10-10,10    h-60C360.477,203.27,356,198.792,356,193.27z"/>
                   <path fill="#ff0000" d="M466,266.909H326c-5.523,0-10,4.478-10,10v83.641c0,5.522,4.477,10,10,10h140c5.523,0,10-4.478,10-10    v-83.641C476,271.387,471.523,266.909,466,266.909z M456,350.55H336v-63.641h120V350.55z"/>
                   <path fill="#ff0000" d="M366,328.729h60c5.523,0,10-4.478,10-10c0-5.522-4.477-10-10-10h-60c-5.523,0-10,4.478-10,10    C356,324.252,360.477,328.729,366,328.729z"/>
-                  <path fill="#ff0000" d="M466,392.369H326c-5.523,0-10,4.477-10,10V486c0,5.522,4.477,10,10,10h140c5.523,0,10-4.478,10-10    v-83.631C476,396.847,471.523,392.369,466,392.369z M356,444.18c0-5.522,4.477-10,10-10h60c5.523,0,10,4.478,10,10    c0,5.522-4.477,10-10,10h-60C360.477,454.18,356,449.702,356,444.18z"/></g></g></svg>
+                  <path fill="#ff0000" d="M466,392.369H326c-5.523,0-10,4.477-10,10V486c0,5.522,4.477,10,10,10h140c5.523,0,10-4.478,10-10    v-83.631C476,396.847,471.523,392.369,466,392.369z M356,444.18c0-5.522,4.477-10,10-10h60c5.523,0,10,4.478,10,10    c0,5.522-4.477,10-10,10h-60C360.477,454.18,356,449.702,356,444.18z"/>
+                </g>
+              </g>
+            </svg>
 
           </div>
           <div class="description">Special Projects</div>
@@ -148,6 +153,129 @@ for ($i = 0; $i < 30; $i++) {
         )
       );
       ?>
+    </div>
+
+    <div class="content-width ">
+      <div class="ongoing-prj-container">
+        <h2 class="page-title">
+          <span class="main">Ongoing Projects</span>
+          <span class="behind">& Opportunities</span>
+        </h2>
+        <h3>Innovating Beyond the Present</h3>
+        <div class="intro">
+          At Technacy Solutions Lab, innovation doesn’t stop at completed projects — it extends to every opportunity we pursue.<br>
+          This section showcases a selection of current ongoing initiatives and quoted opportunities that highlight our continued growth and leadership in IPTV, AI-driven ecosystems, and Smart Video Analytics across the GCC and beyond.<br>
+          Each represents a strategic collaboration — where Technacy designs sustainable, intelligent, and secure infrastructures ready to shape the future of communication, healthcare, and mobility.<br>
+        </div>
+        <div class="card-horiz-container">
+          <div class="card-i">
+            <div class="card-image">
+              <img src="/wp-content/uploads/2025/08/technacy-solutions-virtual-assistance-long.jpg">
+            </div>
+            <div class="card-info">
+              <h2>Al Hammadi Hospital – Riyadh, Saudi Arabia</h2>
+              <div class="category">Service: IPTV</div>
+              <div class="text">
+                Technacy has designed and quoted a complete IPTV infrastructure for the hospital, tailored to modern
+                healthcare standards.<br>
+                The system integrates TM10 AI360 for patient infotainment, internal communication, and room management.
+                It supports nPVR, multilingual interfaces, Digital Signage, and secure content delivery — providing a
+                connected ecosystem for patients, doctors, and staff.<br>
+                This project demonstrates our ability to build sustainable, scalable healthcare IPTV solutions aligned
+                with both patient experience and operational efficiency.
+              </div>
+              <div class="card-link">
+                <a href="/service/iptv-tm10-ai-360-ecosystem/" title="read IPTV & TM10 AI 360 Ecosystem">IPTV & TM10 AI 360 Ecosystem</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-i">
+            <div class="card-image">
+              <img src="/wp-content/uploads/2025/08/technacy-virtual-assistance.jpg">
+            </div>
+            <div class="card-info">
+              <h2>Albania Airport – Tirana, Albania</h2>
+              <div class="category">Service: Video Analitycs</div>
+              <div class="text">
+                A full video analytics and security intelligence infrastructure has been engineered by Technacy for
+                Albania’s main international airport.<br>
+                Our proposal integrates BriefCam (Milestone) for facial recognition, crowd analysis, license plate
+                recognition, and perimeter protection — providing authorities with real-time situational awareness
+                and actionable intelligence.<br>
+                This system is designed as a sustainable, AI-driven framework ready for long-term scalability and
+                compliance with global aviation security standards.
+              </div>
+              <div class="card-link">
+                <a href="/service/smart-video-analytics-with-briefcam/" title="read Smart Video Analytics with BriefCam (Milestone)">Smart Video Analytics</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-i">
+            <div class="card-image">
+              <img src="/wp-content/uploads/2025/08/technacy-virtual-assistance.jpg">
+            </div>
+            <div class="card-info">
+              <h2>Medina Airport – Saudi Arabia</h2>
+              <div class="category">Service: Video Analitycs</div>
+              <div class="text">
+                Technacy designed and quoted a Smart Video Analytics infrastructure for Medina Airport, focusing on
+                sustainability, scalability, and reliability.<br>
+                The proposed ecosystem features facial recognition, object detection, behavioral analysis, and incident
+                alerting, all powered by BriefCam (Milestone) and integrated into the airport’s VMS.<br>
+                This design strengthens security operations, improves passenger flow monitoring, and enhances airport
+                efficiency through real-time video intelligence.
+              </div>
+              <div class="card-link">
+                <a href="/service/smart-video-analytics-with-briefcam/" title="read Smart Video Analytics with BriefCam (Milestone)">Smart Video Analytics</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-i">
+            <div class="card-image">
+              <img src="/wp-content/uploads/2025/08/technacy-solutions-virtual-assistance-long.jpg">
+            </div>
+            <div class="card-info">
+              <h2>DMUH – Dubai Modern University Hospital (UAE)</h2>
+              <div class="category">Service: IPTV</div>
+              <div class="text">
+                Technacy developed a sustainable IPTV infrastructure tailored to the hospital’s digital roadmap.<br>
+                The system features Chromecast integration, mobile connectivity for patients to access test results
+                directly on their devices, and content mirroring from screen to smartphone.<br>
+                Engineered for 70 IPTV licenses, this solution balances advanced functionality with cost efficiency,
+                ensuring digital transformation that respects both performance and budget.
+              </div>
+              <div class="card-link">
+                <a href="/service/iptv-tm10-ai-360-ecosystem/" title="read IPTV & TM10 AI 360 Ecosystem">IPTV & TM10 AI 360 Ecosystem</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-i">
+            <div class="card-image">
+              <img src="/wp-content/themes/technacysolutions/assets/img/technacy-solutions--bic--long.jpg">
+            </div>
+            <div class="card-info">
+              <h2>Bahrain International Circuit (BIC) – Bahrain</h2>
+              <div class="category">Service: IPTV</div>
+              <div class="text">
+                Technacy conducted an extensive survey and network analysis of the BIC infrastructure using our
+                proprietary assessment tools.<br>
+                The study identified weak points and upgrade paths across the entire circuit — guiding a comprehensive
+                IT consultancy roadmap to enhance cybersecurity, bandwidth, and connectivity performance.<br>
+                Given the circuit’s high-profile nature, hosting over 350,000 visitors during the F1 Grand Prix,
+                Technacy’s analysis focused on creating a secure, resilient, and future-ready network capable of
+                supporting mission-critical operations and public connectivity in one of the region’s most sensitive venues.
+              </div>
+              <div class="card-link">
+                <a href="/service/iptv-tm10-ai-360-ecosystem/" title="read IPTV & TM10 AI 360 Ecosystem">IPTV & TM10 AI 360 Ecosystem</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
   </main><!-- .site-main -->

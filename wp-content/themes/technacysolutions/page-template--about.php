@@ -13,7 +13,7 @@
 get_header();
 ?>
 
-  <section class="about-section about-we-crush" id="pinContainer">
+  <section class="about-section about-we-crush-dsk about-we-crush" id="pinContainer">
     <div class="panel panel-1 section-bg" data-masthead-color="transparent">
       <div class="panel-content">
         <div class="content-width">
@@ -70,15 +70,62 @@ get_header();
       </div>
     </div>
   </section>
+  <section class="about-section about-we-crush-mob about-we-crush mobile-only" id="pinContainer">
+    <div class="panel-mb panel-1 section-bg" data-masthead-color="transparent">
+      <div class="panel-content">
+        <div class="content-width inview-elem inview-elem-top">
+          <p><span class="tit-technacy">Technacy Solutions Lab</span>, headquartered in Bahrain, is a leading technology
+            partner shaping the future of <strong>IPTV</strong>, <strong>AI</strong>, and <strong>smart digital
+              ecosystems</strong> across the Middle East.</p>
+
+          <p>We empower <strong>residential communities</strong>, <strong>hospitality groups</strong>, <strong>healthcare
+              providers</strong>, <strong>airports</strong>, <strong>universities</strong>, and <strong>financial
+              institutions</strong> with innovative platforms that redefine the way people connect, interact, and
+            experience digital content.</p>
+
+          <p>At the heart of our portfolio is <strong>TM10 AI 360</strong> powered by <strong>Minerva</strong>, a
+            next-generation platform that integrates <strong>IPTV</strong>, <strong>digital signage</strong>, <strong>video
+              analytics</strong>, and <strong>AI-driven personalization</strong> into one seamless ecosystem. This
+            unified approach delivers entertainment, intelligence, and connectivity on a single, scalable platform.</p>
+
+          <p>Through strong partnerships with <strong>Minerva</strong>, <strong>Yukuan</strong>,
+            <strong>Broadpeak</strong>, <strong>Amino</strong>, <strong>Harmonic</strong>, and <strong>BriefCam</strong>,
+            we provide end-to-end solutions—from content aggregation and delivery to <strong>AI analytics</strong> and
+            monetization—ensuring unmatched reliability, scalability, and user experience.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-mb panel-2 section-bg" data-masthead-color="transparent">
+      <div class="panel-content">
+        <div class="content-width inview-elem inview-elem-top">
+          Through strong partnerships with Minerva, Yukuan, Broadpeak, Amino, Harmonic, and BriefCam, we integrate IPTV,
+          video analytics, and digital signage into a seamless ecosystem—TM10 AI 360 powered by Minerva—bringing
+          entertainment, intelligence, and connectivity together in one platform.<br><br>
+
+          <span class="tit-1 tit-technacy">Our mission is simple</span>: <br>
+          to provide innovative, reliable, and scalable solutions that enhance customer
+          experience, create new revenue opportunities, and support digital transformation.<br>
+          <br>
+          At <span class="tit-technacy">Technacy</span>, we don’t just deliver technology—we deliver end-to-end
+          ecosystems that make organizations smarter, more connected, and future-ready.
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="section-oursolutions section-bg" data-masthead-color="#000000">
     <div class="content-width">
       <!-- Sector Grid -->
-      <h2>Our Services</h2>
+      <h2 class="page-title inview-elem inview-elem-top">
+        <span class="main">Our Services</span>
+        <span class="behind">Solutions</span>
+      </h2>
+
       <section class="our-solutions">
 
         <!-- Aviation -->
-        <div class="card-i">
+        <div class="card-i inview-elem inview-elem-top">
           <div class="card-image">
             <img src="/wp-content/uploads/2025/09/technacysolutions-KAIA-Terminal-North-mobile.jpg" width="500" height="320">
           </div>
@@ -99,7 +146,7 @@ get_header();
         </div>
 
         <!-- Education -->
-        <div class="card-i">
+        <div class="card-i inview-elem inview-elem-top">
           <div class="card-image">
             <img src="/wp-content/uploads/2025/09/technacysolutions-Kapsarc_Campus-IPTV-mobile.jpg" width="500" height="320">
           </div>
@@ -119,7 +166,7 @@ get_header();
         </div>
 
         <!-- Hospitality -->
-        <div class="card-i">
+        <div class="card-i inview-elem inview-elem-top">
           <div class="card-image">
             <img src="/wp-content/themes/technacysolutions/assets/img/our-solutions--residential/our-solutions--hospitality.jpg" width="500" height="320">
           </div>
@@ -141,7 +188,7 @@ get_header();
         </div>
 
         <!-- Banking -->
-        <div class="card-i">
+        <div class="card-i inview-elem inview-elem-top">
           <div class="card-image">
             <img src="/wp-content/themes/technacysolutions/assets/img/our-solutions--residential/our-solutions--banking.jpg" width="500" height="320">
           </div>
@@ -161,7 +208,7 @@ get_header();
         </div>
 
         <!-- Residential & Palaces -->
-        <div class="card-i">
+        <div class="card-i inview-elem inview-elem-top">
           <div class="card-image">
             <img src="/wp-content/themes/technacysolutions/assets/img/our-solutions--residential/our-solutions--residential.jpg" width="500" height="320">
           </div>
@@ -181,7 +228,7 @@ get_header();
         </div>
 
         <!-- Healthcare -->
-        <div class="card-i">
+        <div class="card-i inview-elem inview-elem-top">
           <div class="card-image">
             <img src="/wp-content/themes/technacysolutions/assets/img/our-solutions--residential/our-solutions--healthcare.jpg" width="500" height="320">
           </div>
@@ -202,7 +249,7 @@ get_header();
         </div>
 
         <!-- Telcos -->
-        <div class="card-i">
+        <div class="card-i inview-elem inview-elem-top">
           <div class="card-image">
             <img src="/wp-content/themes/technacysolutions/assets/img/our-solutions--residential/our-solutions--telcos.jpg" width="500" height="320">
           </div>
@@ -233,7 +280,11 @@ get_header();
   <section class="panel panel-2 about-partners section-bg" data-masthead-color="#000000">
     <div class="testo-container">
       <div class="content-width testo">
-        <div class="title">Partners</div>
+        <h2 class="page-title partner">
+          <span class="main">Our Partners</span>
+          <span class="behind">Collaborations</span>
+        </h2>
+        <div class="title"></div>
 
         <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
           <div class="img-i img-i-first">
@@ -331,7 +382,6 @@ get_header();
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Visual.png" alt="">
           </div>
         </div>
-
         <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
           <div class="img-i img-i-first">
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Active.png" alt="">
@@ -342,7 +392,6 @@ get_header();
           <div class="img-i img-i-last">
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-amt.png" alt=""></div>
         </div>
-
         <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
           <div class="img-i img-i-first">
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-bns.png" alt=""></div>
@@ -352,7 +401,6 @@ get_header();
           <div class="img-i img-i-last">
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-CGC.png" alt=""></div>
         </div>
-
         <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
           <div class="img-i img-i-first">
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-cubedots.png" alt="">
@@ -364,7 +412,6 @@ get_header();
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Fortinet.png" alt="">
           </div>
         </div>
-
         <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
           <div class="img-i img-i-first">
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Harmonic.png" alt="">
@@ -376,7 +423,6 @@ get_header();
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-JMC-Group.png" alt="">
           </div>
         </div>
-
         <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
           <div class="img-i img-i-first">
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Min-erva.png" alt="">
@@ -397,7 +443,11 @@ get_header();
   <section class="panel panel-3 about-section about-clients section-bg" data-masthead-color="#000000">
     <div class="testo-container">
       <div class="content-width testo">
-        <div class="title">Clients</div>
+        <div class="title"></div>
+        <h2 class="page-title partner">
+          <span class="main">Our Clients</span>
+          <span class="behind">Opportunities</span>
+        </h2>
         <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
           <div class="img-i img-i-first">
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-bairport.png" alt="">

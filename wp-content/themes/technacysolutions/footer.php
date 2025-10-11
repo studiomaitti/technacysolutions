@@ -20,7 +20,7 @@
             <a href="tel:+97317009819"><i class="fa-solid fa-phone"></i> +973 17009819</a>
           </div>
           <div class="email">
-            <a href="mailto:presales@technacysolutions.com">presales@technacysolutions.com</a>
+            <a href="mailto:office@technacysolutions.com">office@technacysolutions.com</a>
           </div>
         </div>
       </div>
@@ -51,7 +51,7 @@
             <a href="tel:+97317009819"><i class="fa-solid fa-phone"></i> +973 17009819</a>
           </div>
           <div class="email">
-            <a href="mailto:presales@technacysolutions.com">presales@technacysolutions.com</a>
+            <a href="mailto:support@technacysolutions.com">support@technacysolutions.com</a>
           </div>
         </div>
       </div>
