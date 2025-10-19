@@ -12,6 +12,35 @@
 
 get_header();
 ?>
+<style>
+.about-we-crush .panel.panel-1 {
+  background-color: #000000;
+  background-image: url("/wp-content/themes/technacysolutions/assets/img/technacy-solutions-home--about-us.jpg");
+  background-size: cover;
+  background-position: top center;
+  color: #ffffff;
+  position: absolute;
+}
+.about-we-crush .panel.panel-2{
+  background-color: #000000;
+  background-image: url("/wp-content/themes/technacysolutions/assets/img/technacy-solutions-home--about-us-2.jpg");
+  background-size: cover;
+  background-position: top center;
+  color: #ffffff;
+  position: absolute;
+}
+.about-we-crush .panel.panel-2::before,
+.about-we-crush .panel.panel-1::before {
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+</style>
 
   <section class="about-section about-we-crush-dsk about-we-crush" id="pinContainer">
     <div class="panel panel-1 section-bg" data-masthead-color="transparent">

@@ -2797,6 +2797,534 @@ body:not(.home) .header::before {
   width: 1px;
 }
 
+.technacy-linkedin {
+  color: #fff;
+  padding: 100px 0;
+  position: relative;
+}
+@media (max-width: 576px) {
+  .technacy-linkedin {
+    padding: 0 0 100px 0;
+  }
+}
+.technacy-linkedin .section-title {
+  height: 156px;
+  margin-bottom: 2rem;
+  position: relative;
+  text-align: center;
+}
+@media (max-width: 1180px) {
+  .technacy-linkedin .section-title {
+    height: 120px;
+  }
+}
+@media (max-width: 1024px) {
+  .technacy-linkedin .section-title {
+    height: 116px;
+  }
+}
+@media (max-width: 576px) {
+  .technacy-linkedin .section-title {
+    height: 86px;
+  }
+}
+.technacy-linkedin .section-title .dot-container {
+  opacity: 0;
+  position: absolute;
+  top: calc(50% - 24px);
+  transform: translateX(-100px);
+  transition: all 0.7s ease;
+}
+.technacy-linkedin .section-title a:hover .dot-container {
+  opacity: 1;
+  transform: translateX(30px);
+}
+.technacy-linkedin .section-title .main {
+  color: red;
+  font-family: "ivypresto-display", serif;
+  font-size: 66px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 140px;
+  letter-spacing: 0em;
+  z-index: 1;
+}
+@media (max-width: 1180px) {
+  .technacy-linkedin .section-title .main {
+    font-size: 56px;
+    line-height: 120px;
+  }
+}
+@media (max-width: 1024px) {
+  .technacy-linkedin .section-title .main {
+    font-size: 46px;
+    line-height: 110px;
+  }
+}
+@media (max-width: 576px) {
+  .technacy-linkedin .section-title .main {
+    font-size: 50px;
+    line-height: 100px;
+  }
+}
+.technacy-linkedin .section-title .behind {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+  font-family: "Neue Machina", sans-serif;
+  font-size: 160px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 1180px) {
+  .technacy-linkedin .section-title .behind {
+    font-size: 130px;
+  }
+}
+@media (max-width: 1024px) {
+  .technacy-linkedin .section-title .behind {
+    font-size: 110px;
+  }
+}
+@media (max-width: 576px) {
+  .technacy-linkedin .section-title .behind {
+    font-size: 60px;
+  }
+}
+
+.techancy-careers {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  background: #141414;
+  border: 1px solid #222;
+  display: flex;
+  gap: 40px;
+  color: #fff;
+  position: relative;
+  margin: 100px 0;
+  min-height: 30vw;
+  padding: 0;
+}
+@media (max-width: 576px) {
+  .techancy-careers {
+    margin: 0 0 100px 0;
+  }
+}
+.techancy-careers .section-title {
+  height: 156px;
+  margin-bottom: 2rem;
+  position: relative;
+  text-align: center;
+}
+@media (max-width: 1180px) {
+  .techancy-careers .section-title {
+    height: 120px;
+  }
+}
+@media (max-width: 1024px) {
+  .techancy-careers .section-title {
+    height: 90px;
+  }
+}
+@media (max-width: 576px) {
+  .techancy-careers .section-title {
+    height: 86px;
+  }
+}
+.techancy-careers .section-title .main {
+  color: red;
+  font-family: "ivypresto-display", serif;
+  font-size: 66px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 140px;
+  letter-spacing: 0em;
+  z-index: 1;
+}
+@media (max-width: 1180px) {
+  .techancy-careers .section-title .main {
+    font-size: 56px;
+    line-height: 120px;
+  }
+}
+@media (max-width: 1024px) {
+  .techancy-careers .section-title .main {
+    font-size: 46px;
+    line-height: 110px;
+  }
+}
+@media (max-width: 576px) {
+  .techancy-careers .section-title .main {
+    font-size: 50px;
+    line-height: 100px;
+  }
+}
+.techancy-careers .section-title .behind {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+  font-family: "Neue Machina", sans-serif;
+  font-size: 160px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 1180px) {
+  .techancy-careers .section-title .behind {
+    font-size: 110px;
+  }
+}
+@media (max-width: 1024px) {
+  .techancy-careers .section-title .behind {
+    font-size: 80px;
+  }
+}
+@media (max-width: 576px) {
+  .techancy-careers .section-title .behind {
+    font-size: 70px;
+  }
+}
+.techancy-careers .left {
+  width: 50%;
+  padding: 20px 0;
+}
+.techancy-careers .left .text-content {
+  padding: 0 40px 0 100px;
+}
+@media (max-width: 1180px) {
+  .techancy-careers .left .text-content {
+    padding: 0 20px 0 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .techancy-careers .left .text-content {
+    padding: 0 0 0 40px;
+  }
+}
+@media (max-width: 576px) {
+  .techancy-careers .left .text-content {
+    padding: 0 20px 0 20px;
+  }
+}
+.techancy-careers .left .text-content h3 {
+  margin-bottom: 20px;
+  font-family: "Neue Machina", sans-serif;
+  font-size: 2rem;
+}
+@media (max-width: 1180px) {
+  .techancy-careers .left .text-content h3 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 1024px) {
+  .techancy-careers .left .text-content h3 {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 576px) {
+  .techancy-careers .left .text-content h3 {
+    font-size: 1.2rem;
+  }
+}
+.techancy-careers .left .text-content .positions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: left;
+}
+@media (max-width: 576px) {
+  .techancy-careers .left .text-content .positions {
+    flex-direction: column;
+  }
+}
+.techancy-careers .left .text-content .positions .position-i {
+  background: #000;
+  border: 1px solid #222;
+  border-radius: 16px;
+  display: flex;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  flex-direction: column;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: calc(50% - 10px);
+}
+@media (max-width: 1180px) {
+  .techancy-careers .left .text-content .positions .position-i {
+    padding: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .techancy-careers .left .text-content .positions .position-i {
+    padding: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .techancy-careers .left .text-content .positions .position-i {
+    padding: 12px;
+    width: 100%;
+  }
+}
+.techancy-careers .left .text-content .positions .position-i h4 {
+  color: red;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.techancy-careers .left .text-content .positions .position-i .link a {
+  background-color: #ff0000;
+  border: none;
+  color: white;
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-top: 16px;
+  transition: all 0.3s ease;
+  padding: 4px 13px;
+  text-transform: uppercase;
+}
+.techancy-careers .left .text-content .positions .position-i .link a:hover {
+  background-color: #d40000;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.2);
+}
+@media (max-width: 1180px) {
+  .techancy-careers .left .text-content .positions .position-i .link a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1024px) {
+  .techancy-careers .left .text-content .positions .position-i .link a {
+    font-size: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .techancy-careers .left .text-content .positions .position-i .link a {
+    font-size: 10px;
+  }
+}
+.techancy-careers .right {
+  position: relative;
+  width: 50%;
+}
+.techancy-careers .right .bgimage {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/technacy-solutions--careers.jpeg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+@media (max-width: 1180px) {
+  .techancy-careers .left,
+  .techancy-careers .right {
+    width: 50%;
+  }
+}
+@media (max-width: 1024px) {
+  .techancy-careers .left {
+    width: 60%;
+  }
+  .techancy-careers .right {
+    width: 40%;
+  }
+}
+@media (max-width: 576px) {
+  .techancy-careers {
+    flex-direction: column;
+  }
+  .techancy-careers .left,
+  .techancy-careers .right {
+    width: 100%;
+  }
+  .techancy-careers .left {
+    order: 2;
+  }
+  .techancy-careers .right {
+    min-height: 200px;
+    order: 1;
+  }
+}
+
+.techancy-k-touch {
+  display: flex;
+  gap: 40px;
+  color: #fff;
+  position: relative;
+  min-height: 30vw;
+  margin: 100px 0;
+}
+@media (max-width: 576px) {
+  .techancy-k-touch {
+    flex-direction: column;
+  }
+}
+.techancy-k-touch .section-title {
+  height: 156px;
+  margin-bottom: 2rem;
+  position: relative;
+  text-align: center;
+}
+@media (max-width: 1180px) {
+  .techancy-k-touch .section-title {
+    height: 120px;
+  }
+}
+@media (max-width: 1024px) {
+  .techancy-k-touch .section-title {
+    height: 116px;
+  }
+}
+@media (max-width: 576px) {
+  .techancy-k-touch .section-title {
+    height: 86px;
+  }
+}
+.techancy-k-touch .section-title .main {
+  color: red;
+  font-family: "ivypresto-display", serif;
+  font-size: 66px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 140px;
+  letter-spacing: 0em;
+  z-index: 1;
+}
+@media (max-width: 1180px) {
+  .techancy-k-touch .section-title .main {
+    font-size: 56px;
+    line-height: 120px;
+  }
+}
+@media (max-width: 1024px) {
+  .techancy-k-touch .section-title .main {
+    font-size: 46px;
+    line-height: 110px;
+  }
+}
+@media (max-width: 576px) {
+  .techancy-k-touch .section-title .main {
+    font-size: 26px;
+    line-height: 60px;
+  }
+}
+.techancy-k-touch .section-title .behind {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+  font-family: "Neue Machina", sans-serif;
+  font-size: 160px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 1180px) {
+  .techancy-k-touch .section-title .behind {
+    font-size: 100px;
+  }
+}
+@media (max-width: 1024px) {
+  .techancy-k-touch .section-title .behind {
+    font-size: 90px;
+  }
+}
+@media (max-width: 576px) {
+  .techancy-k-touch .section-title .behind {
+    font-size: 60px;
+  }
+}
+.techancy-k-touch .left {
+  width: 50%;
+  padding: 20px 0;
+}
+.techancy-k-touch .left .text-content {
+  padding: 0 40px 0 100px;
+}
+@media (max-width: 1180px) {
+  .techancy-k-touch .left .text-content {
+    padding: 0 40px 0 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .techancy-k-touch .left .text-content {
+    padding: 0 40px 0 20px;
+  }
+}
+@media (max-width: 576px) {
+  .techancy-k-touch .left .text-content {
+    padding: 0 40px 0 40px;
+  }
+}
+.techancy-k-touch .right {
+  position: relative;
+  width: 50%;
+}
+.techancy-k-touch .right .video {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.techancy-k-touch .right .video video {
+  width: 100%;
+}
+@media (max-width: 1180px) {
+  .techancy-k-touch .right .video {
+    left: -40px;
+  }
+  .techancy-k-touch .right .video video {
+    width: calc(100% + 40px);
+  }
+}
+@media (max-width: 1024px) {
+  .techancy-k-touch .right .video {
+    left: -40px;
+  }
+}
+@media (max-width: 576px) {
+  .techancy-k-touch .right .video {
+    left: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .techancy-k-touch .left {
+    width: 60%;
+  }
+  .techancy-k-touch .right {
+    width: 40%;
+  }
+}
+@media (max-width: 576px) {
+  .techancy-k-touch .left {
+    order: 2;
+    width: 100%;
+  }
+  .techancy-k-touch .right {
+    min-height: 200px;
+    order: 1;
+    width: 100%;
+  }
+}
+
 .modal-cform {
   display: none;
   position: fixed;
@@ -3550,6 +4078,211 @@ body.page-template-page-template--contact-us .card-horiz-container .card-link a:
     height: auto;
   }
   body.page-template-page-template--contact-us .card-horiz-container .card-image img {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 0;
+  }
+}
+
+body.page-template-page-template--contact-us--careers .page-title {
+  height: 200px;
+  position: relative;
+  text-align: center;
+}
+@media (max-width: 1180px) {
+  body.page-template-page-template--contact-us--careers .page-title {
+    height: 160px;
+  }
+}
+@media (max-width: 1024px) {
+  body.page-template-page-template--contact-us--careers .page-title {
+    height: 140px;
+  }
+}
+@media (max-width: 576px) {
+  body.page-template-page-template--contact-us--careers .page-title {
+    height: 100px;
+  }
+}
+body.page-template-page-template--contact-us--careers .page-title .main {
+  color: white;
+  font-family: "ivypresto-display", serif;
+  font-size: 96px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 200px;
+  letter-spacing: 0em;
+  z-index: 1;
+}
+@media (max-width: 1180px) {
+  body.page-template-page-template--contact-us--careers .page-title .main {
+    font-size: 76px;
+    line-height: 180px;
+  }
+}
+@media (max-width: 1024px) {
+  body.page-template-page-template--contact-us--careers .page-title .main {
+    font-size: 56px;
+    line-height: 160px;
+  }
+}
+@media (max-width: 576px) {
+  body.page-template-page-template--contact-us--careers .page-title .main {
+    font-size: 36px;
+    line-height: 100px;
+  }
+}
+body.page-template-page-template--contact-us--careers .page-title .behind {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+  font-family: "Neue Machina", sans-serif;
+  font-size: 160px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 1180px) {
+  body.page-template-page-template--contact-us--careers .page-title .behind {
+    font-size: 140px;
+  }
+}
+@media (max-width: 1024px) {
+  body.page-template-page-template--contact-us--careers .page-title .behind {
+    font-size: 120px;
+  }
+}
+@media (max-width: 576px) {
+  body.page-template-page-template--contact-us--careers .page-title .behind {
+    font-size: 70px;
+  }
+}
+body.page-template-page-template--contact-us--careers .card-horiz-container {
+  /* --- Card principale (orizzontale) --- */
+  /* --- Immagine a sinistra --- */
+  /* --- Contenuto testuale (a destra dell'immagine) --- */
+  /* --- Sezione link in fondo al testo (all'interno di .card-info) --- */
+  /* --- Responsive: su schermi piccoli torna verticale --- */
+}
+body.page-template-page-template--contact-us--careers .card-horiz-container .card-i {
+  background: #141414;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  max-width: 80%; /* Aumentato per layout orizzontale */
+  margin: 24px auto;
+  display: flex;
+  flex-direction: row; /* Cambiato da column a row */
+  border: 1px solid #222;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+@media (max-width: 1180px) {
+  body.page-template-page-template--contact-us--careers .card-horiz-container .card-i {
+    max-width: 90%;
+    margin: 24px auto;
+  }
+}
+@media (max-width: 1024px) {
+  body.page-template-page-template--contact-us--careers .card-horiz-container .card-i {
+    max-width: 100%;
+    margin: 24px 0;
+  }
+}
+@media (max-width: 576px) {
+  body.page-template-page-template--contact-us--careers .card-horiz-container .card-i {
+    max-width: 100%;
+    margin: 24px 0;
+  }
+}
+body.page-template-page-template--contact-us--careers .card-horiz-container .card-i:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6), 0 4px 12px rgba(220, 53, 69, 0.15);
+}
+body.page-template-page-template--contact-us--careers .card-horiz-container .card-image {
+  flex: 0 0 auto; /* Non si espande, mantiene dimensione naturale */
+  width: 320px; /* Larghezza fissa per l'immagine */
+  height: 100%;
+  overflow: hidden;
+}
+body.page-template-page-template--contact-us--careers .card-horiz-container .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantiene proporzioni e riempie lo spazio */
+  display: block;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+body.page-template-page-template--contact-us--careers .card-horiz-container .card-info {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 20px;
+}
+body.page-template-page-template--contact-us--careers .card-horiz-container .card-info h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  color: #f00; /* Rosso Bootstrap */
+  line-height: 1.4;
+}
+body.page-template-page-template--contact-us--careers .card-horiz-container .card-info .category {
+  font-size: 0.875rem;
+  color: #aaa;
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+body.page-template-page-template--contact-us--careers .card-horiz-container .card-info .phone i {
+  font-size: 14px;
+}
+body.page-template-page-template--contact-us--careers .card-horiz-container .card-info .text {
+  font-size: 1.5rem;
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+body.page-template-page-template--contact-us--careers .card-horiz-container .card-link {
+  align-items: center;
+  border-top: 1px solid #2a2a2a;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  margin-top: auto; /* Spinge il link in basso */
+  padding-top: 16px;
+  text-align: center;
+}
+body.page-template-page-template--contact-us--careers .card-horiz-container .card-link a {
+  color: #f00; /* Rosso Bootstrap */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.15rem;
+  transition: all 0.2s ease;
+  padding: 4px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+body.page-template-page-template--contact-us--careers .card-horiz-container .card-link a:hover {
+  color: #ffffff;
+  background-color: rgba(220, 53, 69, 0.15);
+  text-shadow: 0 0 8px rgba(220, 53, 69, 0.5);
+}
+@media (max-width: 640px) {
+  body.page-template-page-template--contact-us--careers .card-horiz-container .card-i {
+    flex-direction: column;
+  }
+  body.page-template-page-template--contact-us--careers .card-horiz-container .card-image {
+    width: 100%;
+    height: auto;
+  }
+  body.page-template-page-template--contact-us--careers .card-horiz-container .card-image img {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     border-bottom-left-radius: 0;

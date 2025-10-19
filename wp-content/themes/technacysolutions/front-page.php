@@ -53,7 +53,7 @@ $latest_references = new WP_Query([
         <div class="column-container">
           <div class="section-image">
             <a href="/services" class="section-link" title="Our Services">
-              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-colonna-i.jpg" alt="Our Services">
+              <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-home-referemce--home-5.jpg" alt="Our Services">
             </a>
           </div>
           <h2 class="section-title">Services</h2>
@@ -176,7 +176,7 @@ $latest_references = new WP_Query([
           <div class="swiper-slide">
             <div class="section-image">
               <a href="/services" class="section-link" title="Our Services">
-                <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-colonna-i.jpg" alt="Our Services">
+                <img src="/wp-content/themes/technacysolutions/assets/img/home/technacy-solutions-home-referemce--home-5.jpg" alt="Our Services">
               </a>
             </div>
             <div class="section-description-mobile">
@@ -272,12 +272,12 @@ $latest_references = new WP_Query([
         <span class="sent-1">We crush</span>
         <span class="sent-2">every challenge</span>
         <span class="sent-amp">&amp;</span>
-        <span class="sent-3">deliver with</span>
+        <span class="sent-3">deliver with style</span>
       </h2>
 
       <div class="numbers-grid">
         <div class="number-item inview-elem inview-elem-bottom">
-          <div class="number js-number-growing" data-finale-suffix="+">250</div>
+          <div class="number  js-number-growing" data-finale-suffix="+">250</div>
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 2L1 12l3 9h16l3-9-11-10zm0 2.8L19.3 12H4.7L12 4.8z"/>
@@ -330,12 +330,14 @@ $latest_references = new WP_Query([
           <h2 class="section-title">Technacy Solutions Lab</h2>
           <div class="text-content">
             <p>Innovating IPTV, AI, and smart digital ecosystems across the Middle East.<br>
-<br>
-With TM10 AI 360 powered by Minerva, we unify IPTV, digital signage, video analytics, and AI personalization into one seamless platform.<br>
-<br>
-From airports to hotels, universities to banks, healthcare to residential communities—we help industries connect, engage, and transform.<br>
-<br>
-One platform. Infinite possibilities.</p>
+              <br>
+              With TM10 AI 360 powered by Minerva, we unify IPTV, digital signage, video analytics, and AI
+              personalization into one seamless platform.<br>
+              <br>
+              From airports to hotels, universities to banks, healthcare to residential communities—we help industries
+              connect, engage, and transform.<br>
+              <br>
+              One platform. Infinite possibilities.</p>
             <button class="download-brochure-btn">Download Brochure</button>
           </div>
         </div>
@@ -398,5 +400,87 @@ One platform. Infinite possibilities.</p>
     </div>
   </section>
 
+  <section class="technacy-linkedin">
+    <h2 class="section-title">
+      <span class="main">Latest Updates</span>
+      <span class="behind">Technacy</span>
+    </h2>
+
+    <!-- Elfsight LinkedIn Feed | Technacy Solutions Labs -->
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-e6395e7e-88c6-4fab-9579-b7dfccdec34d" data-elfsight-app-lazy></div>
+  </section>
+
+  <section class="techancy-careers">
+    <div class="left">
+      <h2 class="section-title">
+        <span class="main">Join our team</span>
+        <span class="behind">Careers</span>
+      </h2>
+
+      <div class="text-content">
+        <h3>An inspiring career awaits you in Technacy Solutions Lab</h3>
+
+        <div class="positions">
+          <div class="position-i">
+            <h4>Marketing Manager</h4>
+            <div class="descr">Lead digital strategy, events, brand growth</div>
+            <div class="link">
+              <a href="#">Send your CV</a>
+            </div>
+          </div>
+          <div class="position-i">
+            <h4>ELV Engineer</h4>
+            <div class="descr">
+              IPTV & Video Analytics Specialist
+            </div>
+            <div class="link">
+              <a href="/contact-us/careers-elv-engineer/">Send your CV</a>
+            </div>
+          </div>
+
+          <div class="position-i">
+            <h4>Sales Executive </h4>
+            <div class="descr">
+              To drive IPTV, video analytics, and cybersecurity
+            </div>
+            <div class="link">
+              <a href="#">Send your CV</a>
+            </div>
+          </div>
+
+          <div class="position-i">
+            <h4>Project Manager</h4>
+            <div class="descr">
+              Manage IPTV, AI, and cybersecurity projects
+            </div>
+            <div class="link">
+              <a href="#">Send your CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="bgimage"></div>
+    </div>
+
+  </section>
+
+  <section class="techancy-k-touch">
+    <div class="left">
+      <h2 class="section-title">
+        <span class="main">Let's get in touch!</span>
+        <span class="behind">Contact</span>
+      </h2>
+
+      <div class="text-content">
+        <?php echo do_shortcode('[contact-form-7 id="f7790d5" title="Contact - Home - 2025"]'); ?>
+      </div>
+    </div>
+    <div class="right">
+      <div class="video"> <video class="js-video" src="/wp-content/uploads/technacysolutions-we-work-globally.mp4" autoplay="" playsinline="" muted="" loop=""></video></div>
+    </div>
+  </section>
 <?php
 get_footer();
