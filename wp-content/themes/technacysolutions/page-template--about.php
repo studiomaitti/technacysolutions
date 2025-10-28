@@ -363,6 +363,43 @@ get_header();
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Visual.png" alt="">
           </div>
         </div>
+
+        <div class="dsk logo-row inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--yukuan.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--translite.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--sms.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--saudi-motorsport.png" alt="">
+          </div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--milestone.png" alt="">
+          </div>
+        </div>
+        <div class="dsk logo-row inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--kaltura.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--beyon.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--atlas.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--honeywell.png" alt="">
+          </div>
+          <div class="img-i img-i-last">
+          </div>
+        </div>
+
+
+
         <div class="dsk logo-row logo-row-black inview-elem inview-elem-top">
           <div class="img-i img-i-first">
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Active.png" alt="">
@@ -411,6 +448,9 @@ get_header();
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Visual.png" alt="">
           </div>
         </div>
+
+
+
         <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
           <div class="img-i img-i-first">
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Active.png" alt="">
@@ -461,6 +501,40 @@ get_header();
           </div>
           <div class="img-i img-i-last">
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/logo-Visual.png" alt="">
+          </div>
+        </div>
+
+        <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--yukuan.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--translite.png" alt="">
+          </div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--sms.png" alt="">
+          </div>
+        </div>
+        <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--saudi-motorsport.png" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--milestone.png" alt="">
+          </div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--kaltura.png" alt="">
+          </div>
+        </div>
+        <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--beyon.png"" alt="">
+          </div>
+          <div class="img-i">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--atlas.png" alt="">
+          </div>
+          <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--honeywell.png" alt="">
           </div>
         </div>
 
