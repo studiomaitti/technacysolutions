@@ -1293,6 +1293,29 @@ body {
   display: inline-block;
 }
 
+.request-demo {
+  background-color: #ff0000;
+  border: none;
+  color: #D9D9D9;
+  cursor: pointer;
+  font-family: "ivypresto-display", serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1;
+  padding: 8px 26px;
+  text-decoration: none;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.request-demo:hover {
+  color: white;
+  background-color: #d40000;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.2);
+}
+
 /** *********************
   HEADER
  ************************ */
@@ -5957,14 +5980,15 @@ body.archive.post-type-archive-reference .ongoing-prj-container .intro {
   line-height: 1.2;
   margin-bottom: 1rem;
 }
-body.archive.post-type-archive-reference .card-horiz-container {
+
+.card-horiz-container {
   /* --- Card principale (orizzontale) --- */
   /* --- Immagine a sinistra --- */
   /* --- Contenuto testuale (a destra dell'immagine) --- */
   /* --- Sezione link in fondo al testo (all'interno di .card-info) --- */
   /* --- Responsive: su schermi piccoli torna verticale --- */
 }
-body.archive.post-type-archive-reference .card-horiz-container .card-i {
+.card-horiz-container .card-i {
   background: #141414;
   border-radius: 16px;
   overflow: hidden;
@@ -5977,34 +6001,34 @@ body.archive.post-type-archive-reference .card-horiz-container .card-i {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 @media (max-width: 1180px) {
-  body.archive.post-type-archive-reference .card-horiz-container .card-i {
+  .card-horiz-container .card-i {
     max-width: 90%;
     margin: 24px auto;
   }
 }
 @media (max-width: 1024px) {
-  body.archive.post-type-archive-reference .card-horiz-container .card-i {
+  .card-horiz-container .card-i {
     max-width: 100%;
     margin: 24px 0;
   }
 }
 @media (max-width: 576px) {
-  body.archive.post-type-archive-reference .card-horiz-container .card-i {
+  .card-horiz-container .card-i {
     max-width: 100%;
     margin: 24px 0;
   }
 }
-body.archive.post-type-archive-reference .card-horiz-container .card-i:hover {
+.card-horiz-container .card-i:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6), 0 4px 12px rgba(220, 53, 69, 0.15);
 }
-body.archive.post-type-archive-reference .card-horiz-container .card-image {
+.card-horiz-container .card-image {
   flex: 0 0 auto; /* Non si espande, mantiene dimensione naturale */
   width: 320px; /* Larghezza fissa per l'immagine */
   height: 100%;
   overflow: hidden;
 }
-body.archive.post-type-archive-reference .card-horiz-container .card-image img {
+.card-horiz-container .card-image img {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Mantiene proporzioni e riempie lo spazio */
@@ -6012,20 +6036,20 @@ body.archive.post-type-archive-reference .card-horiz-container .card-image img {
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
 }
-body.archive.post-type-archive-reference .card-horiz-container .card-info {
+.card-horiz-container .card-info {
   padding: 20px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
-body.archive.post-type-archive-reference .card-horiz-container .card-info h2 {
+.card-horiz-container .card-info h2 {
   font-size: 1.35rem;
   font-weight: 700;
   margin: 0 0 16px 0;
   color: #f00; /* Rosso Bootstrap */
   line-height: 1.4;
 }
-body.archive.post-type-archive-reference .card-horiz-container .card-info .category {
+.card-horiz-container .card-info .category {
   font-size: 0.875rem;
   color: #aaa;
   margin-bottom: 12px;
@@ -6033,14 +6057,14 @@ body.archive.post-type-archive-reference .card-horiz-container .card-info .categ
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
-body.archive.post-type-archive-reference .card-horiz-container .card-info .text {
+.card-horiz-container .card-info .text {
   font-size: 0.97rem;
   color: #e0e0e0;
   line-height: 1.6;
   margin-bottom: 16px;
   flex-grow: 1;
 }
-body.archive.post-type-archive-reference .card-horiz-container .card-link {
+.card-horiz-container .card-link {
   padding-top: 16px;
   margin-top: auto; /* Spinge il link in basso */
   border-top: 1px solid #2a2a2a;
@@ -6051,7 +6075,7 @@ body.archive.post-type-archive-reference .card-horiz-container .card-link {
   gap: 6px;
   text-align: center;
 }
-body.archive.post-type-archive-reference .card-horiz-container .card-link a {
+.card-horiz-container .card-link a {
   color: #f00; /* Rosso Bootstrap */
   text-decoration: none;
   font-weight: 600;
@@ -6061,24 +6085,111 @@ body.archive.post-type-archive-reference .card-horiz-container .card-link a {
   border-radius: 4px;
   white-space: nowrap;
 }
-body.archive.post-type-archive-reference .card-horiz-container .card-link a:hover {
+.card-horiz-container .card-link a:hover {
   color: #ffffff;
   background-color: rgba(220, 53, 69, 0.15);
   text-shadow: 0 0 8px rgba(220, 53, 69, 0.5);
 }
 @media (max-width: 640px) {
-  body.archive.post-type-archive-reference .card-horiz-container .card-i {
+  .card-horiz-container .card-i {
     flex-direction: column;
   }
-  body.archive.post-type-archive-reference .card-horiz-container .card-image {
+  .card-horiz-container .card-image {
     width: 100%;
     height: auto;
   }
-  body.archive.post-type-archive-reference .card-horiz-container .card-image img {
+  .card-horiz-container .card-image img {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     border-bottom-left-radius: 0;
   }
+}
+
+.owl-card-vertical {
+  width: 100%;
+  height: 400px;
+}
+.owl-card-vertical .swiper-pagination-bullet {
+  background: white;
+  height: 14px;
+  width: 14px;
+}
+.owl-card-vertical .swiper-pagination-bullet-active {
+  background: red;
+}
+.owl-card-vertical .card-i {
+  background: #141414;
+  border-radius: 16px;
+  color: white;
+  height: calc(100% - 48px);
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  max-width: 80%; /* Aumentato per layout orizzontale */
+  margin: 24px auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #222;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+@media (max-width: 1180px) {
+  .owl-card-vertical .card-i {
+    max-width: 90%;
+    margin: 24px auto;
+  }
+}
+@media (max-width: 1024px) {
+  .owl-card-vertical .card-i {
+    max-width: 100%;
+    margin: 24px 0;
+  }
+}
+@media (max-width: 576px) {
+  .owl-card-vertical .card-i {
+    max-width: 100%;
+    margin: 24px 0;
+  }
+}
+.owl-card-vertical .card-i .card-info {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.owl-card-vertical .card-i .card-info h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  color: #f00; /* Rosso Bootstrap */
+  line-height: 1.4;
+}
+.owl-card-vertical .card-i .card-info h3 {
+  font-size: 0.875rem;
+  color: #aaa;
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.owl-card-vertical .card-i .card-info .text {
+  font-size: 0.97rem;
+  color: #e0e0e0;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+.owl-card-vertical .card-i .card-link {
+  align-items: center;
+  background-color: #1a1a1a;
+  border-top: 1px solid #2a2a2a;
+  display: flex;
+  margin-top: auto; /* Spinge il link in basso */
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 16px 16px 8px 16px;
+  text-align: center;
+}
+.owl-card-vertical .card-i .card-link .request-demo {
+  margin-top: 10px;
 }
 
 /** *********************

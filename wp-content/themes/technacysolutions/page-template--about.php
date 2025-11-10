@@ -395,6 +395,7 @@ get_header();
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--honeywell.png" alt="">
           </div>
           <div class="img-i img-i-last">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--mcoms.png" alt="">
           </div>
         </div>
 
@@ -515,7 +516,7 @@ get_header();
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--sms.png" alt="">
           </div>
         </div>
-        <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
+        <div class="mbl logo-row logo-row-white inview-elem reinview-elem-top">
           <div class="img-i img-i-first">
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--saudi-motorsport.png" alt="">
           </div>
@@ -526,6 +527,7 @@ get_header();
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--kaltura.png" alt="">
           </div>
         </div>
+
         <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
           <div class="img-i img-i-first">
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--beyon.png"" alt="">
@@ -535,6 +537,15 @@ get_header();
           </div>
           <div class="img-i img-i-last">
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--honeywell.png" alt="">
+          </div>
+        </div>
+        <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--mcoms.png" alt="">
+          </div>
+          <div class="img-i">
+          </div>
+          <div class="img-i img-i-last">
           </div>
         </div>
 
@@ -655,6 +666,7 @@ get_header();
           <div class="img-i img-i-last">
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-stc.png" alt=""></div>
         </div>
+
         <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
           <div class="img-i img-i-first">
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-trined.png" alt="">
@@ -670,6 +682,15 @@ get_header();
           </div>
           <div class="img-i img-i-last">
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-zain.png" alt=""></div>
+        </div>
+        <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/technacy-client--kapsarc.png" alt="">
+          </div>
+          <div class="img-i"></div>
+          <div class="img-i"></div>
+          <div class="img-i"></div>
+          <div class="img-i img-i-last"></div>
         </div>
 
 
@@ -734,6 +755,18 @@ get_header();
           </div>
           <div class="img-i img-i-last">
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-zain.png" alt=""></div>
+        </div>
+        <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
+          <div class="img-i img-i-first">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/technacy-client--kapsarc.png" alt="">
+          </div>
+          <div class="img-i">
+          </div>
+          <div class="img-i">
+          </div>
+          <div class="img-i img-i-last">
+
+          </div>
         </div>
 
 

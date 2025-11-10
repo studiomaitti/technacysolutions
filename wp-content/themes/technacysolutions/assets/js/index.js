@@ -56,15 +56,17 @@ document.addEventListener('DOMContentLoaded', function() {
   /// Contact Form
   let cFormModal = document.getElementById('modal-cform');
   if(cFormModal){
-    let cFormOpener = document.querySelector('.js-contact-modal');
+    let cFormOpener = document.querySelectorAll('.js-contact-modal');
     let cFormCloseModal = cFormModal.querySelector('.close-modal');
 
     // Open modal when clicking the video thumbnail
-    cFormOpener.addEventListener('click', function(ev) {
-      ev.preventDefault();
-      cFormModal.classList.add('active');
-      document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
-    });
+    cFormOpener.forEach(function (elem) {
+      elem.addEventListener('click', function(ev) {
+        ev.preventDefault();
+        cFormModal.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+      });
+    })
 
     // Close modal when clicking the close button
     cFormCloseModal.addEventListener('click', function() {

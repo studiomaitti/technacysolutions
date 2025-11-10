@@ -259,7 +259,7 @@ for ($i = 0; $i < 30; $i++) {
             </div>
             <div class="card-info">
               <h2>Bahrain International Circuit (BIC) – Bahrain</h2>
-              <div class="category">Service: IPTV</div>
+              <div class="category">Service: Cyber Security</div>
               <div class="text">
                 Technacy conducted an extensive survey and network analysis of the BIC infrastructure using our
                 proprietary assessment tools.<br>

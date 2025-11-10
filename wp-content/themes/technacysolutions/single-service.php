@@ -14,7 +14,11 @@ get_header();
 /* Start the Loop */
 while ( have_posts() ) :
 	the_post();
-  get_template_part( 'template-parts/content/content-single-service' );
+  if(get_the_ID() === 11671){
+    get_template_part( 'template-parts/content/content-single-service--iptv' );
+  } else {
+    get_template_part( 'template-parts/content/content-single-service' );
+  }
 
 endwhile; // End of the loop.
 

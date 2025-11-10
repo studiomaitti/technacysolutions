@@ -338,7 +338,7 @@ $latest_references = new WP_Query([
               connect, engage, and transform.<br>
               <br>
               One platform. Infinite possibilities.</p>
-            <button class="download-brochure-btn">Download Brochure</button>
+            <a href="/wp-content/uploads/TECHNACY_2025_PROFILE_2025_EXT.pdf" class="download-brochure-btn">Download Brochure</a>
           </div>
         </div>
 
