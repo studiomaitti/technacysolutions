@@ -338,7 +338,7 @@ $latest_references = new WP_Query([
               connect, engage, and transform.<br>
               <br>
               One platform. Infinite possibilities.</p>
-            <a href="/wp-content/uploads/TECHNACY_2025_PROFILE_2025_EXT.pdf" class="download-brochure-btn">Download Brochure</a>
+            <a href="/wp-content/uploads/TECHNACY_2025_PROFILE_2025_EXT.pdf" class="download-brochure-btn" title="Download Brochure">Download Brochure</a>
           </div>
         </div>
 
@@ -426,7 +426,7 @@ $latest_references = new WP_Query([
             <h4>Marketing Manager</h4>
             <div class="descr">Lead digital strategy, events, brand growth</div>
             <div class="link">
-              <a href="#">Send your CV</a>
+              <a href="/careers/marketing-manager/" title="Send your CV">Send your CV</a>
             </div>
           </div>
           <div class="position-i">
@@ -435,17 +435,17 @@ $latest_references = new WP_Query([
               IPTV & Video Analytics Specialist
             </div>
             <div class="link">
-              <a href="/contact-us/careers-elv-engineer/">Send your CV</a>
+              <a href="/careers/elv-engineer-iptv-video-analytics-specialist/" title="Send your CV">Send your CV</a>
             </div>
           </div>
 
           <div class="position-i">
-            <h4>Sales Executive </h4>
+            <h4>Sales Executive</h4>
             <div class="descr">
               To drive IPTV, video analytics, and cybersecurity
             </div>
             <div class="link">
-              <a href="#">Send your CV</a>
+              <a href="/careers/sales-executive/" title="Send your CV">Send your CV</a>
             </div>
           </div>
 
@@ -455,7 +455,7 @@ $latest_references = new WP_Query([
               Manage IPTV, AI, and cybersecurity projects
             </div>
             <div class="link">
-              <a href="#">Send your CV</a>
+              <a href="7careers/project-manager-technology-integration/" title="Send your CV">Send your CV</a>
             </div>
           </div>
         </div>
