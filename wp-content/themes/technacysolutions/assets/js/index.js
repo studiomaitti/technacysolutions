@@ -25,6 +25,62 @@ function animateNumber(element, duration) {
 // Video Modal Functionality
 document.addEventListener('DOMContentLoaded', function() {
 
+  if(document.querySelector('.rotating-text')){
+    // 1. Applica lettering a tutti i testi una volta
+    jQuery('.rotating-text').lettering();
+
+    const texts = gsap.utils.toArray('.rotating-text');
+    let currentIndex = -1; // Parte da -1 per far partire dal primo con animazione
+
+    if (texts.length === 0) return;
+
+    // Nascondi tutti i testi all'inizio
+    gsap.set(texts, { opacity: 0 });
+
+    function showNextText() {
+      // Nascondi il testo corrente (se esiste)
+      if (currentIndex >= 0) {
+        gsap.set(texts[currentIndex], { opacity: 0 });
+      }
+
+      // Passa al successivo (con loop)
+      currentIndex = (currentIndex + 1) % texts.length;
+      const nextText = texts[currentIndex];
+
+      // Assicurati che sia visibile (opacity:1) e anima le lettere
+      gsap.set(nextText, { opacity: 1 });
+      const letters = nextText.querySelectorAll('span');
+
+      // Resetta lo stato delle lettere (per riavviare l'animazione)
+      gsap.set(letters, { opacity: 0, y: 30, rotationX: -90 });
+
+      // Anima l'entrata
+      gsap.to(letters, {
+        opacity: 1,
+        y: 0,
+        rotationX: 0,
+        duration: 0.6,
+        ease: "back.out(1.7)",
+        stagger: 0.03
+      });
+    }
+
+    // Avvia il primo testo subito
+    showNextText();
+
+    // Poi cicla ogni X ms
+    let interval = setInterval(showNextText, 3500);
+
+    // Gestione tab in background (opzionale)
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        clearInterval(interval);
+      } else {
+        interval = setInterval(showNextText, 3500);
+      }
+    });
+  }
+
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // Numeri di crescono
   var elemNumGrowing = document.querySelectorAll('.js-number-growing');

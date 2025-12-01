@@ -266,61 +266,20 @@ $latest_references = new WP_Query([
     </section>
   </div>
 
-  <section class="technacy-numbers-section">
-    <div class="content-width">
-      <h2 class="section-title">
-        <span class="sent-1">We crush</span>
-        <span class="sent-2">every challenge</span>
-        <span class="sent-amp">&amp;</span>
-        <span class="sent-3">deliver with style</span>
-      </h2>
-
-      <div class="numbers-grid">
-        <div class="number-item inview-elem inview-elem-bottom">
-          <div class="number  js-number-growing" data-finale-suffix="+">250</div>
-          <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2L1 12l3 9h16l3-9-11-10zm0 2.8L19.3 12H4.7L12 4.8z"/>
-            </svg>
-          </div>
-          <div class="description">Special Projects</div>
-        </div>
-
-        <div class="number-item inview-elem inview-elem-bottom">
-          <div class="number  js-number-growing" data-finale-suffix="+">15</div>
-          <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-              <path d="M16.59 7.58L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/>
-            </svg>
-          </div>
-          <div class="description">nationalities</div>
-        </div>
-
-        <div class="number-item inview-elem inview-elem-bottom">
-          <div class="number  js-number-growing" data-finale-suffix="+">500</div>
-          <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-            </svg>
-          </div>
-          <div class="description">clients</div>
-        </div>
-
-        <div class="number-item inview-elem inview-elem-bottom">
-          <div class="number  js-number-growing" data-finale-suffix="">15</div>
-          <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
-              <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
-            </svg>
-          </div>
-          <div class="description">years of experience</div>
-        </div>
-      </div>
+  <!-- 2 colonne sfondo nero con bg una immagine-->
+  <section class="intro-section">
+    <h2 class="title"><span>AI-Driven IPTV</span> & <span>Smart Digital Experiences</span> for the Middle East</h2>
+    <div class="text">
+      Transforming hospitality, telecom, government and smart cities with intelligent IPTV, Digital Signage,
+      and AI Avatar technology. To deliver intelligent, secure, and seamless digital experiences through world-class
+      IPTV,
+      AI, ELV, and analytics solutions — helping organizations and cities transform how they communicate, operate, and
+      engage users.
     </div>
   </section>
 
+<?php
+/*
   <section class="technacy-description-section">
     <div class="bg-img-container inview-elem inview-elem-left--opacity-i"></div>
     <div class="content-width">
@@ -338,7 +297,8 @@ $latest_references = new WP_Query([
               connect, engage, and transform.<br>
               <br>
               One platform. Infinite possibilities.</p>
-            <a href="/wp-content/uploads/TECHNACY_2025_PROFILE_2025_EXT.pdf" class="download-brochure-btn" title="Download Brochure">Download Brochure</a>
+            <a href="/wp-content/uploads/TECHNACY_2025_PROFILE_2025_EXT.pdf" class="download-brochure-btn" title="Download Brochure">Download
+              Brochure</a>
           </div>
         </div>
 
@@ -366,6 +326,109 @@ $latest_references = new WP_Query([
       </div>
     </div>
   </section>
+*/
+?>
+  <section class="technacy-description-boxes section-bg" data-masthead-color="#000000">
+    <div class="content-width">
+      <div class="description-grid">
+        <div class="description-content inview-elem inview-elem-left">
+          <h2 class="section-title">Technacy Solutions Lab</h2>
+          <div class="text-content">
+            <p>Innovating IPTV, AI, and smart digital ecosystems across the Middle East.<br>
+              <br>
+              With TM10 AI 360 powered by Minerva, we unify IPTV, digital signage, video analytics, and AI
+              personalization into one seamless platform.<br>
+              <br>
+              From airports to hotels, universities to banks, healthcare to residential communities—we help industries
+              connect, engage, and transform.<br>
+              <br>
+              One platform. Infinite possibilities.</p>
+            <a href="/wp-content/uploads/TECHNACY_2025_PROFILE_2025_EXT.pdf" class="download-brochure-btn general-button" title="Download Brochure">Download
+              Brochure</a>
+          </div>
+        </div>
+
+        <!-- Second Column: Video Thumbnail -->
+        <div class="images-container  inview-elem inview-elem-right">
+          <div class="image-item">
+            <img src="/wp-content/uploads/2025/08/technacy-solutions-industries-hospitality-mobile.jpg" alt="Technacy Solutions" class="thumbnail-image">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="technacy-numbers-section white">
+      <div class="content-width">
+        <!--
+        <div class="home-claim-text">
+          <div class="home-claim-title"><span>Technacy Solutions Lab</span> is a Bahrain-based technology company
+            delivering across the Middle East:
+          </div>
+          <div class="rotating-text-container">
+            <div class="rotating-text">Next-generation IPTV</div>
+            <div class="rotating-text">Hospitality platforms</div>
+            <div class="rotating-text">Telco solutions</div>
+            <div class="rotating-text">AI video analytics</div>
+            <div class="rotating-text">Cybersecurity services</div>
+          </div>
+        </div>
+        <h2 class="section-title">
+          <span class="sent-1">We crush</span>
+          <span class="sent-2">every challenge</span>
+          <span class="sent-amp">&amp;</span>
+          <span class="sent-3">deliver with style</span>
+        </h2>
+        -->
+
+        <div class="numbers-grid">
+          <div class="number-item inview-elem inview-elem-bottom">
+            <div class="number  js-number-growing" data-finale-suffix="+">250</div>
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L1 12l3 9h16l3-9-11-10zm0 2.8L19.3 12H4.7L12 4.8z"/>
+              </svg>
+            </div>
+            <div class="description">Special Projects</div>
+          </div>
+
+          <div class="number-item inview-elem inview-elem-bottom">
+            <div class="number  js-number-growing" data-finale-suffix="+">15</div>
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                <path d="M16.59 7.58L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/>
+              </svg>
+            </div>
+            <div class="description">nationalities</div>
+          </div>
+
+          <div class="number-item inview-elem inview-elem-bottom">
+            <div class="number  js-number-growing" data-finale-suffix="+">500</div>
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+              </svg>
+            </div>
+            <div class="description">clients</div>
+          </div>
+
+          <div class="number-item inview-elem inview-elem-bottom">
+            <div class="number  js-number-growing" data-finale-suffix="">15</div>
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+              </svg>
+            </div>
+            <div class="description">years of experience</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </section>
+
 
   <section class="technacy-references-section">
     <div class="references-container">
@@ -479,7 +542,9 @@ $latest_references = new WP_Query([
       </div>
     </div>
     <div class="right">
-      <div class="video"> <video class="js-video" src="/wp-content/uploads/technacysolutions-we-work-globally.mp4" autoplay="" playsinline="" muted="" loop=""></video></div>
+      <div class="video">
+        <video class="js-video" src="/wp-content/uploads/technacysolutions-we-work-globally.mp4" autoplay="" playsinline="" muted="" loop=""></video>
+      </div>
     </div>
   </section>
 <?php
