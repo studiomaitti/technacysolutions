@@ -1,0 +1,1279 @@
+@charset "UTF-8";
+
+@import "_fonts";
+@import "_base";
+@import "_base_wp";
+@import "_animations";
+@import "_general";
+@import "_header";
+@import "_footer";
+
+/// 1° FASCIA: 5 colonne
+.home-intro-section {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+
+  .section-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    a {
+      display: block;
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.4;
+      transition: opacity 500ms ease-in-out;
+    }
+  }
+
+  .section-title {
+    position: absolute;
+    bottom: 6%;
+    left: 10%;
+    width: 100%;
+    color: #ffffff;
+    padding: 1rem;
+    transition: 500ms ease all;
+    transform: scale(1);
+    pointer-events: none;
+  }
+
+  .section-description {
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    transition: 500ms ease all;
+    transform: translateX(-100%);
+    pointer-events: none;
+    position: absolute;
+    width: 90%;
+    z-index: 2;
+
+    .content-wrapper {
+      background: #fff;
+      color: rgba(0, 0, 0, .7);
+      padding: 1em;
+      width: calc(100% - 58px);
+
+      .section-sub-title {
+        clear: both;
+        font-family: "Alegreya Sans", sans-serif;
+        line-height: 1.2;
+        margin: 0;
+        margin-bottom: 0px;
+        text-rendering: optimizeLegibility;
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .dot {
+      display: flex;
+      flex-direction: column;
+      height: 48px;
+      text-align: center;
+      width: 48px;
+      position: relative;
+
+      span {
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        height: 100%;
+        width: 100%;
+      }
+
+      svg {
+        margin: auto;
+        z-index: 10;
+      }
+    }
+  }
+
+  .section-description-mobile {
+    top: 70vh;
+    left: 2vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    transition: 500ms ease all;
+    pointer-events: none;
+    position: absolute;
+    width: 90%;
+    z-index: 2;
+
+    h3 {
+      font-family: "ivypresto-display", serif;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 1.3;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .short-description {
+      font-size: 1rem;
+    }
+
+    .content-wrapper {
+      background: #ffffffe8;
+      color: rgba(0, 0, 0, .7);
+      padding: 0.2em;
+      width: calc(100% - 58px);
+    }
+
+    .dot {
+      display: flex;
+      flex-direction: column;
+      height: 48px;
+      text-align: center;
+      width: 48px;
+      position: relative;
+
+      span {
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        height: 100%;
+        width: 100%;
+      }
+
+      svg {
+        margin: auto;
+        z-index: 10;
+      }
+    }
+
+  }
+
+  .column {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 20%;
+    overflow: hidden;
+
+    .column-container {
+      position: relative;
+      display: flex;
+      flex: 1 1 100%;
+    }
+
+    &.column-1,
+    &.column-3,
+    &.column-5 {
+      .section-title {
+        padding: 1rem;
+        transition: 500ms ease all;
+        transform: scale(1);
+        font-family: "ivypresto-display", serif;
+        font-size: 48px;
+        font-size: 2.4vw;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 110px;
+        line-height: 1.3;
+        letter-spacing: 0em;
+      }
+    }
+
+    &.column-2,
+    &.column-4 {
+      .section-title {
+        padding: 1rem;
+        transition: 500ms ease all;
+        transform: scale(1);
+
+        font-family: "Neue Machina", sans-serif;
+        font-size: 48px;
+        font-size: 2.4vw;
+        font-weight: 300;
+        line-height: 110px;
+        line-height: 1;
+        letter-spacing: 0em;
+      }
+    }
+
+    &:hover {
+      .section-title {
+        opacity: 0;
+        transform: scale(1.1);
+      }
+
+      .section-description {
+        transform: translateX(0);
+      }
+
+      .section-image {
+        img {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+}
+
+/// 2° FASCIA: titolo + testo
+.intro-section {
+  color: #fff;
+  gap: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 160px 30px 0rem 30px;
+
+  @media (max-width: 1180px) {
+    padding: 120px 25px 0 25px;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 80px 20px 0 20px;
+  }
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    padding: 60px 20px 0 20px;
+  }
+
+  .title {
+    font-family: "Neue Machina", sans-serif;
+    font-size: 2.6rem;
+
+    span {
+      color: red;
+      font-family: "ivypresto-display", serif;
+      font-size: 2.6rem;
+      font-style: italic;
+      font-weight: 300;
+
+    }
+  }
+
+  .text {
+    font-size: 20px;
+  }
+}
+
+/// 3° FASCIA: Technacy Numbers Section
+.technacy-numbers-section {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem 2rem 10rem 2rem;
+  overflow: hidden;
+  position: relative;
+
+  @media (max-width: 1180px) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 60px 0;
+  }
+
+  @media (max-width: 576px) {
+    padding: 40px 0;
+  }
+
+  .content-width {
+    padding: 0 5vw;
+  }
+
+  .home-claim-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    font-family: "Neue Machina", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    position: relative;
+
+    @media (max-width: 1180px) {
+      font-size: 1.8rem;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 1.6rem;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 1.4rem;
+    }
+
+
+    .home-claim-title span {
+      color: red;
+    }
+
+    .rotating-text-container {
+      margin-top: 1rem;
+      position: relative;
+      height: 4em; /* adatta all’altezza del testo */
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .rotating-text {
+      color: #ff0000;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      white-space: nowrap; /* opzionale, per evitare a capo */
+
+      font-family: "ivypresto-display", serif;
+      font-size: 5rem;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 110px;
+      line-height: 1.3;
+      letter-spacing: 0em;
+
+      @media (max-width: 1180px) {
+        font-size: 4rem;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 3rem;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 2.5rem;
+      }
+
+
+      &::before {
+        content: "\232A";
+        font-size: 3rem;
+        transform: translateY(-16px);
+        display: inline-block;
+        padding-right: 3rem;
+        color: #fff;
+      }
+
+    }
+  }
+
+  .section-title {
+    font-size: 4.5vw;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+
+    @media (max-width: 1180px) {
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: 1024px) {
+      margin-bottom: 40px;
+      font-size: 6vw;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+      font-size: 8vw;
+    }
+
+    .sent-1 {
+      color: #ff0000;
+      display: block;
+      font-family: "Neue Machina", sans-serif;
+    }
+
+    .sent-2 {
+      display: block;
+      font-family: "ivypresto-display", serif;
+      font-style: italic;
+      font-weight: 300;
+      z-index: 10;
+      position: relative;
+    }
+
+    .sent-amp {
+      color: #ff0000;
+      display: inline-block;
+      margin: 0 10px;
+      font-family: "ivypresto-display", serif;
+      font-size: 10vw;
+      font-style: italic;
+      font-weight: 300;
+      position: absolute;
+      right: 3vw;
+      bottom: 3vw;
+
+      @media (max-width: 1024px) {
+        font-size: 8vw;
+      }
+    }
+
+    .sent-3 {
+      display: inline-block;
+      font-family: "Neue Machina", sans-serif;
+    }
+  }
+
+  .numbers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1400px;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 30px;
+    }
+  }
+
+  .number-item {
+    text-align: center;
+
+    .number {
+      color: #ff0000;
+      font-size: 6rem;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 15px;
+      text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+
+      @media (max-width: 1180px) {
+        font-size: 6rem;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 5rem;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 4rem;
+        margin-bottom: 10px;
+      }
+
+    }
+
+    .icon {
+      color: #ff0000;
+      height: 40px;
+      margin: 0 auto 15px;
+      width: 40px;
+
+      @media (max-width: 1024px) {
+        height: 30px;
+        margin: 0 auto 15px;
+        width: 30px;
+      }
+
+      svg {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .description {
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+      line-height: 1.4;
+      text-transform: uppercase;
+      text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+
+      @media (max-width: 1024px) {
+        font-size: 1rem;
+      }
+    }
+
+    // Staggered animation delays
+    @for $i from 1 through 4 {
+      &:nth-child(#{$i}) {
+        transition-delay: #{$i * 0.15}s;
+      }
+    }
+  }
+
+  &.white {
+    background-color: transparent;
+    color: #000;
+    padding: 0 0 100px 0;
+  }
+}
+
+/// 4° FASCIA: SKEW img + testo
+
+/// 5° FASCIA: References Section
+
+/// 6° FASCIA: LINKDIN
+.technacy-linkedin {
+  color: #fff;
+  padding: 100px 0;
+  position: relative;
+  @media (max-width: 576px) {
+    padding: 0 0 100px 0;
+  }
+
+  .section-title {
+    height: 156px;
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: center;
+
+    @media (max-width: 1180px) {
+      height: 120px;
+    }
+
+    @media (max-width: 1024px) {
+      height: 116px;
+    }
+
+    @media (max-width: 576px) {
+      height: 86px;
+    }
+
+
+    .dot-container {
+      opacity: 0;
+      position: absolute;
+      top: calc(50% - 24px);
+      transform: translateX(-100px);
+      transition: all 0.7s ease;
+
+    }
+
+    a {
+
+      &:hover {
+        .dot-container {
+          opacity: 1;
+          transform: translateX(30px);
+        }
+      }
+    }
+
+    .main {
+      color: red;
+      font-family: "ivypresto-display", serif;
+      font-size: 80px;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 140px;
+      letter-spacing: 0em;
+      z-index: 1;
+
+
+      @media (max-width: 1180px) {
+        font-size: 56px;
+        line-height: 120px;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 46px;
+        line-height: 110px;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 50px;
+        line-height: 100px;
+      }
+
+    }
+
+    .behind {
+      -webkit-text-stroke: 1px white;
+      color: transparent;
+      font-family: "Neue Machina", sans-serif;
+      font-size: 140px;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: 0em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.3;
+      height: 100%;
+      width: 100%;
+
+      @media (max-width: 1180px) {
+        font-size: 110px;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 80px;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 60px;
+      }
+    }
+
+  }
+
+  &.white {
+    box-shadow: 1px 22px 83px -24px rgba(0, 0, 0, 0.75) inset;
+    -webkit-box-shadow: 1px 22px 83px -24px rgba(0, 0, 0, 0.75) inset;
+    -moz-box-shadow: 1px 22px 83px -24px rgba(0, 0, 0, 0.75) inset;
+    background-color: #ffffff;
+    color: #000;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 10%;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    }
+
+    .section-title .behind {
+      -webkit-text-stroke: 1px black;
+    }
+
+  }
+}
+
+/// 7° FASCIA: INVIA CV CAREERS
+.techancy-careers {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  background: #141414;
+  border: 1px solid #222;
+  display: flex;
+  gap: 40px;
+  color: #fff;
+  position: relative;
+
+  margin: 0px 0 100px 0;
+  min-height: 30vw;
+  padding: 0;
+
+  @media (max-width: 576px) {
+    margin: 0 0 100px 0;
+  }
+
+  .section-title {
+    height: 156px;
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: center;
+
+    @media (max-width: 1180px) {
+      height: 120px;
+    }
+
+    @media (max-width: 1024px) {
+      height: 90px;
+    }
+
+    @media (max-width: 576px) {
+      height: 86px;
+    }
+
+    .main {
+      color: red;
+      font-family: "ivypresto-display", serif;
+      font-size: 66px;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 140px;
+      letter-spacing: 0em;
+      z-index: 1;
+
+
+      @media (max-width: 1180px) {
+        font-size: 56px;
+        line-height: 120px;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 46px;
+        line-height: 110px;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 50px;
+        line-height: 100px;
+      }
+
+    }
+
+    .behind {
+      -webkit-text-stroke: 1px white;
+      color: transparent;
+      font-family: "Neue Machina", sans-serif;
+      font-size: 160px;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: 0em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.3;
+      height: 100%;
+      width: 100%;
+
+      @media (max-width: 1180px) {
+        font-size: 110px;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 80px;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 70px;
+      }
+    }
+  }
+
+  .left {
+    width: 50%;
+    padding: 20px 0;
+
+    .text-content {
+      padding: 0 40px 0 100px;
+
+      @media (max-width: 1180px) {
+        padding: 0 20px 0 40px;
+      }
+
+      @media (max-width: 1024px) {
+        padding: 0 0 0 40px;
+      }
+
+      @media (max-width: 576px) {
+        padding: 0 20px 0 20px;
+      }
+
+      h3 {
+        margin-bottom: 20px;
+        font-family: "Neue Machina", sans-serif;
+        font-size: 2rem;
+
+        @media (max-width: 1180px) {
+          font-size: 1.8rem;
+        }
+
+        @media (max-width: 1024px) {
+          font-size: 1.4rem;
+        }
+
+        @media (max-width: 576px) {
+          font-size: 1.2rem;
+        }
+      }
+
+      .positions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: left;
+
+        @media (max-width: 576px) {
+          flex-direction: column;
+        }
+
+        .position-i {
+          background: #000;
+          border: 1px solid #222;
+          border-radius: 16px;
+          display: flex;
+          box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+          overflow: hidden;
+          flex-direction: column;
+          padding: 20px;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          width: calc(50% - 10px);
+
+          @media (max-width: 1180px) {
+            padding: 20px;
+          }
+
+          @media (max-width: 1024px) {
+            padding: 16px;
+          }
+
+          @media (max-width: 576px) {
+            padding: 12px;
+            width: 100%;
+          }
+
+          h4 {
+            color: red;
+            font-size: 22px;
+            margin-bottom: 15px;
+          }
+
+          .link a {
+            background-color: #ff0000;
+            border: none;
+            color: white;
+            display: inline-block;
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-top: 16px;
+            transition: all 0.3s ease;
+            padding: 4px 13px;
+            text-transform: uppercase;
+
+            &:hover {
+              background-color: #d40000;
+              transform: translateY(-2px);
+              box-shadow: 0 5px 15px rgba(255, 0, 0, 0.2);
+            }
+
+
+            @media (max-width: 1180px) {
+              font-size: 12px;
+            }
+
+            @media (max-width: 1024px) {
+              font-size: 10px;
+            }
+
+            @media (max-width: 576px) {
+              font-size: 10px;
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    position: relative;
+    width: 50%;
+
+    .bgimage {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("../img/technacy-solutions--careers.jpeg");
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+  }
+
+
+  @media (max-width: 1180px) {
+    .left,
+    .right {
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .left {
+      width: 60%;
+    }
+    .right {
+      width: 40%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+
+    .left,
+    .right {
+      width: 100%;
+    }
+    .left {
+      order: 2;
+    }
+    .right {
+      min-height: 200px;
+      order: 1;
+    }
+  }
+}
+
+/// 8° FASCIA: CONTATTI
+.techancy-k-touch {
+  display: flex;
+  gap: 40px;
+  color: #fff;
+  position: relative;
+  min-height: 30vw;
+  margin: 100px 0;
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
+
+  .section-title {
+    height: 156px;
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: center;
+
+    @media (max-width: 1180px) {
+      height: 120px;
+    }
+
+    @media (max-width: 1024px) {
+      height: 116px;
+    }
+
+    @media (max-width: 576px) {
+      height: 86px;
+    }
+
+    .main {
+      color: red;
+      font-family: "ivypresto-display", serif;
+      font-size: 66px;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 140px;
+      letter-spacing: 0em;
+      z-index: 1;
+
+
+      @media (max-width: 1180px) {
+        font-size: 56px;
+        line-height: 120px;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 46px;
+        line-height: 110px;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 26px;
+        line-height: 60px;
+      }
+
+    }
+
+    .behind {
+      -webkit-text-stroke: 1px white;
+      color: transparent;
+      font-family: "Neue Machina", sans-serif;
+      font-size: 160px;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: 0em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.3;
+      height: 100%;
+      width: 100%;
+
+      @media (max-width: 1180px) {
+        font-size: 100px;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 90px;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 60px;
+      }
+    }
+  }
+
+  .left {
+    width: 50%;
+    padding: 20px 0;
+
+    .text-content {
+      padding: 0 40px 0 100px;
+
+      @media (max-width: 1180px) {
+        padding: 0 40px 0 40px;
+      }
+
+      @media (max-width: 1024px) {
+        padding: 0 40px 0 20px;
+      }
+
+      @media (max-width: 576px) {
+        padding: 0 40px 0 40px;
+      }
+    }
+  }
+
+  .right {
+    position: relative;
+    width: 50%;
+    transform: translate(-5%, 0%) skew(7.00031deg);
+    overflow: hidden;
+
+    .video {
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      transform: translate(0%) skew(-7.00031deg);
+      width: 110%;
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+
+      @media (max-width: 1180px) {
+        left: -40px;
+
+        video {
+          width: calc(100% + 40px);
+        }
+      }
+
+      @media (max-width: 1024px) {
+        left: -40px;
+      }
+
+      @media (max-width: 576px) {
+        left: 0;
+      }
+
+    }
+
+
+  }
+
+  @media (max-width: 1024px) {
+    .left {
+      width: 60%;
+    }
+    .right {
+      width: 40%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .left {
+      order: 2;
+      width: 100%;
+    }
+    .right {
+      min-height: 200px;
+      order: 1;
+      width: 100%;
+    }
+  }
+
+
+  &.white {
+    box-shadow: 1px 22px 83px -24px rgba(0, 0, 0, 0.75) inset;
+    -webkit-box-shadow: 1px 22px 83px -24px rgba(0, 0, 0, 0.75) inset;
+    -moz-box-shadow: 1px 22px 83px -24px rgba(0, 0, 0, 0.75) inset;
+    background-color: #ffffff;
+    color: #000;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 10%;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    }
+
+    .section-title .behind {
+      -webkit-text-stroke: 1px black;
+    }
+
+    .request-demo-container label {
+      color: #000000;
+    }
+  }
+
+}
+.request-demo-container {
+  font-size: 15px;
+  line-height: 1.5;
+
+  // Righe compattate: meno spazio tra i campi
+  .row,
+  .ec-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    gap: 12px 0; // verticale: 12px, orizzontale: 0 (gestito dai margini)
+  }
+
+  .col-6,
+  .col-12 {
+    padding: 0 10px;
+  }
+
+  .col-6 {
+    flex: 1;
+    min-width: 250px; // evita collasso su mobile stretto
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 14.5px;
+    letter-spacing: 0.3px;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    background: #222;
+    color: #f0f0f0;
+    border: 1px solid #444;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+
+    &:focus {
+      outline: none;
+      border-color: #ff0000;
+      box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.25);
+    }
+
+    &::placeholder {
+      color: #888;
+      opacity: 1;
+    }
+  }
+
+  textarea {
+    max-height: 100px;
+    resize: vertical;
+    line-height: 1.5;
+  }
+
+  .row.quest {
+    br {
+      display: none;
+    }
+
+    label label {
+      display: inline-block;
+    }
+  }
+
+  .wpcf7-submit {
+    background: linear-gradient(to right, #ba0000, #e30000);
+    color: white;
+    border: none;
+    padding: 12px 26px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 6px;
+    box-shadow: 0 2px 8px rgba(178, 0, 0, 0.4);
+    width: auto;
+
+    &:hover {
+      background: linear-gradient(to right, #9e0000, #c50000);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(178, 0, 0, 0.5);
+    }
+
+    &:disabled {
+      background: #555;
+      color: #aaa;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  /** *********************
+    Elementi vari
+   ******* */
+  .cursor {
+    display: none;
+  }
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: initial;
+  }
+
+
+  /** HOME PAGE **/
+  body.home {
+    .home-intro-section {
+      height: 100vh;
+    }
+
+    .home-section {
+      .row-ivy {
+        font-size: 30px;
+      }
+
+      .row-neue {
+        font-size: 26px;
+      }
+    }
+  }
+
+  .menu-container .menu-area .main-navigation ul li {
+    margin: 15px 0;
+  }
+
+  body.is-mobile .about-testimonial .testimonial-slide .data .description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 844px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: initial;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  /* GENERAL */
+  .cursor {
+    display: none;
+  }
+}

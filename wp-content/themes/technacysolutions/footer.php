@@ -198,13 +198,6 @@
   </div>
 </div>
 <div class="cursor"></div>
-<div class="mobile">
-  <div class="text">
-    <div>Rotate your phone</div>
-    <div style="padding: 5rem 0;"><img class="rotate-logo" src="/wp-content/themes/technacysolutions/assets/img/logo-technacy-full.svg" alt="Logo"></div>
-    <div>for better esperience</div>
-  </div>
-</div>
 <div id="modal-cform" class="modal-cform">
   <div class="modal-content">
     <span class="close-modal">&times;</span>

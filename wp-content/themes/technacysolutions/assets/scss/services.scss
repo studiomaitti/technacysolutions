@@ -1,0 +1,499 @@
+@charset "UTF-8";
+
+@import "_fonts";
+@import "_base";
+@import "_base_wp";
+@import "_animations";
+@import "_general";
+@import "_header";
+@import "_footer";
+
+/** *********************
+  DA SPOSTARE
+ ************************ */
+
+
+.red-box {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 4px 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+// HEADER: no home page
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+/// SERVICES: Smart Video Analytics with BriefCam
+body.postid-11673 .hentry.entry .content--contanier {
+  background-image: url("../img/sfondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.small-card-section {
+  background: #141414;
+  padding: 40px 0;
+
+  @media (max-width: 1180px) {
+    padding: 20px 0;
+  }
+
+  @media (max-width: 1024px) {
+  }
+
+  @media (max-width: 576px) {
+  }
+
+  .content-width {
+
+    .section-title {
+      height: 180px;
+      margin-bottom: 2rem;
+      position: relative;
+      text-align: center;
+
+      @media (max-width: 1180px) {
+        height: 120px;
+      }
+
+      @media (max-width: 1024px) {
+        height: 90px;
+      }
+
+      @media (max-width: 576px) {
+        height: 86px;
+      }
+
+      .main {
+        color: red;
+        font-family: "ivypresto-display", serif;
+        font-size: 80px;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 140px;
+        letter-spacing: 0em;
+        z-index: 1;
+
+
+        @media (max-width: 1180px) {
+          font-size: 56px;
+          line-height: 120px;
+        }
+
+        @media (max-width: 1024px) {
+          font-size: 46px;
+          line-height: 110px;
+        }
+
+        @media (max-width: 576px) {
+          font-size: 50px;
+          line-height: 100px;
+        }
+
+      }
+
+      .behind {
+        -webkit-text-stroke: 1px white;
+        color: transparent;
+        font-family: "Neue Machina", sans-serif;
+        font-size: 90px;
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: 0em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.3;
+        height: 100%;
+        width: 100%;
+
+        @media (max-width: 1180px) {
+          font-size: 60px;
+        }
+
+        @media (max-width: 1024px) {
+          font-size: 40px;
+        }
+
+        @media (max-width: 576px) {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .section-title.second-title {
+      height: 180px;
+      margin-bottom: 2rem;
+      position: relative;
+      text-align: center;
+      margin-top: 80px;
+
+      @media (max-width: 1180px) {
+        height: 120px;
+      }
+
+      @media (max-width: 1024px) {
+        height: 90px;
+      }
+
+      @media (max-width: 576px) {
+        height: 86px;
+      }
+
+      .main {
+        color: red;
+        font-family: "ivypresto-display", serif;
+        font-size: 80px;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 180px;
+        letter-spacing: 0em;
+        z-index: 1;
+
+
+        @media (max-width: 1180px) {
+          font-size: 56px;
+          line-height: 120px;
+        }
+
+        @media (max-width: 1024px) {
+          font-size: 46px;
+          line-height: 110px;
+        }
+
+        @media (max-width: 576px) {
+          font-size: 50px;
+          line-height: 100px;
+        }
+
+      }
+
+      .behind {
+        -webkit-text-stroke: 1px white;
+        color: transparent;
+        font-family: "Neue Machina", sans-serif;
+        font-size: 160px;
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: 0em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.3;
+        height: 100%;
+        width: 100%;
+
+        @media (max-width: 1180px) {
+          font-size: 110px;
+        }
+
+        @media (max-width: 1024px) {
+          font-size: 80px;
+        }
+
+        @media (max-width: 576px) {
+          font-size: 70px;
+        }
+      }
+    }
+
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      gap: 4rem 1rem;
+
+      .small-card {
+        background: #000000;
+        border: 1px solid #222;
+        border-radius: 16px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+        color: white;
+        overflow: hidden;
+        padding: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: calc(33% - 8px);
+
+
+
+        @media (max-width: 1180px) {
+        }
+
+        @media (max-width: 1024px) {
+          width: calc(33% - 9px);
+        }
+
+        @media (max-width: 576px) {
+          width: calc(50% - 8px);
+        }
+
+
+
+        h3 {
+          color: red;
+          font-size: 1.6rem;
+          font-family: "Neue Machina", sans-serif;
+          margin-bottom: 0.5rem;
+
+
+          @media (max-width: 576px) {
+            font-size: 1.4rem;
+          }
+
+        }
+
+        &.white {
+          background: #ffffff;
+          border: 1px solid #f00;
+          box-shadow: 0 8px 30px rgba(255, 255, 255, 0.2);
+          color: black;
+        }
+
+      }
+    }
+  }
+}
+
+.why-technacy {
+  .image-container {
+    .bg {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+  }
+
+  table {
+    border: 0px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    table-layout: fixed;
+    margin: 40px;
+
+    thead {
+      font-family: "Neue Machina", sans-serif;
+      font-weight: 900;
+      color: red;
+
+      tr {
+        border-top: 1px solid;
+      }
+    }
+
+    caption {
+      font-size: 1.5em;
+      margin: .5em 0 .75em;
+    }
+
+    tr {
+      border: 0px;
+      border-bottom: 1px solid #ddd;
+      padding: .35em;
+    }
+
+    th,
+    td {
+      border: 0px;
+      padding: .625em;
+      text-align: center;
+    }
+
+    th {
+      font-size: .85em;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .image-container.table {
+      clip-path: none;
+    }
+
+    table {
+      border: 0;
+      margin: 40px 0;
+      width: 100%;
+
+      thead th {
+        font-size: 12px;
+      }
+
+      tr {
+        border-bottom: 3px solid #ddd;
+        margin-bottom: .625em;
+      }
+
+      td {
+        border-bottom: 1px solid #ddd;
+        font-size: 12px;
+
+        &::before {
+          content: attr(data-label);
+          float: left;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .content-width {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .col-sx {
+    width: 50%;
+  }
+
+  .col-dx {
+    width: 50%;
+  }
+}
+
+.technacy-references-smart-highlights {
+  padding: 100px 0 0px 0;
+
+  .page-title {
+    height: 156px;
+    position: relative;
+    text-align: center;
+
+    @media (max-width: 1180px) {
+      height: 120px;
+    }
+
+    @media (max-width: 1024px) {
+      height: 116px;
+    }
+
+    @media (max-width: 576px) {
+      height: 86px;
+    }
+
+    .main {
+      color: red;
+      font-family: "ivypresto-display", serif;
+      font-size: 66px;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 115px;
+      letter-spacing: 0em;
+      z-index: 1;
+
+
+      @media (max-width: 1180px) {
+        font-size: 56px;
+        line-height: 120px;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 46px;
+        line-height: 110px;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 26px;
+        line-height: 60px;
+      }
+
+    }
+
+    .behind {
+      -webkit-text-stroke: 1px white;
+      color: transparent;
+      font-family: "Neue Machina", sans-serif;
+      font-size: 80px;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: 0em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.3;
+      height: 100%;
+      width: 100%;
+
+      @media (max-width: 1180px) {
+        font-size: 130px;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 110px;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 60px;
+      }
+    }
+  }
+
+  .card-container {
+    display: flex;
+  }
+
+  div.references-container {
+    padding: 0 2vw 4vw 2vw;
+  }
+
+  .references-grid {
+    article {
+      .column {
+        .column-container {
+          h2.section-title {
+            font-size: 46px;
+          }
+        }
+
+        .section-description {
+          .content-wrapper {
+            h3.section-sub-title {
+              font-size: 2.5rem;
+            }
+
+            .short-description {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.white {
+    background-color: white;
+    color: black;
+
+    .page-title {
+    }
+
+    .entry-content {
+      color: black;
+    }
+
+    .behind {
+      -webkit-text-stroke: 1px black;
+    }
+  }
+
+}

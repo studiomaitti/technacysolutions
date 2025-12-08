@@ -105,11 +105,6 @@
   <!-- PRELOAD IMAGES -->
   <link rel="preload" as="image" href="/wp-content/themes/technacysolutions/assets/img/anim-togheter.gif"/>
   <?php if (is_front_page()) { ?>
-    <link rel="preload" as="video" href="/wp-content/uploads/Homevideo_Hero_720.mp4"/>
-    <link rel="preload" as="video" href="/wp-content/uploads/technacy-home-1.mp4"/>
-    <link rel="preload" as="video" href="/wp-content/uploads/technacy-home-2-1.mp4"/>
-    <link rel="preload" as="video" href="/wp-content/uploads/technacy-home-3.mp4"/>
-    <link rel="preload" as="video" href="/wp-content/uploads/technacy-home-4.mp4"/>
   <?php } else if (is_page('about')) { ?>
     <link rel="preload" as="video" href="/wp-content/uploads/technacy-we-are-technacy-smaller.mp4"/>
     <link rel="preload" as="video" href="/wp-content/uploads/astronaut-smaller.mp4"/>

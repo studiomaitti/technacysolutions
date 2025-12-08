@@ -12,132 +12,129 @@
 
 get_header();
 ?>
-<style>
-.about-we-crush .panel.panel-1 {
-  background-color: #000000;
-  background-image: url("/wp-content/themes/technacysolutions/assets/img/technacy-solutions-home--about-us.jpg");
-  background-size: cover;
-  background-position: top center;
-  color: #ffffff;
-  position: absolute;
-}
-.about-we-crush .panel.panel-2{
-  background-color: #000000;
-  background-image: url("/wp-content/themes/technacysolutions/assets/img/technacy-solutions-home--about-us-2.jpg");
-  background-size: cover;
-  background-position: top center;
-  color: #ffffff;
-  position: absolute;
-}
-.about-we-crush .panel.panel-2::before,
-.about-we-crush .panel.panel-1::before {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%);
-  content: "";
-  display: block;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-</style>
+  <div class="featured-image-container">
+    <img class="dsk" src="/wp-content/uploads/2025/08/technacy-solutions-virtual-assistance-desktop-scaled.jpg" alt="">
+    <img class="tbl" src="/wp-content/uploads/2025/08/technacy-solutions-virtual-assistance-tablet.jpg" alt="">
+    <img class="mbl" src="/wp-content/uploads/2025/08/technacy-solutions-virtual-assistance-mobile.jpg" alt="">
+  </div>
+  <div class="content--contanier">
+    <header class="entry-header alignwide content-width">
+      <h1 class="entry-title">About Us</h1>
+    </header><!-- .entry-header -->
 
-  <section class="about-section about-we-crush-dsk about-we-crush" id="pinContainer">
-    <div class="panel panel-1 section-bg" data-masthead-color="transparent">
-      <div class="panel-content">
-        <div class="content-width">
-          <p><span class="tit-technacy">Technacy Solutions Lab</span>, headquartered in Bahrain, is a leading technology
-            partner shaping the future of <strong>IPTV</strong>, <strong>AI</strong>, and <strong>smart digital
-              ecosystems</strong> across the Middle East.</p>
+    <div class="entry-content content-width inview-elem inview-elem-top td-550 is-inview-elem">
+      <p><b><span class="tit-technacy">Technacy Solutions Lab</span> is a Bahrain-based technology integrator delivering
+          advanced IPTV, OTT, Digital Signage, AI video analytics, cybersecurity, and ELV infrastructure across the
+          Middle East and EMEA. With offices in Saudi Arabia and the UAE, we support clients with fast regional
+          deployment and 24/7 professional service.</b></p>
 
-          <p>We empower <strong>residential communities</strong>, <strong>hospitality groups</strong>, <strong>healthcare
-              providers</strong>, <strong>airports</strong>, <strong>universities</strong>, and <strong>financial
-              institutions</strong> with innovative platforms that redefine the way people connect, interact, and
-            experience digital content.</p>
+      <p>For more than a decade, we have designed, deployed, and supported complex media and communication systems for
+        airports, hospitality groups, hospitals, telecom operators, ministries, and smart-city developers. Our work
+        covers more than </span>
+        <b><span data-contrast="auto">1 million IPTV/OTT users</span></b><span data-contrast="auto">, hundreds of hospitality installations, and large-scale enterprise transformation projects.
+      </p>
 
-          <p>At the heart of our portfolio is <strong>TM10 AI 360</strong> powered by <strong>Minerva</strong>, a
-            next-generation platform that integrates <strong>IPTV</strong>, <strong>digital signage</strong>, <strong>video
-              analytics</strong>, and <strong>AI-driven personalization</strong> into one seamless ecosystem. This
-            unified approach delivers entertainment, intelligence, and connectivity on a single, scalable platform.</p>
+      <p>We integrate the world’s leading technologies — <b>Minerva, MCOMS, Kaltura, Milestone, WISI, Broadpeak,
+          Amino</b>, and more — into complete, secure, future-proof solutions that combine performance, reliability, and
+        innovation.</p>
 
-          <p>Through strong partnerships with <strong>Minerva</strong>, <strong>Yukuan</strong>,
-            <strong>Broadpeak</strong>, <strong>Amino</strong>, <strong>Harmonic</strong>, and <strong>BriefCam</strong>,
-            we provide end-to-end solutions—from content aggregation and delivery to <strong>AI analytics</strong> and
-            monetization—ensuring unmatched reliability, scalability, and user experience.</p>
-        </div>
+    </div><!-- .entry-content -->
+  </div>
 
-        <div class="dot dot-arrow">
-          <span class="blob white"></span>
-          <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path id="Vector" d="M13.6394 3.04289L12.9323 2.33579L12.2252 3.04289L10.3452 4.92289L9.63871 5.62937L10.3446 6.33647L16.0811 12.0833H2.26562H1.26562V13.0833V15.75V16.75H2.26562H16.0811L10.3446 22.4969L9.63871 23.204L10.3452 23.9104L12.2252 25.7904L12.9323 26.4975L13.6394 25.7904L24.3061 15.1238L25.0132 14.4167L24.3061 13.7096L13.6394 3.04289Z" fill="black" stroke="white" stroke-width="2"/>
-          </svg>
+  <section class="box-with-skew section-bg" data-masthead-color="#000000">
+    <div class="image-container">
+      <div class="bg" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0%) skew(7.00031deg);"></div>
+      <img src="/wp-content/themes/technacysolutions/assets/img/home-bg-01.jpg" alt="Technacy Solutions">
+    </div>
+    <div class="text-container">
+      <div class="description-content">
+        <h2 class="section-title">OUR APPROACH </h2>
+        <div class="text-content">
+          <p>Consultative Design
+            We define the best architecture for each environment — from hotels and hospitals to stadiums, airports, campuses and smart cities.
+
+            Turnkey Implementation
+            Hardware, software, deployment, configuration, and testing — all managed by our certified engineers.
+
+            Integration Excellence
+            We integrate seamlessly with third-party platforms: HIS, PMS, CRM, IoT, hospitality systems, and government digital services.
+
+            24/7 Support & SLA
+            Global vendor-backed support with regional presence ensures reliability for mission-critical environments. </p>
+
         </div>
       </div>
+
     </div>
 
-    <div class="panel panel-2 section-bg" data-masthead-color="transparent">
-      <div class="panel-content">
-        <div class="content-width">
-          Through strong partnerships with Minerva, Yukuan, Broadpeak, Amino, Harmonic, and BriefCam, we integrate IPTV,
-          video analytics, and digital signage into a seamless ecosystem—TM10 AI 360 powered by Minerva—bringing
-          entertainment, intelligence, and connectivity together in one platform.<br><br>
-
-          <span class="tit-1 tit-technacy">Our mission is simple</span>: <br>
-          to provide innovative, reliable, and scalable solutions that enhance customer
-          experience, create new revenue opportunities, and support digital transformation.<br>
-          <br>
-          At <span class="tit-technacy">Technacy</span>, we don’t just deliver technology—we deliver end-to-end
-          ecosystems that make organizations smarter, more connected, and future-ready.
-        </div>
-        <div class="dot dot-arrow">
-          <span class="blob"></span>
-          <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M25.3712 14.1199L26.0783 13.4128L25.3712 12.7057L23.4912 10.8257L22.7847 10.1192L22.0776 10.825L16.3307 16.5616L16.3307 2.74609L16.3307 1.74609L15.3307 1.74609L12.6641 1.74609L11.6641 1.74609L11.6641 2.74609L11.6641 16.5616L5.9172 10.825L5.2101 10.1192L4.50362 10.8257L2.62362 12.7057L1.91651 13.4128L2.62362 14.1199L13.2903 24.7865L13.9974 25.4936L14.7045 24.7865L25.3712 14.1199Z" fill="white" stroke="white" stroke-width="2"/>
-
-          </svg>
-        </div>
-      </div>
-    </div>
   </section>
-  <section class="about-section about-we-crush-mob about-we-crush mobile-only" id="pinContainer">
-    <div class="panel-mb panel-1 section-bg" data-masthead-color="transparent">
-      <div class="panel-content">
-        <div class="content-width inview-elem inview-elem-top">
-          <p><span class="tit-technacy">Technacy Solutions Lab</span>, headquartered in Bahrain, is a leading technology
-            partner shaping the future of <strong>IPTV</strong>, <strong>AI</strong>, and <strong>smart digital
-              ecosystems</strong> across the Middle East.</p>
 
-          <p>We empower <strong>residential communities</strong>, <strong>hospitality groups</strong>, <strong>healthcare
-              providers</strong>, <strong>airports</strong>, <strong>universities</strong>, and <strong>financial
-              institutions</strong> with innovative platforms that redefine the way people connect, interact, and
-            experience digital content.</p>
-
-          <p>At the heart of our portfolio is <strong>TM10 AI 360</strong> powered by <strong>Minerva</strong>, a
-            next-generation platform that integrates <strong>IPTV</strong>, <strong>digital signage</strong>, <strong>video
-              analytics</strong>, and <strong>AI-driven personalization</strong> into one seamless ecosystem. This
-            unified approach delivers entertainment, intelligence, and connectivity on a single, scalable platform.</p>
-
-          <p>Through strong partnerships with <strong>Minerva</strong>, <strong>Yukuan</strong>,
-            <strong>Broadpeak</strong>, <strong>Amino</strong>, <strong>Harmonic</strong>, and <strong>BriefCam</strong>,
-            we provide end-to-end solutions—from content aggregation and delivery to <strong>AI analytics</strong> and
-            monetization—ensuring unmatched reliability, scalability, and user experience.</p>
+  <section class="small-card-section section-bg" data-masthead-color="#000000">
+    <div class="content-width">
+      <h2 class="section-title inview-elem inview-elem-top">
+        <span class="main">OUR EXPERTISE</span>
+        <span class="behind">&  CAPABILITIES</span>
+      </h2>
+      <div class="card-container inview-elem inview-elem-top">
+        <div class="small-card">
+          <h3>IPTV &amp; OTT Platforms</h3>
+          <p>
+            End-to-end IPTV for hospitality, residential, telecom, airports and government entities.
+            Cloud-based and on-premise deployments with VOD, catch-up, casting and monetization.</p>
         </div>
-      </div>
-    </div>
 
-    <div class="panel-mb panel-2 section-bg" data-masthead-color="transparent">
-      <div class="panel-content">
-        <div class="content-width inview-elem inview-elem-top">
-          Through strong partnerships with Minerva, Yukuan, Broadpeak, Amino, Harmonic, and BriefCam, we integrate IPTV,
-          video analytics, and digital signage into a seamless ecosystem—TM10 AI 360 powered by Minerva—bringing
-          entertainment, intelligence, and connectivity together in one platform.<br><br>
+        <div class="small-card white">
+          <h3>AI Avatar &amp; Digital Assistants</h3>
+          <p>Human-like AI assistants for IPTV interfaces, smart cities, hospitality, real estate, retail, healthcare,
+            and enterprise helpdesk automation.</p>
+        </div>
 
-          <span class="tit-1 tit-technacy">Our mission is simple</span>: <br>
-          to provide innovative, reliable, and scalable solutions that enhance customer
-          experience, create new revenue opportunities, and support digital transformation.<br>
-          <br>
-          At <span class="tit-technacy">Technacy</span>, we don’t just deliver technology—we deliver end-to-end
-          ecosystems that make organizations smarter, more connected, and future-ready.
+        <div class="small-card">
+          <h3>Digital Signage Ecosystems</h3>
+          <p>Centralized content management, wayfinding, advertising networks, emergency messaging, and multi-zone
+            layouts for enterprises and public spaces.</p>
+        </div>
+
+        <div class="small-card white">
+          <h3>ELV &amp; Headend Infrastructure</h3>
+          <p>SMATV, RF distribution, fiber optics, multiswitches, IPTV headend, Android STBs, Linux STBs, and full site
+            engineering for large buildings.</p>
+        </div>
+
+        <div class="small-card">
+          <h3>AI Video Analytics</h3>
+          <p>Facial recognition, scene detection, metadata automation, security monitoring, silence &amp; abusive
+            content detection, compliance analytics and event intelligence.</p>
+        </div>
+
+        <div class="small-card white">
+          <h3>Cybersecurity &amp; Secure Architecture</h3>
+          <p>Network hardening, media encryption, content protection, secure integration with government-grade
+            infrastructure and critical systems.</p>
+        </div>
+
+        <div class="small-card">
+          <h3>Hospitality Platforms (Certified)</h3>
+          <p>MCOMS-based IPTV &amp; guest services platform approved by global hotel brands (Marriott, IHG,
+            Ritz-Carlton, Four Seasons, Bulgari, etc.).</p>
+        </div>
+
+        <div class="small-card white">
+          <h3>Smart City Digital Ecosystems</h3>
+          <p>Unified IPTV + Digital Signage + AI Avatar + IoT media for giga-projects, residential communities, and
+            urban infrastructure.</p>
+        </div>
+
+        <div class="small-card">
+          <h3>Telecom Solutions</h3>
+          <p>STBs, headend, middleware, DRM/CAS, subscriber management, OTT app frameworks and analytics for telecom
+            operators.</p>
+        </div>
+
+        <div class="small-card white">
+          <h3>Healthcare Media Systems</h3>
+          <p>Patient engagement systems, HIS integration, casting, in-room control, digital signage, and multilingual
+            education libraries.
         </div>
       </div>
     </div>
@@ -306,7 +303,7 @@ get_header();
     </div>
   </section>
 
-  <section class="panel panel-2 about-partners section-bg" data-masthead-color="#000000">
+  <section class="about-partners white section-bg" data-masthead-color="#000000">
     <div class="testo-container">
       <div class="content-width testo">
         <h2 class="page-title partner">
@@ -400,7 +397,6 @@ get_header();
         </div>
 
 
-
         <div class="dsk logo-row logo-row-black inview-elem inview-elem-top">
           <div class="img-i img-i-first">
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Active.png" alt="">
@@ -449,7 +445,6 @@ get_header();
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/black/logo-Visual.png" alt="">
           </div>
         </div>
-
 
 
         <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
@@ -530,7 +525,8 @@ get_header();
 
         <div class="mbl logo-row logo-row-white inview-elem inview-elem-top">
           <div class="img-i img-i-first">
-            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--beyon.png"" alt="">
+            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--beyon.png""
+            alt="">
           </div>
           <div class="img-i">
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/white/technacy-partner--atlas.png" alt="">
@@ -553,8 +549,7 @@ get_header();
     </div>
   </section>
 
-
-  <section class="panel panel-3 about-section about-clients section-bg" data-masthead-color="#000000">
+  <section class="about-section about-clients section-bg" data-masthead-color="#000000">
     <div class="testo-container">
       <div class="content-width testo">
         <div class="title"></div>

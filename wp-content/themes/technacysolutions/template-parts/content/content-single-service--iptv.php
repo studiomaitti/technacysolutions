@@ -72,153 +72,293 @@ $header_image_html_mbl = $header_image_mobile ? '<img class="mbl" src="' . $head
     </div><!-- .entry-content -->
   </div>
 
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <section class="box-with-skew section-bg" data-masthead-color="#000000">
+    <div class="image-container">
+      <div class="bg" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0%) skew(7.00031deg);"></div>
+      <img src="/wp-content/themes/technacysolutions/assets/img/home-bg-01.jpg" alt="Technacy Solutions">
+    </div>
+    <div class="text-container">
+      <div class="description-content">
+        <h2 class="section-title">AI Avatar — The Intelligent Layer of the Ecosystem </h2>
+        <div class="text-content">
+          <p>Our <strong>AI Avatar</strong> brings human-like digital interaction across IPTV, OTT, Digital Signage,
+            mobile apps, and kiosks.</p>
 
-  <div class="content-width ">
-    <div class="swiper mySwiper owl-card-vertical">
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide">
-          <div class="card-i">
-            <div class="card-info">
-              <h2>Next-Gen Android TV IPTV for Hospitality, Healthcare & Enterprise</h2>
-              <h3 class="category">Transform every screen into an engaging, interactive experience with Technacy + Minerva Networks.</h3>
-              <div class="text">
-                Technacy Solutions delivers an end-to-end IPTV solution powered by Minerva Networks, designed for Android TV devices.<br>
-                Our platform transforms how hospitality, healthcare, airports, and residential environments
-                engage users, offering an immersive, seamless, and scalable experience across all screens.
-              </div>
-            </div>
-            <div class="card-link">
-              Schedule a Consultation Today to Discover How Technacy + Minerva Can Transform Your Screens into Interactive,
-              High-Performance IPTV Experiences Across Hospitality, Healthcare, Airports, and Enterprise Environments.
-              <a href="/request-a-demo/" class="js-contact-modal request-demo" title="Request a Demo">REQUEST A DEMO</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="card-i">
-            <div class="card-info">
-              <h2>Your Complete IPTV Ecosystem</h2>
-              <div class="text">
-                Technacy’s Android TV IPTV platform provides a fully integrated ecosystem including Middleware, Headend,
-                Servers, and STBs. <br>
-                <br>
-                From content acquisition to device management, analytics, and user experience, every
-                layer is designed for maximum performance, reliability, and ease of use.
-              </div>
-            </div>
-            <div class="card-link">
-              Discover How Our Complete Android TV IPTV Ecosystem Works from Middleware and Headend to Servers and
-              end-user Devices designed to Deliver Seamless, Scalable, and Engaging Digital Experiences.
-              <a href="/request-a-demo/" class="js-contact-modal request-demo" title="Request a Demo read IPTV & TM10 AI 360 Ecosystem">REQUEST A DEMO</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="card-i">
-            <div class="card-info">
-              <h2>Middleware – The Intelligent Core</h2>
-              <div class="text">
-                The Minerva Middleware is the brain of your IPTV ecosystem, built for Android TV to orchestrate content
-                delivery, user interaction, analytics, and enterprise integrations. It seamlessly unifies Live TV, VOD,
-                Catch-Up, and OTT content while connecting with PMS, HIS, and CRM systems. Featuring multi-language
-                support, customizable branding, enterprise-grade DRM, and a native Android TV interface, it delivers
-                fast performance and a rich user experience. Personalized guest and resident profiles enable targeted
-                content delivery, ensuring relevance and engagement.
-              </div>
-            </div>
-            <div class="card-link">
-              Learn More About Our Minerva Middleware and How It Powers Live TV, VOD, OTT Integration, Guest Personalization, and Enterprise-Level Analytics Across All Screens.
-              <a href="/request-a-demo/" class="js-contact-modal request-demo" title="Request a Demo">REQUEST A DEMO</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="card-i">
-            <div class="card-info">
-              <h2>End-User Devices – Seamless Experiences</h2>
-              <div class="text">
-                Technacy offers a complete range of Android TV-powered devices—including set-top boxes, Smart TVs, and
-                tablets—delivering a consistent, intuitive experience. All run the native Android TV OS with Play Store
-                access, support over-the-air updates, remote management, and enterprise-grade provisioning with custom
-                branding for hotels and hospitals. Built-in Chromecast, HDMI-CEC, secure boot, and DRM compliance ensure
-                seamless integration, security, and a unified interface across every device.
-              </div>
-            </div>
-            <div class="card-link">
-              View Our Range of Android TV-Powered Devices, Including STBs, Smart TVs, and Tablets, with Enterprise Provisioning, OTA Updates, Remote Management, and Seamless User Experiences.
-              <a href="/request-a-demo/" class="js-contact-modal request-demo" title="Request a Demo">REQUEST A DEMO</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="card-i">
-            <div class="card-info">
-              <h2>Servers & Infrastructure – Scalable & Reliable</h2>
-              <div class="text">
-                At the heart of the IPTV ecosystem is a robust server architecture, with Technacy providing flexible
-                deployment options—on-premises, hybrid cloud, or fully cloud-based—to guarantee high availability,
-                performance, and security. The platform combines origin servers, content management, and real-time
-                analytics pipelines with built-in redundancy, failover, and disaster recovery. Built on containerized
-                microservices for agile scaling, it also integrates seamlessly with enterprise IT and IoT systems,
-                enabling comprehensive monitoring and operational resilience.
-              </div>
-            </div>
-            <div class="card-link">
-              Discover Our Server and Infrastructure Solutions That Ensure Maximum Performance, Redundancy, Security, and Scalability for Your IPTV Ecosystem — On-Premises, Hybrid Cloud, or Fully Cloud-Based.
-              <a href="/request-a-demo/" class="js-contact-modal request-demo" title="Request a Demo">REQUEST A DEMO</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="card-i">
-            <div class="card-info">
-              <h2>Technacy Works With Leading IPTV & Video Platforms</h2>
-              <div class="text">
-                Technacy is proud to operate and integrate multiple global IPTV and video platforms, giving clients choice, flexibility, and unmatched interoperability.
-                Partner Platforms:
-                <ul style="margin-bottom: 0">
-                  <li><strong>Televes:</strong> IPTV headend and signal distribution solutions</li>
-                  <li>Sonifi: Hospitality-focused in-room entertainment</li>
-                  <li>HiBox: Hospital and enterprise IPTV solutions</li>
-                  <li>Souka TV: Regional OTT content platform for Arabic content</li>
-                  <li>Kaltura: Enterprise video platform with transcoding, API integration, and analytics</li>
-                  <li>MCOMS: Luxury IPTV and digital signage solutions for hotels and resorts</li>
-                </ul>
-
-              </div>
-            </div>
-            <div class="card-link">
-              <a href="/request-a-demo/" class="js-contact-modal request-demo" title="Request a Demo" style="margin-top: 0">REQUEST A DEMO</a>
-            </div>
-          </div>
+          <p><strong>How the Avatar Enhances IPTV &amp; OTT</strong></p>
+          <ul>
+            <li>Natural conversation (Arabic/English)</li>
+            <li>Content discovery through voice</li>
+            <li>Episode summaries &amp; “Explain this video”</li>
+            <li>AI-recommended VOD &amp; live channels</li>
+            <li>Real-time metadata extraction</li>
+            <li>Personalized suggestions</li>
+          </ul>
+          <p><strong>Beyond TV — Cross-Industry AI Assistant</strong></p>
+          <ul>
+            <li>Hospitality guest concierge</li>
+            <li>Healthcare patient assistant</li>
+            <li>Real estate digital advisor</li>
+            <li>Corporate helpdesk &amp; HR assistant</li>
+            <li>Smart-city community information</li>
+            <li>Airport passenger guidance</li>
+            <li>Retail customer support</li>
+            <li>Powered by advanced generative AI — the Avatar bridges media interaction and enterprise productivity.
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
+
     </div>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        direction: "vertical",
-        slidesPerView: 1,
-        spaceBetween: 30,
-        mousewheel: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
+  </section>
 
-  </div>
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <section class="small-card-section">
+    <div class="content-width">
+      <h2 class="section-title inview-elem inview-elem-top">
+        <span class="main">Core Capabilities</span>
+        <span class="behind">Technacy<br>Ecosystem</span>
+      </h2>
+      <div class="card-container inview-elem inview-elem-top">
+        <div class="small-card">
+          <h3>IPTV</h3>
+          <ul>
+            <li>Live TV, EPG</li>
+            <li>Catch-up, Time-shift</li>
+            <li>VOD, multilingual libraries</li>
+            <li>STB & Smart TV apps</li>
+            <li>Multi-brand hotel UI themes</li>
+          </ul>
+        </div>
 
+        <div class="small-card white">
+          <h3>OTT & Multi-Screen</h3>
+          <ul>
+            <li>iOS / Android apps</li>
+            <li>Web TV</li>
+            <li>Samsung & LG Smart TV</li>
+            <li>Android TV Operator Tier</li>
+            <li>Cloud DVR</li>
+            <li>Partner integrations (Netflix, Prime, Shahid, YouTube…)</li>
+          </ul>
+        </div>
 
+        <div class="small-card">
+          <h3>AI Intelligence Layer</h3>
+          <ul>
+            <li>Video understanding</li>
+            <li>Metadata creation</li>
+            <li>Face/object/scene detection</li>
+            <li>Automated cataloging</li>
+            <li>Personalized user journeys</li>
+            <li>Content &amp; workflow automation</li>
+          </ul>
+        </div>
+
+        <div class="small-card white">
+          <h3>Digital Signage Integration</h3>
+          <ul>
+            <li>Multi-zone layouts</li>
+            <li>Airport/retail wayfinding</li>
+            <li>Corporate messaging</li>
+            <li>Emergency alerts</li>
+          </ul>
+        </div>
+
+        <div class="small-card">
+          <h3>ELV & Headend Integration</h3>
+          <ul>
+            <li>RF, SMATV, fiber distribution</li>
+            <li>IPTV headend</li>
+            <li>Multiswitch solutions</li>
+            <li>Server architecture</li>
+          </ul>
+        </div>
+
+        <div class="small-card white">
+          <h3>Deployment Models</h3>
+          <ul>
+            <li>Cloud</li>
+            <li>Hybrid</li>
+            <li>Government on-premise</li>
+            <li>Fully redundant for hospitals & airports</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="section-title second-title inview-elem inview-elem-top">
+        <span class="main">Specific Solutions</span>
+        <span class="behind">Sector</span>
+      </h2>
+
+      <div class="card-container inview-elem inview-elem-top">
+        <div class="small-card">
+          <h3>Hospitality</h3>
+          <ul>
+            <li>Guest IPTV</li>
+            <li>Casting (Chromecast-secure)</li>
+            <li>Room control integration</li>
+            <li>AI concierge</li>
+            <li>Digital menus</li>
+            <li>Hotel branding &amp; PMS integration</li>
+            <li>Certified with Marriott, IHG, Ritz, Four Seasons, Bulgari</li>
+          </ul>
+        </div>
+
+        <div class="small-card white">
+          <h3>Healthcare</h3>
+          <ul>
+            <li>Patient engagement IPTV</li>
+            <li>HIS integration</li>
+            <li>Nurse call</li>
+            <li>Medical content library</li>
+            <li>AI medical assistant for patient guidance</li>
+            <li>Digital signage for clinics &amp; waiting rooms</li>
+          </ul>
+        </div>
+
+        <div class="small-card">
+          <h3>Smart Cities &amp; Residential</h3>
+          <ul>
+            <li>IPTV for communities</li>
+            <li>AI digital concierge</li>
+            <li>Home services &amp; real estate support</li>
+            <li>Smart home integration</li>
+          </ul>
+        </div>
+
+        <div class="small-card white">
+          <h3>Airports</h3>
+          <ul>
+            <li>IPTV for lounges &amp; staff areas</li>
+            <li>Flight information &amp; signage</li>
+            <li>AI passenger assistant</li>
+            <li>Operational messaging</li>
+          </ul>
+        </div>
+
+        <div class="small-card">
+          <h3>Telecom Operators</h3>
+          <ul>
+            <li>Multi-million subscriber IPTV/OTT</li>
+            <li>Monetization engine</li>
+            <li>App store integrations</li>
+            <li>Android TV / Linux STB deployments</li>
+            <li>Regional CDN/Edge optimization</li>
+          </ul>
+        </div>
+
+        <div class="small-card white">
+          <h3>Government &amp; Public Sector</h3>
+          <ul>
+            <li>Secure IPTV networks</li>
+            <li>Internal AI knowledge &amp; policy assistant</li>
+            <li>Training &amp; education systems</li>
+            <li>Video archive management</li>
+            <li>Forma</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <section class="box-with-skew section-bg why-technacy inview-elem inview-elem-top" data-masthead-color="#000000">
+    <div class="image-container table">
+      <div class="bg" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0%) skew(7.00031deg);"></div>
+      <table>
+        <thead>
+        <tr>
+          <th>Feature</b></th>
+          <th>Technacy Ecosystem</th>
+          <th>Traditional IPTV Vendor</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><b><span>AI Avatar</span></b></td>
+          <td><span>✔</span><span> Human-like assistant</span></td>
+          <td><span>✘</span><span> Not available</span></td>
+        </tr>
+        <tr>
+          <td><b><span>Metadata AI Extraction</span></b></td>
+          <td><span>✔</span><span> Automatic</span></td>
+          <td><span>✘</span><span> Manual only</span></td>
+        </tr>
+        <tr>
+          <td><b><span>Sector Customization</span></b></td>
+          <td><span>✔</span><span> Full</span></td>
+          <td><span>✘</span><span> Limited</span></td>
+        </tr>
+        <tr>
+          <td><b><span>Hospitality Certification</span></b></td>
+          <td><span>✔</span><span> Marriott, IHG, Ritz, FS</span></td>
+          <td><span>✘</span><span> No</span></td>
+        </tr>
+        <tr>
+          <td><b><span>Smart City Integration</span></b></td>
+          <td><span>✔</span><span> Yes</span></td>
+          <td><span>✘</span><span> No</span></td>
+        </tr>
+        <tr>
+          <td><b><span>AI Video Analytics</span></b></td>
+          <td><span>✔</span><span> Native</span></td>
+          <td><span>✘</span><span> External only</span></td>
+        </tr>
+        <tr>
+          <td><b><span>Arabic Support</span></b></td>
+          <td><span>✔</span><span> Full</span></td>
+          <td><span>✘</span><span> Partial</span></td>
+        </tr>
+        <tr>
+          <td><b><span>OTT Integration</span></b></td>
+          <td><span>✔</span><span> Netflix, Prime, etc.</span></td>
+          <td><span>✔</span><span> / </span><span>✘</span><span> varies</span></td>
+        </tr>
+        <tr>
+          <td><b><span>STB Options</span></b></td>
+          <td><span>✔</span><span> Android + Linux</span></td>
+          <td><span>✔</span><span> Limited</span></td>
+        </tr>
+        <tr>
+          <td><b><span>Regional Support</span></b></td>
+          <td><span>✔</span><span> Bahrain, KSA, UAE</span></td>
+          <td><span>✘</span><span> Offshore only</span></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="text-container">
+      <div class="description-content">
+        <h2 class="section-title">Why the Technacy Ecosystem Is Unique</h2>
+        <div class="text-content">
+          <h3>✔ AI at the Core</h3>
+          <p>IPTV + OTT + AI Avatar + Digital Signage = one unified ecosystem.</p>
+
+          <h3>✔ Custom Fine-Tuning</h3>
+          <p>Each deployment is built specifically for the sector it serves.</p>
+
+          <h3>✔ Regional Presence</h3>
+          <p>HQ in Bahrain, operational offices in Saudi Arabia &amp; UAE.</p>
+
+          <h3>✔ Enterprise-Grade Security</h3>
+          <p>Designed for ministries, airports, hospitals and telcos.</p>
+
+          <h3>✔ World-Class Partnerships</h3>
+          <p>Minerva • MCOMS • Kaltura • Milestone • WISI • Broadpeak</p>
+
+          <h3>✔ Built for Giga-Projects</h3>
+          <p>Scalable for NEOM, Diriyah, KAIA, Red Sea, and telecom operators.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
   <div class="technacy-references-smart-highlights technacy-references-section">
     <h2 class="page-title inview-elem inview-elem-top">
       <span class="main">Smart Highlights</span>
@@ -229,9 +369,11 @@ $header_image_html_mbl = $header_image_mobile ? '<img class="mbl" src="' . $head
       <div class="entry-content">
         <p>
           Smart Highlights feature transforms ordinary recordings into personalized, dynamic experiences.<br>
-          It lets viewers create their own highlight reels — whether it’s a 2-minute recap, top plays from a favorite player, or only 3-point shots — all in real time and tailored to their interests.<br>
+          It lets viewers create their own highlight reels — whether it’s a 2-minute recap, top plays from a favorite
+          player, or only 3-point shots — all in real time and tailored to their interests.<br>
           <br>
-          Sports fans can also access live stats, scores, and summaries from major leagues worldwide, with Minnie AI ready to provide insights, player stories, and historical context on demand.<br>
+          Sports fans can also access live stats, scores, and summaries from major leagues worldwide, with Minnie AI
+          ready to provide insights, player stories, and historical context on demand.<br>
           <br>
           Smart Highlights isn’t just a replay — it’s your game, your way, instantly.<br><br>
           Try Smart Highlights now — <strong>click below to experience it!</strong>

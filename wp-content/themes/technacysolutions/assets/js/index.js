@@ -430,53 +430,6 @@ document.addEventListener("DOMContentLoaded", () => {
       };
     }
 
-    // init
-    var controller = new ScrollMagic.Controller();
-
-    // define movement of panels
-    var wipeAnimation = new TimelineMax()
-      .fromTo(".about-section .panel.panel-2", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone}); // in from top
-
-    // create scene to pin and link animation
-    new ScrollMagic.Scene({
-      triggerElement: "#pinContainer",
-      triggerHook: "onLeave",
-      duration: "300%"
-    })
-      .setPin("#pinContainer")
-      .setTween(wipeAnimation)
-      //.addIndicators() // add indicators (requires plugin)
-      .addTo(controller);
-
-    var wipeAnimation = new TimelineMax()
-      .fromTo(".sections-from-bottom .panel.panel-2", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone})
-      .fromTo(".sections-from-bottom .panel.panel-3", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone})
-    ; // in from top
-
-    // create scene to pin and link animation
-    new ScrollMagic.Scene({
-      triggerElement: "#pinSectionFromBottom",
-      triggerHook: "onLeave",
-      duration: "300%"
-    })
-      .setPin("#pinSectionFromBottom")
-      .setTween(wipeAnimation)
-      //.addIndicators() // add indicators (requires plugin)
-      .addTo(controller);
-
-    var about_we_are_tech = document.querySelector('.about-intro-top-hover-testo');
-    if (about_we_are_tech) {
-      about_we_are_tech.onmouseover = function (event) {
-        var target = event.target;
-        target.parentElement.classList.add('hover');
-      };
-
-      about_we_are_tech.onmouseout = function (event) {
-        var target = event.target;
-        target.parentElement.classList.remove('hover');
-      };
-    }
-
     var div_swiper_testi = document.querySelector('.swiper-testimonial');
     if (div_swiper_testi) {
       const swiper_testi = new Swiper('.swiper-testimonial', {

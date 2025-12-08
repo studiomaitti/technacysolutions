@@ -76,12 +76,30 @@ function technacysolutions_scripts()
   wp_dequeue_style('wc-blocks-style'); // Remove WooCommerce block CSS
   wp_dequeue_style('global-styles');
 
-  global $is_IE, $wp_scripts;
-  if ($is_IE) {
-    wp_enqueue_style('technacysolutions-style', get_template_directory_uri() . '/assets/css/ie.css', array(), wp_get_theme()->get('Version'));
-  }
-  else {
-    wp_enqueue_style('technacysolutions-style', get_template_directory_uri() . '/assets/css/style.css', array(), wp_get_theme()->get('Version'));
+  if (is_front_page()) {
+    $css_file = get_template_directory() . '/assets/css/front-page.css';
+    wp_enqueue_style(
+      'technacysolutions-style',
+      get_template_directory_uri() . '/assets/css/front-page.css',
+      array(),
+      filemtime($css_file)
+    );
+  } elseif (is_singular('service')) {
+    $css_file = get_template_directory() . '/assets/css/services.css';
+    wp_enqueue_style(
+      'technacysolutions-style',
+      get_template_directory_uri() . '/assets/css/services.css',
+      array(),
+      filemtime($css_file)
+    );
+  } else {
+    $css_file = get_template_directory() . '/assets/css/style.css';
+    wp_enqueue_style(
+      'technacysolutions-style',
+      get_template_directory_uri() . '/assets/css/style.css',
+      array(),
+      filemtime($css_file)
+    );
   }
 
   // RTL styles.
