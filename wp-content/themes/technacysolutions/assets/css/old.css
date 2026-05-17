@@ -1513,6 +1513,25 @@ body {
   object-fit: cover;
   object-position: left;
 }
+.box-with-skew .image-container.text {
+  color: black;
+  padding: 32px;
+}
+.box-with-skew .image-container.text h2 {
+  color: black;
+  font-family: "Neue Machina", sans-serif;
+  font-size: 2.6rem;
+  margin-bottom: 30px;
+}
+.box-with-skew .image-container.text h2:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 20%;
+  height: 3px;
+  background-color: black;
+}
 .box-with-skew .text-container {
   width: 50%;
   padding: 32px;

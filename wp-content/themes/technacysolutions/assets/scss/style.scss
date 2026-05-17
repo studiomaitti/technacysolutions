@@ -37,6 +37,198 @@
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///  PAGE
+body.page{
+  .page-title {
+    height: 140px;
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: center;
+
+    @media (max-width: 1180px) {
+      height: 120px;
+    }
+
+    @media (max-width: 1024px) {
+      height: 90px;
+    }
+
+    @media (max-width: 576px) {
+      height: 86px;
+    }
+
+    .main {
+      color: red;
+      font-family: "ivypresto-display", serif;
+      font-size: 80px;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 140px;
+      letter-spacing: 0em;
+      z-index: 1;
+
+
+      @media (max-width: 1180px) {
+        font-size: 56px;
+        line-height: 120px;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 46px;
+        line-height: 110px;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 50px;
+        line-height: 100px;
+      }
+
+    }
+
+    .behind {
+      -webkit-text-stroke: 1px white;
+      color: transparent;
+      font-family: "Neue Machina", sans-serif;
+      font-size: 90px;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: 0em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.3;
+      height: 100%;
+      width: 100%;
+
+      @media (max-width: 1180px) {
+        font-size: 60px;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 40px;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///  PAGE FORM
+body.page-template-page-template--contact-us--careers{
+  .request-demo-container {
+    font-size: 15px;
+    line-height: 1.5;
+
+    // Righe compattate: meno spazio tra i campi
+    .row,
+    .ec-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+      gap: 12px 0; // verticale: 12px, orizzontale: 0 (gestito dai margini)
+    }
+
+    .col-6,
+    .col-12 {
+      padding: 0 10px;
+    }
+
+    .col-6 {
+      flex: 1;
+      min-width: 250px; // evita collasso su mobile stretto
+    }
+
+    .col-12 {
+      width: 100%;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #fff;
+      font-size: 14.5px;
+      letter-spacing: 0.3px;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 8px;
+      background: #222;
+      color: #f0f0f0;
+      border: 1px solid #444;
+      border-radius: 6px;
+      font-size: 15px;
+      font-family: inherit;
+      box-sizing: border-box;
+      transition: border 0.3s ease, box-shadow 0.3s ease;
+
+      &:focus {
+        outline: none;
+        border-color: #ff0000;
+        box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.25);
+      }
+
+      &::placeholder {
+        color: #888;
+        opacity: 1;
+      }
+    }
+
+    textarea {
+      max-height: 100px;
+      resize: vertical;
+      line-height: 1.5;
+    }
+
+    .row.quest {
+      br {
+        display: none;
+      }
+
+      label label {
+        display: inline-block;
+      }
+    }
+
+    .wpcf7-submit {
+      background: linear-gradient(to right, #ba0000, #e30000);
+      color: white;
+      border: none;
+      padding: 12px 26px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 6px;
+      box-shadow: 0 2px 8px rgba(178, 0, 0, 0.4);
+      width: auto;
+
+      &:hover {
+        background: linear-gradient(to right, #9e0000, #c50000);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(178, 0, 0, 0.5);
+      }
+
+      &:disabled {
+        background: #555;
+        color: #aaa;
+        cursor: not-allowed;
+        transform: none;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///  ABOUT
 body.page-template-page-template--about {
   .header {
@@ -53,6 +245,27 @@ body.page-template-page-template--about {
       z-index: -1;
       opacity: 0.9;
       transition: background-color 0.3s ease;
+    }
+  }
+
+  .our-approach{
+    &:after{
+      display: none;
+    }
+    .text-container{
+      h3{
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 1.1;
+        letter-spacing: 0em;
+        position: relative;
+        color: red;
+        font-family: "Neue Machina", sans-serif;
+      }
+      p{
+        font-size: 22px;
+        line-height: 1.3;
+      }
     }
   }
 
@@ -1075,6 +1288,9 @@ body.page-template-page-template--about {
     display: flex !important;
   }
 }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///  FORM CV
 
 
 /** *********************

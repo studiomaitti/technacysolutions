@@ -13,9 +13,9 @@
 get_header();
 ?>
   <div class="featured-image-container">
-    <img class="dsk" src="/wp-content/uploads/2025/08/technacy-solutions-virtual-assistance-desktop-scaled.jpg" alt="">
-    <img class="tbl" src="/wp-content/uploads/2025/08/technacy-solutions-virtual-assistance-tablet.jpg" alt="">
-    <img class="mbl" src="/wp-content/uploads/2025/08/technacy-solutions-virtual-assistance-mobile.jpg" alt="">
+    <img class="dsk" src="/wp-content/themes/technacysolutions/assets/img/technacy-about-us-01.jpg" alt="">
+    <img class="tbl" src="/wp-content/themes/technacysolutions/assets/img/technacy-about-us-01.jpg" alt="">
+    <img class="mbl" src="/wp-content/themes/technacysolutions/assets/img/technacy-about-us-01.jpg" alt="">
   </div>
   <div class="content--contanier">
     <header class="entry-header alignwide content-width">
@@ -41,26 +41,26 @@ get_header();
     </div><!-- .entry-content -->
   </div>
 
-  <section class="box-with-skew section-bg" data-masthead-color="#000000">
+  <section class="our-approach box-with-skew section-bg" data-masthead-color="#000000">
     <div class="image-container">
       <div class="bg" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0%) skew(7.00031deg);"></div>
-      <img src="/wp-content/themes/technacysolutions/assets/img/home-bg-01.jpg" alt="Technacy Solutions">
+      <img src="/wp-content/themes/technacysolutions/assets/img/technacy-about-us-02.jpg" alt="Technacy Solutions">
     </div>
     <div class="text-container">
       <div class="description-content">
         <h2 class="section-title">OUR APPROACH </h2>
         <div class="text-content">
-          <p>Consultative Design
-            We define the best architecture for each environment — from hotels and hospitals to stadiums, airports, campuses and smart cities.
+          <h3>Consultative Design</h3>
+          <p>We define the best architecture for each environment — from hotels and hospitals to stadiums, airports, campuses and smart cities.</p>
 
-            Turnkey Implementation
-            Hardware, software, deployment, configuration, and testing — all managed by our certified engineers.
+          <h3>Turnkey Implementation</h3>
+          <p>Hardware, software, deployment, configuration, and testing — all managed by our certified engineers.</p>
 
-            Integration Excellence
-            We integrate seamlessly with third-party platforms: HIS, PMS, CRM, IoT, hospitality systems, and government digital services.
+          <h3>Integration Excellence</h3>
+          <p>We integrate seamlessly with third-party platforms: HIS, PMS, CRM, IoT, hospitality systems, and government digital services.</p>
 
-            24/7 Support & SLA
-            Global vendor-backed support with regional presence ensures reliability for mission-critical environments. </p>
+          <h3>24/7 Support & SLA</h3>
+          <p>Global vendor-backed support with regional presence ensures reliability for mission-critical environments. </p>
 
         </div>
       </div>
@@ -557,66 +557,7 @@ get_header();
           <span class="main">Our Clients</span>
           <span class="behind">Opportunities</span>
         </h2>
-        <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
-          <div class="img-i img-i-first">
-            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-bairport.png" alt="">
-          </div>
-          <div class="img-i">
-            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-batelco.png" alt="">
-          </div>
-          <div class="img-i">
-            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-BIC.png" alt=""></div>
-          <div class="img-i">
-            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-BTC.png" alt=""></div>
-          <div class="img-i img-i-last">
-            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-ccp.png" alt=""></div>
-        </div>
-        <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
-          <div class="img-i img-i-first">
-            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-Emar.png" alt=""></div>
-          <div class="img-i">
-            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-F1.png" alt=""></div>
-          <div class="img-i">
-            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-formula-E.png" alt="">
-          </div>
-          <div class="img-i">
-            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-gulfir.png" alt="">
-          </div>
-          <div class="img-i img-i-last">
-            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-icad.png" alt=""></div>
-        </div>
-        <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
-          <div class="img-i img-i-first">
-            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-Kapsark.png" alt="">
-          </div>
-          <div class="img-i">
-            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-kohei.png" alt="">
-          </div>
-          <div class="img-i">
-            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-lambo.png" alt="">
-          </div>
-          <div class="img-i">
-            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-orange.png" alt="">
-          </div>
-          <div class="img-i img-i-last">
-            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-stc.png" alt=""></div>
-        </div>
-        <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
-          <div class="img-i img-i-first">
-            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-trined.png" alt="">
-          </div>
-          <div class="img-i">
-            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-vodafon.png" alt="">
-          </div>
-          <div class="img-i">
-            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-whirpool.png" alt="">
-          </div>
-          <div class="img-i">
-            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-youth.png" alt="">
-          </div>
-          <div class="img-i img-i-last">
-            <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-zain.png" alt=""></div>
-        </div>
+
         <div class="dsk logo-row logo-row-white inview-elem inview-elem-top">
           <div class="img-i img-i-first">
             <img src="/wp-content/themes/technacysolutions/assets/img/loghi-clienti/white/logo-bairport.png" alt="">
@@ -829,160 +770,5 @@ get_header();
     </div>
   </section>
 
-  <section class="about-section about-testimonial section-bg" data-masthead-color="#000000">
-    <div class="testo-container">
-      <div class="content-width testo">
-        <div class="title inview-elem inview-elem-top">What <span>they</span> say</div>
-        <div class="testimonial-container swiper swiper-testimonial inview-elem inview-elem-left td-550">
-          <div class="swiper-wrapper">
-            <div class="testimonial-slide testimonial-slide-1 swiper-slide">
-              <div class="img" style="background-image: url('/wp-content/themes/technacysolutions/assets/img/foto-marco-bonomo.jpg');">
-                <img src="/wp-content/themes/technacysolutions/assets/img/foto-marco-bonomo.jpg">
-              </div>
-              <div class="data-container">
-                <div class="data">
-                  <div class="star">
-                  <span><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.07088 0.667031C9.41462 -0.149428 10.5854 -0.149427 10.9291 0.667033L12.9579 5.48592C13.1029 5.83012 13.4306 6.0653 13.8067 6.09509L19.0727 6.51217C19.9649 6.58283 20.3267 7.68282 19.6469 8.25809L15.6348 11.6534C15.3482 11.8959 15.223 12.2765 15.3106 12.639L16.5363 17.7157C16.744 18.5758 15.7969 19.2557 15.033 18.7948L10.5245 16.0742C10.2025 15.8799 9.7975 15.8799 9.47548 16.0742L4.96699 18.7948C4.20311 19.2557 3.25596 18.5758 3.46363 17.7157L4.68942 12.639C4.77698 12.2765 4.65182 11.8959 4.36526 11.6534L0.353062 8.25809C-0.326718 7.68282 0.0350679 6.58283 0.927291 6.51217L6.19336 6.09509C6.5695 6.0653 6.89716 5.83012 7.04207 5.48592L9.07088 0.667031Z" fill="#FC0606"/>
-</svg></span> <span><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.07088 0.667031C9.41462 -0.149428 10.5854 -0.149427 10.9291 0.667033L12.9579 5.48592C13.1029 5.83012 13.4306 6.0653 13.8067 6.09509L19.0727 6.51217C19.9649 6.58283 20.3267 7.68282 19.6469 8.25809L15.6348 11.6534C15.3482 11.8959 15.223 12.2765 15.3106 12.639L16.5363 17.7157C16.744 18.5758 15.7969 19.2557 15.033 18.7948L10.5245 16.0742C10.2025 15.8799 9.7975 15.8799 9.47548 16.0742L4.96699 18.7948C4.20311 19.2557 3.25596 18.5758 3.46363 17.7157L4.68942 12.639C4.77698 12.2765 4.65182 11.8959 4.36526 11.6534L0.353062 8.25809C-0.326718 7.68282 0.0350679 6.58283 0.927291 6.51217L6.19336 6.09509C6.5695 6.0653 6.89716 5.83012 7.04207 5.48592L9.07088 0.667031Z" fill="#FC0606"/>
-</svg></span> <span><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.07088 0.667031C9.41462 -0.149428 10.5854 -0.149427 10.9291 0.667033L12.9579 5.48592C13.1029 5.83012 13.4306 6.0653 13.8067 6.09509L19.0727 6.51217C19.9649 6.58283 20.3267 7.68282 19.6469 8.25809L15.6348 11.6534C15.3482 11.8959 15.223 12.2765 15.3106 12.639L16.5363 17.7157C16.744 18.5758 15.7969 19.2557 15.033 18.7948L10.5245 16.0742C10.2025 15.8799 9.7975 15.8799 9.47548 16.0742L4.96699 18.7948C4.20311 19.2557 3.25596 18.5758 3.46363 17.7157L4.68942 12.639C4.77698 12.2765 4.65182 11.8959 4.36526 11.6534L0.353062 8.25809C-0.326718 7.68282 0.0350679 6.58283 0.927291 6.51217L6.19336 6.09509C6.5695 6.0653 6.89716 5.83012 7.04207 5.48592L9.07088 0.667031Z" fill="#FC0606"/>
-</svg></span> <span><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.07088 0.667031C9.41462 -0.149428 10.5854 -0.149427 10.9291 0.667033L12.9579 5.48592C13.1029 5.83012 13.4306 6.0653 13.8067 6.09509L19.0727 6.51217C19.9649 6.58283 20.3267 7.68282 19.6469 8.25809L15.6348 11.6534C15.3482 11.8959 15.223 12.2765 15.3106 12.639L16.5363 17.7157C16.744 18.5758 15.7969 19.2557 15.033 18.7948L10.5245 16.0742C10.2025 15.8799 9.7975 15.8799 9.47548 16.0742L4.96699 18.7948C4.20311 19.2557 3.25596 18.5758 3.46363 17.7157L4.68942 12.639C4.77698 12.2765 4.65182 11.8959 4.36526 11.6534L0.353062 8.25809C-0.326718 7.68282 0.0350679 6.58283 0.927291 6.51217L6.19336 6.09509C6.5695 6.0653 6.89716 5.83012 7.04207 5.48592L9.07088 0.667031Z" fill="#FC0606"/>
-</svg></span> <span><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.07088 0.667031C9.41462 -0.149428 10.5854 -0.149427 10.9291 0.667033L12.9579 5.48592C13.1029 5.83012 13.4306 6.0653 13.8067 6.09509L19.0727 6.51217C19.9649 6.58283 20.3267 7.68282 19.6469 8.25809L15.6348 11.6534C15.3482 11.8959 15.223 12.2765 15.3106 12.639L16.5363 17.7157C16.744 18.5758 15.7969 19.2557 15.033 18.7948L10.5245 16.0742C10.2025 15.8799 9.7975 15.8799 9.47548 16.0742L4.96699 18.7948C4.20311 19.2557 3.25596 18.5758 3.46363 17.7157L4.68942 12.639C4.77698 12.2765 4.65182 11.8959 4.36526 11.6534L0.353062 8.25809C-0.326718 7.68282 0.0350679 6.58283 0.927291 6.51217L6.19336 6.09509C6.5695 6.0653 6.89716 5.83012 7.04207 5.48592L9.07088 0.667031Z" fill="#FC0606"/>
-</svg></span>
-                  </div>
-                  <div class="description">
-                    "Technacy Solutions has strong expertise in system integration and high commitment to service
-                    excellence. They've demonstrated to be a trusted partner in the Video space, with in-depth
-                    technology know-how and a customer driven approach. Our overall experience has been extremely
-                    positive and we look forward to our continued collaboration in the years to come."
-                  </div>
-                  <div class="societa">
-                    <div class="container">
-                      <div class="nome">Marco Bonomi</div>
-                      <div class="societa">VPS, EMEA</div>
-                    </div>
-                    <div class="logo">
-                      <div class="logo-white">
-                        <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/normal/logo-minerva-logo-66x50.png">
-                      </div>
-                      <div class="logo-black">
-                        <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/normal/logo-minerva-logo-66x50.png">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonial-slide testimonial-slide-2 swiper-slide">
-              <div class="img" style="background-image: url('/wp-content/themes/technacysolutions/assets/img/ministry-of-youth-affairs.jpg');">
-                <img src="/wp-content/themes/technacysolutions/assets/img/ministry-of-youth-affairs.jpg">
-              </div>
-              <div class="data-container">
-                <div class="data">
-                  <div class="star">
-                  <span><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.07088 0.667031C9.41462 -0.149428 10.5854 -0.149427 10.9291 0.667033L12.9579 5.48592C13.1029 5.83012 13.4306 6.0653 13.8067 6.09509L19.0727 6.51217C19.9649 6.58283 20.3267 7.68282 19.6469 8.25809L15.6348 11.6534C15.3482 11.8959 15.223 12.2765 15.3106 12.639L16.5363 17.7157C16.744 18.5758 15.7969 19.2557 15.033 18.7948L10.5245 16.0742C10.2025 15.8799 9.7975 15.8799 9.47548 16.0742L4.96699 18.7948C4.20311 19.2557 3.25596 18.5758 3.46363 17.7157L4.68942 12.639C4.77698 12.2765 4.65182 11.8959 4.36526 11.6534L0.353062 8.25809C-0.326718 7.68282 0.0350679 6.58283 0.927291 6.51217L6.19336 6.09509C6.5695 6.0653 6.89716 5.83012 7.04207 5.48592L9.07088 0.667031Z" fill="#FC0606"/>
-</svg></span> <span><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.07088 0.667031C9.41462 -0.149428 10.5854 -0.149427 10.9291 0.667033L12.9579 5.48592C13.1029 5.83012 13.4306 6.0653 13.8067 6.09509L19.0727 6.51217C19.9649 6.58283 20.3267 7.68282 19.6469 8.25809L15.6348 11.6534C15.3482 11.8959 15.223 12.2765 15.3106 12.639L16.5363 17.7157C16.744 18.5758 15.7969 19.2557 15.033 18.7948L10.5245 16.0742C10.2025 15.8799 9.7975 15.8799 9.47548 16.0742L4.96699 18.7948C4.20311 19.2557 3.25596 18.5758 3.46363 17.7157L4.68942 12.639C4.77698 12.2765 4.65182 11.8959 4.36526 11.6534L0.353062 8.25809C-0.326718 7.68282 0.0350679 6.58283 0.927291 6.51217L6.19336 6.09509C6.5695 6.0653 6.89716 5.83012 7.04207 5.48592L9.07088 0.667031Z" fill="#FC0606"/>
-</svg></span> <span><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.07088 0.667031C9.41462 -0.149428 10.5854 -0.149427 10.9291 0.667033L12.9579 5.48592C13.1029 5.83012 13.4306 6.0653 13.8067 6.09509L19.0727 6.51217C19.9649 6.58283 20.3267 7.68282 19.6469 8.25809L15.6348 11.6534C15.3482 11.8959 15.223 12.2765 15.3106 12.639L16.5363 17.7157C16.744 18.5758 15.7969 19.2557 15.033 18.7948L10.5245 16.0742C10.2025 15.8799 9.7975 15.8799 9.47548 16.0742L4.96699 18.7948C4.20311 19.2557 3.25596 18.5758 3.46363 17.7157L4.68942 12.639C4.77698 12.2765 4.65182 11.8959 4.36526 11.6534L0.353062 8.25809C-0.326718 7.68282 0.0350679 6.58283 0.927291 6.51217L6.19336 6.09509C6.5695 6.0653 6.89716 5.83012 7.04207 5.48592L9.07088 0.667031Z" fill="#FC0606"/>
-</svg></span> <span><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.07088 0.667031C9.41462 -0.149428 10.5854 -0.149427 10.9291 0.667033L12.9579 5.48592C13.1029 5.83012 13.4306 6.0653 13.8067 6.09509L19.0727 6.51217C19.9649 6.58283 20.3267 7.68282 19.6469 8.25809L15.6348 11.6534C15.3482 11.8959 15.223 12.2765 15.3106 12.639L16.5363 17.7157C16.744 18.5758 15.7969 19.2557 15.033 18.7948L10.5245 16.0742C10.2025 15.8799 9.7975 15.8799 9.47548 16.0742L4.96699 18.7948C4.20311 19.2557 3.25596 18.5758 3.46363 17.7157L4.68942 12.639C4.77698 12.2765 4.65182 11.8959 4.36526 11.6534L0.353062 8.25809C-0.326718 7.68282 0.0350679 6.58283 0.927291 6.51217L6.19336 6.09509C6.5695 6.0653 6.89716 5.83012 7.04207 5.48592L9.07088 0.667031Z" fill="#FC0606"/>
-</svg></span> <span><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.07088 0.667031C9.41462 -0.149428 10.5854 -0.149427 10.9291 0.667033L12.9579 5.48592C13.1029 5.83012 13.4306 6.0653 13.8067 6.09509L19.0727 6.51217C19.9649 6.58283 20.3267 7.68282 19.6469 8.25809L15.6348 11.6534C15.3482 11.8959 15.223 12.2765 15.3106 12.639L16.5363 17.7157C16.744 18.5758 15.7969 19.2557 15.033 18.7948L10.5245 16.0742C10.2025 15.8799 9.7975 15.8799 9.47548 16.0742L4.96699 18.7948C4.20311 19.2557 3.25596 18.5758 3.46363 17.7157L4.68942 12.639C4.77698 12.2765 4.65182 11.8959 4.36526 11.6534L0.353062 8.25809C-0.326718 7.68282 0.0350679 6.58283 0.927291 6.51217L6.19336 6.09509C6.5695 6.0653 6.89716 5.83012 7.04207 5.48592L9.07088 0.667031Z" fill="#FC0606"/>
-</svg></span>
-                  </div>
-                  <div class="description">
-                    "I have always had positive experiences working with Technacy for the past couple of years. Technacy
-                    has always provided the most suitable and recommended solutions with the best price that is suitable
-                    for our business. I would highly recommend Technacy in the field of Innovation."
-                  </div>
-                  <div class="societa">
-                    <div class="container">
-                      <div class="nome">Nani Butti - Director, Information System</div>
-                      <div class="societa">Information Systems Directorate</div>
-                    </div>
-                    <!--
-                    <div class="logo">
-                      <div class="logo-white">
-                        <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/normal/logo-minerva-logo-66x50.png">
-                      </div>
-                      <div class="logo-black">
-                        <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/normal/logo-minerva-logo-66x50.png">
-                      </div>
-                    </div>
-                    -->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonial-slide testimonial-slide-2 swiper-slide">
-              <div class="img" style="background-image: url('/wp-content/themes/technacysolutions/assets/img/technacy-Carlo-Boutagy.jpg');">
-                <img src="/wp-content/themes/technacysolutions/assets/img/technacy-Carlo-Boutagy.jpg">
-              </div>
-              <div class="data-container">
-                <div class="data">
-                  <div class="star">
-                  <span><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.07088 0.667031C9.41462 -0.149428 10.5854 -0.149427 10.9291 0.667033L12.9579 5.48592C13.1029 5.83012 13.4306 6.0653 13.8067 6.09509L19.0727 6.51217C19.9649 6.58283 20.3267 7.68282 19.6469 8.25809L15.6348 11.6534C15.3482 11.8959 15.223 12.2765 15.3106 12.639L16.5363 17.7157C16.744 18.5758 15.7969 19.2557 15.033 18.7948L10.5245 16.0742C10.2025 15.8799 9.7975 15.8799 9.47548 16.0742L4.96699 18.7948C4.20311 19.2557 3.25596 18.5758 3.46363 17.7157L4.68942 12.639C4.77698 12.2765 4.65182 11.8959 4.36526 11.6534L0.353062 8.25809C-0.326718 7.68282 0.0350679 6.58283 0.927291 6.51217L6.19336 6.09509C6.5695 6.0653 6.89716 5.83012 7.04207 5.48592L9.07088 0.667031Z" fill="#FC0606"/>
-</svg></span> <span><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.07088 0.667031C9.41462 -0.149428 10.5854 -0.149427 10.9291 0.667033L12.9579 5.48592C13.1029 5.83012 13.4306 6.0653 13.8067 6.09509L19.0727 6.51217C19.9649 6.58283 20.3267 7.68282 19.6469 8.25809L15.6348 11.6534C15.3482 11.8959 15.223 12.2765 15.3106 12.639L16.5363 17.7157C16.744 18.5758 15.7969 19.2557 15.033 18.7948L10.5245 16.0742C10.2025 15.8799 9.7975 15.8799 9.47548 16.0742L4.96699 18.7948C4.20311 19.2557 3.25596 18.5758 3.46363 17.7157L4.68942 12.639C4.77698 12.2765 4.65182 11.8959 4.36526 11.6534L0.353062 8.25809C-0.326718 7.68282 0.0350679 6.58283 0.927291 6.51217L6.19336 6.09509C6.5695 6.0653 6.89716 5.83012 7.04207 5.48592L9.07088 0.667031Z" fill="#FC0606"/>
-</svg></span> <span><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.07088 0.667031C9.41462 -0.149428 10.5854 -0.149427 10.9291 0.667033L12.9579 5.48592C13.1029 5.83012 13.4306 6.0653 13.8067 6.09509L19.0727 6.51217C19.9649 6.58283 20.3267 7.68282 19.6469 8.25809L15.6348 11.6534C15.3482 11.8959 15.223 12.2765 15.3106 12.639L16.5363 17.7157C16.744 18.5758 15.7969 19.2557 15.033 18.7948L10.5245 16.0742C10.2025 15.8799 9.7975 15.8799 9.47548 16.0742L4.96699 18.7948C4.20311 19.2557 3.25596 18.5758 3.46363 17.7157L4.68942 12.639C4.77698 12.2765 4.65182 11.8959 4.36526 11.6534L0.353062 8.25809C-0.326718 7.68282 0.0350679 6.58283 0.927291 6.51217L6.19336 6.09509C6.5695 6.0653 6.89716 5.83012 7.04207 5.48592L9.07088 0.667031Z" fill="#FC0606"/>
-</svg></span> <span><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.07088 0.667031C9.41462 -0.149428 10.5854 -0.149427 10.9291 0.667033L12.9579 5.48592C13.1029 5.83012 13.4306 6.0653 13.8067 6.09509L19.0727 6.51217C19.9649 6.58283 20.3267 7.68282 19.6469 8.25809L15.6348 11.6534C15.3482 11.8959 15.223 12.2765 15.3106 12.639L16.5363 17.7157C16.744 18.5758 15.7969 19.2557 15.033 18.7948L10.5245 16.0742C10.2025 15.8799 9.7975 15.8799 9.47548 16.0742L4.96699 18.7948C4.20311 19.2557 3.25596 18.5758 3.46363 17.7157L4.68942 12.639C4.77698 12.2765 4.65182 11.8959 4.36526 11.6534L0.353062 8.25809C-0.326718 7.68282 0.0350679 6.58283 0.927291 6.51217L6.19336 6.09509C6.5695 6.0653 6.89716 5.83012 7.04207 5.48592L9.07088 0.667031Z" fill="#FC0606"/>
-</svg></span> <span><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.07088 0.667031C9.41462 -0.149428 10.5854 -0.149427 10.9291 0.667033L12.9579 5.48592C13.1029 5.83012 13.4306 6.0653 13.8067 6.09509L19.0727 6.51217C19.9649 6.58283 20.3267 7.68282 19.6469 8.25809L15.6348 11.6534C15.3482 11.8959 15.223 12.2765 15.3106 12.639L16.5363 17.7157C16.744 18.5758 15.7969 19.2557 15.033 18.7948L10.5245 16.0742C10.2025 15.8799 9.7975 15.8799 9.47548 16.0742L4.96699 18.7948C4.20311 19.2557 3.25596 18.5758 3.46363 17.7157L4.68942 12.639C4.77698 12.2765 4.65182 11.8959 4.36526 11.6534L0.353062 8.25809C-0.326718 7.68282 0.0350679 6.58283 0.927291 6.51217L6.19336 6.09509C6.5695 6.0653 6.89716 5.83012 7.04207 5.48592L9.07088 0.667031Z" fill="#FC0606"/>
-</svg></span>
-                  </div>
-                  <div class="description">
-                    "I have always had positive experiences working with Technacy for the past couple of years. Technacy
-                    has always provided the most suitable and recommended solutions with the best price that is suitable
-                    for our business. I would highly recommend Technacy in the field of Innovation."
-                  </div>
-                  <div class="societa">
-                    <div class="container">
-                      <div class="nome">Carlo Boutagy</div>
-                      <div class="societa">CBX</div>
-                    </div>
-                    <div class="logo">
-                      <div class="logo-white">
-                        <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/normal/logo-cbx-66x50.jpg">
-                      </div>
-                      <div class="logo-black">
-                        <img src="/wp-content/themes/technacysolutions/assets/img/loghi-partners/normal/logo-cbx-66x50.jpg">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-buttons">
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev">
-              <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="24.5" cy="24" r="24" fill="white"/>
-                <path d="M24.5 16L23.09 17.41L28.67 23H16.5V25H28.67L23.09 30.59L24.5 32L32.5 24L24.5 16Z" fill="black"/>
-              </svg>
-            </div>
-            <div class="swiper-button-next">
-              <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="24.5" cy="24" r="24" fill="white"/>
-                <path d="M24.5 16L23.09 17.41L28.67 23H16.5V25H28.67L23.09 30.59L24.5 32L32.5 24L24.5 16Z" fill="black"/>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 <?php
 get_footer();

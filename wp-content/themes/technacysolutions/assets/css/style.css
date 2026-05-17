@@ -1513,6 +1513,25 @@ body {
   object-fit: cover;
   object-position: left;
 }
+.box-with-skew .image-container.text {
+  color: black;
+  padding: 32px;
+}
+.box-with-skew .image-container.text h2 {
+  color: black;
+  font-family: "Neue Machina", sans-serif;
+  font-size: 2.6rem;
+  margin-bottom: 30px;
+}
+.box-with-skew .image-container.text h2:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 20%;
+  height: 3px;
+  background-color: black;
+}
 .box-with-skew .text-container {
   width: 50%;
   padding: 32px;
@@ -3044,6 +3063,182 @@ body.single .entry-content p em {
   opacity: 0.9;
 }
 
+body.page .page-title {
+  height: 140px;
+  margin-bottom: 2rem;
+  position: relative;
+  text-align: center;
+}
+@media (max-width: 1180px) {
+  body.page .page-title {
+    height: 120px;
+  }
+}
+@media (max-width: 1024px) {
+  body.page .page-title {
+    height: 90px;
+  }
+}
+@media (max-width: 576px) {
+  body.page .page-title {
+    height: 86px;
+  }
+}
+body.page .page-title .main {
+  color: red;
+  font-family: "ivypresto-display", serif;
+  font-size: 80px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 140px;
+  letter-spacing: 0em;
+  z-index: 1;
+}
+@media (max-width: 1180px) {
+  body.page .page-title .main {
+    font-size: 56px;
+    line-height: 120px;
+  }
+}
+@media (max-width: 1024px) {
+  body.page .page-title .main {
+    font-size: 46px;
+    line-height: 110px;
+  }
+}
+@media (max-width: 576px) {
+  body.page .page-title .main {
+    font-size: 50px;
+    line-height: 100px;
+  }
+}
+body.page .page-title .behind {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+  font-family: "Neue Machina", sans-serif;
+  font-size: 90px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 1180px) {
+  body.page .page-title .behind {
+    font-size: 60px;
+  }
+}
+@media (max-width: 1024px) {
+  body.page .page-title .behind {
+    font-size: 40px;
+  }
+}
+@media (max-width: 576px) {
+  body.page .page-title .behind {
+    font-size: 30px;
+  }
+}
+
+body.page-template-page-template--contact-us--careers .request-demo-container {
+  font-size: 15px;
+  line-height: 1.5;
+}
+body.page-template-page-template--contact-us--careers .request-demo-container .row,
+body.page-template-page-template--contact-us--careers .request-demo-container .ec-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  gap: 12px 0;
+}
+body.page-template-page-template--contact-us--careers .request-demo-container .col-6,
+body.page-template-page-template--contact-us--careers .request-demo-container .col-12 {
+  padding: 0 10px;
+}
+body.page-template-page-template--contact-us--careers .request-demo-container .col-6 {
+  flex: 1;
+  min-width: 250px;
+}
+body.page-template-page-template--contact-us--careers .request-demo-container .col-12 {
+  width: 100%;
+}
+body.page-template-page-template--contact-us--careers .request-demo-container label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 14.5px;
+  letter-spacing: 0.3px;
+}
+body.page-template-page-template--contact-us--careers .request-demo-container input,
+body.page-template-page-template--contact-us--careers .request-demo-container textarea,
+body.page-template-page-template--contact-us--careers .request-demo-container select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  background: #222;
+  color: #f0f0f0;
+  border: 1px solid #444;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+body.page-template-page-template--contact-us--careers .request-demo-container input:focus,
+body.page-template-page-template--contact-us--careers .request-demo-container textarea:focus,
+body.page-template-page-template--contact-us--careers .request-demo-container select:focus {
+  outline: none;
+  border-color: #ff0000;
+  box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.25);
+}
+body.page-template-page-template--contact-us--careers .request-demo-container input::placeholder,
+body.page-template-page-template--contact-us--careers .request-demo-container textarea::placeholder,
+body.page-template-page-template--contact-us--careers .request-demo-container select::placeholder {
+  color: #888;
+  opacity: 1;
+}
+body.page-template-page-template--contact-us--careers .request-demo-container textarea {
+  max-height: 100px;
+  resize: vertical;
+  line-height: 1.5;
+}
+body.page-template-page-template--contact-us--careers .request-demo-container .row.quest br {
+  display: none;
+}
+body.page-template-page-template--contact-us--careers .request-demo-container .row.quest label label {
+  display: inline-block;
+}
+body.page-template-page-template--contact-us--careers .request-demo-container .wpcf7-submit {
+  background: linear-gradient(to right, #ba0000, #e30000);
+  color: white;
+  border: none;
+  padding: 12px 26px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 6px;
+  box-shadow: 0 2px 8px rgba(178, 0, 0, 0.4);
+  width: auto;
+}
+body.page-template-page-template--contact-us--careers .request-demo-container .wpcf7-submit:hover {
+  background: linear-gradient(to right, #9e0000, #c50000);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(178, 0, 0, 0.5);
+}
+body.page-template-page-template--contact-us--careers .request-demo-container .wpcf7-submit:disabled {
+  background: #555;
+  color: #aaa;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
 body.page-template-page-template--about .header {
   --masthead-bg-color: transparent;
 }
@@ -3058,6 +3253,22 @@ body.page-template-page-template--about .header::before {
   z-index: -1;
   opacity: 0.9;
   transition: background-color 0.3s ease;
+}
+body.page-template-page-template--about .our-approach:after {
+  display: none;
+}
+body.page-template-page-template--about .our-approach .text-container h3 {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  position: relative;
+  color: red;
+  font-family: "Neue Machina", sans-serif;
+}
+body.page-template-page-template--about .our-approach .text-container p {
+  font-size: 22px;
+  line-height: 1.3;
 }
 body.page-template-page-template--about .section-oursolutions {
   color: #ffffff;
